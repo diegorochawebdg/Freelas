@@ -69,7 +69,7 @@
 	$mail->Body .= "E-mail: ".$email."<br>";
 	$mail->Body .= "Telefone: ".$tel."<br>";
 	$mail->Body .= "Melhor Horário para ligar: ".$mensagem."<br><br><br>";
-	$mail->Body .= "<img src='http://www.rafaelbianco.com.br/projetos/sanay/wordpress/wp-content/themes/sanay/images/sanay-logo.png' alt='Sanay - Desenvolvimento Imobiliário' /><br><br><br>";
+	$mail->Body .= "<img src='http://www.sanay.com.br/wp-content/themes/sanay/images/sanay-logo.png' alt='Sanay - Desenvolvimento Imobiliário' /><br><br><br>";
 	
 	//$mail->AltBody = "Este é o corpo da mensagem de teste, em Texto Plano! \r\n <img src='http://blog.thiagobelem.net/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley'>";
 	 

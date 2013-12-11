@@ -38,7 +38,7 @@ $(document).ready(function(e) {
 			
 				e.preventDefault();	
 				$.ajax({
-					url:'http://www.rafaelbianco.com.br/projetos/sanay/wordpress/wp-content/themes/sanay/ajax/ajax_mail_ligamos.php',
+					url:'http://www.sanay.com.br/wp-content/themes/sanay/ajax/ajax_mail_ligamos.php',
 					type:'POST',
 					dataType:'json',
 					data: $('#ligamos').serialize(),
@@ -104,7 +104,7 @@ $(document).ready(function(e) {
 			
 				e.preventDefault();	
 				$.ajax({
-					url:'http://www.rafaelbianco.com.br/projetos/sanay/wordpress/wp-content/themes/sanay/ajax/ajax_mail_duvidas.php',
+					url:'http://www.sanay.com.br/wp-content/themes/sanay/ajax/ajax_mail_duvidas.php',
 					type:'POST',
 					dataType:'json',
 					data: $('#duvidas').serialize(),
@@ -170,7 +170,7 @@ $(document).ready(function(e) {
 			
 				e.preventDefault();	
 				$.ajax({
-					url:'http://www.rafaelbianco.com.br/projetos/sanay/wordpress/wp-content/themes/sanay/ajax/ajax_mail_indique.php',
+					url:'http://www.sanay.com.br/wp-content/themes/sanay/ajax/ajax_mail_indique.php',
 					type:'POST',
 					dataType:'json',
 					data: $('#indique').serialize(),
