@@ -100,10 +100,6 @@
                     if( $corretor_link ): ?>
                        <a href="#" onclick="corretorDefault('<?php echo get_field("chat_link"); ?>', 'Fale com nosso corretor', '563', '556')" class="corretor">Fale agora com nosso <br>corretor online</a>
                     
-                    <?php else : ?>
-                        
-                        <a href="#" onclick="corretorDefault('http://houste.hypnobox.com.br/atendimento/entrar.php?id_produto=10&gclid=&referencia=Direto&id_parceiro=', 'Fale com nosso corretor', '563', '556')" class="corretor" title="Corretores Online">Fale agora com nosso <br>corretor online</a>
-                    
                     <?php endif; ?> 
                     <!--End of Fale com o corretor-->
                     

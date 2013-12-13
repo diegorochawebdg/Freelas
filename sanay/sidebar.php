@@ -3,29 +3,15 @@
 <!-- Options -->
 <div class="options">
     <ul>
-        <li style="cursor:pointer;" <?php
+        <?php
                     
-                $corretor_link = get_field( 'chat_link' );
-                
-                if( $corretor_link ): ?>
-                onclick="corretorDefault('<?php echo get_field("chat_link"); ?>', 'Fale com nosso corretor', '563', '556')"
-                <?php else : ?>                                    
-                                    onclick="corretorDefault('http://houste.hypnobox.com.br/atendimento/entrar.php?id_produto=10&gclid=&referencia=Direto&id_parceiro=', 'Fale com nosso corretor', '563', '556')"
-                <?php endif; ?> 
-        >
-            <?php
-                    
-                $corretor_link = get_field( 'chat_link' );
-                
-                if( $corretor_link ): ?>
-                   <a href="#" class="corretores" title="<?php echo get_field("fale_com_nossos_corretores", 72); ?>"><?php echo get_field("fale_com_nossos_corretores", 72); ?></a>
-                
-                <?php else : ?>
-                    
-                    <a href="#" onclick="corretorDefault('http://houste.hypnobox.com.br/atendimento/entrar.php?id_produto=10&gclid=&referencia=Direto&id_parceiro=', 'Fale com nosso corretor', '563', '556')" class="corretor" title="<?php echo get_field("fale_com_nossos_corretores", 72); ?>"><?php echo get_field("fale_com_nossos_corretores", 72); ?></a>
-                
-                <?php endif; ?> 
-        </li>
+        $corretor_link = get_field( 'chat_link' );
+        
+        if( $corretor_link ): ?>
+            <li style="cursor:pointer;" onclick="corretorDefault('<?php echo get_field("chat_link"); ?>', 'Fale com nosso corretor', '563', '556')">
+                <a href="#" class="corretores" title="<?php echo get_field("fale_com_nossos_corretores", 72); ?>"><?php echo get_field("fale_com_nossos_corretores", 72); ?></a>
+            </li>
+        <?php endif; ?>
         <li class="item1"><a href="#" class="ligamos" title="<?php echo get_field("ligamos_para_voce", 72); ?>"><?php echo get_field("ligamos_para_voce", 72); ?></a></li>
         <li class="ligamos-li">
             <form id="ligamos">
