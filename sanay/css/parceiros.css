@@ -17,8 +17,7 @@ h1{font: italic 26px Oswald, Arial, sans-serif; text-transform:uppercase; color:
 .left-column .parceiro-content .parceiro:first-child{border:none !important;}
 .left-column .parceiro{border-top:solid 1px #d9d9d9; padding:30px 0;}
 .left-column .parceiro div{float:left;}
-.left-column .parceiro-img{border: solid 1px #d9d8d8; width:49%; height:132px; display:table; text-align:center;
-}
+.left-column .parceiro-img{width:49%; height:132px; display:table; text-align:center; float:left; margin:5px 3px;}
 .left-column .relative{display:table-cell; text-align:center; float:none !important; vertical-align:middle;}
 .left-column .parceiro-img img{text-align:center; display:inline; width: 323px; height:150px !important; border: solid 1px #BBB;}
 .left-column .parceiro-info{width:49%; display: table; height:132px;}
@@ -65,6 +64,7 @@ h1{font: italic 26px Oswald, Arial, sans-serif; text-transform:uppercase; color:
 .left-column .parceiro div{float:none; width:100%; }
 .left-column .parceiro .parceiro-info{height:auto;}
 .left-column .parceiro-info .relative{padding: 10% 15% 0 15%;}
+.left-column .parceiro-img{width:100%; height:auto;}
 
 /*Encontre Imóveis*/
 .encontre-imoveis{max-width:326px; display:table; margin:0 auto 65px auto;}

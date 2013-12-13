@@ -86,8 +86,8 @@
                                     {
                                         
                                         $parceiros[$x-1]["image"] = get_field('image_' . $x);
-                                        $parceiros[$x-1]["empresa"] = get_field('empresa_' . $x);
-                                        $parceiros[$x-1]["site"] = get_field('site_' . $x);
+                                        //$parceiros[$x-1]["empresa"] = get_field('empresa_' . $x);
+                                        //$parceiros[$x-1]["site"] = get_field('site_' . $x);
                                     }
                                     else
                                     {
@@ -97,20 +97,20 @@
                             ?>
                             <?php foreach($parceiros as $parceiro): ?>
                             
-                                <div class="parceiro">
+                                <!--<div class="parceiro">-->
                                     <div class="parceiro-img">
                                         <div class="relative">
                                             <img src="<?php echo $parceiro["image"] ?>">
                                         </div>
                                     </div>
-                                    <div class="parceiro-info">
+                                    <!--<div class="parceiro-info">
                                         <div class="relative">
-                                            <span><strong>Empresa:</strong> <?php echo $parceiro["empresa"] ?></span>
-                                            <span><strong>Site:</strong> <a href="http://<?php echo $parceiro["site"] ?>" target="_blank"><?php echo $parceiro["site"] ?></a></span>
+                                            <span><strong>Empresa:</strong> <?php /*echo $parceiro["empresa"]*/ ?></span>
+                                            <span><strong>Site:</strong> <a href="http://<?php /*echo $parceiro["site"]*/ ?>" target="_blank"><?php /*echo $parceiro["site"]*/ ?></a></span>
                                         </div>
                                     </div>
-                                    <div class="clear"></div>
-                                </div>
+                                    <div class="clear"></div>-->
+                               <!-- </div>-->
                                 
                             <?php endforeach; ?>
                                     
