@@ -8,7 +8,7 @@
         $corretor_link = get_field( 'chat_link' );
         
         if( $corretor_link ): ?>
-            <li style="cursor:pointer;" onclick="corretorDefault('<?php echo get_field("chat_link"); ?>', 'Fale com nosso corretor', '563', '556')">
+            <li style="cursor:pointer; background-color:#ff9b37;" onclick="corretorDefault('<?php echo get_field("chat_link"); ?>', 'Fale com nosso corretor', '563', '556')" onMouseOver="this.style.backgroundColor='#e9821d'" onMouseOut="this.style.backgroundColor='#ff9b37'">
                 <a href="#" class="corretores" title="<?php echo get_field("fale_com_nossos_corretores", 72); ?>"><?php echo get_field("fale_com_nossos_corretores", 72); ?></a>
             </li>
         <?php endif; ?>
