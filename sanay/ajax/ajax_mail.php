@@ -9,7 +9,7 @@
 	$cel = utf8_decode($_POST[ 'cel']);
 	$mensagem = utf8_decode($_POST['msg']);
 	$email_destino = '';
-	if($_POST['departamento']=='Administrativo'){
+	if($_POST['departamento']=='Financeiro'){
 	 	$email_destino = 'sanay@sanay.com.br';
 	} else{
 		$email_destino = 'sanay@sanay.com.br';
@@ -17,17 +17,17 @@
 
 	// Inicia a classe PHPMailer
 	$mail = new PHPMailer();
-	// Define os dados do servidor e tipo de conexão
+	// Define os dados do servidor e tipo de conexâ€žo
 
 	// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 	$mail->IsHTML(true);
-	$mail->IsSMTP(); // Define que a mensagem será SMTP
-	$mail->Host = "srv68.prodns.com.br"; // Endereço do servidor SMTP
+	$mail->IsSMTP(); // Define que a mensagem serÂ· SMTP
+	$mail->Host = "srv68.prodns.com.br"; // EndereÃo do servidor SMTP
     $mail->Port = 465;
     $mail->SMTPSecure = "ssl";
-	$mail->SMTPAuth = true; // Usa autenticação SMTP? (opcional)
-	$mail->Username = 'sanaycom'; // Usuário do servidor SMTP
+	$mail->SMTPAuth = true; // Usa autenticaÃâ€žo SMTP? (opcional)
+	$mail->Username = 'sanaycom'; // UsuÂ·rio do servidor SMTP
 	$mail->Password = '18P@(C^P4sW_'; // Senha do servidor SMTP
 	
 	
@@ -36,10 +36,10 @@
 	// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 	
 	$mail->From = "sanay@sanay.com.br"; // Seu e-mail
-	$mail->FromName = utf8_decode("Sanay - Desenvolvimento Imobiliário"); // Seu nome
+	$mail->FromName = utf8_decode("Sanay - Desenvolvimento ImobiliÂ·rio"); // Seu nome
 	 
 	
-	// Define os destinatário(s)
+	// Define os destinatÂ·rio(s)
 	
 	// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 	
@@ -52,13 +52,13 @@
 	
 	//$mail->AddCC('ciclano@site.net', 'Ciclano'); // Copia
 	
-	//$mail->AddBCC('fulano@dominio.com.br', 'Fulano da Silva'); // Cópia Oculta
+	//$mail->AddBCC('fulano@dominio.com.br', 'Fulano da Silva'); // CÃ›pia Oculta
 	
-	// Define os dados técnicos da Mensagem
+	// Define os dados tÃˆcnicos da Mensagem
 	
 	// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 	
-	$mail->IsHTML(true); // Define que o e-mail será enviado como HTML
+	$mail->IsHTML(true); // Define que o e-mail serÂ· enviado como HTML
 	
 	$mail->CharSet = 'iso-8859-1'; // Charset da mensagem (opcional)
 	
@@ -66,18 +66,18 @@
 	
 	// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 	
-	$mail->Subject  = "Fale conosco - Sanay Desenvolvimento Imobiliário"; // Assunto da mensagem
+	$mail->Subject  = "Fale conosco - Sanay Desenvolvimento ImobiliÂ·rio"; // Assunto da mensagem
 	
-	$mail->Body = "Contato através do site www.sanay.com.br: <br />";
+	$mail->Body = "Contato atravÃˆs do site www.sanay.com.br: <br />";
 	
 	$mail->Body .= "Nome: ".$nome."<br>";
 	$mail->Body .= "E-mail: ".$email."<br>";
 	$mail->Body .= "Telefone: ".$tel."<br>";
 	$mail->Body .= "Celular: ".$cel."<br>";
 	$mail->Body .= "Mensagem: ".$mensagem."<br><br><br>";
-	$mail->Body .= "<img src='http://www.sanay.com.br/wp-content/themes/sanay/images/sanay-logo.png' alt='Sanay - Desenvolvimento Imobiliário' /><br><br><br>";
+	$mail->Body .= "<img src='http://www.sanay.com.br/wp-content/themes/sanay/images/sanay-logo.png' alt='Sanay - Desenvolvimento ImobiliÂ·rio' /><br><br><br>";
 	
-	//$mail->AltBody = "Este é o corpo da mensagem de teste, em Texto Plano! \r\n <img src='http://blog.thiagobelem.net/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley'>";
+	//$mail->AltBody = "Este Ãˆ o corpo da mensagem de teste, em Texto Plano! \r\n <img src='http://blog.thiagobelem.net/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley'>";
 	 
 	
 	// Define os anexos (opcional)
@@ -90,11 +90,11 @@
 	// Envia o e-mail
 	
 	$mail->IsHTML(true);
-	$mail->IsSMTP(); // Define que a mensagem será SMTP
-	$mail->Host = "srv68.prodns.com.br"; // Endereço do servidor SMTP
+	$mail->IsSMTP(); // Define que a mensagem serÂ· SMTP
+	$mail->Host = "srv68.prodns.com.br"; // EndereÃo do servidor SMTP
     $mail->Port = 465;
     $mail->SMTPSecure = "ssl";
-	$mail->SMTPAuth = true; // Usa autenticação SMTP? (opcional)
-	$mail->Username = 'sanaycom'; // Usuário do servidor SMTP
+	$mail->SMTPAuth = true; // Usa autenticaÃâ€žo SMTP? (opcional)
+	$mail->Username = 'sanaycom'; // UsuÂ·rio do servidor SMTP
 	$mail->Password = '18P@(C^P4sW_'; // Senha do servidor SMTP
 ?>				

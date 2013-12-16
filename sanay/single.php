@@ -332,33 +332,24 @@
                         <li><strong>Região:</strong> <span><?php echo get_field('regiao'); ?></span> </li>
                         <li><strong>Produto:</strong> <span><?php echo get_field('produto'); ?></span> </li>
                         <li><strong>Lazer/Áreas comuns:</strong> <span><?php echo get_field('lazer_areas_comuns'); ?></span> </li>
-                        
-                        
                         <li><strong>Área do terreno</strong> <span><?php echo get_field('area'); ?></span></li>
                         <li><strong>Nº de vagas por unidade:</strong> <span><?php echo get_field('vagas'); ?></span></li>
-                        
-                        
                         <li><strong>Opções de Metragem:</strong> <span><?php echo get_field('metragem'); ?></span></li>
-                        
-                        
-                        
-                        
-                        
                         <li><strong>Pavimentos:</strong> <span><?php echo get_field('pavimentos'); ?></span></li>
                         <li><strong>Número de torres:</strong> <span><?php echo get_field('torres'); ?></span></li>
                         <li><strong>Unidades (total):</strong> <span><?php echo get_field('unidades_total'); ?></span></li>
                         <li><strong>Unidades (andar):</strong> <span><?php echo get_field('unidades_andar'); ?></span></li>
-                        
-                        
-                        
                         <li><strong>Dormitórios:</strong> <span><?php echo get_field('dormitorios'); ?></span></li>
-                        
-                        
-                        
                         <li><strong class="block">Realização:</strong> <span><?php echo get_field('realizacao'); ?></span></li>
                         <li><strong>Projeto de arquitetura:</strong> <span><?php echo get_field('projeto_de_arquitetura'); ?></span></li>
                         <li><strong>Projeto de paisagismo:</strong> <span><?php echo get_field('projeto_de_paisagismo'); ?></span></li>
                         <li><strong>Vendas:</strong> <span><?php echo get_field('vendas'); ?></span></li>
+                        
+                        <li><strong>Projeto de decoração:</strong> <span><?php echo get_field('projeto_decoracao'); ?></span></li>
+                        <li><strong>Construção:</strong> <span><?php echo get_field('construcao'); ?></span></li>
+                        <li><strong>Observação:</strong> <span><?php echo get_field('observacao'); ?></span></li>
+                        <li><strong>Ótimo acesso:</strong> <span><?php echo get_field('otimo_acesso'); ?></span></li>
+                        
                         <li><strong>Site do Empreendimento:</strong> <span><a class="acesse" href="http://<?php echo get_field('acesse'); ?>" target="blank"><?php echo get_field('acesse'); ?></a></span></li>
                     </ul>
                 </div>

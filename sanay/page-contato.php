@@ -103,7 +103,7 @@
                                     <div class="select">
                                         <select name="departamento">
                                             <option selected value="Comercial">Comercial</option>
-                                            <option value="Administrativo">Administrativo</option>
+                                            <option value="Financeiro">Financeiro</option>
                                         </select>
                                     </div>
                                 </div>
