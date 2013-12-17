@@ -1,0 +1,54 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--PREENCHER AS METAS "KEYWORD" E "DESCRIPTION"COM AS INFORMACOES DO SITE-->
+<meta name="description" content="">
+<meta name="keywords" content="">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Intellectus</title>
+<!-- TemplateEndEditable -->
+<link href="../css/default.css" rel="stylesheet" type="text/css">
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+<div id="container">
+	<!--HEADER-->
+	<div id="header">
+    	<div class="margem-geral">
+        	<a href="index.html" id="logo" title="Intellectus" tabindex="1">Intellectus</a>
+            <div class="menu">
+                <ul>
+                    <li><a href="#" tabindex="2">Cadastro</a></li>
+                    <li><a href="#" tabindex="3">Cursos</a></li>
+                    <li><a href="#" tabindex="4">Ministradores</a></li>
+                    <li><a href="#" tabindex="5">Parceiros</a></li>
+                    <li><a href="#" tabindex="6">Fale Conosco</a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    
+    <!--CONTENT-->
+    <div id="content">
+    	<div class="faixa"></div>
+        <!-- TemplateBeginEditable name="content" -->
+        
+        <!-- TemplateEndEditable -->
+    </div>
+    
+    <!--FOOTER-->
+    <div id="footer">
+    	<div class="margem-geral">
+            <span>2013 - Intellectus - Todos os direitos reservados.</span>
+            <!--SUBSTITUIR O NUMERO DO TELEFONE NO LINK TAMBEM PARA HABILITAR AS LIGACOES DIRETAS PELO SKYPE-->
+            <a href="tel:00-0000-0000" title="Entre em contato conosco">(00) 0000-0000</a>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

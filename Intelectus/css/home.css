@@ -1,0 +1,19 @@
+.banner-content { margin-top: -10px; background: #eee4f4; }
+.banner { width: 440px; }
+.banner-bg { background: url(../images/bg-transparente.png) repeat; position: absolute; left: 50%; top: 78px; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; padding: 7px; margin-left: -477px; }
+.banner h1 { padding: 30px 20px 10px 30px; color: #FFF; font-size: 34px; font-weight: normal; }
+.banner p { color: #FFF; font-size: 18px; padding: 20px 30px; }
+.banner .clique { background: #a45c27; padding: 10px 30px; }
+.banner .clique a { color: #f0cc7f; font-size: 18px; background: url(../images/seta-clique.png) no-repeat 152px 0px; height: 20px; display: block; }
+.coluna-esquerda .border-none { border:none }
+.curso { clear: both; height: auto; border-bottom: 2px dashed #be6dc4; border-top: 0px none #be6dc4; border-right: 0px none #be6dc4; border-left: 0px none #be6dc4; margin-bottom: 30px; padding-bottom: 30px; }
+.curso img { border: 2px solid #999; float: left; }
+.curso .curso-informacoes { float: left; margin-left: 20px; width: 420px; }
+.curso .curso-informacoes h3 { font-size: 24px; color: #333; margin-bottom: 15px; }
+.curso .curso-informacoes p { font-size: 14px; color: #333; margin-bottom: 33px; }
+.curso .curso-informacoes .inscricoes { background: #FFF; display: table-cell; }
+.curso .curso-informacoes .inscricoes .inscricoes-txt { float: left; padding: 15px; }
+.curso .curso-informacoes .inscricoes .inscricoes-txt span { font-size: 14px; }
+.curso .curso-informacoes .inscricoes .inscricoes-txt span strong { font-size: 14px; font-weight: bold !important; }
+.curso .curso-informacoes .inscricoes .saiba-mais { float: left; padding: 15px; }
+.curso .curso-informacoes .inscricoes .saiba-mais a { color: #FFF; text-transform: uppercase; }

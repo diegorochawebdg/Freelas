@@ -1,0 +1,237 @@
+/*
+Theme Name: Ronaldo De Freitas
+Theme URI: http://www.ronaldodefreitas.com.br/
+Description: Noria
+Author: WarleyGP
+Author URI: http://warleygp.com.br/
+*/
+@charset "utf-8";
+/*FONTES*/
+@font-face {
+    font-family: 'chaparral_probold';
+    src: url('fontes/chaparralpro-bold-webfont.eot');
+    src: url('fontes/chaparralpro-bold-webfont.svg#chaparral_probold') format('svg'),
+		 url('fontes/chaparralpro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fontes/chaparralpro-bold-webfont.woff') format('woff'),
+         url('fontes/chaparralpro-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'chaparral_proregular';
+    src: url('fontes/chaparralpro-regular-webfont.eot');
+    src: url('fontes/chaparralpro-regular-webfont.svg#chaparral_proregular') format('svg'),
+		 url('fontes/chaparralpro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fontes/chaparralpro-regular-webfont.woff') format('woff'),
+         url('fontes/chaparralpro-regular-webfont.ttf') format('truetype');
+         
+    font-weight: lighter;
+    font-style: normal;
+
+}
+/*INÍCIO DO CSS*/
+* {
+	margin:0;
+	padding:0;
+	list-style:none;
+	vertical-align:baseline;
+}
+body {
+	background:url(images/background.png) repeat #b7dce4;
+}
+h1,h2,h3,h4,h5,h6,#telefone{ font-family:'chaparral_probold', Georgia, Arial, Helvetica; font-weight:normal;}
+p, .bloco a{font-family:Verdana, Geneva, sans-serif; font-size:14px;}
+
+#home, #sobre, #areas, #consultorio, #convenios, #contato{
+	width:100%;
+	height:1000px;
+	float:left;
+}
+.container{
+	margin:0 auto;
+	width:960px;
+	height:auto;
+}
+
+#topo{width:100%; height:120px; float:left;}
+#logo{ float:left; margin:30px 20px;}
+#logo h1{color:#333; font-size:32px; }
+#logo span{color:#4d8591; font-family:'chaparral_proregular'; font-size:23px; font-weight:lighter;}
+#telefone{float:right; height:120px; line-height:120px; color:#333; font-size:24px; margin:0 20px;}
+
+#menu, #menu-float{float:left; width:100%; height:60px; background:url(images/bg-menu.png) repeat;}
+#menu ul li, #menu-float ul li{float:left;margin:0 20px;}
+#menu ul li a, #menu-float ul li a{color:#4d8591; height:60px; display:block; font-family:'chaparral_proregular'; font-size:24px; font-weight:lighter; line-height:60px; text-decoration:none; text-align:center; margin:0 10px;}
+#menu ul li a:hover, #menu-float ul li a:hover{color:#981c1c;}
+
+#menu-float{position:fixed;top:0; z-index:999; background:#fff; display:none;}
+
+#banner{float:left; width:100%; height:300px; background:#fff;}
+#conteudo{float:left;width:100%;height:240px; background:#8abcc7; margin:20px 0;}
+.bloco{float:left;width:290px;height:200px; margin:20px 20px; color:#fff;}
+.bloco a{color:#fff; text-decoration:none;}
+.bloco li{ list-style:inside;}
+.bloco h2{margin-bottom:10px;}
+.bloco-centro{background:#a7cdd5; padding:20px; width:250px; height:200px; margin:0;}
+.bloco-centro h2, .bloco-centro a{color:#4d8591;}
+
+#sobre{}
+#sobre #foto{float:left; margin:140px 20px 0 20px }
+#sobre #texto{float:right; width:610px; margin:120px 20px 0 0;}
+#sobre h1{ font-size:48px;margin:10px 0;}
+#sobre h2{ font-size:24px; margin:10px 0 10px 30px; color:#4d8591;}
+#sobre h3, #sobre ul li, #sobre p{ font-family:Verdana, Geneva, sans-serif; font-size:14px; font-weight:bold; margin:10px 0 10px 30px}
+#sobre ul li{font-weight:normal; list-style:inside;}
+#sobre p{font-weight:normal;}
+#sobre h4{font-size:24px; margin:10px 0 10px 30px;}
+a.botao{float:left; background:#4d8591; width:210px; height:50px; display:block; color:#fff; text-decoration:none; font-family:'chaparral_proregular'; font-size:23px; font-weight:lighter; margin:30px;
+text-align:center; line-height:50px;}
+a.botao:hover{color:#4d8591; background:#fff;}
+
+#areas{ background:url(images/bg-menu.png) repeat;}
+#areas h1{font-size:48px;margin:100px 0  20px 0;}
+#atuacao{float:left; width:960px; height:510px; background:#fff;}
+#menu-atuacao{float:left;width:200px; height:510px; background:#bfd9df;}
+#menu-atuacao li{float:left;width:200px;height:40px;}
+#menu-atuacao li a{font-family:'chaparral_proregular', Verdana, Arial; font-size:22px; font-weight:lighter; color:#333; text-decoration:none; font-size:15px; display:block; width:180px; height:40px;padding: 0 10px; line-height:40px;}
+#menu-atuacao li a:hover{color:#fff; background:#769298;}
+#atuacao-conteudo img{max-width:292px; margin:-40px 20px 10px 20px; height:auto; float:left; border:1px solid #999;}
+/*#atuacao .galeria img{border:1px solid #999;}*/
+#areas h2{font-size:24px; margin:20px 0;  color:#4d8591; padding-left: 335px;}
+#areas p{font-size:15px; margin:20px 0;}
+#atuacao-conteudo{width:700px;height:490px;float:left;padding: 0 20px; overflow:auto; overflow-x:none;}
+
+#consultorio{}
+#consultorio h1{font-size:48px; color:#4d8591;width:960px; text-align:center; margin:80px 0 20px;}
+#endereco{float:left;width:400px; margin: 10px 0 0 140px; color:#4d8591;}
+#como-chegar{width:220px; height:70px; float:right; margin-right:140px;}
+#galeria-set{float:left;position:relative;width:680px;height:400px;margin:40px 140px;}
+
+#convenios{background:url(images/bg-dark.png) repeat;}
+#convenios h1{font-size:48px; color:#fff; margin:70px 0 20px 20px;}
+#convenios p{margin-left:20px;}
+#convenioset{float:left; width:900px;height:510px;}
+#convenioset ul li{float:left;width:250px; height:120px; margin:25px; background:#fff; text-align:center; line-height:120px;}
+
+#contato{background:url(images/background-footer.png) no-repeat center;}
+#contato h1{width:500px;font-size:48px; color:#4d8591; margin:80px 0 20px 230px;}
+#contato h1 span{float:right; color:#333; font-size:24px; line-height:50px;}
+#contato p{color:#4d8591;}
+#rodape{float:left; margin-top: 200px;}
+form{width:500px; float:left; margin:0 230px;}
+input{
+	float:left;
+	width:480px;
+	height:30px;
+	background:#8abcc7;
+	color:#fff;
+	font-size:24px;
+	padding:10px;
+	font-family:'chaparral_proregular', Verdana, Arial;
+	border:none;
+	margin:12px 0;
+}
+input:focus{background:#fff; color:#333;}
+.meio{width:220px;}
+textarea{
+	float:left;
+	width:480px;
+	height:130px;
+	background:#8abcc7;
+	color:#fff;
+	font-size:18px;
+	padding:10px;
+	font-family:'chaparral_proregular', Verdana, Arial;
+	border:none;
+	margin:12px 0;
+}
+.enviar{float:left; background:#4d8591; width:210px; height:50px; display:block; color:#fff; text-decoration:none; font-family:'chaparral_proregular'; font-size:23px; font-weight:lighter; margin:12px 140px; padding:0;text-align:center; line-height:50px; cursor:pointer;}
+.enviar:hover{color:#4d8591; background:#fff;}
+/* Banner */
+	#slider{
+		position:relative;
+		width:960px;
+		height:300px;
+		margin:0;
+		background:#fff;
+	}
+
+	#slider ul, #slider li,
+	#slider2 ul, #slider2 li{
+		position:relative;
+		margin:0;
+		padding:0;
+		list-style:none;
+		}
+	#slider2{margin-top:1em;}
+	#slider li, #slider2 li{ 
+		/* 
+			define width and height of list item (slide)
+			entire slider area will adjust according to the parameters provided here
+		*/ 
+		width:960px;
+		height:300px;
+		overflow:hidden; 
+		}				
+/* Banner Convênios */
+	#banner-convenios{
+		position:relative;
+		width:250px;
+		height:60px;
+		margin:15px;
+	}
+
+	#banner-convenios ul, #banner-convenios li,
+	#banner-convenios2 ul, #banner-convenios2 li{
+		position:relative;
+		margin:0;
+		padding:0;
+		list-style:none;
+		}
+	#banner-convenios2{margin-top:1em;}
+	#banner-convenios li, #banner-convenios2 li{ 
+		/* 
+			define width and height of list item (slide)
+			entire slider area will adjust according to the parameters provided here
+		*/ 
+		width:250px;
+		height:60px;
+		overflow:hidden; 
+		}	
+	#prevBtn, #nextBtn,
+	#slider1next, #slider1prev{ 
+		display:block;
+		width:40px;
+		height:40px;
+		position:absolute;
+		left:-20px;
+		top:230px;
+		z-index:300;
+		}	
+	#nextBtn, #slider1next{ 
+		left:938px;
+		}														
+	#prevBtn a, #nextBtn a,#slider1next a, #slider1prev a{  
+		display:block;
+		position:relative;
+		width:10px;
+		height:28px;
+		background:url(images/prev-conv.png) no-repeat;	
+		}
+		#prevBtn a:hover, #nextBtn a:hover,#slider1next a:hover, #slider1prev a:hover{
+		background:url(images/prev-conv.png) no-repeat;
+		}
+		#prevBtn a:active, #nextBtn a:active,#slider1next a:active, #slider1prev a:active{
+		background:url(images/prev-conv.png) no-repeat;
+		}
+		
+	#nextBtn a, #slider1next a{ 
+		background:url(images/next-conv.png) no-repeat;
+		}
+		#nextBtn a:hover, #slider1next a:hover{ 
+			background:url(images/next-conv.png) no-repeat;	
+			}
+		#nextBtn a:active, #slider1next a:active{ 
+			background:url(images/next-conv.png) no-repeat;
+			}
