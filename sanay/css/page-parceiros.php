@@ -9,16 +9,25 @@
         
         $images = get_field( 'banner-post' );
         
-        if( $images ): ?>
+        if( $images ):
+        
+        	foreach( $images as $image ):
+        
+        ?>
            <div class="post-img"
-            style="background:url( <?php echo $images; ?> ) no-repeat center;"></div>
+            style="background:url( <?php echo $image['url']; ?> ) no-repeat center;"></div>
+        
+        <?php endforeach; ?>
 		
 		<?php else : ?>
         	
             <div class="post-img" style="background:url( <?php bloginfo('template_directory'); ?>/images/bg-default-internas.jpg) no-repeat center;"></div>
         
-        <?php endif; ?>    	
-        <!-- End of Post img -->
+        <?php endif; ?>
+        
+        
+        
+    	<!-- End of Post img -->
         
         <div class="content-center">
             <div class="page-margin">
@@ -79,15 +88,15 @@
                             <?php
                                 
                                 $parceiros = array();
-                                for($x=1;$x<=30;$x++)
+                                for($x=1;$x<=25;$x++)
                                 {
                                     
                                     if(get_field('image_' . $x))
                                     {
                                         
                                         $parceiros[$x-1]["image"] = get_field('image_' . $x);
-                                        //$parceiros[$x-1]["empresa"] = get_field('empresa_' . $x);
-                                        //$parceiros[$x-1]["site"] = get_field('site_' . $x);
+                                        $parceiros[$x-1]["empresa"] = get_field('empresa_' . $x);
+                                        $parceiros[$x-1]["site"] = get_field('site_' . $x);
                                     }
                                     else
                                     {
@@ -97,20 +106,20 @@
                             ?>
                             <?php foreach($parceiros as $parceiro): ?>
                             
-                                <!--<div class="parceiro">-->
+                                <div class="parceiro">
                                     <div class="parceiro-img">
                                         <div class="relative">
                                             <img src="<?php echo $parceiro["image"] ?>">
                                         </div>
                                     </div>
-                                    <!--<div class="parceiro-info">
+                                    <div class="parceiro-info">
                                         <div class="relative">
-                                            <span><strong>Empresa:</strong> <?php /*echo $parceiro["empresa"]*/ ?></span>
-                                            <span><strong>Site:</strong> <a href="http://<?php /*echo $parceiro["site"]*/ ?>" target="_blank"><?php /*echo $parceiro["site"]*/ ?></a></span>
+                                            <span><strong>Empresa:</strong> <?php echo $parceiro["empresa"] ?></span>
+                                            <span><strong>Site:</strong> <a href="http://<?php echo $parceiro["site"] ?>" target="_blank"><?php echo $parceiro["site"] ?></a></span>
                                         </div>
                                     </div>
-                                    <div class="clear"></div>-->
-                               <!-- </div>-->
+                                    <div class="clear"></div>
+                                </div>
                                 
                             <?php endforeach; ?>
                                     

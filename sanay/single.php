@@ -350,7 +350,7 @@
                         <li><strong>Observação:</strong> <span><?php echo get_field('observacao'); ?></span></li>
                         <li><strong>Ótimo acesso:</strong> <span><?php echo get_field('otimo_acesso'); ?></span></li>
                         
-                        <li><strong>Site do Empreendimento:</strong> <span><a class="acesse" href="http://<?php echo get_field('acesse'); ?>" target="blank"><?php echo get_field('acesse'); ?></a></span></li>
+                        <?php if( get_field('acesse') ) { ?><li><strong>Site do Empreendimento:</strong> <span><a class="acesse" href="http://<?php echo get_field('acesse'); ?>" target="blank"><?php echo get_field('acesse'); ?></a></span></li><?php } ?>
                     </ul>
                 </div>
                 <!-- Ficha técnica -->

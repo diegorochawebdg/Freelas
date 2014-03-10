@@ -48,14 +48,19 @@ $(document).ready(function(e) {
         $(".gallery .selectors a").removeClass("selected");
         imageList[ currentImage ].element.addClass("selected");
         $(".gallery .large-image a").attr("href", imageList[ currentImage ].image);
-        if($(".gallery .viewport").css("margin-left", "0px")){
+        
+        if( currentImage == 0 ) {
             $( ".gallery .selectors .prev" ).addClass("selected");
         }
-        
-        if( currentImage == 0 ) $( ".gallery .selectors .prev" ).addClass("selected");
-        else $( ".gallery .selectors .prev" ).removeClass("selected");
-        if( currentImage == (imageList.length - 1) ) $( ".gallery .selectors .next" ).addClass("selected");
-        else $( ".gallery .selectors .next" ).removeClass("selected");
+        else{ 
+            $( ".gallery .selectors .prev" ).removeClass("selected");
+        }
+        if( currentImage == (imageList.length - 1) ){ 
+            $( ".gallery .selectors .next" ).addClass("selected");
+        }
+        else{
+            $( ".gallery .selectors .next" ).removeClass("selected");
+        }
         
         /*Tittle of large image*/
         var largeTitle = imageList[ currentImage ].element.children("img").attr("title");
@@ -70,7 +75,6 @@ $(document).ready(function(e) {
     
     /*Prev/Next desappear if don't have 4 images*/
 	if($(window).width() >= 768){
-		console.log("works");
 		if($(".gallery .thumbs li").length <= 4){
 			$(".gallery .next, .gallery .prev").addClass("selected");
 		}
@@ -110,10 +114,6 @@ $(document).ready(function(e) {
         plantachangeImage();
         $(".planta-gallery .viewport").animate({"margin-left": "+=138px"});
         
-        if($(".planta-gallery .viewport").css("margin-left", "0px")){
-            $( ".planta-gallery .selectors .prev" ).addClass("selected");
-        }
-        
     } );
     $( ".planta-gallery .selectors .next" ).click( function(e){
         e.preventDefault();
@@ -138,10 +138,18 @@ $(document).ready(function(e) {
         $(".planta-gallery .large-image a").attr("href", plantaimageList[ plantacurrentImage ].image);
         
         
-        if( plantacurrentImage == 0 ) $( ".planta-gallery .selectors .prev" ).addClass("selected");
-        else $( ".planta-gallery .selectors .prev" ).removeClass("selected");
-        if( plantacurrentImage == (plantaimageList.length - 1) ) $( ".planta-gallery .selectors .next" ).addClass("selected");
-        else $( ".planta-gallery .selectors .next" ).removeClass("selected");
+        if( plantacurrentImage == 0 ){ 
+            $( ".planta-gallery .selectors .prev" ).addClass("selected");
+        }
+        else{ 
+            $( ".planta-gallery .selectors .prev" ).removeClass("selected");
+        }
+        if( plantacurrentImage == (plantaimageList.length - 1) ){ 
+            $( ".planta-gallery .selectors .next" ).addClass("selected");
+        }
+        else{ 
+            $( ".planta-gallery .selectors .next" ).removeClass("selected");
+        }
         
         /*Tittle of large image*/
         var plantalargeTitle = plantaimageList[ plantacurrentImage ].element.children("img").attr("title");
@@ -221,7 +229,6 @@ $(document).ready(function(e) {
     
     /*Hide empty Ficha Técnica <li>*/
     $(".ficha-tecnica li span:empty").parent().remove();
-    $(".ficha-tecnica li span a[href*='http://']").parent().parent().remove();
     /*End of Hide empty Ficha Técnica <li>*/
     
     /*Remove Image if don't have text*/
