@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/* Reset */
+*{
+	margin:0;
+	padding:0;
+	border:none;
+	-webkit-font-smoothing:antialiased;
+	font-family:Roboto, Arial, sans-serif;
+	list-style:none;
+	line-height:1;
+}
+body, html, #container{
+	width:100%;
+	height:100%;
+}
+#container{
+	background:url(../images/bg-body.jpg) #434C3D no-repeat left bottom;
+}
+.clear{
+	clear:both;
+}
+.link-padding{
+	position:relative;
+	height:0;
+	overflow:hidden;
+}
+
+/*First Block*/
+#first-block{
+	width:320px;
+}
+#first-block h1{
+	background:url(../images/jazz-pinheiros-residence.png) no-repeat;
+	width:207px;
+	padding-top:119px;
+	margin:0 auto;
+}
+#first-block .line, #third-block .line{
+	border-bottom:solid 1px #5A6753;
+	margin:20px 50px;
+}
+#first-block h2{
+	font-weight:bold;
+	font-size:19px;
+	color:#FFFF99;
+	text-align:center;
+	margin-bottom:22px;
+}
+
+#first-block a{
+	cursor:pointer;
+	background:url(../images/button-bg.png) #899C7D no-repeat 11px center;
+	padding:10px 31px 10px 51px;
+	font-weight:bold;
+	font-size:12px;
+	color:#FFF;
+	text-transform:uppercase;
+	text-decoration:none;
+	display:table;
+	margin:0 auto;
+	-webkit-transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+	   -moz-transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+		 -o-transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+			transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+}
+#first-block a:hover{
+	opacity:0.8;
+}
+
+/*Thanks*/
+.thanks{
+	float:none !important;
+	display:table;
+	margin:0 auto !important;
+	padding-top:100px;
+}

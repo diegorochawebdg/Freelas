@@ -1,0 +1,206 @@
+@charset "UTF-8";
+/* Reset */
+*{
+	margin:0;
+	padding:0;
+	border:none;
+	-webkit-font-smoothing:antialiased;
+	font-family:Roboto, Arial, sans-serif;
+	list-style:none;
+	line-height:1;
+}
+body, html, #container{
+	width:100%;
+	height:100%;
+}
+#container{
+	background:url(../images/bg-body.jpg) #434C3D no-repeat left bottom;
+}
+.clear{
+	clear:both;
+}
+.link-padding{
+	position:relative;
+	height:0;
+	overflow:hidden;
+}
+.page-margin{
+	width:830px;
+	margin:0 auto;
+	display:table;
+}
+#first-block, #second-block, #third-block{
+	margin-top:122px;
+}
+
+/*First Block*/
+#first-block{
+	width:207px;
+	float:left;
+}
+#first-block h1{
+	background:url(../images/jazz-pinheiros-residence.png) no-repeat;
+	width:207px;
+	padding-top:119px;
+}
+#first-block .line, #third-block .line{
+	border-bottom:solid 1px #5A6753;
+	margin:20px 0;
+}
+#first-block h2{
+	text-transform:uppercase;
+	font-weight:bold;
+	font-size:19px;
+	color:#FFFF99;
+	text-align:center;
+	margin-bottom:15px;
+}
+#first-block li{
+	display:block;
+	float:left;
+	width:32%;
+	text-align:center;
+	padding:18px 0;
+	color:#FFF;
+}
+#first-block li.item1{
+	background-color:#586450;
+}
+#first-block li.item2{
+	background-color:#6D7D64;
+	margin-left:5px;
+}
+#first-block li.item3{
+	background-color:#899C7D;
+	float:right !important;
+}
+
+/*Second block*/
+#second-block{
+	background-color:#FFF;
+	margin-left:48px;
+	float:left;
+	width:260px;
+	padding:33px 30px;
+}
+#second-block h2{
+	color:#4C5445;
+	font-size:24px;
+	margin-bottom:38px;
+}
+#second-block input{
+	border:solid 1px #CFD2CE;
+	text-transform:uppercase;
+	color:#4C5445;
+	font-size:12px;
+	display:block;
+	width:80%;
+	height:34px;
+	margin-bottom:14px;
+	background-image:url(../images/form-bg.jpg);
+	background-repeat:no-repeat;
+	padding:0 5px 0 43px;
+}
+#second-block input#nome{
+	background-position:10px 9px;
+}
+#second-block input#email{
+	background-position:10px -41px;
+}
+#second-block input#tel{
+	background-position:10px -91px;
+}
+#second-block input#endereco{
+	background-position:10px -141px;
+}
+#second-block button{
+	cursor:pointer;
+	background:url(../images/button-bg.png) #899C7D no-repeat 11px center;
+	padding:10px 16px 10px 43px;
+	font-weight:bold;
+	font-size:12px;
+	color:#FFF;
+	text-transform:uppercase;
+	float:right;
+	-webkit-transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+	   -moz-transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+		 -o-transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+			transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+}
+#second-block button:hover{
+	opacity:0.8;
+}
+
+#third-block{
+	float:right;
+	width:206px;
+}
+#third-block .stripes{
+	background:url(../images/stripes.png) repeat-x;
+	height:272px;
+}
+#third-block h3{
+	font-size:14px;
+	color:#889B7D;
+	margin-bottom:13px;
+	font-weight:lighter;
+}
+#third-block strong.item1{
+	background-image:url(../images/alfa-reality.png);
+	width:140px;
+	padding-top:21px;
+	display:block;
+}
+#third-block strong.item2{
+	background-image:url(../images/anastassiadis-arquitetos.png);
+	width:187px;
+	padding-top:33px;
+	display:block;
+}
+#third-block .line{
+	margin:15px 0;
+}
+
+/*And... Make it Responsible!*/
+@media screen and (min-width: 320px) and (max-width: 830px) {
+	body, html, #container{
+		height:auto;
+	}
+	#first-block{
+		margin-top:55px !important;
+	}
+	.page-margin{
+		width:320px;
+	}
+	#first-block, #second-block, #third-block{
+		float:none;
+		padding-top:0;
+	}
+	#first-block, #third-block{
+		display:table;
+		margin:0 auto 55px auto;
+	}
+	#first-block h1{
+		margin:0 auto;
+	}
+	#second-block{
+		margin:0 0 53px 0;
+		padding:33px 30px !important;
+	}
+	#third-block .stripes{
+		display:none;
+	}
+}
+@media screen and (max-height: 533px) {
+	body, html, #container{
+		height:auto;
+	}
+}
+
+/*Thanks*/
+.thanks{
+	float:none !important;
+	display:table;
+	margin:0 auto !important;
+	padding-top:100px;
+}
