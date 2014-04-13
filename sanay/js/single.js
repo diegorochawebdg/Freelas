@@ -2,7 +2,7 @@ $(document).ready(function(e) {
 	lightboxMargin();
     
 	/*Destaque hover*/
-	$(".gallery .large-image, .planta-gallery .large-image").hover(function(e) {
+	$(".gallery .large-image, .planta-gallery .large-image,  .andamento-gallery .large-image").hover(function(e) {
         $(this).children(".detalhes-hover").css({opacity:1});
     }, function(e){
 		$(this).children(".detalhes-hover").css({opacity:""});
@@ -81,6 +81,9 @@ $(document).ready(function(e) {
 		if($(".planta-gallery .thumbs li").length <= 4){
 			$(".planta-gallery .next, .gallery .prev").addClass("selected");
 		}
+		if($(".andamento-gallery .thumbs li").length <= 4){
+			$(".andamento-gallery .next, .gallery .prev").addClass("selected");
+		}
 	}
     
     if($(".gallery .thumbs li").length <= 1){
@@ -88,6 +91,9 @@ $(document).ready(function(e) {
     }
     if($(".planta-gallery .thumbs li").length <= 1){
         $(".planta-gallery .selectors").hide();
+    }
+	if($(".andamento-gallery .thumbs li").length <= 1){
+        $(".andamento-gallery .selectors").hide();
     }
     /*End of Prev/Next desappear if don't have 4 images*/
     
@@ -163,6 +169,81 @@ $(document).ready(function(e) {
     }
     
     /*End of Planta Galery Thumbs - Link*/
+	
+	
+	
+	
+	/*andamento Galery Thumbs - Link*/
+    var andamentoimageList    = new Array();
+    var andamentocurrentImage = -1;
+    $(".andamento-gallery .thumbs a").each(function(index, element) {
+        if (andamentocurrentImage == -1)andamentocurrentImage = 0;
+        andamentoimageList[ index ]         = new Object();
+        andamentoimageList[ index ].id      = index;
+        andamentoimageList[ index ].element = $(element);
+        andamentoimageList[ index ].image   = $(element).attr("href");
+        andamentoimageList[ index ].title   = $(element).attr("title");
+    });
+    
+    
+    $( ".andamento-gallery .selectors .prev" ).click( function(e){
+        e.preventDefault();
+        andamentocurrentImage--;
+        andamentochangeImage();
+        $(".andamento-gallery .viewport").animate({"margin-left": "+=138px"});
+        
+    } );
+    $( ".andamento-gallery .selectors .next" ).click( function(e){
+        e.preventDefault();
+        andamentocurrentImage++;
+        andamentochangeImage();
+        $(".andamento-gallery .viewport").animate({"margin-left": "-=138px"});
+    } );
+    if(andamentocurrentImage != -1)andamentoimageList[ andamentocurrentImage ].element.addClass("selected");
+    
+    $(".andamento-gallery .selectors a").click(function(e) {
+        e.preventDefault();
+        for( key in andamentoimageList ) if( $(this).attr("href") == andamentoimageList[key].image ) andamentocurrentImage = andamentoimageList[key].id;
+        andamentochangeImage();
+    });
+    
+    function andamentochangeImage(){
+        $(".andamento-gallery .large-image img").attr("src", andamentoimageList[ andamentocurrentImage ].image);
+        $(".andamento-gallery .large-image img").attr("title", andamentoimageList[ andamentocurrentImage ].title);
+        $(".andamento-gallery .large-image img").hide().fadeIn(300);
+        $(".andamento-gallery .selectors a").removeClass("selected");
+        andamentoimageList[ andamentocurrentImage ].element.addClass("selected");
+        $(".andamento-gallery .large-image a").attr("href", andamentoimageList[ andamentocurrentImage ].image);
+        
+        
+        if( andamentocurrentImage == 0 ){ 
+            $( ".andamento-gallery .selectors .prev" ).addClass("selected");
+        }
+        else{ 
+            $( ".andamento-gallery .selectors .prev" ).removeClass("selected");
+        }
+        if( andamentocurrentImage == (andamentoimageList.length - 1) ){ 
+            $( ".andamento-gallery .selectors .next" ).addClass("selected");
+        }
+        else{ 
+            $( ".andamento-gallery .selectors .next" ).removeClass("selected");
+        }
+        
+        /*Tittle of large image*/
+        var andamentolargeTitle = andamentoimageList[ andamentocurrentImage ].element.children("img").attr("title");
+        if(andamentolargeTitle !== 'undefined' && andamentolargeTitle !== '' ){
+            $(".andamento-gallery .large-image span").remove();
+            $(".andamento-gallery .large-image").append("<span>" + andamentolargeTitle + "</span>");
+        } else{
+            $(".andamento-gallery .large-image span").remove();
+        }
+        /*End of Tittle of large image*/
+    }
+    
+    /*End of Planta Galery Thumbs - Link*/
+	
+	
+	
     
     
     /*Lightbox*/
@@ -218,6 +299,14 @@ $(document).ready(function(e) {
         $(".planta-gallery").show();
     } else{
         $(".planta-gallery").hide();
+    }
+    /*End of Hide Planta Gallery if this don't have any images*/
+	
+	/*Hide Andamento Gallery if this don't have any images*/
+    if($(".andamento-gallery .viewport ul li").size() > 0){
+        $(".andamento-gallery").show();
+    } else{
+        $(".andamento-gallery").hide();
     }
     /*End of Hide Planta Gallery if this don't have any images*/
     

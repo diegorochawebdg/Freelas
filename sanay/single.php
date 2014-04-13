@@ -307,6 +307,83 @@
                 </div>
                 <!-- End of Planta -->
                 
+                
+                
+                
+                
+                <?php if( get_field('andamento_galeria_1') ) {?>
+					
+                    <!--Em Andamento-->
+                    <div class="andamento-gallery">
+                    	<h2>Em andamento</h2>
+                        <?php 
+							$andamento_txt = get_field('andamento_txt'); 
+							echo $andamento_txt;
+						?>
+                        
+                        <!-- Large Size -->
+                        <div class="large-image animate">
+                            <?php $the_andamento_img =  get_field('andamento_galeria_1'); ?>
+                            <img src="<?php echo $the_andamento_img['url'] ?>" alt="" title="<?php echo $the_andamento_img['title'] ?>">
+                            
+                            <?php if( $the_andamento_img['title'] ): ?>
+                            	<span><?php echo $the_andamento_img['title'] ?></span>
+                            <?php endif; ?>
+                            
+                            <a href="<?php echo $the_andamento_img['url'] ?>" title="Veja mais detalhes" class="link-padding detalhes-hover transition"></a>
+                        </div>
+                        <!-- End of Large Size -->
+                        
+                        <!-- Selectors -->
+                        <div class="selectors">
+                            <a href="#" title="Anterior" class="prev selected">Anterior</a>
+                            <div class="thumbs">
+                                <div class="viewport">
+                                    <ul>
+                                        <?php
+                                    
+                                            $andamento_gallery_img = array();
+                                            for($x=1;$x<=10;$x++)
+                                            {
+                                                $andamento_array = get_field('andamento_galeria_' . $x);
+                                                if($andamento_array)
+                                                {
+                                                    
+                                                    $andamento_gallery_img[$x-1]["image"] = $andamento_array['sizes']['thumbnail'];
+                                                    $andamento_gallery_img[$x-1]["title"] = $andamento_array['title'];
+                                                    $andamento_gallery_img[$x-1]["link"]  = $andamento_array['url'];
+                                                }
+                                                else
+                                                {
+                                                    break;
+                                                }
+                                            }
+                                        ?>
+                                        <?php foreach($andamento_gallery_img as $andamento_gallery): ?>
+                                        
+                                            <li><a href="<?php  echo $andamento_gallery["link"] ?>"><img src="<?php  echo $andamento_gallery["image"] ?>" alt="" title="<?php echo $andamento_gallery["title"] ?>"></a></li>
+                                            
+                                        <?php endforeach; ?>
+                                        
+                                    </ul>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <a href="#" title="Próxima" class="next link-padding">Próxima</a>
+                            <div class="clear"></div>
+                        </div>
+                        <!-- End of Selectors -->
+                        
+                    </div>
+                    <!--End of Em Andamento-->
+                    
+				<?php } ?>
+                
+                
+                
+                
+                
+                
                 <!-- Localização -->
                 <div class="localizacao">
                     <h2>Localização</h2>

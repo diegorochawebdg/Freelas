@@ -73,12 +73,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76f', end
 
 
 /*Gallery*/
-.left-column .gallery, .left-column .planta-gallery{margin-bottom:40px; padding-bottom: 50px; border-bottom: solid 1px #CCC;}
-.left-column .gallery{ }
-.left-column .gallery .large-image, .left-column .planta-gallery .large-image{position:relative; text-align:center; font:italic 16px Oswald; color:#FFF; text-transform:uppercase; margin-bottom:25px; height: 370px; overflow: hidden; min-height:370px; border: solid 1px #CCC;}
-.left-column .gallery .large-image .detalhes-hover, .left-column .planta-gallery .large-image .detalhes-hover{width:100%; padding-top:370px; position:absolute; background:url(../images/ampliar-foto.png) no-repeat center; top:0; left:0; opacity:0;}
-.left-column .gallery .large-image span, .left-column .planta-gallery .large-image span{ background:url(../images/bg-destaques-span.png) repeat; width:100%; padding: 7px 0; position:absolute; bottom:0; left:0;}
-.left-column .gallery .large-image img, .left-column .planta-gallery .large-image img{width:100%;}
+.left-column .gallery, .left-column .planta-gallery, .left-column .andamento-gallery{margin-bottom:40px; padding-bottom: 50px; border-bottom: solid 1px #CCC;}
+.left-column .gallery .large-image, .left-column .planta-gallery .large-image, .left-column .andamento-gallery .large-image{position:relative; text-align:center; font:italic 16px Oswald; color:#FFF; text-transform:uppercase; margin-bottom:25px; height: 370px; overflow: hidden; min-height:370px; border: solid 1px #CCC;}
+.left-column .gallery .large-image .detalhes-hover, .left-column .planta-gallery .large-image .detalhes-hover, .left-column .andamento-gallery .large-image .detalhes-hover{width:100%; padding-top:370px; position:absolute; background:url(../images/ampliar-foto.png) no-repeat center; top:0; left:0; opacity:0;}
+.left-column .gallery .large-image span, .left-column .planta-gallery .large-image span, .left-column .andamento-gallery .large-image span{ background:url(../images/bg-destaques-span.png) repeat; width:100%; padding: 7px 0; position:absolute; bottom:0; left:0;}
+.left-column .gallery .large-image img, .left-column .planta-gallery .large-image img, .left-column .andamento-gallery .large-image img{width:100%;}
 
 /*Gallery Selectors*/
 .selectors{width:100%;}
@@ -166,9 +165,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76f', end
 .left-column .main-img-txt img{float:none; width:100%; margin-bottom:25px;}
 
 /*Gallery's*/
-.left-column .gallery, .left-column .planta-gallery{position:relative;}
-.left-column .gallery .large-image, .left-column .planta-gallery .large-image{max-height:243px;}
-.left-column .gallery .large-image .detalhes-hover, .left-column .planta-gallery .large-image .detalhes-hover{padding-top:243px;}
+.left-column .gallery, .left-column .planta-gallery, .left-column .andamento-gallery{position:relative;}
+.left-column .gallery .large-image, .left-column .planta-gallery .large-image, .left-column .andamento-gallery .large-image{max-height:243px;}
+.left-column .gallery .large-image .detalhes-hover, .left-column .planta-gallery .large-image .detalhes-hover, .left-column .andamento-gallery .large-image .detalhes-hover{padding-top:243px;}
 .thumbs{display:none;}
 .selectors{width:100px; position:absolute; top:0; right:5px;}
 .selectors .prev, .selectors .next{width:43px; margin-top:0;}
@@ -199,7 +198,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76f', end
 .ficha-tecnica{margin:0px 0 20px 0}
 .options{margin-bottom:100px;}
 
-.left-column .gallery .large-image, .left-column .planta-gallery .large-image {min-height: 163px; max-height: 163px;}
+.left-column .gallery .large-image, .left-column .planta-gallery .large-image, .left-column .andamento-gallery .large-image{min-height: 163px; max-height: 163px;}
 .left-column .planta-gallery h2{margin-bottom: 60px;}
 .left-column .planta-gallery .selectors{top:60px;}
 }
