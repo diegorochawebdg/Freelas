@@ -79,6 +79,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76f', end
 .left-column .gallery .large-image span, .left-column .planta-gallery .large-image span, .left-column .andamento-gallery .large-image span{ background:url(../images/bg-destaques-span.png) repeat; width:100%; padding: 7px 0; position:absolute; bottom:0; left:0;}
 .left-column .gallery .large-image img, .left-column .planta-gallery .large-image img, .left-column .andamento-gallery .large-image img{width:100%;}
 
+.left-column .andamento-gallery iframe{width:220px; height:130px; float:left; border:none; margin-bottom:25px;}
+
 /*Gallery Selectors*/
 .selectors{width:100%;}
 .selectors .viewport{width:3000px;}

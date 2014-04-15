@@ -194,8 +194,8 @@
                     
                     <!-- Large Size -->
                     <div class="large-image animate">
-                    		<?php $the_gallery_img =  get_field('galeria_1'); ?>
-                        <img src="<?php echo $the_gallery_img['url'] ?>" alt="" title="<?php echo $the_gallery_img['title'] ?>" width="<?php echo $the_gallery_img['width'] ?>" heigth="<?php echo $the_gallery_img['height'] ?>">
+                    	<?php $the_gallery_img =  get_field('galeria_1'); ?>
+                        <img src="<?php echo $the_gallery_img['sizes']['large'] ?>" alt="" title="<?php echo $the_gallery_img['title'] ?>" width="<?php echo $the_gallery_img['width'] ?>" heigth="<?php echo $the_gallery_img['height'] ?>">
                         <?php if( $the_gallery_img['title'] ): ?>
                         <span><?php echo $the_gallery_img['title'] ?></span>
                         <?php endif; ?>
@@ -220,7 +220,7 @@
                                                 $galeria = get_field('galeria_' . $x);
                                                 $gallery_img[$x-1]["image"] = $galeria['sizes']['thumbnail'];
                                                 $gallery_img[$x-1]["title"] = $galeria['title'];
-                                                $gallery_img[$x-1]["link"] = $galeria['url'];
+                                                $gallery_img[$x-1]["link"] = $galeria['sizes']['large'];
                                             }
                                             else
                                             {
@@ -253,7 +253,7 @@
                     <!-- Large Size -->
                     <div class="large-image animate">
                     		<?php $the_planta_img =  get_field('planta_galeria_1'); ?>
-                        <img src="<?php echo $the_planta_img['url'] ?>" alt="" title="<?php echo $the_planta_img['title'] ?>">
+                        <img src="<?php echo $the_planta_img['sizes']['large'] ?>" alt="" title="<?php echo $the_planta_img['title'] ?>">
                         
                         <?php if( $the_planta_img['title'] ): ?>
                         
@@ -281,7 +281,7 @@
                                                 
                                                 $planta_gallery_img[$x-1]["image"] = $planta_array['sizes']['thumbnail'];
                                                 $planta_gallery_img[$x-1]["title"] = $planta_array['title'];
-                                                $planta_gallery_img[$x-1]["link"]  = $planta_array['url'];
+                                                $planta_gallery_img[$x-1]["link"]  = $planta_array['sizes']['large'];
                                             }
                                             else
                                             {
@@ -315,16 +315,19 @@
 					
                     <!--Em Andamento-->
                     <div class="andamento-gallery">
-                    	<h2>Em andamento</h2>
+                    	<h2>Estágio da obra</h2>
                         <?php 
 							$andamento_txt = get_field('andamento_txt'); 
 							echo $andamento_txt;
 						?>
                         
+                        <div class="clear"></div>
+                        
                         <!-- Large Size -->
+                        <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.js"></script>
                         <div class="large-image animate">
                             <?php $the_andamento_img =  get_field('andamento_galeria_1'); ?>
-                            <img src="<?php echo $the_andamento_img['url'] ?>" alt="" title="<?php echo $the_andamento_img['title'] ?>">
+                            <img src="<?php echo $the_andamento_img['sizes']['large'] ?>" alt="" title="<?php echo $the_andamento_img['title'] ?>">
                             
                             <?php if( $the_andamento_img['title'] ): ?>
                             	<span><?php echo $the_andamento_img['title'] ?></span>
@@ -351,7 +354,7 @@
                                                     
                                                     $andamento_gallery_img[$x-1]["image"] = $andamento_array['sizes']['thumbnail'];
                                                     $andamento_gallery_img[$x-1]["title"] = $andamento_array['title'];
-                                                    $andamento_gallery_img[$x-1]["link"]  = $andamento_array['url'];
+                                                    $andamento_gallery_img[$x-1]["link"]  = $andamento_array['sizes']['large'];
                                                 }
                                                 else
                                                 {
@@ -503,7 +506,6 @@
 <?php get_footer(); ?>
 
 <!-- Scripts -->
-<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory')?>/js/sidebar.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/script.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/single.js"></script>
