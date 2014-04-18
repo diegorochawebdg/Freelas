@@ -1,0 +1,21 @@
+#premios{font-family: 'Open Sans', sans-serif !important; color:#37983f !important; font-weight: bold;}
+#premios:hover{text-decoration:none !important}
+h1{font-size:36px; color:#6d6e71; margin-bottom:30px;}
+.premios-first, .item-second{position:relative; text-align:center;}
+.premios-first { float: left; width: 247px; height: 628px; background: url(../images/premios/premio-benny.jpg); margin-top: -27px; }
+.premios-first p, .txt{position:absolute;}
+.premios-first p{color:#FFF; bottom:20px; width:200px; font:12px 'Calibri'; left:50%; margin-left:-100px; line-height:1.2em !important;}
+.premios-first p strong{font-family: 'Calibri' !important; font-weight:normal;}
+.premios-second { float: left; width:695px; }
+.item-second { float: left; height: 310px; width: 155px; position:relative; margin:0 0 22px 18px; }
+.txt{ top: 127px; width: 155px; }
+.txt h2{font:12px/13px 'Open Sans', sans-serif !important; font-weight:bold !important; text-transform:uppercase; margin: 0 0 5px 0;}
+.txt h3{ font-size:12px; font-style:italic; margin: 0 0 2px 0;}
+.txt p{color:#6d6e71; font-size:12px; margin-bottom:7px;}
+#item1 { background: url(../images/premios/printing-industries-of-america.jpg); }
+#item2 { background-image: url(../images/premios/aberje.jpg); }
+#item3 { background-image: url(../images/premios/anatec.jpg); }
+#item4 { background-image: url(../images/premios/abca.jpg); }
+#item5 { background-image: url(../images/premios/premio-comtexto.jpg); }
+#item6 { background-image: url(../images/premios/premio-jornalistas-cia-hsbc.jpg); }
+#item7 { background-image: url(../images/premios/trofeu-hq-mix.jpg); }

@@ -1,0 +1,8 @@
+#home{font-family: 'Open Sans', sans-serif !important; color:#37983f !important; font-weight: bold;}
+#home:hover{text-decoration:none !important;}
+#content img{margin-bottom:30px;}
+#content p{line-height:1.4em; font-size:16px;}
+#content .faixa{ border-top: 3px solid #a7a9ac; border-right-style: none; border-bottom-style: none; border-left-style: none; margin-top:20px; }
+/*Slider*/
+#slider {margin-bottom:30px;}
+#slider ul, #slider li{margin:0; padding:0; list-style:none;}

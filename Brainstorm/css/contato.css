@@ -1,0 +1,16 @@
+@charset "UTF-8";
+#contato{font-family: 'Open Sans', sans-serif !important; color:#37983f !important; font-weight: bold;}
+h1 { color: #6d6e71; font-size: 36px;margin: 0; }
+#form { background: url(../images/contato/bg-contato.jpg) no-repeat; height: 459px; width: 857px; position: relative; padding: 28px 45px; margin: 23px 0 27px 0; }
+#form form label { color: #FFF; margin: 0 0 3px 0; display: block; font-size:16px; }
+#form span{font-style:normal;}
+#form input, #form textarea{background:url(../images/contato/bg-fields.png) repeat; border-radius:13px; box-shadow:#333 5px 5px 14px; padding:20px; font-size:18px; margin-bottom:20px;}
+#form input{height:10px; width:490px;}
+#form textarea{height:160px; width:785px;}
+#form form #enviar { font-size: 20px; color: #333; background: url(../images/contato/bg-fields.png) repeat; text-align: center; padding: 7px 20px; position: absolute; left: 70px; bottom: 6px; text-decoration: none;}
+#form .info { position: absolute; left: 624px; top: 50px; font-size: 18px; }
+#form .info *{ color: #FFF; text-decoration: none; display: block; margin-bottom: 10px; }
+#form .info a:hover { text-decoration: underline; }
+.social a { float: right; margin-right: 14px; }
+#content .faixa{ border-top: 3px solid #a7a9ac; border-right-style: none; border-bottom-style: none; border-left-style: none; margin-top:20px; }
+.clear{clear:both;}

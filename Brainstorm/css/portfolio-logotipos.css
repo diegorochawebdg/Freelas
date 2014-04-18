@@ -1,0 +1,8 @@
+@charset "UTF-8";
+#content .purple-box { background: url(../portfolio/logotipos-identidade-visual/purple-bg.jpg); height: 582px; width: 917px; padding: 30px 0 0 30px; }
+#portfolio{font-family: 'Open Sans', sans-serif !important; color:#37983f !important; font-weight: bold;}
+h1 { color: #6d6e71; font-size: 36px;margin: 0; }
+h2 { color: #6d6e71; font-size: 20px; margin: 0 0 30px 0; }
+.purple-box .item { float: left; height: 140px; }
+.purple-box .item span{ font-size: 12px; color: #FFF; text-decoration: none; }
+.clear{clear:both;}

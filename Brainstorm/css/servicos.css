@@ -1,0 +1,12 @@
+#servicos{font-family: 'Open Sans', sans-serif !important; color:#37983f !important; font-weight: bold;}
+#servicos:hover{text-decoration:none !important;}
+#container * { color: #FFF; }
+#container h2 { font-size: 19px; margin:0 0 5px 0;}
+#container p{ font-size: 13px; line-height: 1.4em; }
+.publicacoes, .identidade { float: left; position: relative; }
+.publicacoes { background: url(../images/servicos/publicacoes-brainstorm.jpg); height: 644px; width: 297px; }
+.identidade { background: url(../images/servicos/identidade-visual-brainstorm.jpg); height: 637px; width: 293px; margin-left: 30px; margin-top:8px; }
+.criacao { float: right; background: url(../images/servicos/criacao-publicitaria-brainstorm.jpg); height: 627px; width: 286px; position: relative; margin-top:21px; }
+.txt{ position: absolute; top: 486px; width: 250px; left: 25px; }
+.txt p{line-height:1.2em; font-size:14px;}
+.clear { clear: both; }

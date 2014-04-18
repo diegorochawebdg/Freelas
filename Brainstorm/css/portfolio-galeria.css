@@ -1,0 +1,24 @@
+#portfolio{font-family: 'Open Sans', sans-serif !important; font-weight:bolder; color:#37983f !important;}
+.left { width: 580px; float: left; }
+h3 { color: #6d6e71; font-size: 36px;margin: 0; }
+h2 { color: #6d6e71; font-size: 16px; margin: 0 0 30px 0; }
+
+#slideshow{width:571px; height:376px; background-color:#FFF; margin-bottom:40px;}
+#content .clear { clear: both; }
+#content .right { float: right; width: 340px; padding-top: 40px; }
+#content .right h1 { font-size: 20px; color: #37983f; margin: 0 0 20px 0; }
+#content .right p{font-size:13px; line-height:1.2em;}
+#content .right p:first-letter{padding-left:10px;}
+#content .right p.first-letter:first-letter{font-size: 242%; float: left; color: #6d6e71; line-height:25px !important; width:19px; height:25px; padding:0;}
+#content .right h2 { font: 13px 'Open Sans', sans-serif; font-weight:bold !important; color: #6d6e71; margin: 20px 0 0 0 !important; }
+
+
+#thumbs { height: 96px; overflow:hidden; position:relative; }
+#thumbs .viewport { float: left; width: 580px; height: 96px; overflow: hidden; position: relative; }
+#thumbs .buttons { display: block; width:26px; height:25px; position: absolute; top:46px; z-index:10; }
+#thumbs .prev { background:url(../images/portfolio/seta-left-galeria.png) no-repeat scroll 0 0 transparent; background-position:0 0; text-indent:-9999px; left:0px;  }
+#thumbs .next { background:url(../images/portfolio/seta-right-galeria.png) no-repeat scroll 0 0 transparent; background-position:0 0; text-indent:-9999px; right:10px;  }
+#thumbs .disable { visibility: hidden; }
+#thumbs .overview { list-style: none; position: absolute; padding: 0; margin: 0; left: 0; top: 0; }
+#thumbs .overview li{ float: left; margin: 0 14px 0 0; padding: 1px; height: 86px; width: 130px;}
+#thumbs .overview img{box-shadow:#999 4px -4px 7px; margin-top:10px;}

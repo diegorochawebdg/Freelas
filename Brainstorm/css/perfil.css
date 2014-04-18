@@ -1,0 +1,24 @@
+#perfil{font-family: 'Open Sans', sans-serif !important; color:#37983f !important; font-weight: bold;}
+h1, h2{color:#585a5e; font-size:36px;}
+.txt-perfil, .txt-historico { background: url(../images/perfil/bg.png); height: 578px; width: 800px; padding: 40px 70px 0 70px; }
+.txt-perfil p { font-size: 13.5px; line-height: 1.4em !important; }
+.txt-perfil .bloco1 { float: left; width: 430px; }
+.bloco1 .type:first-letter { font-size: 481%; float: left; color: #6d6e71; line-height:51px !important; width:47px; height:40px; }
+.txt-perfil .bloco2 { float: right; width: 332px; }
+.bloco2 img { margin-bottom: 25px; }
+.bloco2 p { font-style: italic; font-size:13px; line-height:1.4em !important; text-align:left !important; }
+.bloco2 .txt { background: url(../images/perfil/aspas.jpg); height: 241px; width: 325px; padding: 19px 11px; }
+.bloco2 .txt span{text-align:right; display:block; margin-top:22px; font-family: 'Open Sans', sans-serif !important; color:#6D6E71;}
+#content .faixa{ border-top: 3px solid #a7a9ac; border-right-style: none; border-bottom-style: none; border-left-style: none; margin-top:20px; }
+
+.txt-historico .bloco1:first-letter{font-size: 481%; float: left; color: #6d6e71; line-height:58px !important; width:51px; height:55px;}
+.txt-historico .bloco1 { float: left; width: 400px; height:496px; padding-right:46px; overflow: -moz-scrollbars-vertical; overflow-y: scroll; appearance:none; -moz-appearance:none; -webkit-appearance:none; font-size: 13.5px; line-height: 1.4em !important; }
+.txt-historico .bloco1 strong{font-family: 'Open Sans', sans-serif !important; margin:20px 0 !important; display:block !important;}
+.txt-historico img { float: right; width: 332px; }
+h2.contato{margin-bottom:60px;}
+.texture{margin-bottom:10px;}
+.contato-box p{font-size:14px;}
+.contato-box h3{color:#6d6e71; margin-bottom:10px;}
+.clientes div{width:22%; float:left; padding-right:25px;}
+.clientes li{list-style-type:disc; margin-left:5px; font-size:14px; margin-bottom:5px;}
+.clear{clear:both;}
