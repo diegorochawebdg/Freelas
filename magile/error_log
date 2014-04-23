@@ -1,0 +1,8 @@
+[22-Apr-2014 01:18:04] PHP Parse error:  syntax error, unexpected ')' in /home/rafaelb/public_html/projetos/magile/wp-content/themes/magile/home.php on line 44
+[22-Apr-2014 01:18:46] PHP Parse error:  syntax error, unexpected ')' in /home/rafaelb/public_html/projetos/magile/wp-content/themes/magile/home.php on line 44
+[22-Apr-2014 01:18:49] PHP Parse error:  syntax error, unexpected ')' in /home/rafaelb/public_html/projetos/magile/wp-content/themes/magile/home.php on line 44
+[22-Apr-2014 01:19:56] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING in /home/rafaelb/public_html/projetos/magile/wp-content/themes/magile/home.php on line 44
+[22-Apr-2014 01:38:50] PHP Parse error:  syntax error, unexpected '<' in /home/rafaelb/public_html/projetos/magile/wp-content/themes/magile/home.php on line 31
+[22-Apr-2014 01:49:28] PHP Fatal error:  Cannot redeclare get_the_excerpt() (previously declared in /home/rafaelb/public_html/projetos/magile/wp-includes/post-template.php:328) in /home/rafaelb/public_html/projetos/magile/wp-content/themes/magile/functions.php on line 10
+[22-Apr-2014 01:50:47] PHP Fatal error:  Cannot redeclare get_the_excerpt() (previously declared in /home/rafaelb/public_html/projetos/magile/wp-includes/post-template.php:328) in /home/rafaelb/public_html/projetos/magile/wp-content/themes/magile/functions.php on line 10
+[22-Apr-2014 01:53:37] PHP Fatal error:  Cannot redeclare get_the_excerpt() (previously declared in /home/rafaelb/public_html/projetos/magile/wp-includes/post-template.php:328) in /home/rafaelb/public_html/projetos/magile/wp-content/themes/magile/functions.php on line 10
