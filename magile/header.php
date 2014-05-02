@@ -50,18 +50,20 @@
                 <img src="<?php bloginfo('template_directory'); ?>/images/grupo-gergo.png" width="103" height="76" alt="Grupo Gergo" title="Grupo Gergo" class="grupo-gergo">
                 <!--End of Menu Logo & items-->
                 
+                <!--Menu-->
 				<div id="menu" class="clearfix">
-					<ul id="primary" class="nav sf-js-enabled">
-															<li class="current_page_item"><a href="http://www.rafaelbianco.com.br/projetos/magile/">Home</a></li>
-							
-							<li class="page_item page-item-2"><a href="http://www.rafaelbianco.com.br/projetos/magile/?page_id=2">Página de Exemplo</a></li>
-
-								<li class="cat-item cat-item-1"><a href="http://www.rafaelbianco.com.br/projetos/magile/?cat=1" title="Ver todos os posts arquivados em Sem categoria">Sem categoria</a>
-</li>
-	<li class="cat-item cat-item-2"><a href="http://www.rafaelbianco.com.br/projetos/magile/?cat=2" title="Ver todos os posts arquivados em Slider">Slider</a>
-</li>
-				    </ul>
-				</div> <!-- end #menu -->
+                    <?php
+                        wp_nav_menu( array(
+                            'menu' => 'meu_menu',
+                            'theme_location' => 'meu_menu',
+                            'menu_class' => 'nav sf-js-enabled',
+                            'echo' => true,
+                            'menu_id' => 'primary'
+                        ) );
+                    ?>
+				</div>
+                <!--End of Menu-->
+                
 			</div> <!-- end #header -->
 		</div> <!-- end .container -->
 	</div> <!-- end #top -->

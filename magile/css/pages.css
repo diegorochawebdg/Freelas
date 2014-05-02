@@ -1,0 +1,62 @@
+#intro{
+    background: #1F4F98;
+}
+#breadcrumbs *{
+    font-size: 16px;
+    color: #FFF;
+}
+#breadcrumbs{
+    font-weight: bold;
+    font-size: 16px;
+}
+#breadcrumbs a{
+    font-weight: normal;
+}
+h1, h2{
+    color: #F8E228;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+h2{
+    color: #FFF;
+    margin-bottom: 30px;
+}
+h3{
+    color: #FFF;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+h4{
+    color: #F8E127;
+    font-size: 20px;
+    min-height: 80px;
+}
+.one_fourth{
+    margin-bottom: 35px;
+}
+.one_fourth p{
+    font-size: 16px;
+    line-height: 1.3em;
+}
+.linha{
+    border-bottom: solid 1px #3156B3;
+    margin-bottom: 35px;
+    clear: both;
+}
+
+/*Galleries*/
+.et-learn-more .learn-more-content{
+    padding: 30px 0 0 0;
+}
+.tabs li{
+    float: left;
+    margin: 0 16px 25px 16px;
+}
+
+/*Lightbox*/
+.lightbox{background:url(../images/lightbox-overlay.png) repeat; position:fixed; z-index:10; left:0; top:0; width:100%; height:100%; display:none;}
+.lightbox .lightbox-content{position:relative; left:50%; top:50%; max-height:90%; max-width:90%; width:auto; height:auto; display: table;}
+.lightbox .fechar{position:absolute; height:0; width:28px; padding-top:28px; right:-10px; top:-10px; background:url(../images/lightbox-fechar.png) no-repeat; display:block; overflow:hidden;}

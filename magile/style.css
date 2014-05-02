@@ -283,6 +283,10 @@ img#about-image {
     margin: 0 20px;
     font-size: 20px;
 }
+#menu a:hover{
+    color: #194C9D;
+    font-weight: bold;
+}
 #menu li:last-child a:after{
     content:"";
 }
@@ -487,7 +491,6 @@ a.readmore:hover {
     text-decoration: none;
 }
 #content-area {
-    background: url(images/sidebar-bg.png) 688px 0px repeat-y;
     padding: 38px 0px;
 }
 #full {
@@ -657,8 +660,7 @@ ul.nav a {
     padding-bottom: 13px;
 }
 ul.nav a:hover {
-    color: #000000;
-    text-shadow: 1px 1px 0px #fff;
+    color: #194C9D;
 }
 ul.nav ul,
 #mobile_menu {
@@ -1498,4 +1500,10 @@ strong {
 .wp-caption {
     color: #111;
     text-shadow: none;
+}
+
+
+
+.clear{
+    clear: both;
 }

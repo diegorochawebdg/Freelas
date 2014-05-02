@@ -11,6 +11,11 @@ function get_excerpt($count){
   return $excerpt;
 }
 
+/*Add Menu*/
+if ( function_exists( 'register_nav_menu' ) ) {
+    register_nav_menu( 'meu_menu', 'Este é meu primeiro menu' );
+}
+
 add_action( 'after_setup_theme', 'et_setup_theme' );
 if ( ! function_exists( 'et_setup_theme' ) ){
 	function et_setup_theme(){
@@ -74,14 +79,14 @@ function et_insert_thumbnail_rss($content) {
 add_filter('the_excerpt_rss', 'et_insert_thumbnail_rss');
 add_filter('the_content_feed', 'et_insert_thumbnail_rss');
 
-function register_main_menus() {
+/*function register_main_menus() {
 	register_nav_menus(
 		array(
 			'primary-menu' => __( 'Primary Menu', 'DeepFocus' )
 		)
 	);
 }
-if (function_exists('register_nav_menus')) add_action( 'init', 'register_main_menus' );
+if (function_exists('register_nav_menus')) add_action( 'init', 'register_main_menus' );*/
 
 if ( ! function_exists( 'et_list_pings' ) ){
 	function et_list_pings($comment, $args, $depth) {
@@ -188,7 +193,7 @@ function et_delete_featured_ids_cache(){
 add_action( 'et_header_menu', 'et_add_mobile_navigation' );
 function et_add_mobile_navigation(){
 	if ( 'on' != get_option('deepfocus_responsive_layout') ) return;
-	echo '<a href="#" id="mobile_nav" class="closed">' . esc_html__( 'Navigation Menu', 'DeepFocus' ) . '<span></span></a>';
+	echo '<a href="#" id="mobile_nav" class="closed">Menu rápido<span></span></a>';
 }
 
 function et_epanel_custom_colors_css(){
