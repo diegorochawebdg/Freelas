@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/pages.css"
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/pages.css">
 
 <div id="content-full">
 	<div id="hr">
@@ -64,117 +64,249 @@
                 
                 <div class="tabs">
                     
+                    <?php do_shortcode('[learn_more caption="Content Closed"] Content [/learn_more]'); ?>
+                    
+                    <!--Transporte Rodoviário-->
                     <div class="et-learn-more et-open clearfix">
                         <h3 class="heading-more open">Transporte Rodoviário<span class="et_learnmore_arrow"><span></span></span></h3>
                         <div class="learn-more-content" style="display: block;">
                             <ul>
-                                <?php
-
-                                    $rodoviaria_img = array();
-                                    for($x=1;$x<=10;$x++)
-                                    {
-                                        if(get_field('rodoviaria_' . $x))
-                                        {
-                                            $rodoviaria                    = get_field('rodoviaria_' . $x);
-                                            $rodoviaria_img[$x-1]["image"] = $rodoviaria['sizes']['thumbnail'];
-                                            $rodoviaria_img[$x-1]["title"] = $rodoviaria['title'];
-                                            $rodoviaria_img[$x-1]["link"]  = $rodoviaria['sizes']['large'];
-                                        }
-                                        else
-                                        {
-                                            break;
-                                        }
-                                    }
-                                ?>
-                                <?php foreach($rodoviaria_img as $rodoviaria): ?>
-
-                                    <li><a href="<?php  echo $rodoviaria["link"] ?>"><img src="<?php  echo $rodoviaria["image"] ?>" alt="" title="<?php echo $rodoviaria["title"] ?>"></a></li>
-
-                                <?php endforeach; ?>
+                                <?php if( have_rows('rodoviario_repeater') ): ?>
+                                    <ul>
+                                        <?php while( have_rows('rodoviario_repeater') ): the_row();
+                                            $image = get_sub_field('galeria_rodoviario');
+                                        ?>
+                                            <li><a href="<?php echo $image['sizes']['large']; ?>"><img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt'] ?>" /></a>
+                                            </li>
+                                        <?php endwhile; ?>
+                                    </ul>
+                                <?php endif; ?>
                                 <div class="clear"></div>
                             </ul>
                         </div>
                     </div>
+                    <!--End Transporte Rodoviário-->
+                    
+                    <!--Transporte Pesado-->
                     <div class="et-learn-more clearfix">
-                        <h3 class="heading-more">Transporte pesado<span class="et_learnmore_arrow"><span></span></span></h3>
+                        <h3 class="heading-more">Transporte Pesado<span class="et_learnmore_arrow"><span></span></span></h3>
                         <div class="learn-more-content" style="display: block;">
                             <ul>
-                                teste
+                                <?php if( have_rows('pesado_repeater') ): ?>
+                                    <ul>
+                                        <?php while( have_rows('pesado_repeater') ): the_row();
+                                            $image = get_sub_field('galeria_pesado');
+                                        ?>
+                                            <li><a href="<?php echo $image['sizes']['large']; ?>"><img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt'] ?>" /></a>
+                                            </li>
+                                        <?php endwhile; ?>
+                                    </ul>
+                                <?php endif; ?>
+                                <div class="clear"></div>
                             </ul>
                         </div>
                     </div>
-                   <!-- <div class="et-learn-more clearfix">
-                        <h3 class="heading-more open">Guindastes<span class="et_learnmore_arrow"><span></span></span></h3>
+                    <!--End Transporte Pesado-->
+                    
+                    <!--Guindastes-->
+                    <div class="et-learn-more clearfix">
+                        <h3 class="heading-more">Guindastes<span class="et_learnmore_arrow"><span></span></span></h3>
                         <div class="learn-more-content" style="display: block;">
                             <ul>
-                                
-                            </ul>
+                                <?php if( have_rows('guindastes_repeater') ): ?>
+                                    <ul>
+                                        <?php while( have_rows('guindastes_repeater') ): the_row();
+                                            $image = get_sub_field('galeria_guindastes');
+                                        ?>
+                                            <li><a href="<?php echo $image['sizes']['large']; ?>"><img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt'] ?>" /></a>
+                                            </li>
+                                        <?php endwhile; ?>
+                                    </ul>
+                                <?php endif; ?>
+                                <div class="clear"></div>
+                            </ul>    
+                            <div class="clear"></div>
                         </div>
                     </div>
+                    <!--End Guindastes-->
+                    
+                    <!--Empilhadeiras-->
                     <div class="et-learn-more clearfix">
-                        <h3 class="heading-more open">Empilhadeiras<span class="et_learnmore_arrow"><span></span></span></h3>
+                        <h3 class="heading-more">Empilhadeiras<span class="et_learnmore_arrow"><span></span></span></h3>
                         <div class="learn-more-content" style="display: block;">
                             <ul>
-                                
-                            </ul>
+                                <?php if( have_rows('empilhadeiras_repeater') ): ?>
+                                    <ul>
+                                        <?php while( have_rows('empilhadeiras_repeater') ): the_row();
+                                            $image = get_sub_field('galeria_empilhadeiras');
+                                        ?>
+                                            <li><a href="<?php echo $image['sizes']['large']; ?>"><img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt'] ?>" /></a>
+                                            </li>
+                                        <?php endwhile; ?>
+                                    </ul>
+                                <?php endif; ?>
+                                <div class="clear"></div>
+                            </ul>    
+                            <div class="clear"></div>
                         </div>
                     </div>
+                    <!--End Empilhadeiras-->
+                    
+                    <!--Remoção de máquinas-->
                     <div class="et-learn-more clearfix">
-                        <h3 class="heading-more open">Remoção de máquinas<span class="et_learnmore_arrow"><span></span></span></h3>
+                        <h3 class="heading-more">Remoção de máquinas<span class="et_learnmore_arrow"><span></span></span></h3>
                         <div class="learn-more-content" style="display: block;">
                             <ul>
-                                
-                            </ul>
+                                <?php if( have_rows('remocao_repeater') ): ?>
+                                    <ul>
+                                        <?php while( have_rows('remocao_repeater') ): the_row();
+                                            $image = get_sub_field('galeria_remocao');
+                                        ?>
+                                            <li><a href="<?php echo $image['sizes']['large']; ?>"><img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt'] ?>" /></a>
+                                            </li>
+                                        <?php endwhile; ?>
+                                    </ul>
+                                <?php endif; ?>
+                                <div class="clear"></div>
+                            </ul>    
+                            <div class="clear"></div>
                         </div>
                     </div>
+                    <!--End Remoção de máquinas-->
+                    
+                    <!--Caminhões Muncks-->
                     <div class="et-learn-more clearfix">
-                        <h3 class="heading-more open">Caminhões muncks<span class="et_learnmore_arrow"><span></span></span></h3>
+                        <h3 class="heading-more">Caminhões Muncks<span class="et_learnmore_arrow"><span></span></span></h3>
                         <div class="learn-more-content" style="display: block;">
                             <ul>
-                                
-                            </ul>
+                                <?php if( have_rows('muncks_repeater') ): ?>
+                                    <ul>
+                                        <?php while( have_rows('muncks_repeater') ): the_row();
+                                            $image = get_sub_field('galeria_muncks');
+                                        ?>
+                                            <li><a href="<?php echo $image['sizes']['large']; ?>"><img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt'] ?>" /></a>
+                                            </li>
+                                        <?php endwhile; ?>
+                                    </ul>
+                                <?php endif; ?>
+                                <div class="clear"></div>
+                            </ul>    
+                            <div class="clear"></div>
                         </div>
                     </div>
+                    <!--End Caminhões Muncks-->
+                    
+                    <!--Içamentos-->
                     <div class="et-learn-more clearfix">
-                        <h3 class="heading-more open">Içamentos<span class="et_learnmore_arrow"><span></span></span></h3>
+                        <h3 class="heading-more">Içamentos<span class="et_learnmore_arrow"><span></span></span></h3>
                         <div class="learn-more-content" style="display: block;">
                             <ul>
-                                
-                            </ul>
+                                <?php if( have_rows('icamentos_repeater') ): ?>
+                                    <ul>
+                                        <?php while( have_rows('icamentos_repeater') ): the_row();
+                                            $image = get_sub_field('galeria_icamentos');
+                                        ?>
+                                            <li><a href="<?php echo $image['sizes']['large']; ?>"><img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt'] ?>" /></a>
+                                            </li>
+                                        <?php endwhile; ?>
+                                    </ul>
+                                <?php endif; ?>
+                                <div class="clear"></div>
+                            </ul>    
+                            <div class="clear"></div>
                         </div>
                     </div>
+                    <!--End Içamentos-->
+                    
+                    <!--Pórticos hidráulicos-->
                     <div class="et-learn-more clearfix">
-                        <h3 class="heading-more open">Pórticos hidráulicos<span class="et_learnmore_arrow"><span></span></span></h3>
+                        <h3 class="heading-more">Pórticos hidráulicos<span class="et_learnmore_arrow"><span></span></span></h3>
                         <div class="learn-more-content" style="display: block;">
                             <ul>
-                                
-                            </ul>
+                                <?php if( have_rows('porticos_repeater') ): ?>
+                                    <ul>
+                                        <?php while( have_rows('porticos_repeater') ): the_row();
+                                            $image = get_sub_field('galeria_porticos');
+                                        ?>
+                                            <li><a href="<?php echo $image['sizes']['large']; ?>"><img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt'] ?>" /></a>
+                                            </li>
+                                        <?php endwhile; ?>
+                                    </ul>
+                                <?php endif; ?>
+                                <div class="clear"></div>
+                            </ul>    
+                            <div class="clear"></div>
                         </div>
                     </div>
+                    <!--End Pórticos hidráulicos-->
+                    
+                    <!--Estudo de rigging-->
                     <div class="et-learn-more clearfix">
-                        <h3 class="heading-more open">Estudo de rigging<span class="et_learnmore_arrow"><span></span></span></h3>
+                        <h3 class="heading-more">Estudo de rigging<span class="et_learnmore_arrow"><span></span></span></h3>
                         <div class="learn-more-content" style="display: block;">
                             <ul>
-                                
-                            </ul>
+                                <?php if( have_rows('rigging_repeater') ): ?>
+                                    <ul>
+                                        <?php while( have_rows('rigging_repeater') ): the_row();
+                                            $image = get_sub_field('galeria_rigging');
+                                        ?>
+                                            <li><a href="<?php echo $image['sizes']['large']; ?>"><img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt'] ?>" /></a>
+                                            </li>
+                                        <?php endwhile; ?>
+                                    </ul>
+                                <?php endif; ?>
+                                <div class="clear"></div>
+                            </ul>    
+                            <div class="clear"></div>
                         </div>
                     </div>
+                    <!--End Estudo de rigging-->
+                    
+                    <!--Escoltas-->
                     <div class="et-learn-more clearfix">
-                        <h3 class="heading-more open">Escoltas<span class="et_learnmore_arrow"><span></span></span></h3>
+                        <h3 class="heading-more">Escoltas<span class="et_learnmore_arrow"><span></span></span></h3>
                         <div class="learn-more-content" style="display: block;">
                             <ul>
-                                
-                            </ul>
+                                <?php if( have_rows('escoltas_repeater') ): ?>
+                                    <ul>
+                                        <?php while( have_rows('escoltas_repeater') ): the_row();
+                                            $image = get_sub_field('galeria_escoltas');
+                                        ?>
+                                            <li><a href="<?php echo $image['sizes']['large']; ?>"><img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt'] ?>" /></a>
+                                            </li>
+                                        <?php endwhile; ?>
+                                    </ul>
+                                <?php endif; ?>
+                                <div class="clear"></div>
+                            </ul>    
+                            <div class="clear"></div>
                         </div>
                     </div>
+                    <!--End Escoltas-->
+                    
+                    <!--Plataforma hidráulica-->
                     <div class="et-learn-more clearfix">
-                        <h3 class="heading-more open">Plataforma hidráulica<span class="et_learnmore_arrow"><span></span></span></h3>
+                        <h3 class="heading-more">Plataforma hidráulica<span class="et_learnmore_arrow"><span></span></span></h3>
                         <div class="learn-more-content" style="display: block;">
                             <ul>
-                                
-                            </ul>
+                                <?php if( have_rows('plataforma_repeater') ): ?>
+                                    <ul>
+                                        <?php while( have_rows('plataforma_repeater') ): the_row();
+                                            $image = get_sub_field('galeria_plataforma');
+                                        ?>
+                                            <li><a href="<?php echo $image['sizes']['large']; ?>"><img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt'] ?>" /></a>
+                                            </li>
+                                        <?php endwhile; ?>
+                                    </ul>
+                                <?php endif; ?>
+                                <div class="clear"></div>
+                            </ul>    
+                            <div class="clear"></div>
                         </div>
-                    </div>-->
+                    </div>
+                    <!--End Plataforma hidráulica-->
+                    
+                   
                 </div>
                 
 
@@ -185,14 +317,7 @@
         <div class="lightbox">
             <div class="lightbox-content">
                 <a href="#" title="Fechar" class="fechar">Fechar</a>
-                <?php
-                   $images = get_field( 'rodoviaria_1' );
-                   if( $images ):
-                ?>                                                  
-                    <img src="<?php echo $image[ 'sizes' ][ 'large' ]; ?>" alt="" title="" width="<?php echo $image['width'] ?>" heigth="<?php echo $image['height'] ?>">
-                <?php
-                    endif;
-                ?>
+                <img src="" alt="" title="" width="" heigth="">
             </div>
         </div>
         
