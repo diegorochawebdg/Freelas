@@ -48,6 +48,7 @@
                 <h2 class="sub">Conduzindo excelência, <br>transportando qualidade.</h2>
                 
                 <img src="<?php bloginfo('template_directory'); ?>/images/grupo-gergo.png" width="103" height="76" alt="Grupo Gergo" title="Grupo Gergo" class="grupo-gergo">
+                <img src="<?php bloginfo('template_directory'); ?>/images/iso9001-footer.png" width="81" height="76" alt="Grupo Gergo" title="Grupo Gergo" class="grupo-gergo" style="margin-right: 15px;">
                 <!--End of Menu Logo & items-->
                 
                 <!--Menu-->

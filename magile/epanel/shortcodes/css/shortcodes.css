@@ -204,9 +204,10 @@ ul.et_shortcodes_mobile_nav { margin: 0 !important; padding: 0 !important; list-
 .et-simple-slides .et_slidecontent { width: auto; }
 
 .et-image-slides { background: #555; }
-	.et-image-slider { background: #fff; border: 1px solid #e7e7e7; margin-bottom:25px; }
-		.et-image-slide { position: relative; }
-			.et-image-slider img { display: block; width: auto; margin: 0 auto; height: auto; }
+.et-image-slides p{display: none;}
+	.et-image-slider { background: #fff; margin-bottom:25px; }
+		.et-image-slide { position: relative; overflow: hidden; }
+			.et-image-slider img { display: block; width: auto; max-width: 100%; margin: 0 auto; height: auto; }
 			.et-image-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.6); -moz-box-shadow: inset 0 0 5px rgba(0,0,0,0.6); box-shadow: inset 0 0 5px rgba(0,0,0,0.6); }
 
 .et-learn-more, .et-tabs-container, .tabs-left, .et-simple-slider, .author-shortcodes, .et-tooltip-box { color:#201F1F !important; text-shadow: none !important; }

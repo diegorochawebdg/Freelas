@@ -62,12 +62,58 @@ h4{
 }
 
 /*Clientes*/
-.logos{
+.logos-clientes{
     margin-top: 20px;
 }
-.logos a{
+.logos-clientes li{
     float: left;
     margin: 0 1.5% 2% 1.5%;
+}
+
+/*Magile Transportes*/
+.txt-gallery{
+    margin-bottom: 30px;
+}
+.txt-gallery p{
+    font-size: 16px;
+    line-height: 1.3em;
+    margin-bottom: 20px;
+}
+.boxes{
+    margin-bottom: 35px;
+}
+.boxes .item{
+    float: left;
+    background: #FAFAFA;
+    padding: 30px;
+    width: 209px;
+    height: 219px;
+}
+.boxes .item.first{
+    margin-right: 84px;
+}
+.boxes .item.last{
+    float: right;
+}
+.boxes .item h3{
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #1D4583;
+    margin-bottom: 15px;
+}
+.boxes .item p{
+    font-size: 20px;
+    color: #858585;
+}
+.certificados h3{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.certificados img{
+    max-width: 100%;
+    height: auto;
 }
 
 /*Lightbox*/
