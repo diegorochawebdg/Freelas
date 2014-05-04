@@ -48,28 +48,22 @@
                         <script src='http://maps.googleapis.com/maps/api/js?sensor=false' type='text/javascript'></script>
 
                         <script type="text/javascript">
-                          //<![CDATA[
                             function load() {
                             var lat = <?php echo $location['lat']; ?>;
                             var lng = <?php echo $location['lng']; ?>;
-                        // coordinates to latLng
                             var latlng = new google.maps.LatLng(lat, lng);
-                        // map Options
                             var myOptions = {
                             zoom: 14,
                             center: latlng,
                             mapTypeId: google.maps.MapTypeId.ROADMAP
                            };
-                        //draw a map
                             var map = new google.maps.Map(document.getElementById("map"), myOptions);
                             var marker = new google.maps.Marker({
                             position: map.getCenter(),
                             map: map
                            });
                         }
-                        // call the function
                            load();
-                        //]]>
                         </script>
                     <?php endif; ?> 
                 </div>
