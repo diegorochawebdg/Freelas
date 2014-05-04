@@ -1,0 +1,79 @@
+#intro{
+    background: #1F4F98;
+}
+#breadcrumbs *{
+    font-size: 16px;
+    color: #FFF;
+}
+#breadcrumbs{
+    font-weight: bold;
+    font-size: 16px;
+}
+#breadcrumbs a{
+    font-weight: normal;
+}
+h1{
+    color: #F8E026;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+#left-area li{
+    list-style-type: none;
+    margin-bottom: 65px;
+}
+#left-area .post-thumb{
+    margin-right: 27px;
+    float: left;
+}
+#left-area .post-thumb img{
+    border: 2px solid #FFF;
+}
+
+
+#left-area h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #FFF;
+    margin-bottom: 10px;
+}
+#left-area p.post-excerpt{
+    font-size: 16px;
+    color: #FFF;
+    line-height: 1.4em;
+    padding-bottom: 0;
+}
+#left-area a.readmore{
+    text-transform: uppercase;
+    font-size: 18px;
+}
+#left-area a.readmore:hover{
+    text-decoration: underline;
+}
+
+/*Pagination*/
+#left-area .page-numbers{
+    display: table;
+    margin: 0 auto;
+}
+#left-area .page-numbers li{
+    float: left;
+    margin:0 10px !important;
+}
+#left-area .page-numbers li a, #left-area .page-numbers li span.current{
+    color: #FFF;
+    padding: 10px;
+    font-size: 14px;
+}
+#left-area .page-numbers li span.current{
+    font-weight: bold;
+    color: #F8E127 !important;
+}
+.post-content .postado-por p{
+    display: flex;
+}
+.post-content p{
+    font-size: 16px;
+    line-height: 1.4em;
+    margin-bottom: 15px;
+}

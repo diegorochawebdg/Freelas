@@ -80,7 +80,6 @@ br.clear {
 h1, h2, h3, h4, h5, h6 {
     padding-bottom: 5px;
     color: #808080;
-    letter-spacing: -1px;
     line-height: 1em;
     font-weight: normal;
 }
@@ -415,9 +414,6 @@ a.readmore {
 }
 a.readmore span {
     display: block;
-    background: url(images/readmore.png) no-repeat;
-    padding: 9px 5px 4px 12px;
-    height: 38px;
 }
 a.readmore:hover {
     color: #ffffff;
@@ -498,7 +494,7 @@ a.readmore:hover {
     padding: 38px 0px
 }
 #left-area {
-    width: 688px;
+    width: 656px;
     float: left;
 }
 .entry {
@@ -528,21 +524,16 @@ a.readmore:hover {
     width: 651px;
 }
 p.post-meta {
-    border-radius: 20px;
-    -moz-border-radius: 20px;
-    -webkit-border-radius: 20px;
-    background: rgba(0, 0, 0, 0.2);
-    border-bottom: 1px solid #909090;
-    border-right: 1px solid #909090;
-    padding: 5px 13px 5px 12px;
-    font-style: italic;
-    font-size: 11px;
-    float: left;
+    background: #132D5A;
+    padding: 10px 15px;
+    font-size: 16px;
+    display: block;
+    color: #6C7C98;
     margin-bottom: 11px;
 }
-p.post-meta,
-p.post-meta a {
-    color: #cccccc;
+.postado-por p.post-meta,
+.postado-por p.post-meta a {
+    color: #6C7C98;
     font-weight: normal !important;
 }
 .post p.post-meta {
@@ -1118,19 +1109,26 @@ span.fn a:hover {
 /*------------------------------------------------*/
 
 #sidebar {
-    float: left;
-    width: 269px;
+    float: right;
+    width: 194px;
+    padding: 25px;
+    background: #132D5A;
 }
 .widget h4.widgettitle {
-    font-size: 30px;
-    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.3);
-    color: #000000;
+    font-size: 20px;
+    color: #F8E127;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 10px;
+    max-width: 140px;
+}
+#recent-posts-2{
+    margin-top: 35px;
 }
 #sidebar a {
     color: #ffffff;
-}
-#sidebar .widget {
-    padding: 0px 0px 50px 22px;
+    font-size: 14px;
+    text-transform: uppercase;
 }
 .widget ul ul {
     margin: 0px 0px 0px 15px;
@@ -1138,6 +1136,7 @@ span.fn a:hover {
 .widget ul li {
     background: url(images/widget-bullet.png) no-repeat 0px 12px;
     padding: 4px 0px 4px 16px;
+    border-bottom: solid 1px #2359AA;
 }
 .widget ul li ul {
     padding: 5px 0px 0px 7px;
