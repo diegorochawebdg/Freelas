@@ -62,6 +62,9 @@
                             'menu_id' => 'primary'
                         ) );
                     ?>
+                    <a href="#" id="mobile_nav" class="closed">Menu rápido<span></span>
+                        
+                    </a>
 				</div>
                 <!--End of Menu-->
                 

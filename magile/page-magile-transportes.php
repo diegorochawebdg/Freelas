@@ -47,6 +47,7 @@
                             ?>
                         <?php } ?>
                     </div>
+                    <div class="space"></div>
                     <div class="item">
                         <?php 
                             $visao = get_field('visao'); 
@@ -55,6 +56,7 @@
                             ?>
                         <?php } ?>
                     </div>
+                    <div class="space"></div>
                     <div class="item last">
                         <?php 
                             $valores = get_field('valores'); 

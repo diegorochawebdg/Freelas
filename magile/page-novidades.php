@@ -28,7 +28,7 @@
                     <h1 class="title"><?php the_title(); ?></h1>
                     
                     
-                    <?php query_posts("cat=-2&posts_per_page=5&paged=".get_query_var('paged'));?>
+                    <?php query_posts("cat=-2&posts_per_page=3&paged=".get_query_var('paged'));?>
                     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                                 <li>
                                     <!--Post Thumbnail-->
@@ -40,7 +40,7 @@
                                             <div class="post-content" style="float:right; width:430px;">
                                         <?php }
                                         else { ?>
-                                            <div class="post-content">
+                                            <div class="post-content nope">
                                         <?php }
                                     ?>
                                     <!--End Post Thumbnail-->

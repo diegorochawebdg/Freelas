@@ -33,19 +33,17 @@
                 
                 <!--Logos-->
                 <div class="logos-clientes">
-                    <ul>
-                        <?php if( have_rows('clientes_repeater') ): ?>
-                            <ul>
-                                <?php while( have_rows('clientes_repeater') ): the_row();
-                                    $image = get_sub_field('logotipo');
-                                ?>
-                                    <li><img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt'] ?>">
-                                    </li>
-                                <?php endwhile; ?>
-                            </ul>
-                        <?php endif; ?>
-                        <div class="clear"></div>
-                    </ul>
+                    <?php if( have_rows('clientes_repeater') ): ?>
+                        <ul>
+                            <?php while( have_rows('clientes_repeater') ): the_row();
+                                $image = get_sub_field('logotipo');
+                            ?>
+                                <li><img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt'] ?>">
+                                </li>
+                            <?php endwhile; ?>
+                        </ul>
+                    <?php endif; ?>
+                    <div class="clear"></div>
                 </div>
                 <!--End Logos-->
                 

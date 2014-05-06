@@ -656,9 +656,7 @@ ul.nav a:hover {
 ul.nav ul,
 #mobile_menu {
     width: 189px;
-    background: #e7e7e7 url(images/dropdown-bottom.png) bottom left repeat-x;
-    border: 1px solid #ffffff;
-    border-top: none;
+    background: #FFF;
     top: 34px !important;
     box-shadow: 3px 6px 7px 1px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 3px 6px 7px 1px rgba(0, 0, 0, 0.1);

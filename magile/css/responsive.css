@@ -148,8 +148,8 @@ div.service img,
     height: 11px;
     background: url(../images/responsive_arrow.png) no-repeat;
     position: absolute;
-    top: 16px;
-    left: 19px;
+    top: 23px;
+    left: 38px;
     -moz-transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
@@ -164,13 +164,12 @@ div.service img,
 #mobile_menu {
     position: absolute;
     top: 47px !important;
-    left: -13px;
+    left: -48px;
     z-index: 1000;
     display: none;
     text-align: left;
-    padding-left: 15px;
     width: 179px;
-    padding-top: 5px;
+    padding: 5px 51px 5px 87px;
 }
 #mobile_menu li {
     padding-bottom: 0;
@@ -314,7 +313,13 @@ video {
         font-size: 15px;
     }
     #left-area {
-        width: 533px;
+        width: 100%;
+    }
+    #left-area .post-content{
+        width: 520px !important;
+    }
+    #left-area .post-content.nope{
+        width: 100% !important;
     }
     .post p.post-meta {
         width: 288px;
@@ -416,151 +421,48 @@ video {
     #footer address, #footer .tel{
         margin-top: 22px !important;
     }
+    
+    
+    
+    #menu a:after{
+        margin: 0 8px;
+    }
+    .columns .one_fourth{
+        width: 48% !important;
+        margin-right: 4% !important;
+        float: left !important;
+        margin-bottom: 50px !important;
+    }
+    .columns .one_fourth:nth-child(even){
+        float: right !important;
+        clear: right !important;
+        margin-right: 0 !important;
+    }
+    
+    /*Novidades*/
+    #sidebar{
+        display: none;
+    }
 }
-/*@media only screen and (max-width: 767px) {
-    .container,
-    #menu,
-    .slide .overlay,
-    .slide .overlay2 {
-        width: 460px;
-    }
-    .slides .description,
-    #blog,
-    ul.nav,
-    #sidebar {
-        display: none;
-    }
-    #menu {
-        background-image: url(../images/menu-bg_460.png);
-        text-align: center;
-    }
-    #search-form {
-        position: absolute;
-        right: 14px;
-        top: -60px;
-    }
-    #featured {
-        background: none;
-    }
-    div.service:nth-child(2) {
-        padding-right: 0;
-    }
-    #tagline p {
-        font-size: 37px;
-        line-height: 37px;
-        text-align: center;
-    }
-    #tagline span {
-        font-size: 20px;
-        display: block;
-        text-align: center;
-    }
-    div.service {
-        width: 202px;
-        padding: 52px 36px 26px 0px;
-    }
-    #footer p#copyright {
-        text-align: center;
-    }
-        
-    #left-area {
-        width: auto;
-    }
-    .entry-description {
-        width: 250px;
-    }
-    .post {
-        width: 460px;
-    }
-    .gallery-thumb-bottom {
-        display: none;
-    }
-    #comment-wrap {
-        padding-right: 0;
-    }
-    .post p.post-meta {
-        width: 225px;
-    }
-    li.depth-1 .comment-wrap {
-        width: 377px;
-    }
-    li.depth-2 .comment-wrap {
-        width: 295px;
-    }
-    li.depth-3 .comment-wrap {
-        width: 213px;
-    }
-    li.depth-4 .comment-wrap {
-        width: 131px;
-    }
-    li.depth-5 .comment-wrap {
-        width: 49px;
-    }
-    #mobile_nav {
-        display: inline-block;
-        margin-top: 7px;
-    }
-    .sitemap-col {
-        float: none !important;
-        width: auto !important;
-    }
-    #et_pt_portfolio_gallery {
-        margin-left: -34px !important;
-    }
-    .et_pt_portfolio_item {
-        margin-left: 31px !important;
-        width: 133px !important;
-    }
-    .et_portfolio_more_icon,
-    .et_portfolio_zoom_icon {
-        top: 25px !important;
-    }
-    .et_portfolio_more_icon {
-        left: 29px !important;
-    }
-    .et_portfolio_zoom_icon {
-        left: 67px !important;
-    }
-    .et_portfolio_small .et_pt_portfolio_item {
-        width: 469px !important;
-        margin-bottom: 10px;
-    }
-    .et_portfolio_small .et_pt_portfolio_entry {
-        float: left;
-        margin-right: 15px;
-    }
-    .et_portfolio_small .et_portfolio_more_icon,
-    .et_portfolio_small .et_portfolio_zoom_icon {
-        top: 30px !important;
-    }
-    .et_portfolio_small .et_portfolio_more_icon {
-        left: 38px !important;
-    }
-    .et_portfolio_small .et_portfolio_zoom_icon {
-        left: 77px !important;
-    }
-    #et_pt_portfolio_gallery.et_portfolio_large {
-        margin-left: 0 !important;
-    }
-    #et_pt_portfolio_gallery.et_portfolio_large .et_pt_portfolio_item {
-        margin-left: 0 !important;
-        width: 404px !important;
-    }
-    #et_pt_portfolio_gallery.et_portfolio_large .et_portfolio_more_icon,
-    #et_pt_portfolio_gallery.et_portfolio_large .et_portfolio_zoom_icon {
-        top: 109px !important;
-    }
-    #et_pt_portfolio_gallery.et_portfolio_large .et_portfolio_more_icon {
-        left: 155px !important;
-    }
-    #et_pt_portfolio_gallery.et_portfolio_large .et_portfolio_zoom_icon {
-        left: 195px !important;
-    }
-    body#home-featured #hr {
-        min-height: 0px;
-    }
-}*/
 @media only screen and (max-width: 767px) {
+    
+    /*Mobile Menu*/
+    #mobile_nav{
+        display: table;
+        margin: 0 auto;
+        padding: 17px 26px 12px 65px
+    }
+    #mobile_nav:after, #mobile_menu a:after{
+        content: "" !important;
+    }
+    #mobile_menu a:hover, #mobile_menu:hover, #mobile_nav:hover{
+        font-weight:normal !important;
+    }
+    #mobile_menu a:hover{
+        color: #1D4583 !important;
+    }
+    
+    /*Header*/
     #header h2, #header .grupo-gergo{
         display: none;
     }
@@ -691,5 +593,33 @@ video {
     width: 240px;
     text-align: left;
     line-height: 1.2em;
+    }
+    
+    /*Tabs li*/
+    .tabs li {
+        float: none !important; 
+        margin: 0 auto 10px !important;
+        display: table !important;
+    }
+    
+    /*Novidades*/
+    #left-area{
+        float: none !important;
+        width: 100%;
+    }
+    #left-area .post-thumb{
+        float: none !important;
+        display: table !important;
+        margin: 0 auto 20px auto !important;
+    }
+    #left-area .post-content{
+        float: none !important;
+        width: auto !important;
+    }
+    #sidebar{
+        display: none;
+    }
+    #left-area .post-content.single .postado-por{
+        display: none;
     }
 }

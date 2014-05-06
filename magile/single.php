@@ -28,7 +28,7 @@
                     <h2 style="color: #F8E026; font-size: 36px; text-transform: uppercase; margin-bottom: 25px;">Novidades</h2>
                     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                                     <!--Post Content-->
-                                    <div class="post-content">
+                                    <div class="post-content single">
                                         <!--Post Thumbnail-->
                                         <?php
                                             if ( has_post_thumbnail() ) {?>

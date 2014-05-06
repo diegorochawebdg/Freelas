@@ -27,7 +27,7 @@
 								<h3 class="hometitle"><?php the_title(); ?></h3>
 								<?php global $more;
 								$more = 0;
-								/*the_content('');*/ 
+								$text = preg_replace( '|\[(.+?)\](.+?\[/\\1\])?|s', '', $text);
                                 echo get_excerpt(259); ?>
 								<a href="<?php the_permalink(); ?>" class="readmore" title="Saiba mais">Saiba mais</a>
 							</div> <!-- end .service -->

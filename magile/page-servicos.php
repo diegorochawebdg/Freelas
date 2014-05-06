@@ -29,33 +29,35 @@
                 <!--End Titles-->
                 
                 <!--Columns-->
-                <?php 
-                    $first = get_field('first_column'); 
-                    if( $first ) { 
-                        echo $first; 
-                    ?>
-                <?php } ?>
-                
-                <?php 
-                    $second = get_field('second_column'); 
-                    if( $second ) { 
-                        echo $second; 
-                    ?>
-                <?php } ?>
-                
-                <?php 
-                    $third = get_field('third_column'); 
-                    if( $third ) { 
-                        echo $third; 
-                    ?>
-                <?php } ?>
-                
-                <?php 
-                    $fourth = get_field('fourth_column'); 
-                    if( $fourth ) { 
-                        echo $fourth; 
-                    ?>
-                <?php } ?>
+                <div class="columns">
+                    <?php 
+                        $first = get_field('first_column'); 
+                        if( $first ) { 
+                            echo $first; 
+                        ?>
+                    <?php } ?>
+
+                    <?php 
+                        $second = get_field('second_column'); 
+                        if( $second ) { 
+                            echo $second; 
+                        ?>
+                    <?php } ?>
+
+                    <?php 
+                        $third = get_field('third_column'); 
+                        if( $third ) { 
+                            echo $third; 
+                        ?>
+                    <?php } ?>
+
+                    <?php 
+                        $fourth = get_field('fourth_column'); 
+                        if( $fourth ) { 
+                            echo $fourth; 
+                        ?>
+                    <?php } ?>
+                </div>
                 <!--End Columns-->
                 
                 <div class="linha"></div>
