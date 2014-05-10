@@ -1,6 +1,160 @@
 @charset "utf-8";
 
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+
+/*Main Slider*/
 #main-slider{
-    min-height: 700px;
-    background: #008eb3;
+    min-height: 800px;
+    background: #008eb3 url(../images/home/bg-main-slider.png) no-repeat center bottom;
+}
+#main-slider h1, #main-slider #slider, #main-slider h2{
+    position: absolute;
+    color: #FFF;
+}
+#main-slider h1{
+    text-align: right;
+    font-weight: bold;
+    font-size: 82px;
+    width: 230px;
+    top: 330px;
+    line-height: 70px;
+}
+#main-slider h2{
+    font-weight: bold;
+    font-size: 24px;
+    width: 100px;
+    top: 494px;
+    left: 766px;
+}
+
+/*Produtos*/
+#produtos{
+    background: #dfd7c1 url(../images/home/bg-produtos.png) no-repeat center bottom;
+    height: 552px;
+}
+#produtos .left{
+    margin: 175px 0 0 107px;
+    width: 190px;
+}
+#produtos .left h2{
+    font: bold 47px Museo, Arial, sans-serif;
+    color: #20baa5;
+    text-align: right;
+    line-height: 40px;
+    margin-bottom: 17px;
+}
+#produtos .left a{
+    color: #1fbaa5;
+    font-size: 24px;
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    border: solid 3px #1fbaa5;
+    text-align: center;
+    border-radius: 5px
+}
+#produtos img{
+    position: absolute;
+    top: 109px;
+    left: 399px;
+}
+#produtos .right{
+    margin: 131px 0 0 105px;
+    width: 190px;
+}
+#produtos .right h2{
+    color: #1fbaa5;
+    font-size: 72px;
+    margin-bottom: 15px;
+    line-height: 58px
+}
+#produtos .right a{
+    color: #474747;
+    font-size: 16px;
+}
+
+/*Onde encontrar*/
+#onde-encontrar{
+    background: url(../images/home/bg-onde-encontrar.png) no-repeat center top;
+    height: 534px;
+}
+#onde-encontrar *{
+    color: #FFF;
+}
+#onde-encontrar .left{
+    margin: 133px 0 0 107px;
+    width: 190px;
+}
+#onde-encontrar .left h2{
+    font: bold 36px/30px Museo, Arial, sans-serif;
+    text-align: right;
+    margin-bottom: 12px;
+}
+#onde-encontrar .left a{
+    font: 16px Museo, Arial, sans-serif;
+    text-align: right;
+}
+
+#onde-encontrar img{
+    position: absolute;
+    top: 45px;
+    left: 400px;
+}
+#onde-encontrar .right{
+    margin: 179px 30px 0 0;
+    width: 250px;
+}
+#onde-encontrar .right a{
+    font-size: 24px;
+    width: 250px;
+    padding: 18px 0;
+    border: solid 3px #FFF;
+    text-align: center;
+    border-radius: 5px;
+} 
+#onde-encontrar .right i{
+    margin-left: 15px
+}
+
+/*Cardápio*/
+#cardapio{
+    background: #f49443;
+    height: 508px;
+}
+#cardapio *{
+    color: #FFF;
+}
+#cardapio .left{
+    margin: 207px 0 0 107px;
+    width: 190px;
+}
+#cardapio .left a{
+    font-size: 24px;
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    border: solid 3px #FFF;
+    text-align: center;
+    border-radius: 5px;
+}  
+#cardapio img{
+    position: absolute;
+    top: 62px;
+    left: 372px;
+}
+#cardapio .right{
+    margin: 167px 103px 0 0;
+    width: 190px;
+}
+#cardapio .right h2{
+    font: bold 36px/30px Museo, Arial, sans-serif;
+    margin-bottom: 12px;
+}
+#cardapio .right a{
+    font: 16px Museo, Arial, sans-serif;
 }

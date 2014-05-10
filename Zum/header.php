@@ -43,8 +43,8 @@
                 </div>
                 <span class="slogan animate">fast fresh food</span>
             </div>
-            <div class="menu-complement animate2"></div>
         </div>
+        <div class="menu-complement animate2"></div>
         <!--End of Menu-->
         
         <!--******** O fechamento da div container e das outras tags estão no arquivo "footer.php" ********-->

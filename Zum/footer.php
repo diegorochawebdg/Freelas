@@ -2,11 +2,10 @@
     <div id="footer">
         <div class="footer-bg"></div>
         <div class="content-center">
-            <span class="foodright">Foodright - Todos os direitos de uma
-alimentação saudável você encontrará na Zum.</span>
+            <span class="foodright">Foodright - Todos os direitos de uma<br> alimentação saudável você encontrará na Zum.</span>
             <div class="social">
-                <a href="#" title="Interaja com Facebook"><i class="fa fa-facebook-square fa-lg"></i>interaja com facebook</a>
-                <a href="#" title="Siga-nos no twitter"><i class="fa fa-instagram fa-lg"></i>siga-nos no instagram</a>
+                <a href="#" title="Interaja com Facebook"><i class="fa fa-facebook-square fa-2x"></i>interaja com <br>facebook</a>
+                <a href="#" title="Siga-nos no twitter"><i class="fa fa-instagram fa-2x"></i>siga-nos <br>no instagram</a>
             </div>
             <div class="clear"></div>
         </div>
@@ -21,11 +20,21 @@ alimentação saudável você encontrará na Zum.</span>
     <script type="text/javascript">
         $(document).ready(function(e){
             $(window).scroll(function(e){
-                var menu = $('#menu');
+                var menu         = $('#menu');
+                var menuContract = $('.menu-complement')
                 if($(this).scrollTop() > 100){
                     menu.addClass('contract');
+                    menuContract.addClass('contract');
                 } else{
                     menu.removeClass('contract');
+                    menuContract.removeClass('contract');
+                }
+            });
+            $(window).resize(function(e){
+                if($(this).width() < 1203){
+                    $('#menu').addClass('resize');
+                } else{
+                    $('#menu').removeClass('resize');
                 }
             });
         });
