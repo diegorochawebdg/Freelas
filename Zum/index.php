@@ -1,4 +1,9 @@
-<?php include('header.php'); ?>
+<?php 
+    include('header.php');
+    $title = "Zum - Home";
+    $output = str_replace('%TITLE%', $title, $output);
+    echo $output;
+?>
 
 <link rel="stylesheet" href="css/home.css">
 
@@ -10,8 +15,9 @@
         <div class="content-center">
             <h1>zum fast fresh food</h1>
             <div id="slider">
-                <ul>
-                    <li class="slide"><img src="" alt="" title=""></li>
+                <ul class="the-slider">
+                    <li><div class="slide-height"><img src="images/home/slider/slide01.png" width="344" height="558" alt="" title=""></div></li>
+                    <li><div class="slide-height"><img src="images/home/slider/slide02.png" width="494" height="357" alt="" title=""></div></li>
                 </ul>
             </div>
             <h2>zum comida fesca e rápida</h2>
@@ -71,3 +77,25 @@
 <!--End of Content-->
         
 <?php include('footer.php'); ?>
+
+<link rel="stylesheet" href="css/jquery.bxslider.css">
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(e){
+        //The slider
+        $('.the-slider').bxSlider({
+            slideWidth:     494,
+            auto:           true,
+            mode:           'fade',
+            onSlideBefore: function(currentSlideNumber, totalSlideQty, currentSlideHtmlObject){
+                if(currentSlideHtmlObject == 0){
+                    $('#main-slider').css("background-color","#008eb3");
+                }
+                if(currentSlideHtmlObject == 1){
+                    $('#main-slider').css("background-color","#20baa5");
+                }
+            }
+
+        });
+    });
+</script>

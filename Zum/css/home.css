@@ -29,7 +29,23 @@
     font-size: 24px;
     width: 100px;
     top: 494px;
-    left: 766px;
+    left: 820px;
+}
+#main-slider #slider{
+    position: absolute;
+    left: 50%;
+    margin-left: -247px;
+    top: 160px;
+}
+#main-slider #slider .the-slider li{
+    width: 494px !important;
+}
+    
+#main-slider #slider .slide-height{
+    height: 558px;
+    display: table-cell;
+    vertical-align: middle;
+    width: 494px;
 }
 
 /*Produtos*/

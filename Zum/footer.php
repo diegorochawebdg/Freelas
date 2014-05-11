@@ -32,9 +32,9 @@
             });
             $(window).resize(function(e){
                 if($(this).width() < 1203){
-                    $('#menu').addClass('resize');
+                    $('#menu').addClass('resize2');
                 } else{
-                    $('#menu').removeClass('resize');
+                    $('#menu').removeClass('resize2');
                 }
             });
         });
