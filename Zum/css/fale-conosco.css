@@ -82,9 +82,12 @@ body{
 }
 .right li{
     padding: 20px 0 20px 63px;
-    background: url(../images/fale-conosco/location.png) no-repeat 3px center;
+    background: url(../images/fale-conosco/location.png) no-repeat 3px 26px;
     color: #828282;
     border-bottom: dashed 2px #1fbaa5;
+}
+.right li:hover{
+    background: url(../images/fale-conosco/location.png) no-repeat 3px 15px;
 }
 .right li h2{
     font-size: 18px;

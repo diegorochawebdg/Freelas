@@ -40,22 +40,22 @@
         <!--Right-->
         <div class="right">
             <ul>
-                <li>
+                <li class="animate">
                     <h2>Loja Sorocaba X</h2>
                     <address>Rua Oswaldo Antunes, 340 Sorocaba / SP</address>
                     <a href="tel:01523456789" title="Ligue para nós!">15 2345 6789</a> - <a href="mailto:e-mail@zum.com.br" title="Mande um email para nós!">e-mail@zum.com.br</a>
                 </li>
-                <li>
+                <li class="animate">
                     <h2>Loja Sorocaba X</h2>
                     <address>Rua Oswaldo Antunes, 340 Sorocaba / SP</address>
                     <a href="tel:01523456789" title="Ligue para nós!">15 2345 6789</a> - <a href="mailto:e-mail@zum.com.br" title="Mande um email para nós!">e-mail@zum.com.br</a>
                 </li>
-                <li>
+                <li class="animate">
                     <h2>Loja Sorocaba X</h2>
                     <address>Rua Oswaldo Antunes, 340 Sorocaba / SP</address>
                     <a href="tel:01523456789" title="Ligue para nós!">15 2345 6789</a> - <a href="mailto:e-mail@zum.com.br" title="Mande um email para nós!">e-mail@zum.com.br</a>
                 </li>
-                <li>
+                <li class="animate">
                     <h2>Loja Sorocaba X</h2>
                     <address>Rua Oswaldo Antunes, 340 Sorocaba / SP</address>
                     <a href="tel:01523456789" title="Ligue para nós!">15 2345 6789</a> - <a href="mailto:e-mail@zum.com.br" title="Mande um email para nós!">e-mail@zum.com.br</a>

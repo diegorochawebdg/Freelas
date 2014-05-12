@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+body{
+    background: #dfd7c1 url(../images/onde-encontrar/bg.png) no-repeat center 247px;
+}
+#content{
+    padding: 143px 0 130px 0;
+}
+#menu, .menu-complement{
+    background-color: #008eb3; 
+}
+
+/*Titles*/
+.titles{
+    margin-bottom: 81px;
+}
+.titles h1{
+    color: #f49443;
+    font-size: 60px;
+    float: left;
+    padding-top: 45px;
+}
+.titles h2{
+    color: #f49443;
+    font-size: 28px;
+    float: right;
+    text-align: right;
+    background: url(../images/onde-encontrar/encontre-a-mais-proxima.png) no-repeat;
+    padding: 42px 0 0 234px;
+    height: 105px;
+}
+
+/*Unidades*/
+.unidades .loja{
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+    background: #FFF;
+    border-radius: 5px;
+}
+.unidades .loja.last{
+    margin-right: 0;
+    clear: right;
+}
+.unidades .loja img{
+    border-radius: 5px 5px 0 0;
+}
+.unidades .loja .details{
+    background: url(../images/onde-encontrar/location.png) no-repeat center top;
+    padding: 82px 19px 28px 19px;
+    margin-top: -26px;
+    position: relative;
+    z-index: 2;
+}
+.unidades .loja .details *{
+    color: #828282;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 1.3em;
+}
+.unidades .loja .details h3{
+    color: #008eb3;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.unidades .the-map{
+    height: 0;
+    position: relative;
+    overflow: hidden;
+}
+.unidades .the-map.active{
+    height: 300px;
+}
+.unidades .loja a.map{
+    background: #f49443;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    display: block;
+    padding: 5px 0;
+    color: #FFF;
+    border-radius: 0 0 5px 5px;
+}
