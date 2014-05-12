@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+body{
+    background: #dfd7c1 url(../images/fale-conosco/bg.png) no-repeat center 245px;
+}
+#content{
+    padding: 187px 0 175px 0;
+}
+
+/*Titles*/
+.titles{
+    margin-bottom: 107px;
+}
+.titles h1{
+    color: #f04c4b;
+    font-size: 60px;
+    float: left;
+}
+.titles i{
+    color: #1fbaa5;
+    margin-right: 5px;
+}
+.titles h2{
+    color: #f04c4b;
+    font-size: 28px;
+    float: right;
+}
+
+/*Form*/
+.left{
+    float: left;
+    width: 38%
+}
+.left label{
+    color: #f04c4b;
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+}
+.left input{
+    color: #828282;
+    font-size: 20px;
+    margin-bottom: 15px;
+    display: block;
+    height: 52px;
+    padding: 0 10px;
+    width: 100%;
+    border-radius: 5px
+}
+.left textarea{
+    color: #f04c4b;
+    font-size: 20px;
+    margin-bottom: 25px;
+    display: block;
+    height: 52px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    resize: none;
+    overflow: auto;
+    height: 110px;
+}
+.left button{
+    color: #1fbaa5;
+    font-size: 24px;
+    border: solid 3px #1fbaa5;
+    padding: 7px 15px;
+    float: right;
+    background: none;
+    border-radius: 5px; 
+    margin-right: -20px;
+    cursor: pointer;
+}
+.left button:hover{
+    opacity: 0.7;
+}
+
+/*Addresses*/
+.right{
+    float: right;
+    width: 50%;
+}
+.right li{
+    padding: 20px 0 20px 63px;
+    background: url(../images/fale-conosco/location.png) no-repeat 3px center;
+    color: #828282;
+    border-bottom: dashed 2px #1fbaa5;
+}
+.right li h2{
+    font-size: 18px;
+    color: #f04c4b;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.right li address, .right li a{
+    color: #828282;
+    font: normal normal 16px Museo, Arial, sans-serif;
+    line-height: 1.4em;
+}
+.right li a{
+    display: inline;
+}

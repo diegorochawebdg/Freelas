@@ -1,6 +1,6 @@
 <?php 
     include('header.php');
-    $title = "Zum - Home";
+    $title = "Zum - Comida fresca e rápida";
     $output = str_replace('%TITLE%', $title, $output);
     echo $output;
 ?>

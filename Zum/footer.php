@@ -5,7 +5,7 @@
             <span class="foodright">Foodright - Todos os direitos de uma<br> alimentação saudável você encontrará na Zum.</span>
             <div class="social">
                 <a href="#" title="Interaja com Facebook"><i class="fa fa-facebook-square fa-2x"></i>interaja com <br>facebook</a>
-                <a href="#" title="Siga-nos no twitter"><i class="fa fa-instagram fa-2x"></i>siga-nos <br>no instagram</a>
+                <a href="#" title="Siga-nos no Instagram"><i class="fa fa-instagram fa-2x"></i>siga-nos <br>no instagram</a>
             </div>
             <div class="clear"></div>
         </div>
