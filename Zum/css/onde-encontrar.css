@@ -64,6 +64,9 @@ body{
     font-weight: bold;
     margin-bottom: 10px;
 }
+.unidades .loja .details address{
+    font-weight: bold;
+}
 .unidades .the-map{
     height: 0;
     position: relative;

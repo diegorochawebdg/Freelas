@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+body{
+    background: #dfd7c1 url(../images/onde-encontrar/bg.png) no-repeat center 240px;
+}
+#content{
+    padding: 172px 0 130px 0;
+}
+
+/*Titles*/
+.titles{
+    margin-bottom: 36px;
+}
+.titles h1{
+    color: #f04b4b;
+    font-size: 60px;
+    float: left;
+}
+.titles img{
+    float: right;
+    margin-right: 16px;
+    
+}
+
+/*Submenu*/
+.submenu{
+    text-align: center;
+    padding: 0 30px;
+    margin-bottom: 58px
+}
+.submenu a{
+    display: inline-block;
+    color: #008eb3;
+    font-weight: bold;
+    font-size: 20px;
+    background: #FFF;
+    padding: 8px 10px;
+    border-radius: 5px;
+    margin: 0 5px 8px 0;
+}
+.submenu a span{
+    display: inline-block;
+    color: #7d7d7d;
+    font-size: 14px;
+    font-weight: normal;
+}
+.submenu a.active{
+    color: #FFF;
+    background: #f04b4b;
+    text-decoration: underline;
+}
+.submenu a.active span{
+    color: #FFF;
+}
+
+/*Item*/
+.item{
+    border-radius: 7px;
+    width: 30%;
+    margin:0 1.5% 50px 1.5%;
+}
+.item a{
+    -webkit-transition: all 300ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+       -moz-transition: all 300ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+         -o-transition: all 300ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+            transition: all 300ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+}
+.item a:hover{
+    text-decoration: none;
+    opacity: 0.7;
+}
+.item.big{
+    border-radius: 7px;
+    width: 63%;
+    margin-bottom: 50px;
+}
+.item img{
+    border-radius: 7px 7px 0 0;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+.item .description{
+    background: #FFF;
+    padding: 17px 17px;
+    border-radius: 0 0 7px 7px;
+}
+.item.big .description{
+    background: #FFF;
+    padding: 25px 17px;
+    border-radius: 0 0 7px 7px;
+}
+.item.big .description h2{
+    font-size: 36px;
+    margin-bottom: 35px;
+}
+.item .description h2{
+    color: #f04b4b;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.item .description h3{
+    color: #828282;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.item .description p{
+    color: #828282;
+    font-weight: normal;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
