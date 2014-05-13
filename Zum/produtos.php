@@ -133,6 +133,7 @@
 <?php include('footer.php'); ?>
 
 <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+<script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function(e){
         //Submenu
@@ -142,9 +143,17 @@
         });
         
         //Columns
-        $('#content .produtos').masonry({
+        var $produtos = $('#content .produtos');
+        // initialize Masonry after all images have loaded  
+        $produtos.imagesLoaded( function() {
+          $produtos.masonry({
+              columnWidth: 1,
+              itemSelector: '.item'
+          });
+        });
+        /*$('#content .produtos').masonry({
           columnWidth: 1,
           itemSelector: '.item'
-        });
+        });*/
     });
 </script>
