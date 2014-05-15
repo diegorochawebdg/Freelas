@@ -129,6 +129,46 @@
     </div>
 </div>
 <!--End of Content-->
+
+<!--Lightbox-->
+<div id="lightbox">
+    <div class="lightbox-content">
+        <!--Menu-->
+        <div id="menu-lightbox">
+                <a href="/" title="Voltar para a página inicial" id="home-link" class="link-padding animate">Zum</a>
+                <a href="#" class="fechar-lightbox">fechar <i class="fa fa-plus"></i></a>
+        </div>
+        <!--End of Menu-->
+        
+        <!--The Image-->
+        <div class="the-image">
+            <div class="image-relative">
+                <img src="images/produtos/imagem-ampliada.jpg" width="788" height="788" alt="Sanduiche natural" title="Sanduiche natural">
+            </div>
+        </div>
+         <!--End of The Image-->
+        
+        <!--Text-->
+        <div class="text">
+            <h2>Sanduiche Natural</h2>
+            <p>Lorem ipsum dolor sit amet consecteruer adiscipling elit, orem ipsum ecteruer adiscipling elit, Lorem ipsum dolor sit amet consecteruum dolor sit amet consecteruer adiscipling elit</p>
+            <h3>Ingredientes</h3>
+            <p>Lorem ipsum dolor sit amet consecteruer adiscipling elit, orem ipsum ecteruer adiscipling elit</p>
+            <a href="#" title="Compartilhar">compartilhar <i class="fa fa-share-square"></i></a>
+            
+            <!--Links-->
+            <div class="links">
+                <a href="#" title="anterior" class="next">próximo <i class="fa fa-arrow-right"></i></a>
+                <a href="#" title="anterior" class="prev"><i class="fa fa-arrow-left"></i> anterior</a>
+            </div>
+            <!--End of Links-->
+            <div class="clear"></div>
+        </div>
+        <!--End of Text-->
+        
+    </div>
+</div>
+<!--End of Lightbox-->
         
 <?php include('footer.php'); ?>
 
@@ -144,16 +184,21 @@
         
         //Columns
         var $produtos = $('#content .produtos');
-        // initialize Masonry after all images have loaded  
         $produtos.imagesLoaded( function() {
           $produtos.masonry({
               columnWidth: 1,
               itemSelector: '.item'
           });
         });
-        /*$('#content .produtos').masonry({
-          columnWidth: 1,
-          itemSelector: '.item'
-        });*/
+        
+        //Lightbox - Example only
+        $('.item a').click(function(e){
+            e.preventDefault();
+            $('#lightbox').fadeIn(300);
+        });
+        $('#lightbox a.fechar-lightbox').click(function(e){
+            e.preventDefault();
+            $('#lightbox').fadeOut(300);
+        });
     });
 </script>

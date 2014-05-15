@@ -37,9 +37,9 @@
                 </div>
                 <div class="social animate">
                     <ul>
-                        <li><a href="#" title="Facebook" class="facebook"><i class="fa fa-facebook-square fa-lg"></i></a></li>
-                        <li><a href="#" title="Instagram" class="instagram"><i class="fa fa-instagram fa-lg"></i></a></li>
-                        <li><a href="#" title="Foursquare" class="foursquare"><i class="fa fa-foursquare fa-lg"></i></a></li>
+                        <li><a href="#" title="Facebook" class="facebook animate"><i class="fa fa-facebook-square fa-lg"></i></a></li>
+                        <li><a href="#" title="Instagram" class="instagram animate"><i class="fa fa-instagram fa-lg"></i></a></li>
+                        <li><a href="#" title="Foursquare" class="foursquare animate"><i class="fa fa-foursquare fa-lg"></i></a></li>
                     </ul>
                 </div>
                 <span class="slogan animate">fast fresh food</span>

@@ -112,3 +112,134 @@ body{
     font-size: 14px;
     margin-bottom: 5px;
 }
+
+
+/******** Internas - Lightbox **********/
+#lightbox{
+    position: fixed;
+    overflow: scroll;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #dfd7c1;
+    z-index: 10;
+    display: none;
+}
+#lightbox a.fechar-lightbox{
+    position: absolute;
+    color: #FFF;
+    font-size: 22px;
+    font-weight: bold;
+    right: 5%;
+    top: 22px
+}
+#lightbox a.fechar-lightbox i{
+    -o-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(SizingMethod='auto expand', M11=-0.7071067811865476, M12=0.7071067811865475, M21=0.7071067811865475, M22=0.7071067811865476)"; /* IE8 */
+}
+#lightbox .the-image{
+    width: 70%;
+    text-align: center;
+    float: left;
+    position: relative;
+}
+#lightbox img{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    display: inline;
+}
+#lightbox .text{
+    width: 25%;
+    max-width: 390px;
+    float: left;
+    height: 100%;
+    margin-top: 3%;
+    padding: 0 2.5%;
+    text-align: right;
+    overflow: scroll;
+}
+#lightbox .text h2{
+    font-size: 38px;
+    color: #f49443;
+    margin-bottom: 20px
+}
+#lightbox .text h3{
+    font-size: 22px;
+    color: #f49443;
+    margin-bottom: 20px
+}
+#lightbox .text p{
+    font-size: 15px;
+    color: #3a3a3a;
+    margin-bottom: 30px;
+    line-height: 1.6em;
+}
+#lightbox .text a{
+    font-size: 24px;
+    color: #1fbaa5;
+    font-weight: bold;
+    padding: 15px;
+    border: solid 4px #1fbaa5;
+    border-radius: 5px;
+    display: table;
+    float: right;
+}
+#lightbox .text a i{
+    margin-left: 10px;
+}
+
+/*Lightbox Links*/
+#lightbox .links{
+    position: relative;
+    z-index: 2;
+    margin-top: 50px;
+    display: table;
+    float: right;
+}
+#lightbox .links a{
+    color: #FFF;
+    background: #f04c4b;
+    padding: 15px;
+    font-weight: bold;
+    display: inline-block;
+    border: none;
+    margin: 0 1px 3px 0;
+    font-size: 15px;
+}
+#lightbox .links a.next{
+    border-radius: 0;
+}
+#lightbox .links a.prev{
+    border-radius: 50px 0 0 0;
+}
+
+/*Lightbox Menu*/
+#menu-lightbox{
+    position: relative;
+    background: #f04b4b;
+    left: 0;
+    width: 95%;
+    height: 62px;
+    border-radius: 0 0 100px 0;
+    z-index: 3;
+}
+#menu-lightbox .content-center{
+    position: relative;
+    height: 62px;
+}
+#menu-lightbox #home-link{
+    background: url(../images/zum-logo.png);
+    width: 307px;
+    padding-top: 48px;
+    left: 5%;
+    top: 8px;
+    -webkit-transform:scale(0.5);
+	-moz-transform:scale(0.5);
+	-o-transform:scale(0.5);
+	transform:scale(0.5);
+}
