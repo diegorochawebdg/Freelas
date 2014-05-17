@@ -681,8 +681,7 @@ ul.nav ul li,
 }
 ul.nav ul li a,
 #mobile_menu li a {
-    background: url(images/dropdown-bullet.png) no-repeat 0px 4px;
-    padding: 0px 0px 0px 17px;
+    background: url(images/dropdown-bullet.png) no-repeat 29% center;
     width: 130px;
 }
 ul.nav li:hover ul ul,

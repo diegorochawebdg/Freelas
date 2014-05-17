@@ -168,13 +168,12 @@ div.service img,
     z-index: 1000;
     display: none;
     text-align: left;
-    width: 179px;
-    padding: 5px 51px 5px 87px;
+    width: 319px;
+    padding: 5px 0;
 }
 #mobile_menu li {
     padding-bottom: 0;
     padding-left: 0;
-    margin: 7px 0;
 }
 #mobile_menu ul {
     display: block !important;
@@ -196,6 +195,15 @@ div.service img,
 #mobile_menu a {
     font-style: normal;
     color: #393939;
+}
+#mobile_menu li a{
+    width: auto !important;
+    padding: 5px 0 5px 36%;
+    display: block;
+}
+#mobile_menu li a:after{
+    content: "";
+    margin: 0 !important;
 }
 #mobile_menu li.current-menu-item > a,
 #mobile_menu a:hover {

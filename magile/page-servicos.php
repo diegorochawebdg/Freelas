@@ -327,10 +327,11 @@
 
 		<?php get_footer(); ?>
         
+        
         <script type="text/javascript">
             jQuery(document).ready(function(e){
                 /*Lightbox*/
-                function lightboxMargin() {
+                /*function lightboxMargin() {
                     var lightboxWidth  = jQuery(".lightbox .lightbox-content img").width() / 2;
                     var lightboxHeight = jQuery(".lightbox .lightbox-content img").height() / 2;
 
@@ -354,17 +355,21 @@
                 jQuery(".lightbox").click(function(e){
                     e.preventDefault;
                     jQuery(this).fadeOut(300);
-                });
+                });*/
 
                 jQuery(".tabs li a").click(function(e){
-                    setTimeout(lightboxMargin, 500);
+                    e.preventDefault();
+                    jQuery(this).fancybox({
+                        'type':     'image'
+                    });
+                    /*setTimeout(lightboxMargin, 500);
                     e.preventDefault();
 
                     var detalhesLink = jQuery(this).attr("href");
                     jQuery(".lightbox .lightbox-content img").attr("src", detalhesLink);
                     jQuery(".lightbox").fadeIn(300);
                     var maxHeightImg = jQuery(window).height() - 50;
-                    jQuery(".lightbox .lightbox-content img").css({maxHeight:maxHeightImg});
+                    jQuery(".lightbox .lightbox-content img").css({maxHeight:maxHeightImg});*/
                 });
                 /*End of Lightbox*/
             });
