@@ -1,0 +1,1 @@
+Please use following documentation, or contact us on our support forum at http://www.support.drythemes.com
