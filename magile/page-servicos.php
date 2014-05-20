@@ -316,13 +316,6 @@
 
 		</div> <!-- end .container -->
         
-        <div class="lightbox">
-            <div class="lightbox-content">
-                <a href="#" title="Fechar" class="fechar">Fechar</a>
-                <img src="" alt="" title="" width="" heigth="">
-            </div>
-        </div>
-        
         
 
 		<?php get_footer(); ?>
@@ -330,46 +323,15 @@
         
         <script type="text/javascript">
             jQuery(document).ready(function(e){
-                /*Lightbox*/
-                /*function lightboxMargin() {
-                    var lightboxWidth  = jQuery(".lightbox .lightbox-content img").width() / 2;
-                    var lightboxHeight = jQuery(".lightbox .lightbox-content img").height() / 2;
 
-                    var lightboxMarginTop  = "-" + parseFloat(lightboxHeight) + "px";
-                    var lightboxMarginLeft = "-" + parseFloat(lightboxWidth) + "px";
-                    jQuery(".lightbox .lightbox-content").css("margin-top", lightboxMarginTop);
-                    jQuery(".lightbox .lightbox-content").css("margin-left", lightboxMarginLeft);
-                }
-                lightboxMargin();
-                jQuery(".lightbox .lightbox-content").css("width", jQuery(".lightbox .lightbox-content img").width());
-                jQuery(".lightbox .lightbox-content").css("height", jQuery(".lightbox .lightbox-content img").height());
-
-                jQuery(window).resize(function(e){
-                    lightboxMargin();
-                });
-
-                jQuery(".fechar").click(function(e){
-                    e.preventDefault;
-                    jQuery(this).parent().parent().fadeOut(300);
-                });
-                jQuery(".lightbox").click(function(e){
-                    e.preventDefault;
-                    jQuery(this).fadeOut(300);
-                });*/
-
-                jQuery(".tabs li a").click(function(e){
+                /*jQuery(".tabs li a").click(function(e){
                     e.preventDefault();
-                    jQuery(this).fancybox({
+                    jQuery.fancybox({
                         'type':     'image'
                     });
-                    /*setTimeout(lightboxMargin, 500);
-                    e.preventDefault();
-
-                    var detalhesLink = jQuery(this).attr("href");
-                    jQuery(".lightbox .lightbox-content img").attr("src", detalhesLink);
-                    jQuery(".lightbox").fadeIn(300);
-                    var maxHeightImg = jQuery(window).height() - 50;
-                    jQuery(".lightbox .lightbox-content img").css({maxHeight:maxHeightImg});*/
+                });*/
+                jQuery(".tabs li a").fancybox({
+                    'type':     'image'
                 });
                 /*End of Lightbox*/
             });
