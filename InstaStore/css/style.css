@@ -1,0 +1,482 @@
+/** Geral **/
+.header-desconto {
+    background: #ee2f45;
+    color: #fbba32;
+    padding: 8px 20px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'pill_gothic_600mgregular';
+}
+/** End General **/
+
+
+
+/** Header **/
+.navbar .container {
+    position: relative;
+}
+
+.navbar-inner {
+    background: #f8f8f5;
+}
+
+.navbar .nav > li > a {
+    color: #806c6d;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 32px 15px 24px;
+}
+
+.navbar .nav > .ativo > a, .navbar .nav > .ativo > a:hover, .navbar .nav > .ativo > a:focus {
+
+}
+
+.navbar a.login {
+    background: #ee2f45;
+    color: #FFF;
+    font-size: 14px;
+    padding: 10px 35px;
+    display: block;
+    float: left;
+}
+
+.navbar a:hover {
+    text-decoration: none;
+}
+
+.navbar .btn-navbar {
+    float: left;
+    margin-top: 24px;
+}
+
+.navbar .icones {
+    position: absolute;
+    right: 0; top: 20px;
+}
+
+.header-cores {
+    height: 25px;
+    background: url(../images/header-cores.jpg) repeat-x;
+}
+/** End Header **/
+
+
+
+/** Home **/
+.webdoor {
+    width: 100%;
+    float: left;
+}
+
+.webdoor .item {
+    width: 100%;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.webdoor .color {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.webdoor .content {
+    z-index: 110;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.webdoor .content h1 {
+    font-family: 'pill_gothic_600mgregular';
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.webdoor .content h1 span {
+    font-family: 'pill_gothic_600mgthin';
+    font-size: 28px;
+}
+
+.webdoor img {
+    text-align: center;
+    z-index: 100;
+    position: relative;
+}
+
+.destaques {
+}
+
+.destaques .span4,
+.destaques .span6 {
+    text-align: center;
+    border: 1px solid #d1d3d4;
+    background: #fff;
+    padding: 30px;
+    margin-bottom: 25px;
+}
+
+.destaques h3 {
+    margin-top: 15px;
+}
+
+.destaques .saiba {
+    margin-top: 10px;
+}
+
+.destaques .span4 .quero {
+    font-size: 16px;
+    background: #ee2f45 url(../images/logotipo-coracao-p.png) 15px center  no-repeat;
+    padding: 18px 0 18px 60px;
+    width: 138px;
+    text-align: left;
+}
+
+.destaques .span4 .saiba {
+    width: 198px;
+    font-size: 14px;
+}
+
+.destaques .span4 h4 {
+    font-size: 30px;
+}
+
+.chamada {
+    text-align: center;
+    margin: 10px 0 35px 0;
+}
+
+.chamada h1 {
+    font-size: 45px;
+    color: #58574b;
+    font-family: 'pill_gothic_600mgregular';
+}
+
+.chamada p {
+    font-size: 32px;
+    color: #4ca578;
+    font-family: 'pill_gothic_600mgthin';
+}
+/** End Header **/
+
+
+
+/** Footer **/
+.footer {
+    padding: 50px 20px;
+    background: #13c9c6;
+    color: #FFF;
+}
+
+.container-insta .form-inline {
+    width: 100%;
+    font-family: 'pill_gothic_600mgregular';
+}
+
+form.newsletter {
+    margin-bottom: 50px;
+}
+
+.newsletter label {
+    font-size: 22px;
+}
+
+.newsletter input {
+    font-size: 22px;
+    width: 460px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 0 15px;
+}
+
+.newsletter button {
+    background: #507dbf;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    color: #FFF;
+    padding: 7px 15px;
+    border: none;
+    font-size: 14px;
+}
+
+.footer .span7 h4 {
+    font-size: 26px;
+    color: #507dbf;
+    font-family: 'pill_gothic_600mgregular';
+}
+
+.footer .span5 h4 {
+    font-size: 24px;
+    color: #FFF;
+    font-family: 'pill_gothic_600mgthin';
+    text-align: right;
+}
+
+.footer ul {
+    margin: 0;
+}
+
+.footer li {
+    list-style: none;
+    padding: 2px 0;
+}
+
+.footer li a {
+    color: #FFF;
+    font-size: 18px;
+    font-family: 'pill_gothic_600mgregular';
+}
+
+.footer .span5 li {
+    float: left;
+}
+
+.footer a.rede {
+    display: block;
+    width: 86px;
+    height: 74px;
+    background: url(../images/logos-redes.png) no-repeat;
+    text-indent: -9999px;
+    line-height: 1px;
+    float: right;
+}
+
+.footer a.facebook {
+    background-position: -172px 0;
+}
+
+.footer a.twitter {
+    background-position: -86px 0;
+}
+
+.footer a.instagram {
+    background-position: 0 0;
+}
+
+.sub-footer {
+    padding: 20px 0;
+}
+
+.sub-footer p {
+    color: #333333;
+    font-size: 11px;
+    line-height: 30px;
+    margin: 0;
+}
+
+.sub-footer .span6 {
+    float: left;
+    margin-left: 0;
+}
+
+.sub-footer .logos {
+    float: right;
+}
+
+.sub-footer a {
+    float: right;
+    display: block;
+    text-indent: -9999px;
+    line-height: 1px;
+}
+
+.sub-footer .pagseguro {
+    width: 143px;
+    height: 32px;
+    background: url(../images/logotipo-pagseguro.png) no-repeat;
+    margin: -4px 0 0 30px;
+}
+
+.sub-footer .paypal {
+    width: 105px;
+    height: 27px;
+    background: url(../images/logotipo-paypal.png) no-repeat;
+}
+/** End Footer **/
+
+
+
+/** Responsive **/
+@media (max-width: 979px) {
+    .webdoor {
+        display: none;
+    }
+
+    .destaques.duplo {
+        margin-top: 25px;
+    }
+
+    .newsletter label {
+        text-align: center;
+        width: 100%;
+    }
+
+    .newsletter span {
+        clear: both;
+        display: block;
+        text-align:center;
+    }
+
+    .newsletter label input {
+        margin: 5px 0;
+        clear: both;
+    }
+
+    .newsletter button {
+        clear: both;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .footer li {
+        padding: 0;
+    }
+
+    .footer .span7 h4 {
+        font-size: 22px;
+    }
+
+    .footer .span7 a {
+        font-size: 14px;
+    }
+
+    .footer .span5 h4 {
+        font-size: 20px;
+    }
+
+    .sub-footer {
+        padding: 20px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
+
+@media (max-width: 767px)
+{
+    .chamada h1 {
+        font-size: 32px;
+    }
+
+    .chamada p {
+        font-size: 24px;
+    }
+
+    .footer .span7 {
+        float: left;
+    }
+
+    .footer .span7 .span4 {
+        width: 33%;
+        float: left;
+        text-align: center;
+    }
+
+    .footer .span5 {
+        margin-top: 40px;
+        float: left;
+    }
+
+    .footer .span5 .span4  {
+        text-align: left;
+        width: auto;
+    }
+
+    .footer .span5 h4 {
+        text-align: left;
+    }
+
+    .sub-footer .logos {
+        float: left;
+        width: auto;
+    }
+}
+
+@media (max-width: 610px) {
+
+    .navbar .logo {
+        width: 51px;
+        overflow-x: hidden;
+    }
+
+    .destaques .span6 .quero {
+        font-size: 16px;
+        background: #ee2f45 url(../images/logotipo-coracao-p.png) 15px center  no-repeat;
+        padding: 18px 0 18px 60px;
+        width: 138px;
+        text-align: left;
+    }
+
+    .destaques .span6 .saiba {
+        width: 198px;
+        font-size: 14px;
+    }
+
+    .destaques .span6 h4 {
+        font-size: 30px;
+    }
+
+    .destaques .span6 h3 {
+        display: none;
+    }
+
+    .newsletter label input {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .navbar .logo {
+        padding-right: 10px;
+    }
+
+    .navbar a.login {
+        padding: 10px 10px;
+        font-size: 12px;
+        overflow-x: hidden;
+    }
+
+    .navbar a.carrinho {
+        margin-left: 6px;
+    }
+
+    form.newsletter {
+        margin-bottom: 30px;
+    }
+
+    .footer .span7 .span4 {
+        width: 100%;
+        float: none;
+        text-align: left;
+    }
+
+    .footer .span7 ul {
+        margin-bottom: 30px;
+    }
+
+    .footer .span5 {
+        margin-top: 0px;
+    }
+
+    .footer .span5 h4 {
+        font-size: 12px;
+    }
+
+    .footer .span5 a.facebook {
+        width: 50px;
+        background-position: -190px top;
+    }
+}
+/** End Responsive **/

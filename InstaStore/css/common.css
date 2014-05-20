@@ -1,0 +1,98 @@
+/** General **/
+body {
+    background: #f8f8f5;
+}
+
+h2 {
+    font-size: 22px;
+    color: #79523e;
+    line-height: 22px;
+    font-family: 'pill_gothic_600mgregular';
+}
+
+h3 {
+    font-family: 'pill_gothic_600mgthin';
+    font-size: 46px;
+}
+
+h3 span {
+    font-family: 'pill_gothic_600mgregular';
+}
+
+
+.minibook {
+    color: #fbba32;
+}
+
+.instacards {
+    color: #ee2f45;
+}
+
+.clear {
+    clear: both;
+    width: 100%;
+}
+
+.container-insta {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.botao {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+a.carrinho {
+    background: url(../images/header-carrinho-bg.png) no-repeat;
+    color: #FFF;
+    font-size: 15px;
+    padding: 5px 5px 10px 56px;
+    margin: 0 0 0 20px;
+    display: block;
+    float: left;
+    text-align: center;
+    width: 28px;
+}
+
+a.carrinho:hover {
+    text-decoration: none;
+}
+
+a.logo {
+    display: block;
+    float: left;
+    padding: 16px 20px;
+    height: 43px;
+    width: 257px;
+    margin-left: -20px;
+    background: url(../images/logotipo.png) 20px 16px no-repeat;
+}
+
+a.quero {
+    font-size: 22px;
+    color: #fff;
+    background: #ee2f45 url(../images/logotipo-coracao.png) 20px center  no-repeat;
+    padding: 26px 0 26px 90px;
+    font-weight: bold;
+    display: inline-block;
+    width: 208px;
+    text-align: left;
+}
+
+a.saiba {
+    font-size: 18px;
+    color: #fff;
+    background: #507dbf;
+    padding: 5px 0 5px 0;
+    width: 298px;
+    text-align: center;
+    display: inline-block;
+}
+
+
+.error {
+    padding: 50px 0 300px 0;
+}
+/** End General **/

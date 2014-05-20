@@ -72,20 +72,10 @@
                     <?php wp_link_pages('before=<div id="page-links">&after=</div>'); ?>						
                 </div>
                 <div class="posts-navigation">
-                    <div class="left"><?php previous_post_link('%link', 'PREVIOUS'); ?></div>
-                    <div class="right"><?php next_post_link('%link', 'NEXT'); ?></div>
+                    <div class="left"><?php previous_post_link('%link', 'ANTERIOR'); ?></div>
+                    <div class="right"><?php next_post_link('%link', 'PRÓXIMO'); ?></div>
                     <div class="clear">&nbsp;</div>
                 </div>
-                <?php if (comments_open()) : ?>
-                    <div class="comments-holder clear">
-                        <?php comments_template(); ?>
-                    </div>
-                    <div class="comments-pagination-wrapper">
-                        <div class="comments-pagination">
-                            <?php paginate_comments_links(array('prev_text' => '&laquo;', 'next_text' => '&raquo;')); ?> 
-                        </div>
-                    </div>
-                <?php endif; ?>
                 <div class="pop-up-footer">	
                     <div class="pop-up-copyright"><?php echo get_theme_mod('copyright_text', '&copy; DryThemes - Built with love and passion'); ?></div>
                 </div>

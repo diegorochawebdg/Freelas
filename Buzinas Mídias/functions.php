@@ -653,11 +653,15 @@ function contact($atts, $content = null) {
 					<input type="text" id="name" />
 				</li>
 				<li class="right-35 email-holder">
-					<input type="text" id="contact-email" />
+					<input type="email" id="contact-email" />
 				</li>
 				<li class="right-35 message-holder">
 					<textarea rows="4" cols="50" id="message"></textarea>
 				</li>
+                <li class="newsletter">
+                    <input type="checkbox" id="newsletter" name="newsletter" checked="checked" value="sim">
+                    <label for="newsletter">Desejo receber newsletters da Buzina Mídias Digitais</label>
+                </li>
 				<li>
 					<button onClick="SendMail()" id="send-message">ENVIAR</button>   
 				</li>

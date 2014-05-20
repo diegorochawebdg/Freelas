@@ -204,6 +204,11 @@ div.content-960
 #news-items li p.title a
 {
     text-decoration: none;
+    color: #333 !important;
+}
+#news-items li p.title a:hover
+{
+    color: #6C1E2C !important;
 }
 #news-items li span.category
 {
@@ -220,6 +225,7 @@ div.content-960
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
+    background: #81810f;
 }
 #news-items li a.read-more img
 {
@@ -309,9 +315,15 @@ ul#contact-form li
     -moz-border-radius: 3px;
     border: none;	
 }
+.contact-form .newsletter input{
+    width: 30px;
+}
 .contact-form button
 {
     cursor: pointer;
+}
+.contact-form button:hover{
+    background: #424242;
 }
 footer
 {	
@@ -497,8 +509,8 @@ div.social-about img
     max-width: none;
 }
 img.service-short-code-image{
-    display: table;
-    margin: 0 auto 20px auto;
+    display: block !important;
+    margin-bottom: 20px;
 }
 ul.service-short-code-holder li{
     margin-bottom: 10px;
@@ -591,9 +603,15 @@ div.pop-up-footer
 
 
 /*Serviços*/
-.one_fourth *{
-    text-align: center;
-}
 .one_fourth li{
     list-style-type: none;
+}
+.one_fourth li .service-title{
+    font-size: 1.5em;
+    color: #d82445;
+    margin-bottom: 15px;
+    display: block;
+}
+.one_fourth li p{
+    line-height: 1.5em;
 }

@@ -11,6 +11,7 @@ var SendMail = function(){
             'action'    : 'contact_action',
             'name'      : jQuery('div.contact-form #name').val(),
             'email'     : jQuery('div.contact-form #contact-email').val(),
+            'newsletter': jQuery('div.contact-form #newsletter').val(),
             'message'   : jQuery('div.contact-form #message').val()
         };
         

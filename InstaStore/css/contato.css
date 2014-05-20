@@ -1,0 +1,78 @@
+.content{
+    padding: 74px 0 49px 0;
+    background: #efe8e2;
+}
+.content-center{
+    margin: 0 auto;
+    max-width: 960px;
+}
+.content-center .left, .content-center .right{
+    width: 50%;
+    float: left;
+}
+/*Left*/
+.content-center .left{
+    padding-top: 103px;
+}
+.content-center .left h1{
+    color: #ee2f45;
+    font: normal 46px/25px 'pill_gothic_600mgthin';
+}
+.content-center .left h1 strong{
+    display: block;
+    font: 56px 'pill_gothic_600mgregular';
+}
+.content-center .left p{
+    display: block;
+    font: 18px/1em 'pill_gothic_600mgregular';
+    color: #575651;
+    margin-bottom: 10px;
+}
+/*Right*/
+.right label{
+    font: bold 16px Arial, sans-serif;
+    color: #575651;
+}
+.right input, .right textarea{
+    border: solid 1px #79523e;
+    height: 59px;
+    border-radius: 2px;
+    width: 96%;
+    padding: 0 2%;
+    background: #FFF;
+    font-size: 20px;
+    margin-bottom: 22px;
+}
+.right .left-input, .right .right-input{
+    float: left;
+    width: 47.5%;
+}
+.right .left-input{
+    margin-right: 5%;
+}
+.clear{
+    clear: both;
+}
+.right textarea{
+    resize: none;
+    overflow: auto;
+    padding: 2%;
+    height: 130px;
+}
+.right button{
+    color: white;
+    background: #ee2f45;
+    font: 23.5px Arial, sans-serif;
+    padding: 19px 72px;
+    border: none;
+    display: table;
+    margin: 0 auto;
+    text-transform: uppercase;
+    -webkit-transition: all 400ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+       -moz-transition: all 400ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+         -o-transition: all 400ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+            transition: all 400ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+}
+.right button:hover{
+    opacity: 0.7;
+}
