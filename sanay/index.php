@@ -18,7 +18,7 @@
                     <li class="futuro-lancamento borders"><a href="#" title="Futuro Lançamento">Futuro Lançamento</a></li>
                     <li class="entregues borders"><a href="#" title="Entregues">Entregues</a></li>
                     <li class="bairro borders"><a href="#" title="Por bairro">Por bairro</a></li>
-                    <li class="corretor borders no-margin"><a href="#" title="Fale agora com nosso corretor online">Fale agora com nosso <strong>corretor online</strong></a></li>
+                    <!--<li class="corretor borders no-margin"><a href="#" title="Fale agora com nosso corretor online">Fale agora com nosso <strong>corretor online</strong></a></li>-->
                 </ul>
                 <div class="clear"></div>
                 
