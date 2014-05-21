@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+body{
+    background: #dfd7c1 url(../images/onde-encontrar/bg.png) no-repeat center 247px;
+}
+#content{
+    padding: 173px 0 130px 0;
+}
+#menu, .menu-complement{
+    background-color: #008eb3; 
+}
+
+/*Titles*/
+.titles{
+    margin-bottom: 81px;
+}
+.titles h1{
+    color: #f04c4b;
+    font-size: 60px;
+    float: left;
+    padding-top: 13px;
+}
+.titles img{
+    float: right;
+}
+
+/*Left*/
+.left{
+    float: left;
+    width: 47%;
+}
+.left p{
+    color: #828282;
+    font-size: 14px;
+    line-height: 1.6em;
+    margin-bottom: 15px;
+}
+
+/*Right*/
+.right{
+    float: right;
+    width: 500px;
+}
+.right #slideshow{
+    margin-bottom: 7px;
+}
+.right #slideshow a{
+    position: relative;
+}
+.right #slideshow img{
+    border-radius: 10px;
+}
+.right #slideshow span.title{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 18px;
+    text-shadow: #333 1px 1px 0px;
+}
+.right #slideshow .lupa{
+    background: url(../images/zum/lupa.png);
+    width: 30px;
+    height: 30px;
+    pointer-events: none;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.right #thumbs li{
+    float: left;
+    margin: 0 1px 3px 1px;
+    position: relative;
+}
+.right #thumbs li .hover{
+    background: #f04c4b url(../images/zum/lupa.png) no-repeat center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.right #thumbs li .hover:hover{
+    opacity: 1;
+}
+    
