@@ -1,14 +1,18 @@
+body{
+    background: #efe8e2;
+}
 .content{
     padding: 74px 0 49px 0;
-    background: #efe8e2;
+    /*background: #efe8e2;*/
 }
 .content-center{
     margin: 0 auto;
     max-width: 960px;
 }
 .content-center .left, .content-center .right{
-    width: 50%;
+    width: 46%;
     float: left;
+    padding: 0 2%;
 }
 /*Left*/
 .content-center .left{
@@ -75,4 +79,31 @@
 }
 .right button:hover{
     opacity: 0.7;
+}
+
+
+/******Responsible********/
+@media screen and (min-width: 611px) and (max-width: 768px){
+    .content-center .left, .content-center .right{
+        float: none;
+        width: auto;
+    }
+    .content-center .left{
+        margin-bottom: 50px;
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 610px){
+    .content-center .left, .content-center .right{
+        float: none;
+        width: auto;
+    }
+    .content-center .left{
+        margin-bottom: 50px;
+        padding-top: 0;
+    }
+    .right .left-input, .right .right-input{
+        float: none;
+        width: 100%;
 }
