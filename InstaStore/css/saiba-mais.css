@@ -1,0 +1,137 @@
+body{
+    background: #f8f8f5;
+}
+.content-center{
+    margin: 0 auto;
+    max-width: 960px;
+}
+.img{
+    position: relative;
+}
+.img .txt{
+    position: absolute;
+    top: 22.5%;
+    left: 50%;
+    margin-left: -460px
+}
+.img .txt *{
+    font-family: 'pill_gothic_600mgregular';
+}
+.img .txt h1{
+    font-size: 68px;
+    font-weight: normal;
+    font-family: 'pill_gothic_600mgthin';
+    line-height: 0.9em;
+}
+.img .txt h1 span{
+    font-weight: bold;
+}
+.img .txt h1, .img .txt p span{
+    color: #507dbf;
+}
+.img .txt p{
+    color: white;
+    font-size: 22px;
+    margin: 0;
+    line-height: 1.2em;
+}
+.img .txt p span{
+    display: block;
+}
+.img .quero{
+    position: absolute;
+    text-transform: uppercase;
+    bottom: 70px;
+    left: 50%;
+    margin-left: -150px;
+}
+
+.sub-content{
+    padding: 35px 0;
+}
+.sub-content .social-links{
+    display: none;
+    margin-bottom: 40px;
+}
+.sub-content .social-links ul{
+    margin: 0;
+    padding: 0;
+}
+.sub-content .social-links li{
+    display: block;
+    float: left;
+    width: 30%;
+    margin: 0 2%;
+    text-align: center;
+}
+.sub-content .social-links li:last-child{
+    margin: 0;
+}
+.sub-content .social-links li a{
+    display: block;
+    -webkit-transition: all 400ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+       -moz-transition: all 400ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+         -o-transition: all 400ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+            transition: all 400ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+}
+.sub-content .social-links li a:hover{
+    opacity: 0.7;
+}
+.sub-content p{
+    text-align: center;
+    color: #575651;
+    font-size: 22px;
+    font-family: 'pill_gothic_600mgregular';
+}
+
+/******Responsible********/
+@media screen and (max-width: 979px){
+    .img .txt{
+        left: 30px;
+        top: 5% !important;
+        margin-left: 0;
+    }
+}
+
+
+@media screen and (min-width: 611px) and (max-width: 768px){
+    .txt{
+        top: 7% !important;
+    }
+    .txt h1{
+        font-size: 58px !important;
+    }
+    .txt p{
+        font-size: 20px !important;
+    }
+}
+/*Quero*/
+@media screen and (max-width: 768px){
+    .quero{
+        position: static !important;
+        display: block !important;
+        width: 90% !important;
+        padding: 20px 5% !important;
+        margin: 0 !important;
+        text-align: center !important;
+        font-size: 16px !important;
+    }
+}
+@media screen and (max-width: 610px){
+    /*.img img{
+        display: none;
+    }*/
+    .img .txt{
+        position: static;
+        padding: 20px 0;
+        display: table;
+        margin: 0 auto;
+    }
+    .img .txt h1{
+        font-size: 45px;
+    }
+    .img .txt p{
+        color: #575651;
+        font-size: 18px;
+    }
+}

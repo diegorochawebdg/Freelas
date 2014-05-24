@@ -1,0 +1,76 @@
+.content{
+    position: relative;
+}
+.txt{
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    width: 42%;
+    margin-left: -480px;
+    max-width: 480px;
+}
+.txt h1{
+    color: #fbba32;
+    font-size: 46px !important;
+    font-family: 'pill_gothic_600mgthin';
+    line-height: 1em;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.txt h1 strong{
+    font-size: 56px;
+    display: block;
+    font-family: 'pill_gothic_600mgregular';
+}
+.txt p{
+    color: #FFF;
+    font-size: 18px;
+    font-family: 'pill_gothic_600mgthin';
+    line-height: 1.4em;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+/******Responsible********/
+@media screen and (min-width: 1200px){
+    .txt{
+        left: 50% !important;
+        margin-left: -580px !important;
+        width: 50% !important;
+    }
+}
+@media screen and (max-width: 979px){
+    .txt{
+        top: 30px;
+        left: 15px !important;
+        margin-left: 0 !important;
+        width: 45%;
+    }
+    .txt h1{
+        font-size: 40px !important;
+    }
+    .txt h1 strong{
+        font-size: 50px !important;
+    }
+    .txt p{
+        font-size: 16px !important;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 768px){
+    .txt{
+        position: static;
+        width: 90% !important;
+        max-width: 90%;
+        padding: 20px 5%;
+    }
+    .txt p{
+        color: #806c6d;
+        font-size: 20px !important;
+    }
+}
+@media screen and (max-width: 610px){
+    .txt{
+        position: static;
+    }
+}
