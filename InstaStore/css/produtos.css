@@ -1,0 +1,216 @@
+.instacards .img, .instaphoto .img, .instasquare .img, .minibook .img{
+    position: relative;
+}
+.txt{
+    position: absolute;
+    max-width: 480px;
+}
+.txt *, .description *{
+    font-family: 'pill_gothic_600mgregular';
+    font-weight: normal;
+}
+.txt h1, .txt h2{
+    font-family: 'pill_gothic_600mgthin';
+    font-size: 62px;
+    margin-bottom: 20px;
+}
+.txt p{
+    margin-bottom: 20px;
+}
+.quero{
+    text-transform: uppercase;
+    font-family: Arial, sans-serif;
+    font-weight: normal !important;
+    text-align: center !important;
+    padding-left: 91px;
+    padding-right: 41px !important;
+    width: auto !important;
+}
+.description{
+    padding: 65px 0;
+}
+.description *{
+    color: #e9ebf3;
+    text-align: center;
+}
+.description h3{
+    font-size: 50px;
+}
+.description p{
+    font-size: 22px;
+}
+
+/*Instacards*/
+.instacards .txt{
+    top: 10%;
+    left: 50%;
+    width: 42%;
+    margin-left: -480px;
+}
+.instacards .txt p{
+    font-size: 28px;
+    color: #79523e;
+}
+.instacards .description{
+    background: #507dbf;
+}
+
+/*InstaPhoto*/
+.instaphoto .txt{
+    top: 10%;
+    right: 4%;
+    text-align: right;
+}
+.instaphoto .txt h2{
+    color: #ede5e1;
+}
+.instaphoto .txt p{
+    font-size: 28px;
+    color: #79523e;
+}
+.instaphoto .quero{
+    font-size: 19px !important;
+    padding: 20px 30px 20px 75px !important;
+    width: auto;
+}
+.instaphoto .description{
+    background: #fbba32;
+}
+.instaphoto .description p{
+    color: #507dbf;
+}
+
+/*InstaSquare*/
+.instasquare .txt{
+    bottom: 5%;
+    left: 20%;
+}
+.instasquare .txt p{
+    font-size: 28px;
+    color: #79523e;
+    line-height: 1em;
+    margin-bottom: 5px;
+}
+.instasquare .txt h2, .instasquare .txt p span{
+    color: #507dbf;
+    display: block;
+}
+.instasquare .description{
+    background: #4ca578;
+}
+
+/*Minibook*/
+.minibook .txt{
+    top: 20%;
+    left: 15px !important;
+}
+.minibook .txt p{
+    font-size: 28px;
+    color: #ebdfd9;
+}
+.minibook .txt h2{
+    color: #fbba32;
+}
+
+
+/******Responsible********/
+@media screen and (min-width: 1200px){
+    .instacards .txt{
+        left: 50% !important;
+        margin-left: -580px !important;
+        width: 50% !important;
+    }
+    .instaphoto .txt{
+        right: 11%;
+    }
+    .instasquare .txt{
+        bottom: 10%;
+        left: 20%;
+    }
+    .minibook .txt{
+        left: 15px !important;
+    }
+    
+}
+@media screen and (max-width: 1199px){
+    .minibook .txt p{
+        font-size: 18px !important;
+        color: #ebdfd9;
+        margin-bottom: 10px;
+    }
+    .minibook .txt h2{
+        color: #fbba32;
+        font-size: 50px
+    }
+    .minibook .txt a.quero{
+        font-size: 16px !important;
+        padding:17px 10px 17px 80px;
+        width: auto !important;
+    }
+    
+}
+@media screen and (max-width: 979px){
+    .instacards .txt{
+        top: 5%;
+        left: 15px !important;
+        margin-left: auto !important;
+        width: auto !important;
+        padding: 20px 0;
+    }
+    .instaphoto .txt{
+        top: 5%;
+        left: 15px !important;
+        margin-left: auto !important;
+        width: auto !important;
+        padding: 20px 0;
+    }
+    .instaphoto .txt h2{
+        font-size: 50px;
+    }
+    .instaphoto .txt a.quero{
+        font-size: 16px !important;
+    }
+    .instasquare .txt h2{
+        font-size: 50px;
+    }
+    .instasquare .txt p{
+        font-size: 20px;
+        line-height: 1em;
+        margin-bottom: 10px;
+    }
+    .instasquare .txt a.quero{
+        font-size: 16px !important;
+        padding:17px 10px 17px 80px;
+        width: auto !important;
+    }
+}
+@media screen and (max-width: 768px){
+    .txt{
+        position: static;
+        display: table;
+        margin: 0 auto !important;
+        padding: 20px 0 !important;
+    }
+    .txt h1, .txt h2{
+        font-size: 50px;
+    }
+    .txt p{
+        font-size: 20px !important;
+    }
+    .description{
+        padding: 20px 10px;
+    }
+    .description h3{
+        font-size: 38px;
+        line-height: 1.1em;
+    }
+    .description p{
+        font-size: 18px;
+        line-height: 1.1em;
+    }
+    .instaphoto .txt h2{
+        color: #507dbf;
+    }
+}
+@media screen and (max-width: 610px){
+}
