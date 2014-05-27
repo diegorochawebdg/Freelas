@@ -1,0 +1,264 @@
+body{
+    background: #f8f8f5;
+}
+.content{
+    padding: 45px 0;
+}
+.content-center{
+    margin: 0 auto;
+    max-width: 960px;
+}
+.clear{
+    clear: both;
+}
+
+/*User*/
+.user{
+    margin-bottom: 38px;
+    /*height: 97px;*/
+}
+.user .img, .user .welcome{
+    display: table-cell
+}
+.user .img{
+    width: 10%;
+}
+.user .welcome{
+    width: 85%;
+    height:100%;
+    max-height: 100%;
+    padding: 0 2.5%;
+}
+.user .welcome span{
+    vertical-align: middle;
+    font: 20px Arial, sans-serif;
+    color: #a16d55;
+}
+.user .welcome span strong{
+    color: #ee2f45;
+}
+
+/*Left*/
+.content-center .left{
+    float: left;
+    width: 27.5%;
+}
+.content-center .left .navbar{
+    display: none;
+    float: none !important;
+}
+.content-center .left .navbar button{
+    float: none !important;
+    display: table;
+    margin: 0 auto;
+}
+.content-center .left .submenu{
+    height: auto;
+}
+.content-center ul{
+    margin: 0;
+}
+.content-center .left li{
+    list-style-type: none;
+    border-top: solid 1px #3b639c;
+}
+.content-center .left li:first-child{
+    border-top: none;
+}
+.content-center .left li a{
+    padding: 25px 5px 25px 25px;
+    display: block;
+    background: #507dbf;
+    color: #f0f0eb;
+    font-size: 17px;
+    font-weight: bold;
+}
+.content-center .left li a.active, .content-center .left li a:hover{
+    color: #fbba32;
+    text-decoration: none;
+}
+
+/*Right*/
+.content-center .right{
+    float: right;
+    width: 67.5%;
+}
+.content-center .right.termos p, .content-center .right.privacidade p{
+    color: #666666;
+    font-size: 12px;
+    margin-bottom: 0;
+    line-height: 1.5em;
+}
+.content-center .right.faq ul{
+    margin-left: 15px;
+    padding-right: 15px;
+}
+.content-center .right.faq li{
+    list-style-position: outside;
+}
+.content-center .right.faq li span, .content-center .right.faq li p{
+    font-size: 12px;
+}
+.content-center .right.faq li span{
+    font-weight: bold;
+}
+.content-center .right h1, .content-center .right h2{
+    font-family: 'pill_gothic_600mgregular';
+}
+.content-center .right h1{
+    color: #507dbf;
+    line-height: 1em;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+    font-size: 22px;
+    border-bottom: solid 1px #adadab;
+}
+.content-center .right .left-column, .content-center .right .right-column{
+    float: left;
+    width: 40%;
+    padding: 0 5%;
+}
+.content-center .right h2{
+    color: #507dbf;
+    font-size: 16px;
+    line-height: 1em;
+    margin-bottom: 5px;
+}
+.content-center .right li{
+    margin-bottom: 5px;
+    list-style-position: inside;
+}
+.content-center .right li a{
+    color: #58574b;
+    font-size: 12px;
+    margin-bottom: 3px;
+    line-height: 1.1em;
+    display: block;
+}
+.content-center .right ul{
+    margin-bottom: 40px;
+}
+.content-center .right a.fale-conosco{
+    color: #f8f8f5;
+    font: normal 16px normal 'pill_gothic_600mgregular', Arial, sans-serif;
+    background: #507dbf;
+    padding: 18px 36px;
+    border-radius: 2px;
+    display: table;
+}
+
+.content-center .right.contato label, .content-center .right.contato input, .content-center .right.contato textarea{
+    display: block;
+    float: left;
+}
+.content-center .right.contato label{
+    width: 24%;
+    color: #575651;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 12px
+}
+.content-center .right.contato label sup{
+    color: #507dbf;
+}
+.content-center .right.contato input, .content-center .right.contato textarea{
+    width: 70% !important;
+    padding: 0 2.5% !important;
+    border: solid 1px #cecdc2;
+    height: 42px;
+    font: bold 14px Arial, Helvetica, sans-serif;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+.content-center .right.contato textarea{
+    resize: none;
+    overflow: auto;
+    height: 140px;
+    padding: 2.5% !important;
+}
+.content-center .right.contato button{
+    background: #507dbf;
+    color: white;
+    font-family: 'pill_gothic_600mgregular';
+    font-size: 16px;
+    padding: 18px 56px;
+    float: right;
+    border: none;
+    border-radius: 2px;
+}
+.content-center .right.contato button:hover{
+    text-decoration: underline;
+}
+
+
+/******Responsible********/
+@media screen and (min-width: 611px) and (max-width: 768px){
+    .content-center .left, .content-center .right{
+        float: none;
+        width: auto;
+    }
+    .content-center .left{
+        margin-bottom: 50px;
+        padding-top: 0;
+    }
+    .content-center .left li{
+        float: left;
+        width: 33.3%;
+    }
+    .content-center .left li:first-child{
+        border-top: solid 1px #3b639c;
+    }
+    .content-center .left li a{
+        padding: 5px 0;
+        display: block;
+        text-align: center;
+        width: 100%;
+        font-size: 13px
+        
+    }
+    .content-center h1{
+        clear: both;
+        padding-top: 50px;
+    }
+    .user .welcome{
+        height: 73px;
+    }
+}
+@media screen and (min-width: 611px){
+    .content-center .left .collapse {
+      height: auto !important;
+    }
+}
+
+@media screen and (max-width: 610px){
+    .user{
+        margin-bottom: 10px;
+    }
+    .user .welcome span{
+        font-size: 17px;
+    }
+    .content-center .left .submenu{
+        height: 0;
+    }
+    .content-center .left .navbar{
+        display: block;
+    }
+    .content-center .left, .content-center .right{
+        float: none;
+        width: auto;
+    }
+    .content-center .left{
+        margin-bottom: 20px;
+        padding-top: 0;
+    }
+    .right .left-column, .right .right-column{
+        float: none !important;
+        width: 90% !important;
+        padding: 0 5% !important;
+    }
+    
+    .content-center .right.contato label, .content-center .right.contato input, .content-center .right.contato textarea{
+        float: none !important;
+        width: 95% !important;
+    }
+}
