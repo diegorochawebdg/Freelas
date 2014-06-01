@@ -1,0 +1,778 @@
+body{
+    background: #f8f8f5;
+}
+.content{
+    padding: 45px 0;
+}
+.content-center{
+    margin: 0 auto;
+    max-width: 960px;
+}
+.clear{
+    clear: both;
+}
+
+/*User*/
+.user{
+    margin-bottom: 38px;
+}
+.user .img, .user .welcome{
+    display: table-cell
+}
+.user .img{
+    width: 10%;
+}
+.user .welcome{
+    width: 85%;
+    height:100%;
+    max-height: 100%;
+    padding: 0 2.5%;
+}
+.user .welcome span{
+    vertical-align: middle;
+    font: 20px Arial, sans-serif;
+    color: #a16d55;
+}
+.user .welcome span strong{
+    color: #ee2f45;
+}
+
+/*Left*/
+.content-center .left{
+    float: left;
+    width: 27.5%;
+}
+.content-center .left .navbar{
+    display: none;
+    float: none !important;
+}
+.content-center .left .navbar button{
+    float: none !important;
+    display: table;
+    margin: 0 auto;
+}
+.content-center .left .submenu{
+    height: auto;
+}
+.content-center ul{
+    margin: 0;
+}
+.content-center .left li{
+    list-style-type: none;
+    border-top: solid 1px #f8f8f5;
+}
+.content-center .left li:first-child{
+    border-top: none;
+}
+.content-center .left li a{
+    padding: 25px 5px 25px 25px;
+    display: block;
+    background: #4ca578;
+    color: #f0f0eb;
+    font-size: 17px;
+    font-weight: bold;
+}
+.content-center .left li a.active, .content-center .left li a:hover{
+    text-decoration: none;
+    background: #0d9a98;
+}
+
+/*Right*/
+.content-center .right{
+    float: right;
+    width: 67.5%;
+}
+
+.content-center .right h1, .content-center .right h2{
+    font-family: 'pill_gothic_600mgregular';
+}
+.content-center .right h1{
+    color: #507dbf;
+    line-height: 1em;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+    font-size: 22px;
+    border-bottom: solid 1px #adadab;
+}
+.content-center .right .left-column, .content-center .right .right-column{
+    float: left;
+    width: 40%;
+    padding: 0 5%;
+}
+.content-center .right h2{
+    color: #507dbf;
+    font-size: 16px;
+    line-height: 1em;
+    margin-bottom: 5px;
+}
+.content-center .right li{
+    margin-bottom: 5px;
+    list-style-position: inside;
+}
+.content-center .right li a{
+    color: #58574b;
+    font-size: 12px;
+    margin-bottom: 3px;
+    line-height: 1.1em;
+    display: block;
+}
+.content-center .right ul{
+    margin-bottom: 40px;
+}
+
+.right.senha{
+    padding-top: 100px;
+}
+.content-center .right.senha label, .content-center .right.senha input, .content-center .right.editar label, .content-center .right.editar input{
+    display: block;
+    float: left;
+}
+.content-center .right.senha label, .content-center .right.editar label{
+    width: 24%;
+    color: #575651;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 12px
+}
+.content-center .right.senha label sup, .content-center .right.editar label sup{
+    color: #507dbf;
+}
+.content-center .right.senha input, .content-center .right.editar input{
+    width: 70% !important;
+    padding: 0 2.5% !important;
+    border: solid 1px #cecdc2;
+    height: 42px;
+    font: bold 14px Arial, Helvetica, sans-serif;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+.content-center .right.senha button, .content-center .right.editar button{
+    background: #0d9a98;
+    color: white;
+    font-family: 'pill_gothic_600mgregular';
+    font-size: 16px;
+    padding: 18px 56px;
+    border: none;
+    border-radius: 2px;
+    display: table;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+.content-center .right.senha button:hover, .content-center .right.editar button:hover{
+    background: #4ca578;
+}
+.content-center .right.editar .image{
+    float: left;
+    width: 76%;
+}
+.content-center .right.editar .image img{
+    float: left;
+    margin-right: 5%;
+}
+.content-center .img-buttons{
+    float: left;
+    
+}
+
+/*Editar Perfil*/
+.content-center .right.editar .img-buttons a{
+    display: block;
+}
+.content-center .right.editar .img-buttons a.sync{
+    color: #507dbf;
+    font-size: 14px;
+    font-weight: bold;
+}
+.content-center .right.editar .img-buttons a.upload{
+    background: #0d9a98;
+    color: white;
+    font-size: 14px;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    display: table;
+}
+.content-center .right.editar .line{
+    border-bottom: solid 1px #adadab;
+    margin: 35px 0;
+}
+.content-center .right.editar button.back, .content-center .right.editar button#alterar{
+    display: inline-block;
+    padding: 12px 60px;
+}
+.content-center .right.editar .buttons{
+    text-align: center;
+}
+.content-center .right.editar button.back{
+    margin-right: 10px;
+    background: #a16d55;
+}
+
+/*Convite*/
+.content-center .right.convide .title{
+    margin-bottom: 55px;
+}
+.content-center .right.convide .title h1{
+    border: none;
+    padding: 0;
+    font-size: 30px;
+    color: #58574b;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.content-center .right.convide .title h1 span{
+    color: #507dbf;
+}
+.content-center .right.convide p{
+    color: #58574b;
+    font-size: 16px;
+    font-family: 'pill_gothic_600mgregular';
+}
+.content-center .right.convide h2{
+    color: #507dbf;
+    font-size: 22px;
+}
+.content-center .right.convide .link-convite input, .content-center .right.convide .link-convite a{
+    float: left;
+    margin: 0 5px 0 0;
+}
+.content-center .right.convide .link-convite input{
+    width: 50%;
+    height: 35px;
+}
+.content-center .right.convide .link-convite a.copiar{
+    color: #FFF;
+    background: #0d9a98;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'pill_gothic_600mgregular';
+    padding: 12px 15px;
+}
+.content-center .right.convide .linha{
+    border-bottom: solid 1px #0d9a98;
+    margin: 40px 0;
+}
+.content-center .right.convide .convide{
+    border-bottom: solid 1px #adadab;
+    margin-bottom: 15px;
+}
+.content-center .right.convide .convide p{
+    margin-bottom: 30px;
+}
+.content-center .right.convide .convide a{
+    font: bold 16px Arial, sans-serif;
+    padding: 15px 35px;
+    color: #acacaa;
+    border: solid 1px #adadab;
+    margin:0 0 -1px 0;
+    display: inline-block;
+    border-radius: 2px 2px 0 0;
+}
+.content-center .right.convide .convide a.active{
+    color: #FFF;
+    background: #a3a3a1;
+}
+.content-center .right.convide .to-post{
+    margin-bottom: 55px;
+}
+.content-center .right.convide .to-post a{
+    color: #FFF;
+    text-transform: uppercase;
+    font-family: 'pill_gothic_600mgregular';
+    font-size: 16px;
+    background: #0d9a98;
+    padding: 15px;
+    display: table;
+    border: solid 1px #cecdc2;
+}
+.content-center .right.convide .to-post a.timeline-post{
+    float: left;
+}
+.content-center .right.convide .to-post a.friend-timeline{
+    float: right;
+}
+.content-center .right.convide .the-table thead tr{
+    height: 30px;
+}
+.content-center .right.convide .the-table tr{
+    border-bottom: solid 1px #adadab;
+}
+.content-center .right.convide .the-table thead *{
+    text-align: center;
+    font-size: 14px;
+    color: #58574b;
+    font-family: 'pill_gothic_600mgregular';
+    text-transform: uppercase;
+}
+.content-center .right.convide .the-table tbody tr{
+    border-bottom: solid 1px #adadab;
+    height: 80px
+}
+.content-center .right.convide .the-table tbody a{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #FFF;
+    padding: 15px 10px 12px 10px;
+    background: #507dbf;
+    font-family: 'pill_gothic_600mgregular';
+}
+.content-center .right.convide .the-table tbody img{
+    margin-right: 15px;
+}
+.content-center .right.convide .the-table tbody .name{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #a0a09e;
+    font-family: 'pill_gothic_600mgregular';
+}
+.content-center .right.convide .the-table tbody .status{
+    text-align: center;
+    font: bold 14px Arial, sans-serif;
+}
+.content-center .right.convide .the-table tbody .no{
+    color: #4ca578;
+}
+.content-center .right.convide .the-table tbody .yes{
+    color: #ee2f45;
+}
+
+/*Config*/
+.content-center .right.config h1{
+    border: none;
+    margin-bottom: 30px;
+}
+.content-center .right.config h2{
+    color: #58574b;
+    line-height: 1em;
+    padding:15px 0 15px 45px;
+    height: 11px;
+    position: relative;
+    overflow: hidden;
+    margin: 30px 0;
+    font-size: 18px;
+    border-bottom: solid 1px #adadab;
+    text-transform: uppercase;
+    background: url(../images/perfil/icons.png) no-repeat;
+}
+.content-center .right.config h2.facebook-connect{
+    background-position: 0 -53px;
+}
+.content-center .right.config h2.twitter-connect{
+    background-position: 0 -113px;
+}
+.content-center .right.config h2.email-connect{
+    background-position: 0 -170px;
+}
+.content-center .right.config span{
+    color: #58574b;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 15px;
+    display: block;
+    float: left;
+    width: 230px;
+    margin:0 0 15px 0;
+}
+.content-center .right.config a{
+    color: #FFF;
+    font: bold 14px Arial, sans-serif;
+    display: block;
+    float: left;
+    padding: 15px 45px;
+    border-radius: 2px;
+    text-transform: uppercase;
+}
+.content-center .right.config a.connected{
+    background: #0d9a98;
+}
+.content-center .right.config a.disconnected{
+    background: #ee2f45;
+}
+
+.content-center .right.config input#email-check{
+    opacity: 0;
+    float: left;
+    width: 30px;
+}
+.content-center input#email-check + label.email-label{
+    margin: 0;
+    clear: none;
+    padding: 5px 0 4px 24px;
+    cursor: pointer; 
+    background: url(../images/perfil/icons.png) no-repeat 1px -234px;
+}
+.content-center input#email-check:checked + label.email-label{
+    background: url(../images/perfil/icons.png) no-repeat 0 -295px;
+}
+
+/*Sem Pedidos*/
+.content-center .right.sem-pedidos{
+    text-align: center;
+    padding-top: 100px
+}
+.content-center .right.sem-pedidos h1{
+    color: #a16d55;
+    font-size: 35px;
+    font-family: 'pill_gothic_600mgregular';
+    border: none;
+    padding: 0;
+    margin-bottom: 5px
+}
+.content-center .right.sem-pedidos h2{
+    color: #0d9a98;
+    font-size: 26px;
+    font-family: 'pill_gothic_600mgregular';
+    margin-bottom: 50px;
+}
+.content-center .right.sem-pedidos a{
+    font-size: 17px;
+    color: #FFF;
+    background: #ee2f45;
+    text-transform: uppercase;
+    padding: 20px 54px;
+    border-radius: 3px;
+}
+
+/*Lista pedidos*/
+.content-center .right.lista-pedidos h1{
+    color: #a16d55;
+    font-size: 22px;
+    margin-bottom: 25px;
+    border: none;
+}
+.content-center .right.lista-pedidos h1 span{
+    color: #ee2f45;
+}
+.content-center .right.lista-pedidos table tr{
+    border: solid 1px #13c9c6;
+    border-top: none;
+}
+.content-center .right.lista-pedidos table tr:hover{
+    background: #f0f0f0;
+}
+.content-center .right.lista-pedidos table tr:first-child{
+    border-top: solid 1px #13c9c6;
+}
+.content-center .right.lista-pedidos table td{
+    height: 75px;
+    text-align: center;
+    font: bold 14px Arial, sans-serif;
+    color: #646464;
+}
+.content-center .right.lista-pedidos table td.value{
+    color: #0d9a98;
+}
+.content-center .right.lista-pedidos table td.status.entregue span{
+    background:url(../images/perfil/entregue.png) no-repeat;
+    padding-left: 25px;
+    color: #646464;
+}
+.content-center .right.lista-pedidos table td.status span{
+    height: 19px;
+    display: inline-block;
+    color: #ee2f45;
+}
+.content-center .right.lista-pedidos table a{
+    background:url(../images/perfil/ver-pedido.png) no-repeat;
+    height: 0;
+    padding-top: 20px;
+    width: 20px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.content-center .right.lista-pedidos table a:hover{
+    opacity: 0.7;
+}
+
+/*Detalhe do pedido*/
+.content-center .right.detalhe-pedido *{
+    color: #646464;
+}
+.content-center .right.detalhe-pedido h1{
+    border: none;
+    padding: 0;
+    font-size: 20px;
+    color: #0d9a98;
+    margin-bottom: 15px;
+}
+.content-center .right.detalhe-pedido .status-data{
+    margin-bottom: 45px;
+}
+.content-center .right.detalhe-pedido .status-data span{
+    display: block;
+    font-size: 14px;
+}
+.content-center .right.detalhe-pedido .status-data span span{
+    display: inline;
+    font-weight: bold;
+}
+.content-center .right.detalhe-pedido .status-data span span.pendente{
+    color: #ed1b2f;
+}
+.content-center .right.detalhe-pedido .status-data span span.entregue{
+    color: #0d9a98;
+}
+.content-center .right.detalhe-pedido .status-data span span.data{
+    color: #507dbf;
+}
+.content-center .right.detalhe-pedido h2{
+    border-bottom: solid 1px #adadab;
+    padding-bottom: 5px;
+    font-size: 16px;
+    color: #0d9a98;
+    margin-bottom: 10px;
+}
+.content-center .right.detalhe-pedido h2.no-border{
+    border: none;
+}
+.content-center .right.detalhe-pedido .address{
+    margin-bottom: 80px;
+}
+.content-center .right.detalhe-pedido .address div{
+    float: left;
+    max-width: 50%;
+    margin-right: 40px;
+}
+.content-center .right.detalhe-pedido .address div *{
+    font: bold 13px Arial, sans-serif;
+    display: block;
+    line-height: 1.3em;
+}
+.content-center .right.detalhe-pedido .address .clear{
+    float: none;
+}
+.content-center .right.detalhe-pedido .address .address-type{
+    color: #507dbf;
+}
+.content-center .right.detalhe-pedido .the-table{
+    margin-bottom: 50px;
+}
+.content-center .right.detalhe-pedido .the-table *{
+    font: 12px Arial, sans-serif;
+    text-align: center;
+}
+.content-center .right.detalhe-pedido .the-table tbody tr:nth-child(even), .content-center .right.detalhe-pedido .the-table thead tr{
+    background: #ebebe9;
+}
+.content-center .right.detalhe-pedido .the-table td{
+    border-top: solid 1px #adadab;
+}
+.content-center .right.detalhe-pedido .the-table thead td{
+    font-weight: bold;
+    height: 27px !important;
+}
+.content-center .right.detalhe-pedido .the-table td{
+    height: 43px;
+}
+.content-center .right.detalhe-pedido .the-table .item{
+    font-weight: bold;
+    color: #507dbf;
+    font-size: 15px;
+}
+.content-center .right.detalhe-pedido .the-table .bold{
+    font-weight: bold;
+}
+.content-center .right.detalhe-pedido .payment-form{
+    padding: 10px 0 80px 0;
+}
+.content-center .right.detalhe-pedido .payment-form img{
+    float: left;
+}
+.content-center .right.detalhe-pedido .payment-form a{
+    float: right;
+    font: bold 14px Arial, sans-serif;
+    text-transform: uppercase;
+    background: #0d9a98;
+    padding: 15px;
+    color: #FFF;
+    border-radius: 3px;
+}
+.content-center .right.detalhe-pedido .linha{
+    border-bottom: solid 1px #adadab;
+    margin: 15px 0;
+}
+.content-center .right.detalhe-pedido a.voltar{
+    font: bold 14px Arial, sans-serif;
+    text-transform: uppercase;
+    background: #a16d55;
+    padding: 15px 60px;
+    color: #FFF;
+    border-radius: 3px;
+    display: table;
+    margin: 0 auto;
+}
+
+/******Responsible********/
+@media screen and (max-width: 979px){
+    .content-center .right.convide .to-post a.timeline-post, .content-center .right.convide .to-post a.friend-timeline{
+        float: none;
+        display: table;
+        margin: 0 auto 10px auto;
+        width: 90%;
+        padding: 15px 5%;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 611px) and (max-width: 768px){
+    .right.senha{
+        padding-top: 0px;
+    }
+    .content-center .left, .content-center .right{
+        float: none;
+        width: auto;
+    }
+    .content-center .left{
+        margin-bottom: 50px;
+        padding-top: 0;
+    }
+    .content-center .left li{
+        float: left;
+        width: 33.3%;
+    }
+    .content-center .left li:first-child{
+        border-top: solid 1px #f8f8f5;
+    }
+    .content-center .left li a{
+        padding: 5px 0;
+        display: block;
+        text-align: center;
+        width: 100%;
+        font-size: 13px
+        
+    }
+    .content-center h1{
+        clear: both;
+        padding-top: 50px;
+    }
+    .user .welcome{
+        height: 73px;
+    }
+    .content-center .right.sem-pedidos{
+        padding: 10px 0 20px 0;
+    }
+}
+@media screen and (min-width: 611px){
+    .content-center .left .collapse {
+      height: auto !important;
+    }
+}
+
+@media screen and (max-width: 610px){
+    .right.senha{
+        padding-top: 0px;
+    }
+    .user{
+        margin-bottom: 10px;
+    }
+    .user .welcome span{
+        font-size: 17px;
+    }
+    .content-center .left .submenu{
+        height: 0;
+    }
+    .content-center .left .navbar{
+        display: block;
+    }
+    .content-center .left, .content-center .right{
+        float: none;
+        width: auto;
+    }
+    .content-center .left{
+        margin-bottom: 20px;
+        padding-top: 0;
+    }
+    .right .left-column, .right .right-column{
+        float: none !important;
+        width: 90% !important;
+        padding: 0 5% !important;
+    }
+    
+    .content-center .right.senha label, .content-center .right.senha input, .content-center .right.editar label, .content-center .right.editar input{
+        float: none !important;
+        width: 95% !important;
+        font-size: 16px;
+    }
+    .content-center .right.editar .image{
+        float: none;
+        width: 100%;
+    }
+    .content-center .right.editar .image img{
+        width: 25%;
+    }
+    .content-center .right.editar button.back, .content-center .right.editar button#alterar{
+        display: block;
+        margin: 0 0 10px 0;
+        width: 100%;
+    }
+    /*Convite*/
+    .content-center .right.convide .to-post a.timeline-post, .content-center .right.convide .to-post a.friend-timeline{
+        font-size: 14px;
+    }
+    .content-center .right.convide .link-convite input, .content-center .right.convide .link-convite a{
+        float: none;
+        margin: 0 5px 0 0;
+    }
+    .content-center .right.convide .link-convite input{
+        width: 90%;
+        padding: 0 5%;
+        height: 45px;
+        margin-bottom: 20px;
+    }
+    .content-center .right.convide .link-convite a.copiar{
+        color: #FFF;
+        background: #0d9a98;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-family: 'pill_gothic_600mgregular';
+        padding: 12px 15px;
+    }
+    .content-center .right.convide .the-table, .content-center .right.lista-pedidos .the-table, .content-center .right.detalhe-pedido .the-table{
+        overflow-x: scroll;
+    }
+    .content-center .right.convide .the-table table{
+        min-width: 350px;
+    }
+    
+    /*Sem Pedidos*/
+    .content-center .right.sem-pedidos{
+        padding: 0;
+    }
+    .content-center .right.sem-pedidos h1{
+        font-size: 30px;
+    }
+    .content-center .right.sem-pedidos h2{
+        font-size: 20px;
+    }
+    .content-center .right.sem-pedidos a{
+        font-size: 16px;
+        padding: 20px 0;
+        width: 100%;
+        display: block;
+    }
+    
+    /*Lista Pedidos*/
+    .content-center .right.detalhe-pedido .the-table table{
+        min-width: 500px;
+    }
+    /*Detalhe Pedidos*/
+    .content-center .right.detalhe-pedido .address div{
+        float: none;
+        max-width: none;
+        margin-bottom: 20px
+    }
+    .content-center .right.detalhe-pedido .address{
+        margin-bottom: 30px;
+    }
+    .content-center .right.detalhe-pedido .payment-form{
+        padding-bottom: 20px;
+    }
+    .content-center .right.detalhe-pedido .payment-form img, .content-center .right.detalhe-pedido .payment-form a{
+        float: none;
+        display: table;
+        text-align: center;
+        margin: 0 auto 10px auto;
+    }
+}
