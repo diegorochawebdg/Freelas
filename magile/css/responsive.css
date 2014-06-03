@@ -418,16 +418,9 @@ video {
     }
     #footer address{
         height: auto;
-        width: 170px;
     }
     #footer .tel{
         height: auto;
-    }
-    #footer .tel a{
-        display: block;
-    }
-    #footer address, #footer .tel{
-        margin-top: 22px !important;
     }
     
     

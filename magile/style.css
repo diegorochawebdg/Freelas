@@ -1045,19 +1045,21 @@ span.fn a:hover {
 }
 #footer .yellow{
     background-color: #F8E228;
+    padding: 20px 0;
 }
 #footer address, #footer .tel{
-    float: left;
     color: #1D4583;
     font-size: 16px; 
     font-style: normal;
-    margin-top: 32px !important;
+    min-height: 23px;
 }
 #footer address{
-    margin: 0 30px 0 -18px;
+    float: left;
+    margin: 0 0 0 -18px;
     padding: 5px 0 0 30px;
     background: url(images/endereco-footer.png) no-repeat 0 center;
     height: 24px;
+    display: block;
 }
 #footer address span, #footer .tel{
     font-weight: bold;
@@ -1066,6 +1068,7 @@ span.fn a:hover {
 #footer .tel{
     background: url(images/tel-footer.png) no-repeat 0 center;
     padding: 5px 0 0 30px;
+    float: right;
 }
 #footer .tel a{
     color: #1D4583;
