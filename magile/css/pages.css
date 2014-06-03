@@ -86,14 +86,18 @@ h4{
     float: left;
     background: #FAFAFA;
     padding: 30px;
-    width: 209px;
-    height: 219px;
+    width: 196px;
+    height: 188px;
 }
 .boxes .item.first{
-    margin-right: 84px;
+    margin-right: 34px;
 }
 .boxes .item.last{
     float: right;
+	width:320px;
+}
+.boxes .item.last strong{
+	color: #F00;
 }
 .boxes .item h3{
     font-size: 18px;
@@ -103,7 +107,7 @@ h4{
     margin-bottom: 15px;
 }
 .boxes .item p{
-    font-size: 20px;
+    font-size: 16px;
     color: #858585;
 }
 .certificados h3{
@@ -205,8 +209,8 @@ h4{
         margin-right: 14px;
     }
     .boxes .item {
-        width: 180px;
-        height: 249px;
+        width: 180px!important;
+        height: 280px;
     }
     .et-image-slider.et_sliderfx_fade.et_sliderauto_true.et_sliderauto_speed_4000.et_slidertype_images{
         display: table;
@@ -228,6 +232,9 @@ h4{
     .contato .mail-to{
         margin-bottom: 30px;
     }
+    #sidebar{
+        display: none;
+    }
 }
 @media only screen and (max-width: 767px) {
     .boxes .item{
@@ -238,6 +245,7 @@ h4{
         width: auto;
         display: block;
     }
+	.boxes .item.last{width:260px!important;}
     .boxes .space{
         height: 20px;
     }

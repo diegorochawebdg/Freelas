@@ -582,7 +582,8 @@ video {
         background: none;
         float: right;
         height: auto;
-        margin-top: 0 !important;
+        margin: 0 20px 0 0 !important;
+        text-align: right;
     }
     #footer .tel a{
         display: block;
@@ -622,5 +623,11 @@ video {
     }
     #left-area .post-content.single .postado-por{
         display: none;
+    }
+    #footer .yellow .container{
+        padding: 10px;
+    }
+    #footer address{
+        margin: 0 !important;
     }
 }
