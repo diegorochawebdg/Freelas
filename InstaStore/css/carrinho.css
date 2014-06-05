@@ -1,0 +1,97 @@
+.content{
+    padding: 57px 0;
+}
+.content-center{
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 0 20px;
+}
+.icons{
+    background: url(../images/carrinho/icons.png) no-repeat;
+}
+h1{
+    color: #ee2f45;
+    font-size: 26px !important;
+    font-family: 'pill_gothic_600mgregular';
+    line-height: 1em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    padding-top: 6px;
+    min-height: 30px
+}
+.title h1{
+    padding-left: 60px;
+    float: left;
+}
+.title a{
+    float: right;
+    color: white;
+    text-transform: uppercase;
+    font: bold 14px Arial, sans-serif;
+    background: #d72439;
+    padding: 15px 19px;
+}
+
+.the-table thead tr{
+    background: #f5f4f1;
+    height: 25px;
+}
+.the-table thead tr th{
+    color: #575651;
+    font: bold 12px Arial, sans-serif;
+    padding: 0 5px;
+    border-top: solid 1px #d6d4cb;
+    border-bottom: solid 1px #d6d4cb;
+}
+.the-table tbody td .imgs{
+    float: left;
+    width: 70px
+}
+.the-table tbody td .imgs img{
+    float: left;
+    margin: 0 1px 1px 0;
+}
+
+/******Responsible********/
+@media screen and (min-width: 1200px){
+    .txt{
+        left: 50% !important;
+        margin-left: -580px !important;
+        width: 50% !important;
+    }
+}
+@media screen and (max-width: 979px){
+    .txt{
+        top: 30px;
+        left: 15px !important;
+        margin-left: 0 !important;
+        width: 45%;
+    }
+    .txt h1{
+        font-size: 40px !important;
+    }
+    .txt h1 strong{
+        font-size: 50px !important;
+    }
+    .txt p{
+        font-size: 16px !important;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 768px){
+    .txt{
+        position: static;
+        width: 90% !important;
+        max-width: 90%;
+        padding: 20px 5%;
+    }
+    .txt p{
+        color: #806c6d;
+        font-size: 20px !important;
+    }
+}
+@media screen and (max-width: 610px){
+    .txt{
+        position: static;
+    }
+}
