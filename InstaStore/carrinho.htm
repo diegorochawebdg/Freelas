@@ -88,7 +88,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>
+                            <td class="photos-item">
                                 <div class="imgs">
                                     <img src="http://placehold.it/19x19">
                                     <img src="http://placehold.it/19x19">
@@ -99,16 +99,39 @@
                                 </div>
                                 <span class="item-name">InstaSquare <a href="#" title="Ver fotos">Ver fotos</a></span>
                             </td>
-                            <td>8 fotos - 23X23cm</td>
-                            <td>
-                                <a href="#" title="Adicionar item">Adicionar item</a>
+                            <td class="description">8 fotos - 23X23cm</td>
+                            <td class="quantity">
+                                <a href="#" title="Remover item" class="remove">Remover item</a>
                                 <span class="quantidade">3</span>
-                                <a href="#" title="Remover item">Remover item</a>
+                                <a href="#" title="Adicionar item" class="add">Adicionar item</a>
                             </td>
-                            <td><a href="#" title="Editar" class="editar">Editar</a></td>
-                            <td>R$39,00</td>
-                            <td>R$117,00</td>
-                            <td><a href="#" title="Remover item do carrinho">Remover item do carrinho</a></td>
+                            <td class="edit"><a href="#" title="Editar" class="editar">Editar</a></td>
+                            <td class="value">R$39,00</td>
+                            <td class="value">R$117,00</td>
+                            <td class="remove-item"><a href="#" title="Remover item do carrinho">Remover item do carrinho</a></td>
+                        </tr>
+                        <tr>
+                            <td class="photos-item">
+                                <div class="imgs">
+                                    <img src="http://placehold.it/19x19">
+                                    <img src="http://placehold.it/19x19">
+                                    <img src="http://placehold.it/19x19">
+                                    <img src="http://placehold.it/19x19">
+                                    <img src="http://placehold.it/19x19">
+                                    <img src="http://placehold.it/19x19">
+                                </div>
+                                <span class="item-name">InstaSquare <a href="#" title="Ver fotos">Ver fotos</a></span>
+                            </td>
+                            <td class="description">8 fotos - 23X23cm</td>
+                            <td class="quantity">
+                                <a href="#" title="Remover item" class="remove">Remover item</a>
+                                <span class="quantidade">3</span>
+                                <a href="#" title="Adicionar item" class="add">Adicionar item</a>
+                            </td>
+                            <td class="edit"><a href="#" title="Editar" class="editar">Editar</a></td>
+                            <td class="value">R$39,00</td>
+                            <td class="value">R$117,00</td>
+                            <td class="remove-item"><a href="#" title="Remover item do carrinho">Remover item do carrinho</a></td>
                         </tr>
                     </tbody>
                 </table>
@@ -116,7 +139,7 @@
             <!--End of The table-->
             
             <!--Imgs-->
-            <div class="imgs">
+            <div class="imgs-list">
                 <div class="box-padding">
                     <img src="http://placehold.it/73x73">
                     <img src="http://placehold.it/73x73">
@@ -137,6 +160,10 @@
                     <img src="http://placehold.it/73x73">
                     <img src="http://placehold.it/73x73">
                     <img src="http://placehold.it/73x73">
+                    <img src="http://placehold.it/73x73">
+                    <img src="http://placehold.it/73x73">
+                    <img src="http://placehold.it/73x73">
+                    <div class="clear"></div>
                 </div>
             </div>
             <!--End of Imgs-->
@@ -148,8 +175,8 @@
                         <label for="prazo-frete">Calcule o prazo e o valor do frete</label>
                         <input type="text" name="prazo-frete" id="prazo-frete">
                         <button type="button" name="calcular-prazo-frete" id="calcular-prazo-frete" title="Calcular">Calcular</button>
+                        <a href="#" title="" class="cep-finder" title="Não sei o CEP">não sei o CEP</a>
                     </form>
-                    <a href="#" title="" class="cep-finder" title="Não sei o CEP">não sei o CEP</a>
                 </div>
                 <div class="clear"></div>
             </div>
@@ -162,13 +189,12 @@
                         <label for="cupom-desconto">Possui um cupom de desconto?</label>
                         <input type="text" name="cupom-desconto" id="cupom-desconto">
                         <button type="button" name="calcular-cupom-desconto" id="calcular-cupom-desconto" title="Calcular">Calcular</button>
+                        <a href="#" title="" class="cep-finder" title="Não sei o CEP">não sei o CEP</a>
                     </form>
-                    <a href="#" title="" class="cep-finder" title="Não sei o CEP">não sei o CEP</a>
                 </div>
                 <div class="valores">
-                    <span class="desconto-label">Desconto</span>
-                    <span class="desconto-value">R$0,00</span>
-                    <div class="clear"></div>
+                    <span class="the-label">Desconto</span>
+                    <span class="the-value">R$0,00</span>
                 </div>
                 <div class="clear"></div>
             </div>
@@ -177,9 +203,8 @@
             <!--Valor total-->
             <div class="valor-total">
                 <div class="valores">
-                    <span class="valor-total-label">Valor Total</span>
-                    <span class="valor-total-value">R$146,00</span>
-                    <div class="clear"></div>
+                    <span class="the-label">Valor Total</span>
+                    <span class="the-value">R$146,00</span>
                 </div>
                 <div class="clear"></div>
             </div>
@@ -192,7 +217,7 @@
             
             
             <!--**************Complete os dados*************-->
-            <h1>Complete os dados para entrega</h1>
+            <h1 class="entrega">Complete os dados para entrega</h1>
             
             <!--Selecione Endereço-->
             <div class="selecione">
@@ -213,134 +238,138 @@
             <div class="form-cadastro">
                 <form>
                     <div class="field">
-                        <label for=""></label>
-                        <input type="" name="" id="">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome">
                     </div>
                     <div class="field">
-                        <label for=""></label>
-                        <input type="" name="" id="">
+                        <label for="sobrenome">Sobrenome</label>
+                        <input type="text" name="sobrenome" id="sobrenome">
                     </div>
-                    <div class="field">
-                        <label for=""></label>
-                        <input type="" name="" id="">
+                    <div class="field last">
+                        <label for="cpf">CPF</label>
+                        <input type="text" name="cpf" id="cpf">
                     </div>
                     <div class="clear"></div>
                     
                     
                     <div class="field">
-                        <label for=""></label>
-                        <input type="" name="" id="">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email">
                     </div>
                     <div class="field">
-                        <label for=""></label>
-                        <input type="" name="" id="">
+                        <label for="tel">Telefone</label>
+                        <input type="tel" name="tel" id="tel">
                     </div>
-                    <div class="field">
-                        <label for=""></label>
-                        <input type="" name="" id="">
+                    <div class="field last">
+                        <label for="cel">Celular</label>
+                        <input type="tel" name="cel" id="cel">
                     </div>
                     <div class="clear"></div>
                     
                     
                     <div class="field-cep">
-                        <label for=""></label>
-                        <input type="" name="" id="">
-                        <a href="#" title="Não sabe o CEP?">Não sabe o CEP?</a>
+                        <label for="cep">CEP</label>
+                        <input type="text" name="cep" id="cep">
+                        <a href="#" title="Não sabe o CEP?" class="nao-sabe-cep">Não sabe o CEP?</a>
                     </div>
                     <div class="field-rua">
-                        <label for=""></label>
-                        <input type="" name="" id="">
+                        <label for="rua">Rua</label>
+                        <input type="text" name="rua" id="rua">
                     </div>
                     <div class="field-numero">
-                        <label for=""></label>
-                        <input type="" name="" id="">
+                        <label for="numero">Número</label>
+                        <input type="text" name="numero" id="numero">
                     </div>
-                    <div class="field">
-                        <label for=""></label>
-                        <input type="" name="" id="">
+                    <div class="field-complemento">
+                        <label for="complemento">Complemento</label>
+                        <input type="text" name="complemento" id="complemento">
                     </div>
                     <div class="clear"></div>
                     
                     
                     <div class="field">
-                        <label for=""></label>
-                        <input type="" name="" id="">
+                        <label for="bairro">Bairro</label>
+                        <input type="text" name="bairro" id="bairro">
                     </div>
                     <div class="field">
-                        <label for=""></label>
-                        <input type="" name="" id="">
+                        <label for="cidade">Cidade</label>
+                        <input type="text" name="cidade" id="cidade">
                     </div>
                     <div class="field-estado">
-                        <select name="estado">
-                            <option value="estado">Selecione o Estado</option> 
-                            <option value="ac">Acre</option> 
-                            <option value="al">Alagoas</option> 
-                            <option value="am">Amazonas</option> 
-                            <option value="ap">Amapá</option> 
-                            <option value="ba">Bahia</option> 
-                            <option value="ce">Ceará</option> 
-                            <option value="df">Distrito Federal</option> 
-                            <option value="es">Espírito Santo</option> 
-                            <option value="go">Goiás</option> 
-                            <option value="ma">Maranhão</option> 
-                            <option value="mt">Mato Grosso</option> 
-                            <option value="ms">Mato Grosso do Sul</option> 
-                            <option value="mg">Minas Gerais</option> 
-                            <option value="pa">Pará</option> 
-                            <option value="pb">Paraíba</option> 
-                            <option value="pr">Paraná</option> 
-                            <option value="pe">Pernambuco</option> 
-                            <option value="pi">Piauí</option> 
-                            <option value="rj">Rio de Janeiro</option> 
-                            <option value="rn">Rio Grande do Norte</option> 
-                            <option value="ro">Rondônia</option> 
-                            <option value="rs">Rio Grande do Sul</option> 
-                            <option value="rr">Roraima</option> 
-                            <option value="sc">Santa Catarina</option> 
-                            <option value="se">Sergipe</option> 
-                            <option value="sp">São Paulo</option> 
-                            <option value="to">Tocantins</option> 
-                        </select>
+                        <label for="estado">Estado</label>
+                        <div class="select">
+                            <select name="estado">
+                                <option value="estado">Selecione o Estado</option> 
+                                <option value="ac">Acre</option> 
+                                <option value="al">Alagoas</option> 
+                                <option value="am">Amazonas</option> 
+                                <option value="ap">Amapá</option> 
+                                <option value="ba">Bahia</option> 
+                                <option value="ce">Ceará</option> 
+                                <option value="df">Distrito Federal</option> 
+                                <option value="es">Espírito Santo</option> 
+                                <option value="go">Goiás</option> 
+                                <option value="ma">Maranhão</option> 
+                                <option value="mt">Mato Grosso</option> 
+                                <option value="ms">Mato Grosso do Sul</option> 
+                                <option value="mg">Minas Gerais</option> 
+                                <option value="pa">Pará</option> 
+                                <option value="pb">Paraíba</option> 
+                                <option value="pr">Paraná</option> 
+                                <option value="pe">Pernambuco</option> 
+                                <option value="pi">Piauí</option> 
+                                <option value="rj">Rio de Janeiro</option> 
+                                <option value="rn">Rio Grande do Norte</option> 
+                                <option value="ro">Rondônia</option> 
+                                <option value="rs">Rio Grande do Sul</option> 
+                                <option value="rr">Roraima</option> 
+                                <option value="sc">Santa Catarina</option> 
+                                <option value="se">Sergipe</option> 
+                                <option value="sp">São Paulo</option> 
+                                <option value="to">Tocantins</option> 
+                            </select>
+                        </div>
                     </div>
                     <div class="clear"></div>
                 </form>
             </div>
             
             <!--**************Forma de pagamento*************-->
-            <h1>Selecione a forma de pagamento</h1>
+            <h1 class="pagamento">Selecione a forma de pagamento</h1>
             
             <!--Payment form-->
-            <div class="payment-form">
+            <div class="payment-method">
                 <a href="#" title="PayPal" class="paypal-payment">PayPal</a>
-                <a href="#" title="PagSeguro - Uol" class="PagSeguro - Uol"></a>
+                <a href="#" title="PagSeguro - Uol" class="pagseguro-payment">PagSeguro</a>
+                <div class="clear"></div>
             </div>
             <!--End of Payment form-->
             
             <!--Another methods-->
             <div class="another-methods">
                 <div class="box-padding">
-                    <a href="#" title="Visa" class="item1"><img src="" alt="" title=""></a>
-                    <a href="#" title="Visa" class="item2"><img src="" alt="" title=""></a>
-                    <a href="#" title="Visa" class="item3"><img src="" alt="" title=""></a>
-                    <a href="#" title="Visa" class="item4"><img src="" alt="" title=""></a>
-                    <a href="#" title="Visa" class="item5"><img src="" alt="" title=""></a>
-                    <a href="#" title="Visa" class="item6"><img src="" alt="" title=""></a>
-                    <a href="#" title="Visa" class="item7"><img src="" alt="" title=""></a>
-                    <a href="#" title="Visa" class="item8"><img src="" alt="" title=""></a>
-                    <a href="#" title="Visa" class="item9"><img src="" alt="" title=""></a>
-                    <a href="#" title="Visa" class="item10"><img src="" alt="" title=""></a>
-                    <a href="#" title="Visa" class="item11"><img src="" alt="" title=""></a>
-                    <a href="#" title="Visa" class="item12"><img src="" alt="" title=""></a>
-                    <a href="#" title="Visa" class="item13"><img src="" alt="" title=""></a>
-                    <a href="#" title="Visa" class="item14"><img src="" alt="" title=""></a>
-                    <a href="#" title="Visa" class="item15"><img src="" alt="" title=""></a>
-                    <a href="#" title="Visa" class="item16"><img src="" alt="" title=""></a>
-                    <a href="#" title="Visa" class="item17"><img src="" alt="" title=""></a>
-                    <a href="#" title="Visa" class="item18"><img src="" alt="" title=""></a>
-                    <a href="#" title="Visa" class="item19"><img src="" alt="" title=""></a>
-                    <a href="#" title="Visa" class="item20"><img src="" alt="" title=""></a>
-                    <a href="#" title="Visa" class="item21"><img src="" alt="" title=""></a>
-                    <a href="#" title="Visa" class="item22"><img src="" alt="" title=""></a>
+                    <a href="#" title="" class="item1"><img src="images/carrinho/formas-pagamento/item1.jpg" alt="" title=""></a>
+                    <a href="#" title="" class="item2"><img src="images/carrinho/formas-pagamento/item2.jpg" alt="" title=""></a>
+                    <a href="#" title="" class="item3"><img src="images/carrinho/formas-pagamento/item3.jpg" alt="" title=""></a>
+                    <a href="#" title="" class="item4"><img src="images/carrinho/formas-pagamento/item4.jpg" alt="" title=""></a>
+                    <a href="#" title="" class="item5"><img src="images/carrinho/formas-pagamento/item5.jpg" alt="" title=""></a>
+                    <a href="#" title="" class="item6"><img src="images/carrinho/formas-pagamento/item6.jpg" alt="" title=""></a>
+                    <a href="#" title="" class="item7"><img src="images/carrinho/formas-pagamento/item7.jpg" alt="" title=""></a>
+                    <a href="#" title="" class="item8"><img src="images/carrinho/formas-pagamento/item8.jpg" alt="" title=""></a>
+                    <a href="#" title="" class="item9"><img src="images/carrinho/formas-pagamento/item9.jpg" alt="" title=""></a>
+                    <a href="#" title="" class="item10"><img src="images/carrinho/formas-pagamento/item10.jpg" alt="" title=""></a>
+                    <a href="#" title="" class="item11"><img src="images/carrinho/formas-pagamento/item11.jpg" alt="" title=""></a>
+                    <a href="#" title="" class="item12"><img src="images/carrinho/formas-pagamento/item12.jpg" alt="" title=""></a>
+                    <a href="#" title="" class="item13"><img src="images/carrinho/formas-pagamento/item13.jpg" alt="" title=""></a>
+                    <a href="#" title="" class="item14"><img src="images/carrinho/formas-pagamento/item14.jpg" alt="" title=""></a>
+                    <a href="#" title="" class="item15"><img src="images/carrinho/formas-pagamento/item15.jpg" alt="" title=""></a>
+                    <a href="#" title="" class="item16"><img src="images/carrinho/formas-pagamento/item16.jpg" alt="" title=""></a>
+                    <a href="#" title="" class="item17"><img src="images/carrinho/formas-pagamento/item17.jpg" alt="" title=""></a>
+                    <a href="#" title="" class="item18"><img src="images/carrinho/formas-pagamento/item18.jpg" alt="" title=""></a>
+                    <a href="#" title="" class="item19"><img src="images/carrinho/formas-pagamento/item19.jpg" alt="" title=""></a>
+                    <a href="#" title="" class="item20"><img src="images/carrinho/formas-pagamento/item20.jpg" alt="" title=""></a>
+                    <a href="#" title="" class="item21"><img src="images/carrinho/formas-pagamento/item21.jpg" alt="" title=""></a>
+                    <a href="#" title="" class="item22"><img src="images/carrinho/formas-pagamento/item22.jpg" alt="" title=""></a>
                     <div class="clear"></div>
                 </div>
             </div>
@@ -351,12 +380,11 @@
             <div class="success">
                 <div class="left">
                     <h1>Parabéns, sua compra foi efetuada com sucesso.</h1>
-                    <span>Pedido número:</span>
-                    <strong>XXXXXXXXXX</strong>
+                    <span>Pedido número: <strong>XXXXXXXXXX</strong></span>
                     <p>Você receberá um e-mail com todos os dados do seu pedido e assim que ele for postado enviaremos o código dos correios para acompanhamento de sua entrega.</p>
                 </div>
                 <div class="right">
-                    <img src="" alt="Exemplo de InstaCards" title="Sua compra foi efetuada com sucesso!">
+                    <img src="images/carrinho/instacards.jpg" width="415" height="436" alt="Exemplo de InstaCards" title="Sua compra foi efetuada com sucesso!">
                 </div>
                 <div class="clear"></div>
             </div>

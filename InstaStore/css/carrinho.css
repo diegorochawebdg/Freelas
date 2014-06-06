@@ -43,6 +43,71 @@ h1{
     border-top: solid 1px #d6d4cb;
     border-bottom: solid 1px #d6d4cb;
 }
+.the-table tbody tr{
+    border-bottom: 1px solid #cecdc2;
+}
+.the-table tbody td{
+    height: 88px;
+    text-align: center;
+}
+.the-table tbody td.photos-item{
+    text-align: left;
+}
+.the-table tbody td span.item-name{
+    font-size: 15px;
+    font-weight: bold;
+    color: #507dbf;
+    text-align: left;
+}
+.the-table tbody td span.item-name a{
+    font-size: 11px;
+    color: #575651;
+    display: table;
+    text-decoration: underline;
+}
+.the-table tbody td.description{
+    color: #575651;
+    font-size: 12px;
+}
+.the-table tbody td.quantity span{
+    color: #575651;
+    font-size: 14px;
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: top;
+}
+.the-table tbody td.quantity a, .the-table tbody td.edit a, .the-table tbody td.remove-item a{
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    background: url(../images/carrinho/icons.png) no-repeat;
+    width: 19px;
+    padding-top: 19px;
+    display: inline-block;
+}
+.the-table tbody td.quantity a.remove{
+    background-position: 0 -150px;
+}
+.the-table tbody td.quantity a.add{
+    background-position: 0 -200px;
+}
+.the-table tbody td.edit a{
+    background-position: 0 -250px;
+    width: 21px;
+    padding-top: 21px;
+}
+.the-table tbody td.remove-item{
+    width: 30px;
+}
+.the-table tbody td.remove-item a{
+    background-position: 0 -300px;
+    width: 15px;
+    padding-top: 15px;
+}
+.the-table tbody td.value{
+    font-size: 14px;
+    color: #575651;
+}
 .the-table tbody td .imgs{
     float: left;
     width: 70px
@@ -52,46 +117,454 @@ h1{
     margin: 0 1px 1px 0;
 }
 
-/******Responsible********/
-@media screen and (min-width: 1200px){
-    .txt{
-        left: 50% !important;
-        margin-left: -580px !important;
-        width: 50% !important;
-    }
+/*Imgs*/
+.imgs-list{
+    background: #f3efed;
+    border-bottom: solid 1px #cecdc2;
+    border-top: solid 1px #cecdc2;
 }
+.imgs-list .box-padding{
+    padding: 34px 27px;
+}
+.imgs-list .box-padding img{
+    margin: 0 4.5px 4.5px;
+    display: block;
+    float: left;
+}
+
+/*Frete*/
+.frete, .desconto, .valor-total{
+    padding: 17px 40px;
+    border-bottom: 1px solid #d1d0c5;
+}
+.frete .form, .frete .form *, .desconto .form, .desconto .form *{
+    float: left;
+    display: table;
+    margin-bottom: 0;
+}
+.frete .form label, .desconto .form label{
+    color: #575651;
+    font: bold 12px Arial, sans-serif;
+    margin-top: 8px;
+}
+.frete .form input, .desconto .form input{
+    color: #575651;
+    font: normal 12px Arial, sans-serif;
+    border: solid 1px #959593;
+    border-radius: 2px;
+    height: 21px;
+    margin: 0 10px;
+}
+.frete .form button, .desconto .form button{
+    color: white;
+    font: bold 12px Arial, sans-serif;
+    margin-right: 10px;
+    background: #39639f;
+    padding: 8px 10px;
+    border: none;
+}
+.frete .form a, .desconto .form a{
+    color: #666560;
+    font: normal 10px Arial, sans-serif;
+    text-decoration: underline;
+    margin-top: 10px
+}
+.desconto .valores, .valor-total .valores{
+    float: right;
+}
+.desconto .valores *, .valor-total .valores *{
+    font: bold 16px Arial, sans-serif;
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+}
+.desconto .valores .the-label, .valor-total .valores .the-label{
+    color: #575651;
+}
+.desconto .valores .the-value, .valor-total .valores .the-value{
+    color: #2b5ea9;
+}
+a.avancar-carrinho{
+    color: #FFF;
+    text-transform: uppercase;
+    font: bold 14px Arial, sans-serif;
+    background: #39639f;
+    padding: 15px 53px;
+    border-radius: 2px;
+    display: table;
+    margin-top: 20px;
+    float: right;
+    margin-bottom: 100px;
+}
+
+/************Entrega*************/
+h1.entrega{
+    padding-left: 51px;
+    background: url(../images/carrinho/icons.png) no-repeat 0 -45px;
+}
+.selecione span{
+    color: #666560;
+    font-size: 12px;
+    display: block;
+    margin-bottom: 5px;
+}
+.selecione{
+    margin-bottom: 40px;
+}
+.selecione .select{
+    position: relative;
+    overflow: hidden;
+    border: solid 1px #39639f;
+    border-radius: 2px;
+    background: #FFF;
+    height: 44px !important;
+    float: left;
+    width: 230px;
+    margin-right: 15px;
+}
+.selecione .select select{
+    display: table;
+    background: #FFF;
+    height: 44px !important;
+    width: 120%;
+    background: url(../images/carrinho/select-bg.png) no-repeat 200px center;
+    border: none;
+}
+.selecione .novo-endereco{
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    background: #39639f;
+    padding: 13px;
+    display: block;
+    float: left;
+}
+
+.form-cadastro{
+    margin-bottom: 100px;
+}
+.form-cadastro .field{
+    width: 32%;
+    float: left;
+    margin-right: 2%;
+}
+.form-cadastro .field.last{
+    margin-right: 0;
+}
+.form-cadastro label{
+    font: normal 12px Arial, sans-serif;
+    color: #575651;
+}
+.form-cadastro input{
+    width: 96%;
+    padding: 0 2%;
+    height: 30px;
+    border-radius: 2px;
+    border: solid 1px #cecdc2;
+    margin-bottom: 18px;
+}
+.form-cadastro .field-cep{
+    float: left;
+    width: 239px;
+}
+.form-cadastro .field-cep input{
+    width: 100px;
+    float: left;
+}
+.form-cadastro .field-cep a{
+    font-size: 11px;
+    color: #575651;
+    text-decoration: underline;
+    display: block;
+    float: left;
+    margin: 7px 0 0 5px;
+}
+.form-cadastro .field-rua{
+    float: left;
+    width: 315px;
+    margin-right: 14px;
+}
+.form-cadastro .field-numero{
+    float: left;
+    width: 67px;
+}
+.form-cadastro .field-complemento{
+    float: right;
+    width: 32%;
+}
+.form-cadastro .field-estado{
+    float: left;
+    width: 23%;
+}
+.form-cadastro .select{
+    position: relative;
+    overflow: hidden;
+    border: solid 1px #cecdc2;
+    border-radius: 2px;
+    background: #FFF;
+    height: 30px !important;
+    float: left;
+    width: 100%;
+    margin-right: 15px;
+}
+.form-cadastro .select select{
+    display: table;
+    background: #FFF;
+    height: 30px !important;
+    width: 120%;
+    background: url(../images/carrinho/select-estado.png) no-repeat 200px center;
+    border: none;
+}
+
+/************Forma de pagamento*************/
+h1.pagamento{
+    padding-left: 28px;
+    background: url(../images/carrinho/icons.png) no-repeat 0 -94px;
+}
+
+.payment-method{
+    margin-bottom: 30px;
+}
+.payment-method a{
+    border: solid 1px #d1d0c5;
+    border-radius: 4px;
+    width: 240px;
+    padding-top: 69px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    float: left;
+    margin-right: 15px;
+    background: #f8f8f5 url(../images/carrinho/icons.png) no-repeat 75px -325px;
+    background: url(../images/carrinho/icons.png) no-repeat 75px -325px, -moz-linear-gradient(top,  #f8f8f5 0%, #dfdfdd 100%);
+    background: url(../images/carrinho/icons.png) no-repeat 75px -325px, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f5), color-stop(100%,#dfdfdd));
+    background: url(../images/carrinho/icons.png) no-repeat 75px -325px, -webkit-linear-gradient(top,  #f8f8f5 0%,#dfdfdd 100%);
+    background: url(../images/carrinho/icons.png) no-repeat 75px -325px, -o-linear-gradient(top,  #f8f8f5 0%,#dfdfdd 100%);
+    background: url(../images/carrinho/icons.png) no-repeat 75px -325px, -ms-linear-gradient(top,  #f8f8f5 0%,#dfdfdd 100%);
+    background: url(../images/carrinho/icons.png) no-repeat 75px -325px, linear-gradient(to bottom,  #f8f8f5 0%,#dfdfdd 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f8f5', endColorstr='#dfdfdd',GradientType=0 );
+}
+.payment-method a.pagseguro-payment{
+    background: #f8f8f5 url(../images/carrinho/icons.png) no-repeat 50px -375px;
+    background: url(../images/carrinho/icons.png) no-repeat 50px -375px, -moz-linear-gradient(top,  #f8f8f5 0%, #dfdfdd 100%);
+    background: url(../images/carrinho/icons.png) no-repeat 50px -375px, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f5), color-stop(100%,#dfdfdd));
+    background: url(../images/carrinho/icons.png) no-repeat 50px -375px, -webkit-linear-gradient(top,  #f8f8f5 0%,#dfdfdd 100%);
+    background: url(../images/carrinho/icons.png) no-repeat 50px -375px, -o-linear-gradient(top,  #f8f8f5 0%,#dfdfdd 100%);
+    background: url(../images/carrinho/icons.png) no-repeat 50px -375px, -ms-linear-gradient(top,  #f8f8f5 0%,#dfdfdd 100%);
+    background: url(../images/carrinho/icons.png) no-repeat 50px -375px, linear-gradient(to bottom,  #f8f8f5 0%,#dfdfdd 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f8f5', endColorstr='#dfdfdd',GradientType=0 );
+}
+.another-methods{
+    border: solid 1px #d1d0c5;
+    border-radius: 4px;
+    background: #FFF;
+    padding: 23px 66px 10px;
+    margin-bottom: 100px;
+}
+.another-methods a{
+    display: block;
+    float: left;
+    margin-bottom: 10px;
+    width: 50px;
+    text-align: center;
+    height: 20px;
+}
+.another-methods a img{
+    display: inline;
+    float: none;
+}
+
+/************Compra efetuada com sucesso*************/
+.success .left, .success .right{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.success .left{
+    padding-top: 90px;
+}
+.success .left h1{
+    font: normal 26px 'pill_gothic_600mgregular';
+    color: #507dbf;
+    margin-bottom: 40px;
+}
+.success .left span, .success .left p{
+    font: normal 14px Arial, sans-serif;
+    color: #58574b;
+    margin-bottom: 35px;
+}
+.success .left span strong{
+    font: normal 29px Arial, sans-serif;
+    color: #4ca578;
+    margin-bottom: 35px;
+    display: block;
+}
+.success .left p{
+    margin-bottom: 0;
+}
+.success .right img{
+    max-width: 90%;
+}
+
+/******Responsible********/
 @media screen and (max-width: 979px){
-    .txt{
-        top: 30px;
-        left: 15px !important;
-        margin-left: 0 !important;
-        width: 45%;
+    .desconto .valores, .valor-total .valores, .desconto .form{
+        float: none;
     }
-    .txt h1{
-        font-size: 40px !important;
+    .desconto .form{
+        margin-bottom: 20px;
     }
-    .txt h1 strong{
-        font-size: 50px !important;
-    }
-    .txt p{
-        font-size: 16px !important;
-        margin-bottom: 10px;
+    .success .left{
+        padding-top: 30px;
     }
 }
 @media screen and (max-width: 768px){
-    .txt{
-        position: static;
-        width: 90% !important;
-        max-width: 90%;
-        padding: 20px 5%;
+    .frete .form, .frete .form label, .desconto .form, .desconto .form label{
+        float: none;
+        margin: 0 0 20px 0;
     }
-    .txt p{
-        color: #806c6d;
-        font-size: 20px !important;
+    .frete .form, .frete .form label{
+        display: block;
+        width: 100%;
+    }
+    .form label{
+        margin-bottom: 10px !important;
+    }
+    a.avancar-carrinho{
+        float: none;
+        width: auto;
+        display: block;
+        padding: 15px 0px;
+        text-align: center;
+    }
+    .form-cadastro .field-cep{
+        width: 119px;
+    }
+    .form-cadastro .field-cep input{
+        margin-bottom: 5px;
+    }
+    .form-cadastro .field-cep a{
+        float: none;
+    }
+    .form-cadastro .field-rua{
+        width: 147px;
+    }
+    .form-cadastro .field-estado{
+        width: 32%;
+    }
+    .form-cadastro .select select{
+        background: url(../images/carrinho/select-estado.png) no-repeat 140px center !important;
     }
 }
 @media screen and (max-width: 610px){
-    .txt{
-        position: static;
+    body{
+        padding: 0 !important;
+        overflow-x: hidden !important;
     }
+    .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top{
+        margin-right: 0;
+    }
+    .navbar .container{
+        padding: 0 20px !important;
+    }
+    .title h1, .title a{
+        float: none;
+    }
+    .title h1{
+        margin-bottom: 20px;
+    }
+    .title a{
+        display: block;
+        padding: 15px 0;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .frete .form, .frete .form *, .desconto .form, .desconto .form *{
+        float: none;
+        margin: 0 0 10px 0 !important;
+    }
+    h1.entrega{
+        max-width: 320px;
+        background: url(../images/carrinho/icons.png) no-repeat 0 -34px;
+    }
+    .selecione .select{
+        float: none;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .selecione .novo-endereco{
+        float: none;
+        text-align: center;
+    }
+    .form-cadastro .field, .form-cadastro .field-cep, .form-cadastro .field-rua, .form-cadastro .field-numero, .form-cadastro .field-complemento{
+        float: none;
+        width: auto;
+        margin-right: 0;
+    }
+    .form-cadastro label{
+        font-size: 16px;
+    }
+    .form-cadastro input{
+        display: block !important;
+        float: none !important;
+        width: 96% !important;
+        padding: 0 2% !important;
+    }
+    .form-cadastro .field-cep a{
+        margin-bottom: 20px;
+    }
+    .form-cadastro .field-estado{
+        float: none;
+        width: 100%;
+    }
+    h1.pagamento{
+        max-width: 320px;
+        background: url(../images/carrinho/icons.png) no-repeat 0 -84px;
+    }
+    .payment-method a{
+        width: 100%;
+        margin: 0 0 15px 0;
+        background: #f8f8f5 url(../images/carrinho/icons.png) no-repeat center -325px;
+    background: url(../images/carrinho/icons.png) no-repeat center -325px, -moz-linear-gradient(top,  #f8f8f5 0%, #dfdfdd 100%);
+    background: url(../images/carrinho/icons.png) no-repeat center -325px, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f5), color-stop(100%,#dfdfdd));
+    background: url(../images/carrinho/icons.png) no-repeat center -325px, -webkit-linear-gradient(top,  #f8f8f5 0%,#dfdfdd 100%);
+    background: url(../images/carrinho/icons.png) no-repeat center -325px, -o-linear-gradient(top,  #f8f8f5 0%,#dfdfdd 100%);
+    background: url(../images/carrinho/icons.png) no-repeat center -325px, -ms-linear-gradient(top,  #f8f8f5 0%,#dfdfdd 100%);
+    background: url(../images/carrinho/icons.png) no-repeat center -325px, linear-gradient(to bottom,  #f8f8f5 0%,#dfdfdd 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f8f5', endColorstr='#dfdfdd',GradientType=0 );
+    }
+    .payment-method a.pagseguro-payment{
+        background: #f8f8f5 url(../images/carrinho/icons.png) no-repeat center -375px;
+        background: url(../images/carrinho/icons.png) no-repeat center -375px, -moz-linear-gradient(top,  #f8f8f5 0%, #dfdfdd 100%);
+        background: url(../images/carrinho/icons.png) no-repeat center -375px, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f5), color-stop(100%,#dfdfdd));
+        background: url(../images/carrinho/icons.png) no-repeat center -375px, -webkit-linear-gradient(top,  #f8f8f5 0%,#dfdfdd 100%);
+        background: url(../images/carrinho/icons.png) no-repeat center -375px, -o-linear-gradient(top,  #f8f8f5 0%,#dfdfdd 100%);
+        background: url(../images/carrinho/icons.png) no-repeat center -375px, -ms-linear-gradient(top,  #f8f8f5 0%,#dfdfdd 100%);
+        background: url(../images/carrinho/icons.png) no-repeat center -375px, linear-gradient(to bottom,  #f8f8f5 0%,#dfdfdd 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f8f5', endColorstr='#dfdfdd',GradientType=0 );
+    }
+    .another-methods{
+        padding: 23px 6px 10px;
+    }
+    .success .left, .success .right{
+        float: none;
+        width: 100%;
+        margin-bottom: 30px;
+        padding: 0;
+    }
+    
+    /*The table*/
+    .the-table{ margin-bottom: 20px;}
+    .the-table *{ border: none !important;}
+    .the-table table { display: block !important; position: relative !important; width: 100% !important; }
+    .the-table thead { display: block !important; float: left !important; }
+    .the-table tbody { display: block !important; width: auto !important; position: relative !important; overflow-x: auto !important; white-space: nowrap !important; }
+    .the-table thead tr { display: block !important; }
+    .the-table th { display: block !important; height: 60px !important; border: none !important; background: #f3efed;}
+    .the-table tbody tr { display: inline-block !important; vertical-align: top !important; }
+    .the-table tbody td{ padding: 0 10px;}
+    .the-table td { display: block !important; min-height: 50px !important; height: 60px !important; }
+    .the-table tbody td.remove-item{width: auto;}
 }
