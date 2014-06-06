@@ -50,6 +50,8 @@ body{
     float: none !important;
     display: table;
     margin: 0 auto;
+    width: 100%;
+    background: #4ca578;
 }
 .content-center .left .submenu{
     height: auto;
