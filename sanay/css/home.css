@@ -47,7 +47,7 @@ background: url(../images/content-menu-corretor-online.png) no-repeat center 23p
 .content-menu .mobile-view li a{font-size:1.2em; text-align: left; top: 87px; bottom:auto;}
 .content-menu .mobile-view li.lancamento a, .content-menu .mobile-view li.futuro-lancamento a{font-size:1em;}
 .content-menu .mobile-view li{width:16%; height:125px; padding-left: 2%;}
-.content-menu .mobile-view .corretor{ display:block; border-radius:5px; box-shadow:#e9821b 0 -5px 0; padding:9px 0; width:98%; margin: 0 1% 15px 1%;;
+.content-menu .mobile-view .corretor{ display:table; border-radius:5px; box-shadow:#e9821b 0 -5px 0; padding:9px 0; width:98%; margin: 0 1% 15px 1%;;
 background: #ffb76f;
 background: -moz-linear-gradient(top,  #ffb76f 0%, #e9821b 100%);
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffb76f), color-stop(100%,#e9821b));
