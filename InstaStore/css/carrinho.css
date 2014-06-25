@@ -32,28 +32,31 @@ h1{
     padding: 15px 19px;
 }
 
-.the-table thead tr{
+.the-mobile-table{
+    display: none;
+}
+.the-table thead tr, .the-mobile-table thead tr{
     background: #f5f4f1;
     height: 25px;
 }
-.the-table thead tr th{
+.the-table thead tr th, .the-mobile-table thead tr th{
     color: #575651;
     font: bold 12px Arial, sans-serif;
     padding: 0 5px;
     border-top: solid 1px #d6d4cb;
     border-bottom: solid 1px #d6d4cb;
 }
-.the-table tbody tr{
+.the-table tbody tr, .the-mobile-table tbody tr{
     border-bottom: 1px solid #cecdc2;
 }
-.the-table tbody td{
+.the-table tbody td, .the-mobile-table tbody td{
     height: 88px;
     text-align: center;
 }
 .the-table tbody td.photos-item{
     text-align: left;
 }
-.the-table tbody td span.item-name{
+.the-table tbody td span.item-name, .the-mobile-table tbody td span.item-name{
     font-size: 15px;
     font-weight: bold;
     color: #507dbf;
@@ -65,11 +68,11 @@ h1{
     display: table;
     text-decoration: underline;
 }
-.the-table tbody td.description{
+.the-table tbody td.description, .the-mobile-table tbody .description{
     color: #575651;
     font-size: 12px;
 }
-.the-table tbody td.quantity span{
+.the-table tbody td.quantity span, .the-mobile-table .second span{
     color: #575651;
     font-size: 14px;
     display: inline-block;
@@ -85,13 +88,17 @@ h1{
     padding-top: 19px;
     display: inline-block;
 }
-.the-table tbody td.quantity a.remove{
+.the-table tbody td.quantity a.remove, .the-mobile-table tbody a.remove{
     background-position: 0 -150px;
+    width: 19px;
+    padding-top: 19px;
 }
-.the-table tbody td.quantity a.add{
+.the-table tbody td.quantity a.add, .the-mobile-table tbody a.add{
     background-position: 0 -200px;
+    width: 19px;
+    padding-top: 19px;
 }
-.the-table tbody td.edit a{
+.the-table tbody td.edit a, .the-mobile-table tbody .edit{
     background-position: 0 -250px;
     width: 21px;
     padding-top: 21px;
@@ -99,12 +106,12 @@ h1{
 .the-table tbody td.remove-item{
     width: 30px;
 }
-.the-table tbody td.remove-item a{
+.the-table tbody td.remove-item a, .the-mobile-table tbody .remove-item{
     background-position: 0 -300px;
     width: 15px;
     padding-top: 15px;
 }
-.the-table tbody td.value{
+.the-table tbody td.value, .the-mobile-table tbody .value{
     font-size: 14px;
     color: #575651;
 }
@@ -556,7 +563,39 @@ h1.pagamento{
     }
     
     /*The table*/
-    .the-table{ margin-bottom: 20px;}
+    .link-padding{
+        position: relative;
+        overflow: hidden;
+        height: 0;
+        display: inline-block;
+        background: url(../images/carrinho/icons.png) no-repeat;
+    }
+    .the-table{
+        display: none;
+    }
+    .the-mobile-table{
+        display: block;
+    }
+    
+    /*Mobile Table*/
+    .the-mobile-table .first, .the-mobile-table .second{
+        width: 50%;
+    }
+    .the-mobile-table .first span{
+        display: block;
+        text-align: center !important;
+    }
+    .the-mobile-table .second span.quantidade, .the-mobile-table .second a{
+        display: 
+    }
+    .the-mobile-table tbody .value{
+        display: block;
+        margin-top: 10px;
+    }
+    .the-mobile-table tbody .edit{
+        vertical-align: sub;
+    }
+    /*.the-table{ margin-bottom: 20px;}
     .the-table *{ border: none !important;}
     .the-table table { display: block !important; position: relative !important; width: 100% !important; }
     .the-table thead { display: block !important; float: left !important; }
@@ -566,5 +605,5 @@ h1.pagamento{
     .the-table tbody tr { display: inline-block !important; vertical-align: top !important; }
     .the-table tbody td{ padding: 0 10px;}
     .the-table td { display: block !important; min-height: 50px !important; height: 60px !important; }
-    .the-table tbody td.remove-item{width: auto;}
+    .the-table tbody td.remove-item{width: auto;}*/
 }
