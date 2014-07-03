@@ -660,7 +660,7 @@ function contact($atts, $content = null) {
 				</li>
                 <li class="newsletter">
                     <input type="checkbox" id="newsletter" name="newsletter" checked="checked" value="sim">
-                    <label for="newsletter">Desejo receber newsletters da Buzina Mídias Digitais</label>
+                    <label for="newsletter">Desejo receber notícias e novidades da Buzina</label>
                 </li>
 				<li>
 					<button onClick="SendMail()" id="send-message">ENVIAR</button>   

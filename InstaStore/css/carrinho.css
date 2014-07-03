@@ -575,6 +575,10 @@ h1.pagamento{
     }
     .the-mobile-table{
         display: block;
+        margin-bottom: 20px;
+    }
+    .imgs-list{
+        display: none;
     }
     
     /*Mobile Table*/
@@ -595,15 +599,4 @@ h1.pagamento{
     .the-mobile-table tbody .edit{
         vertical-align: sub;
     }
-    /*.the-table{ margin-bottom: 20px;}
-    .the-table *{ border: none !important;}
-    .the-table table { display: block !important; position: relative !important; width: 100% !important; }
-    .the-table thead { display: block !important; float: left !important; }
-    .the-table tbody { display: block !important; width: auto !important; position: relative !important; overflow-x: auto !important; white-space: nowrap !important; }
-    .the-table thead tr { display: block !important; }
-    .the-table th { display: block !important; height: 60px !important; border: none !important; background: #f3efed;}
-    .the-table tbody tr { display: inline-block !important; vertical-align: top !important; }
-    .the-table tbody td{ padding: 0 10px;}
-    .the-table td { display: block !important; min-height: 50px !important; height: 60px !important; }
-    .the-table tbody td.remove-item{width: auto;}*/
 }

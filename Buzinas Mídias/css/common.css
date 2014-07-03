@@ -400,13 +400,17 @@ div.about-item-holder p.about-info
 }
 div.social-about 
 {
-    bottom: -16px;
     height: 37px;
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
-    position: relative;
-    margin-bottom: 30px;
+    float: left;
+}
+a.facebook-link{
+    float: left;
+    color: white;
+    padding: 5px;
+    clear: left;
 }
 div.about-item-holder div.social-about
 {
@@ -469,7 +473,6 @@ div.social-about a
 .sending-message-status-holder
 {
     margin-top: 30px;
-    text-align: center;
 }
 .popup-close img
 {

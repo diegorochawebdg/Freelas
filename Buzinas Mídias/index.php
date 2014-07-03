@@ -61,8 +61,7 @@ $option = '<ul id="news-items">';
 				<p class="title">
 				<a href="' . get_permalink($post->ID) . '">' . substrwords(get_the_title(), 25) . '</a>
 				</p>
-				<span class="category">' . get_the_time('F d, Y', $post->ID) . '</span>
-                                <div class="blog-front-content">' . substrwords(get_the_content(), 120) . '</div>
+                <div class="blog-front-content">' . substrwords(get_the_content(), 120) . '</div>
 				<a class="read-more" href="' . get_permalink($post->ID) . '">
                                     CONTINUE LENDO
 				</a>				

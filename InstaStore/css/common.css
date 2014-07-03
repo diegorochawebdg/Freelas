@@ -95,4 +95,90 @@ a.saiba {
 .error {
     padding: 50px 0 300px 0;
 }
+
+/*Logged Menu*/
+.navbar .logged{
+    position: relative;
+    background: url(../images/header-logged-arrow.png) no-repeat right center;
+    padding-right: 40px;
+    float: left;
+    min-width: 105px;
+}
+.navbar .logged img{
+    float: left;
+    margin: 0 10px;
+    border-radius: 3px;
+}
+.navbar .logged .user span{
+    font: normal 11px Arial, sans-serif;
+    color: #79523e;
+    text-transform: uppercase;
+    float: left;
+    margin-top: 4px;
+}
+.navbar .logged .user span strong{
+    font-size: 14px;
+    display: block;
+}
+.navbar .logged ul#logged-options{
+    position: absolute;
+    top: 50px;
+    padding: 0;
+    margin: 0;
+    background: #806c6d;
+    width: 100%;
+    border-radius: 3px;
+    display: none;
+}
+.navbar .logged ul#logged-options li{
+    list-style-type: none;
+    border-top: solid 1px #928586;
+}
+.navbar .logged ul#logged-options li:first-child{
+    border-radius: 3px 3px 0 0;
+}
+.navbar .logged ul#logged-options li:last-child{
+    border-radius: 0 0 3px 3px;
+}
+.navbar .logged ul#logged-options li:first-child{
+    border: none;
+}
+.navbar .logged ul#logged-options li a{
+    color: #FFF;
+    font: normal 14px Arial, sans-serif;
+    padding: 17px 0 17px 17px;
+    display: block;
+}
+.navbar .logged ul#logged-options li a:hover{
+    background: #a16d55;
+}
+.navbar .arrow{
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #806c6d; 
+    display: table;
+    position: absolute;
+    left: 43%;
+    top: -9px;
+}
 /** End General **/
+
+@media screen and (max-width: 600px){
+    .navbar .logged{
+        padding-right: 10px;
+        background: none;
+        min-width: 0 !important;
+    }
+    .navbar .logged .user span{
+        display: none;
+    }
+    .navbar .logged ul{
+        display: table;
+        left: -45px;
+        min-width: 145px
+    }
+    .navbar .logged ul li a{
+        padding-right: 15px !important;
+        display: table;
+    }
+}

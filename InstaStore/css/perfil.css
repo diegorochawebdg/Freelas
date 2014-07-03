@@ -447,6 +447,9 @@ body{
 .content-center .right.lista-pedidos h1 span{
     color: #ee2f45;
 }
+.content-center .right.lista-pedidos .the-mobile-table{
+    display: none;
+}
 .content-center .right.lista-pedidos table tr{
     border: solid 1px #13c9c6;
     border-top: none;
@@ -463,7 +466,7 @@ body{
     font: bold 14px Arial, sans-serif;
     color: #646464;
 }
-.content-center .right.lista-pedidos table td.value{
+.content-center .right.lista-pedidos table .value{
     color: #0d9a98;
 }
 .content-center .right.lista-pedidos table td.status.entregue span{
@@ -552,29 +555,37 @@ body{
 .content-center .right.detalhe-pedido .the-table{
     margin-bottom: 50px;
 }
+.content-center .right.detalhe-pedido .the-mobile-table{
+    display: none;
+}
 .content-center .right.detalhe-pedido .the-table *{
     font: 12px Arial, sans-serif;
     text-align: center;
 }
-.content-center .right.detalhe-pedido .the-table tbody tr:nth-child(even), .content-center .right.detalhe-pedido .the-table thead tr{
+.content-center .right.detalhe-pedido .the-table tbody tr:nth-child(even), .content-center .right.detalhe-pedido .the-table thead tr,
+.content-center .right.detalhe-pedido .the-mobile-table tbody tr:nth-child(even), .content-center .right.detalhe-pedido .the-mobile-table thead tr{
     background: #ebebe9;
 }
-.content-center .right.detalhe-pedido .the-table td{
+.content-center .right.detalhe-pedido .the-table td, .content-center .right.detalhe-pedido .the-mobile-table td{
     border-top: solid 1px #adadab;
 }
-.content-center .right.detalhe-pedido .the-table thead td{
+.content-center .right.detalhe-pedido .the-table thead td, .content-center .right.detalhe-pedido .the-mobile-table thead td{
     font-weight: bold;
     height: 27px !important;
 }
-.content-center .right.detalhe-pedido .the-table td{
+.content-center .right.detalhe-pedido .the-table td, .content-center .right.detalhe-pedido .the-mobile-table td{
     height: 43px;
 }
-.content-center .right.detalhe-pedido .the-table .item{
+.content-center .right.detalhe-pedido .the-mobile-table td{
+    text-align: center;
+    width: 50%;
+}
+.content-center .right.detalhe-pedido .the-table .item, .content-center .right.detalhe-pedido .the-mobile-table .item{
     font-weight: bold;
     color: #507dbf;
     font-size: 15px;
 }
-.content-center .right.detalhe-pedido .the-table .bold{
+.content-center .right.detalhe-pedido .the-table .bold, .content-center .right.detalhe-pedido .the-mobile-table .bold{
     font-weight: bold;
 }
 .content-center .right.detalhe-pedido .payment-form{
@@ -756,8 +767,11 @@ body{
     }
     
     /*Lista Pedidos*/
-    .content-center .right.detalhe-pedido .the-table table{
-        min-width: 500px;
+    .content-center .right.lista-pedidos .the-table{
+        display: none;
+    }
+    .content-center .right.lista-pedidos .the-mobile-table{
+        display: block;
     }
     /*Detalhe Pedidos*/
     .content-center .right.detalhe-pedido .address div{
@@ -776,5 +790,11 @@ body{
         display: table;
         text-align: center;
         margin: 0 auto 10px auto;
+    }
+    .content-center .right.detalhe-pedido .the-mobile-table{
+        display: block;
+    }
+    .content-center .right.detalhe-pedido .the-table{
+        display: none;
     }
 }

@@ -308,6 +308,15 @@ form.newsletter {
 
 /** Responsive **/
 @media (max-width: 979px) {
+    .navbar .nav > li{
+        border-bottom: 1px solid #cecdc2;
+    }
+    .navbar .nav > li a{
+        padding: 15px;
+    }
+    .navbar .nav > li:last-child{
+        border-bottom: none;
+    }
     .webdoor {
         display: none;
     }
@@ -478,6 +487,17 @@ form.newsletter {
     .footer .span5 a.facebook {
         width: 50px;
         background-position: -190px top;
+    }
+    
+    .sub-footer .logos{
+        width: 100%;
+    }
+    .sub-footer .logos a{
+        margin: 10px auto;
+        float: none;
+    }
+    .sub-footer p{
+        line-height: 1.3em;
     }
 }
 /** End Responsive **/

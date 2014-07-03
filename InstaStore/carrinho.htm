@@ -15,6 +15,17 @@
     <link rel="stylesheet" type="text/css" href="css/carrinho.css" media="screen">
     <!--End of The stylesheet-->
     <script type="text/javascript" src="js/jquery.js"></script>
+    
+    <!--Show/hide do menu quando o usuário está logado-->
+    <script type="text/javascript">
+        $(document).ready(function(e){
+            $('.navbar .logged').hover(function(e){
+                $(this).children('#logged-options').stop().fadeIn();
+            }, function(e){
+                $(this).children('#logged-options').stop().fadeOut();
+            });
+        });
+    </script>
 </head>
 <body>
     
@@ -37,16 +48,31 @@
                 </button>
 
                 <div class="pull-right icones">
-                    <a class="botao login" href="#">LOGIN</a>
+                    <!--<a class="botao login" href="#">LOGIN</a>-->
+                    <div class="logged">
+                        <a href="#" class="user">
+                            <img src="http://placehold.it/36x36">
+                            <span>Olá, <strong>Maria</strong></span>
+                            <div class="clear"></div>
+                        </a>
+                        
+                        <ul id="logged-options">
+                            <div class="arrow"></div>
+                            <li><a href="#" title="Editar perfil">Editar perfil</a></li>
+                            <li><a href="#" title="Meus pedidos">Meus pedidos</a></li>
+                            <li><a href="#" title="Convidar amigos">Convidar amigos</a></li>
+                            <li><a href="#" title="Sair">Sair</a></li>
+                        </ul>
+                    </div>
                     <a class="carrinho" href="#">2</a>
                 </div>
 
                 <div class="nav-collapse collapse">
                     <ul class="nav">
-                        <li class="ativo"><a href="#">PRODUTOS</a></li>
-                        <li><a href="#about">SOBRE</a></li>
-                        <li><a href="#contact">BLOG</a></li>
-                        <li><a href="#contact">CONTATO</a></li>
+                        <li class="ativo"><a href="#" title="Produtos">PRODUTOS</a></li>
+                        <li><a href="#about" title="Sobre">SOBRE</a></li>
+                        <li><a href="#contact" title="Blog">BLOG</a></li>
+                        <li><a href="#contact" title="Contato">CONTATO</a></li>
                     </ul>
                 </div>
             </div>
