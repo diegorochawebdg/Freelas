@@ -19,6 +19,7 @@ em   {padding:10px; background:#000; display:none; position:absolute;}
 #menu-left ul {list-style-type:none; margin:0; padding:0;}
 #menu-left li {list-style-type:none; border-bottom:1px solid #CCCCCC; padding:5px 0; float:left; width:122px;}
 #menu-left li ul {position:absolute; top:38px; left:60px; display:none; background:url(img-layout/bg-menu-hover.png) repeat;}
+#menu-left li ul.locacao-sub {top: 208px; left: 100px;}
 #menu-left li ul a {color:#FFF;}
 #menu-left li ul li:hover a {color:#000;}
 #menu-left li:hover ul{display:block;} 
