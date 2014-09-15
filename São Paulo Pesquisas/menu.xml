@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<menus id="main">
+	<menu label="BANNER" permissions="1">
+		<item href="banner.php" label="CADASTRO" permissions="1,5" />
+	</menu>
+</menus>
