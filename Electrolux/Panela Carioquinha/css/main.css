@@ -38,10 +38,10 @@ a:hover{
     clear: both;
 }
 .animate{
--webkit-transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
-   -moz-transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
-     -o-transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
-        transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+-webkit-transition: all 2000ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+   -moz-transition: all 2000ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+     -o-transition: all 2000ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+        transition: all 2000ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
 }
 .content-center{
     width: 780px;
@@ -62,6 +62,8 @@ a:hover{
 #header{
     background: url(../images/bg-header.jpg) no-repeat center;
     height: 547px;
+    position: relative;
+    overflow: hidden;
 }
 #header .txt1{
     top: 38px;
@@ -96,6 +98,9 @@ a:hover{
 #header .tampa{
     margin-left: -340px;
     top: 148px;
+}
+#header .tampa.active{
+    top: -300px;
 }
 #header .hotspots .item1{
     margin-left: -252px;
@@ -173,11 +178,90 @@ a:hover{
     background: url(../images/bg-compacta-facil-usar.jpg) no-repeat center;
     height: 376px;
 }
+#compacta-facil h2{
+    color: #bc1e85;
+    font: normal 42px 'Lato', Arial, sans-serif;
+    margin-left: -411px;
+    top: -100px;
+    text-align: center;
+}
+#compacta-facil .txt{
+    margin-left: 10px;
+    top: 75px;
+}
+#compacta-facil .txt li{
+    padding: 10px 0 0 100px;
+    margin-bottom: 30px;
+}
+#compacta-facil .txt li.cabo{
+    background: url(../images/cabo-eletrico-removivel.png) no-repeat left top;
+}
+#compacta-facil .txt li.copo{
+    background: url(../images/copo-medidor-concha-plastica.png) no-repeat left top;
+    margin-left: 75px;
+}
+#compacta-facil .txt li h3{
+    color: #b80a7d;
+    font: normal 24px Arial, sans-serif;
+    margin-bottom: 20px;
+}
+#compacta-facil .txt li p{
+    color: #666;
+    font: normal 15px Arial, sans-serif;
+}
 
 /*Múltiplos programas*/
 #multiplos-programas{
     background: url(../images/bg-multiplos-programas-cozimento.jpg) no-repeat center;
     height: 568px;
+}
+#multiplos-programas .txt{
+    background: #b80a7d;
+    padding: 50px;
+    border-radius: 100%;
+    width: 237px;
+    text-align: center;
+    margin-left: -400px;
+    top: 0;
+}
+#multiplos-programas .txt h3{
+    color: white;
+    font: bold 24px Arial, sans-serif;
+    margin-bottom: 15px;
+}
+#multiplos-programas .txt p{
+    color: #ebccdd;
+    font: normal 16px Arial, sans-serif;
+}
+#multiplos-programas img.prato-comida{
+    top: 295px;
+    margin-left: -400px;
+}
+#multiplos-programas .table{
+    background: white;
+    padding: 20px 25px;
+    width: 275px;   
+    border: solid 3px #b80a7d;
+    border-radius: 13px;
+    top: 166px;
+    margin-left: -28px;
+}
+#multiplos-programas .table th{
+    color: #b80a7d;
+    font: bold 15px Arial, sans-serif;   
+    padding-bottom: 5px;
+}
+#multiplos-programas .table td{
+    color: #333;
+    font: bold 15px Arial, sans-serif;   
+}
+#multiplos-programas .hotspots .item1{
+    margin-left: 217px;
+    top: 0;
+}
+#multiplos-programas .hotspots-content .item1{
+    margin-left: 40px;
+    top: -60px;
 }
 
 /*Dispositivos de Segurança*/
@@ -185,17 +269,110 @@ a:hover{
     background: url(../images/bg-dispositivos-seguranca.jpg) no-repeat center;
     height: 507px;
 }
+#dispositivos-de-seguranca h2{
+    background: url(../images/conheca-os-9-dispositivos-de-seguranca.png) no-repeat center;
+    width: 253px;
+    padding-top: 97px;
+    margin-left: 60px;
+    top: 10px;
+}
+#dispositivos-de-seguranca .select-content{
+    width: 288px;
+    top: 180px;
+    margin-left: 52px;
+}
+#dispositivos-de-seguranca .select-content h4{
+    color: #b80a7d;
+    font: normal 22px Arial, sans-serif;
+    margin-bottom: 15px;
+}
+#dispositivos-de-seguranca .select-content p{
+    color: #333;
+    font: normal 14px Arial, sans-serif;
+}
+#dispositivos-de-seguranca .select-content li{
+    display: none;
+}
+#dispositivos-de-seguranca .select-content li:first-child{
+    display: block;
+}
+#dispositivos-de-seguranca .select-links{
+    top: 323px;
+    margin-left: 60px;
+    text-align: center;
+}
+#dispositivos-de-seguranca .select-links li{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+#dispositivos-de-seguranca .select-links li a{
+    color: #333;
+    font: normal 16px Arial, sans-serif;
+    border: solid 1px #333;
+    border-radius: 50%;
+    padding: 2px 6.5px;
+    -webkit-transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+       -moz-transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+         -o-transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+            transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+}
+#dispositivos-de-seguranca .select-links li.active a, #dispositivos-de-seguranca .select-links li:hover a{
+    color: white;
+    background: #333;
+    text-decoration: none;
+}
+#dispositivos-de-seguranca .select-links small{
+    color: #666;
+    font: normal 12px Arial, sans-serif;
+}
+#dispositivos-de-seguranca .hotspots .item1{
+    top: 300px;
+    margin-left: -220px;
+}
+#dispositivos-de-seguranca .hotspots-content .item1{
+    margin-left: -240px;
+    top: 110px;
+}
 
 /*Vídeo*/
 #video{
     background: url(../images/bg-video.jpg) no-repeat center;
     height: 480px;
 }
+#video h3{
+    color: #b80a7d;
+    font: bold 18px Arial, sans-serif;
+    margin-bottom: 20px;
+}
 
 /*Conteúdo da Embalagem*/
 #conteudo-embalagem{
     background: url(../images/bg-conteudo-embalagem.jpg) no-repeat center;
     height: 455px;
+}
+#conteudo-embalagem .txt{
+    margin-left: 90px;
+    top: 65px;
+    width: 300px;
+}
+#conteudo-embalagem .txt h4{
+    color: #fe55e9;
+    font: normal 26px Arial, sans-serif;
+    margin-bottom: 15px;
+}
+#conteudo-embalagem .txt ul{
+    margin-bottom: 15px;
+}
+#conteudo-embalagem .txt li{
+    color: white;
+    font: normal 15px/1.5em Arial, sans-serif;
+    list-style-position: inside;
+    list-style-type: disc;
+}
+
+/*Hotspots*/
+.hotspots-content div{
+    display: none;
 }
 
 /*CD*/
