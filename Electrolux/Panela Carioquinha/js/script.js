@@ -38,11 +38,16 @@ $(document).ready(function() {
     });
 
     //Tampa
-    $('#header').appear();
+    /*$('#header').appear();
     $('#header').on('appear', function(event, $all_appeared_elements) {
         $('#header .tampa').delay(400).addClass('active');
     });
     $('#header').on('disappear', function(event, $all_appeared_elements) {
         $('#header .tampa').removeClass('active');
+    });*/
+    $('#header .interaction-area').hover(function(e) {
+        $('#header .tampa').delay(400).removeClass('active');
+    }, function(e){
+        $('#header .tampa').delay(400).addClass('active');
     });
 });
