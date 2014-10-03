@@ -20,6 +20,7 @@ $(document).ready(function($) {
 		next: '#next3',
 		width: '100%',
 		scroll: 1,
+		auto: 	false,
 		items: {
 			width: 100,
 			height: '65%',

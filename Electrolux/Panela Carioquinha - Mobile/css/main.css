@@ -45,7 +45,7 @@ a:hover{
 }
 #container{
     min-width: 320px;
-    max-width: 480px;
+    max-width: 600px;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -244,12 +244,12 @@ a:hover{
     display: table;
 }
 #aco-escovado .aco-escovado-txt{
-    height: 211px;
+    height: 180px;
     display: table-cell;
     vertical-align: middle;
 }
 #aco-escovado .aco-escovado-txt p{
-    height: 211px;
+    height: 180px;
     display: table-cell;
     vertical-align: middle;
     color: #666;
