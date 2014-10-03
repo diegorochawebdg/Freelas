@@ -14,4 +14,19 @@ $(document).ready(function($) {
 			}
 		}
 	});	
+	$('#dispositivos-seguranca ul').carouFredSel({
+		responsive: true,
+		prev: '#prev3',
+		next: '#next3',
+		width: '100%',
+		scroll: 1,
+		items: {
+			width: 100,
+			height: '65%',
+			visible: {
+				min: 1,
+				max: 1
+			}
+		}
+	});	
 });
