@@ -9,11 +9,12 @@
     <meta name="keywords" lang="pt-br" content="A São Paulo Pesquisa está cadastrando interessados em participar de pesquisa remunerada.">
     <meta name="Author" content="Diego Rocha">
     <link href="favicon.png" rel="icon" type="image/x-icon" />
-    <link rel="stylesheet" href="css/main.css">
 
     <!--Bootstrap-->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <!--End Bootstrap-->
+
+    <link rel="stylesheet" href="css/main.min.css">
 </head>
 
 <body>
@@ -22,9 +23,16 @@
         <!--Header-->
         <div id="header">
             <div class="container">
-                <img src="" alt="São Paulo Pesquisas logo" title="São Paulo Pesquisas - Mercado, social e opinião pública">
-                <h1>Formulário de cadastro</h1>
-                <p>A São Paulo Pesquisa está cadastrando interessados em participar de pesquisa remunerada.</p>
+                <div class="col-md-6">
+                    <img src="images/sao-paulo-pesquisas-logo.png" height="115" width="197" alt="São Paulo Pesquisas logo" title="São Paulo Pesquisas - Mercado, social e opinião pública">
+                </div>
+                <div class="col-md-6">
+                    <h1>Formulário de cadastro</h1>
+                </div>
+                <div class="clearfix"></div>
+                <div class="row">
+                    <p>A São Paulo Pesquisa está cadastrando interessados em participar de pesquisa remunerada.</p>
+                </div>
             </div>
         </div>
         <!--End of Header-->
@@ -107,7 +115,7 @@
                         <input type="tel" name="tel-res" id="tel-res">
                     </div>
                     <div class="col-md-2">
-                        <label for="tel-com">Telefone res.</label>
+                        <label for="tel-com">Telefone com.</label>
                         <input type="tel" name="tel-com" id="tel-com">
                     </div>
                     <div class="clearfix"></div>
@@ -185,7 +193,7 @@
                 </form>
 
                 <h2>Questionário Sócio Econômico</h2>
-                <form action="">
+                <form action="" name="socio-economico" id="socio-economico">
                     <!-- First Row -->
                     <div class="col-md-2">
                         <label for="filhos">Tem filhos?</label>
@@ -220,7 +228,7 @@
 
                     <!-- Second Row -->
                     <div class="col-md-2">
-                        <label for="trabalho-remunerado">Exerce trabalho remunerado atualmente?</label>
+                        <label for="trabalho-remunerado" class="less">Exerce trabalho remunerado atualmente?</label>
                         <div class="radio">
                             <input type="radio" name="trabalho-remunerado" id="sim-trabalho-remunerado">
                             <label for="sim-trabalho-remunerado">Sim</label>
@@ -244,7 +252,7 @@
 
                     <!-- Third Row -->
                     <div class="col-md-6">
-                        <label for="nome-empresa">Qual o nome da empresa ou ramo de atividade que você trabalha? </label>
+                        <label for="nome-empresa" class="less">Qual o nome da empresa ou ramo de atividade que você trabalha? </label>
                         <input type="text" name="nome-empresa" id="nome-empresa">
                     </div>
                     <div class="col-md-6">
@@ -275,309 +283,311 @@
                     <!-- Table -->
                     <div class="table">
                         <h3>Da lista de itens abaixo, quais você tem em casa? E quantos você tem de cada item?</h3>
-                        <table cellpadding="0" cellspacing="" border="0">
-                            <tr>
-                                <td>
-                                    <label>Banheiros</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="banheiros" id="banheiros-0">
-                                    <label for="banheiros">0</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="banheiros" id="banheiros-1">
-                                    <label for="banheiros">1</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="banheiros" id="banheiros-2">
-                                    <label for="banheiros">2</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="banheiros" id="banheiros-3">
-                                    <label for="banheiros">3</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="banheiros" id="banheiros-4">
-                                    <label for="banheiros">4 ou +</label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label>Empregada doméstica</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="empregada-domestica" id="empregada-domestica-0">
-                                    <label for="empregada-domestica">0</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="empregada-domestica" id="empregada-domestica-1">
-                                    <label for="empregada-domestica">1</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="empregada-domestica" id="empregada-domestica-2">
-                                    <label for="empregada-domestica">2</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="empregada-domestica" id="empregada-domestica-3">
-                                    <label for="empregada-domestica">3</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="empregada-domestica" id="empregada-domestica-4">
-                                    <label for="empregada-domestica">4 ou +</label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label>Automóveis</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="automoveis" id="automoveis-0">
-                                    <label for="automoveis">0</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="automoveis" id="automoveis-1">
-                                    <label for="automoveis">1</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="automoveis" id="automoveis-2">
-                                    <label for="automoveis">2</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="automoveis" id="automoveis-3">
-                                    <label for="automoveis">3</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="automoveis" id="automoveis-4">
-                                    <label for="automoveis">4 ou +</label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label>Microcomputador (exceto tablet)</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="computador" id="computador-0">
-                                    <label for="computador">0</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="computador" id="computador-1">
-                                    <label for="computador">1</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="computador" id="computador-2">
-                                    <label for="computador">2</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="computador" id="computador-3">
-                                    <label for="computador">3</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="computador" id="computador-4">
-                                    <label for="computador">4 ou +</label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label>Lava-louças</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="lava-loucas" id="lava-loucas-0">
-                                    <label for="lava-loucas">0</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="lava-loucas" id="lava-loucas-1">
-                                    <label for="lava-loucas">1</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="lava-loucas" id="lava-loucas-2">
-                                    <label for="lava-loucas">2</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="lava-loucas" id="lava-loucas-3">
-                                    <label for="lava-loucas">3</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="lava-loucas" id="lava-loucas-4">
-                                    <label for="lava-loucas">4 ou +</label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label>Geladeira</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="geladeira" id="geladeira-0">
-                                    <label for="geladeira">0</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="geladeira" id="-1">
-                                    <label for="geladeira">1</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="geladeira" id="geladeira-2">
-                                    <label for="geladeira">2</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="geladeira" id="geladeira-3">
-                                    <label for="geladeira">3</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="geladeira" id="geladeira-4">
-                                    <label for="geladeira">4 ou +</label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label>Freezer (parte duplex ou freezer separado)</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="freezer" id="freezer-0">
-                                    <label for="freezer">0</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="freezer" id="freezer-1">
-                                    <label for="freezer">1</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="freezer" id="freezer-2">
-                                    <label for="freezer">2</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="freezer" id="freezer-3">
-                                    <label for="freezer">3</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="freezer" id="freezer-4">
-                                    <label for="freezer">4 ou +</label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label>Lava-roupa (não considerar tanquinho)</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="lava-roupa" id="lava-roupa-0">
-                                    <label for="lava-roupa">0</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="lava-roupa" id="lava-roupa-1">
-                                    <label for="lava-roupa">1</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="lava-roupa" id="lava-roupa-2">
-                                    <label for="lava-roupa">2</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="lava-roupa" id="lava-roupa-3">
-                                    <label for="lava-roupa">3</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="lava-roupa" id="lava-roupa-4">
-                                    <label for="lava-roupa">4 ou +</label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label>DVD / Blu-ray / Home Theater
-</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="dvd" id="dvd-0">
-                                    <label for="dvd">0</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="dvd" id="dvd-1">
-                                    <label for="dvd">1</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="dvd" id="dvd-2">
-                                    <label for="dvd">2</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="dvd" id="dvd-3">
-                                    <label for="dvd">3</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="dvd" id="dvd-4">
-                                    <label for="dvd">4 ou +</label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label>Micro-ondas</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="micro-ondas" id="micro-ondas-0">
-                                    <label for="micro-ondas">0</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="micro-ondas" id="micro-ondas-1">
-                                    <label for="micro-ondas">1</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="micro-ondas" id="micro-ondas-2">
-                                    <label for="micro-ondas">2</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="micro-ondas" id="micro-ondas-3">
-                                    <label for="micro-ondas">3</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="micro-ondas" id="micro-ondas-4">
-                                    <label for="micro-ondas">4 ou +</label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label>Motocicleta</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="motocicleta" id="motocicleta-0">
-                                    <label for="motocicleta">0</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="motocicleta" id="motocicleta-1">
-                                    <label for="motocicleta">1</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="motocicleta" id="motocicleta-2">
-                                    <label for="motocicleta">2</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="motocicleta" id="motocicleta-3">
-                                    <label for="motocicleta">3</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="motocicleta" id="motocicleta-4">
-                                    <label for="motocicleta">4 ou +</label>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label>Secadora de roupas</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="secadora" id="secadora-0">
-                                    <label for="secadora">0</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="secadora" id="secadora-1">
-                                    <label for="secadora">1</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="secadora" id="secadora-2">
-                                    <label for="secadora">2</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="secadora" id="secadora-3">
-                                    <label for="secadora">3</label>
-                                </td>
-                                <td>
-                                    <input type="radio" name="secadora" id="secadora-4">
-                                    <label for="secadora">4 ou +</label>
-                                </td>
-                            </tr>
-                        </table>
+
+                        <div class="the-table">
+                            <table cellpadding="0" cellspacing="" border="0">
+                                <tr>
+                                    <td>
+                                        <label>Banheiros</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="banheiros" id="banheiros-0">
+                                        <label for="banheiros">0</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="banheiros" id="banheiros-1">
+                                        <label for="banheiros">1</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="banheiros" id="banheiros-2">
+                                        <label for="banheiros">2</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="banheiros" id="banheiros-3">
+                                        <label for="banheiros">3</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="banheiros" id="banheiros-4">
+                                        <label for="banheiros">4 ou +</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Empregada doméstica</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="empregada-domestica" id="empregada-domestica-0">
+                                        <label for="empregada-domestica">0</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="empregada-domestica" id="empregada-domestica-1">
+                                        <label for="empregada-domestica">1</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="empregada-domestica" id="empregada-domestica-2">
+                                        <label for="empregada-domestica">2</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="empregada-domestica" id="empregada-domestica-3">
+                                        <label for="empregada-domestica">3</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="empregada-domestica" id="empregada-domestica-4">
+                                        <label for="empregada-domestica">4 ou +</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Automóveis</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="automoveis" id="automoveis-0">
+                                        <label for="automoveis">0</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="automoveis" id="automoveis-1">
+                                        <label for="automoveis">1</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="automoveis" id="automoveis-2">
+                                        <label for="automoveis">2</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="automoveis" id="automoveis-3">
+                                        <label for="automoveis">3</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="automoveis" id="automoveis-4">
+                                        <label for="automoveis">4 ou +</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Microcomputador (exceto tablet)</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="computador" id="computador-0">
+                                        <label for="computador">0</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="computador" id="computador-1">
+                                        <label for="computador">1</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="computador" id="computador-2">
+                                        <label for="computador">2</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="computador" id="computador-3">
+                                        <label for="computador">3</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="computador" id="computador-4">
+                                        <label for="computador">4 ou +</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Lava-louças</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="lava-loucas" id="lava-loucas-0">
+                                        <label for="lava-loucas">0</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="lava-loucas" id="lava-loucas-1">
+                                        <label for="lava-loucas">1</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="lava-loucas" id="lava-loucas-2">
+                                        <label for="lava-loucas">2</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="lava-loucas" id="lava-loucas-3">
+                                        <label for="lava-loucas">3</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="lava-loucas" id="lava-loucas-4">
+                                        <label for="lava-loucas">4 ou +</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Geladeira</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="geladeira" id="geladeira-0">
+                                        <label for="geladeira">0</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="geladeira" id="-1">
+                                        <label for="geladeira">1</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="geladeira" id="geladeira-2">
+                                        <label for="geladeira">2</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="geladeira" id="geladeira-3">
+                                        <label for="geladeira">3</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="geladeira" id="geladeira-4">
+                                        <label for="geladeira">4 ou +</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Freezer (parte duplex ou freezer separado)</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="freezer" id="freezer-0">
+                                        <label for="freezer">0</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="freezer" id="freezer-1">
+                                        <label for="freezer">1</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="freezer" id="freezer-2">
+                                        <label for="freezer">2</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="freezer" id="freezer-3">
+                                        <label for="freezer">3</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="freezer" id="freezer-4">
+                                        <label for="freezer">4 ou +</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Lava-roupa (não considerar tanquinho)</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="lava-roupa" id="lava-roupa-0">
+                                        <label for="lava-roupa">0</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="lava-roupa" id="lava-roupa-1">
+                                        <label for="lava-roupa">1</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="lava-roupa" id="lava-roupa-2">
+                                        <label for="lava-roupa">2</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="lava-roupa" id="lava-roupa-3">
+                                        <label for="lava-roupa">3</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="lava-roupa" id="lava-roupa-4">
+                                        <label for="lava-roupa">4 ou +</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>DVD / Blu-ray / Home Theater</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="dvd" id="dvd-0">
+                                        <label for="dvd">0</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="dvd" id="dvd-1">
+                                        <label for="dvd">1</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="dvd" id="dvd-2">
+                                        <label for="dvd">2</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="dvd" id="dvd-3">
+                                        <label for="dvd">3</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="dvd" id="dvd-4">
+                                        <label for="dvd">4 ou +</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Micro-ondas</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="micro-ondas" id="micro-ondas-0">
+                                        <label for="micro-ondas">0</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="micro-ondas" id="micro-ondas-1">
+                                        <label for="micro-ondas">1</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="micro-ondas" id="micro-ondas-2">
+                                        <label for="micro-ondas">2</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="micro-ondas" id="micro-ondas-3">
+                                        <label for="micro-ondas">3</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="micro-ondas" id="micro-ondas-4">
+                                        <label for="micro-ondas">4 ou +</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Motocicleta</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="motocicleta" id="motocicleta-0">
+                                        <label for="motocicleta">0</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="motocicleta" id="motocicleta-1">
+                                        <label for="motocicleta">1</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="motocicleta" id="motocicleta-2">
+                                        <label for="motocicleta">2</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="motocicleta" id="motocicleta-3">
+                                        <label for="motocicleta">3</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="motocicleta" id="motocicleta-4">
+                                        <label for="motocicleta">4 ou +</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Secadora de roupas</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="secadora" id="secadora-0">
+                                        <label for="secadora">0</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="secadora" id="secadora-1">
+                                        <label for="secadora">1</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="secadora" id="secadora-2">
+                                        <label for="secadora">2</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="secadora" id="secadora-3">
+                                        <label for="secadora">3</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="secadora" id="secadora-4">
+                                        <label for="secadora">4 ou +</label>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
 
                     <!-- Fifth Row -->
@@ -590,7 +600,7 @@
                         </select>
                     </div>
                     <div class="col-md-2">
-                        <label for="automovel-uso-proprio">Você possui automóvel para uso próprio?</label>
+                        <label for="automovel-uso-proprio" class="less">Você possui automóvel para uso próprio?</label>
                         <div class="radio">
                             <input type="radio" name="automovel-uso-proprio" id="automovel-uso-proprio-sim">
                             <label for="automovel-uso-proprio-sim">Sim</label>
@@ -606,7 +616,7 @@
 
                     <!-- Sixth row -->
                     <div class="col-md-6">
-                        <label for="numero-pessoas">Somando você, quantas pessoas vivem na sua casa?</label>
+                        <label for="numero-pessoas" class="less">Somando você, <br>quantas pessoas vivem na sua casa?</label>
                         <select name="numero-pessoas" id="numero-pessoas">
                             <option value="">1</option>
                             <option value="">2</option>
@@ -615,7 +625,7 @@
                         </select>
                     </div>
                     <div class="col-md-6">
-                        <label for="salario-pessoas">Somando o salário de todos que moram na sua casa, em qual faixa sua família se encontra?</label>
+                        <label for="salario-pessoas" class="less">Somando o salário de todos que moram na sua casa, <br>em qual faixa sua família se encontra?</label>
                         <select name="salario-pessoas" id="salario-pessoas">
                             <option value="">Opção 1</option>
                             <option value="">Opção 2</option>
@@ -627,12 +637,12 @@
 
                     <!-- Seventh Row -->
                     <div class="col-md-2">
-                        <label>Você possui smartphone?</label>
+                        <label class="less">Você possui smartphone?</label>
                         <div class="radio">
                             <input type="radio" name="smartphone" id="smartphone-sim"> 
-                            <label for="smartphone">Sim</label>
+                            <label for="smartphone-sim">Sim</label>
                             <input type="radio" name="smartphone" id="smartphone-nao">
-                            <label for="smartphone">Não</label>
+                            <label for="smartphone-nao">Não</label>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -643,7 +653,7 @@
 
                     <!-- Eighth row -->
                     <div class="col-md-6">
-                        <label for="tipo-casa">Sobre sua casa, você mora em:</label>
+                        <label for="tipo-casa" class="less">Sobre sua casa, você mora em:</label>
                         <select name="tipo-casa" id="tipo-casa">
                             <option value="">Opção 1</option>
                             <option value="">Opção 2</option>
@@ -662,12 +672,12 @@
 
                     <!-- Nineth Row -->
                     <div class="col-md-2">
-                        <label>Você fez alguma viagem a lazer nos últimos dois anos?</label>
+                        <label class="less">Você fez alguma viagem a lazer nos últimos dois anos?</label>
                         <div class="radio">
                             <input type="radio" name="viagem" id="viagem-sim"> 
-                            <label for="viagem">Sim</label>
+                            <label for="viagem-sim">Sim</label>
                             <input type="radio" name="viagem" id="viagem-nao">
-                            <label for="viagem">Não</label>
+                            <label for="viagem-nao">Não</label>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -678,12 +688,12 @@
 
                     <!-- Tenth row -->
                     <div class="col-md-2">
-                        <label>Você fala fluentemente outro idioma?</label>
+                        <label class="less">Você fala fluentemente outro idioma?</label>
                         <div class="radio">
                             <input type="radio" name="idioma" id="idioma-sim"> 
-                            <label for="idioma">Sim</label>
+                            <label for="idioma-sim">Sim</label>
                             <input type="radio" name="idioma" id="idioma-nao">
-                            <label for="idioma">Não</label>
+                            <label for="idioma-nao">Não</label>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -694,30 +704,28 @@
 
                     <!-- Eleventh Row -->
                     <div class="col-md-2">
-                        <label>Você é filiado a algum partido político?</label>
+                        <label class="less">Você é filiado a algum partido político?</label>
                         <div class="radio">
                             <input type="radio" name="partido" id="partido-sim"> 
-                            <label for="partido">Sim</label>
+                            <label for="partido-sim">Sim</label>
                             <input type="radio" name="partido" id="partido-nao">
-                            <label for="partido">Não</label>
+                            <label for="partido-nao">Não</label>
                         </div>
                     </div>
                     <div class="col-md-2">
-                        <label>Você vota na cidade em que você mora?</label>
+                        <label class="less">Você vota na cidade em que você mora?</label>
                         <div class="radio">
                             <input type="radio" name="vota" id="vota-sim"> 
-                            <label for="vota">Sim</label>
+                            <label for="vota-sim">Sim</label>
                             <input type="radio" name="vota" id="vota-nao">
-                            <label for="vota">Não</label>
+                            <label for="vota-nao">Não</label>
                         </div>
                     </div>
                     <div class="clearfix"></div>
 
                     <!-- Obdervações -->
                     <label for="observacoes">Observações</label>
-                    <textarea name="observacoes" id="observacoes">
-                        
-                    </textarea>
+                    <textarea name="observacoes" id="observacoes"></textarea>
 
                     <!-- Enviar -->
                     <button type="button" name="enviar" id="enviar">Enviar</button>
@@ -738,9 +746,47 @@
     </div>
     <!--End of Container-->
 
+    <!-- Lightboxes -->
+    <div id="lightboxes">
+        <div class="lightbox-content aviso-legal">
+            <div class="lightbox-title">
+                <h2>Aviso legal</h2>
+            </div>
+            <div class="lightbox-the-content">
+                <p>Ao se cadastrar não significa que você será convidado de imediato.</p>
+                <p>Sua convocação dependerá do perfil exigido para cada pesquisa.</p> 
+                <p>Finalizando o cadastro significa que você concorda com essa condição.</p>
+                <div class="linha"></div>
+                <div class="links">
+                    <a href="#" class="ir-cadastro">Ir para o cadastro</a>
+                    <a href="http://www.saopaulopesquisas.com.br" class="sair">Sair</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Lightboxes -->
+
 <!-- Scripts -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/masked.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+
+        //Lightboxes
+        $('#lightboxes .ir-cadastro').click(function(event) {
+            $('#lightboxes').fadeOut('400', function() {
+                $('#lightboxes .aviso-legal').hide();
+            });
+        });
+
+        //Masks
+        $('#cep').mask("99999 - 999");
+        $("#tel-res, #tel-com, #celular, #celular2").mask("(99) 9999-9999?9");
+        $("#cpf").mask("999.999.999-99");
+        $("#data-nascimento, #nasc1, #nasc2, #nasc3, #nasc4, #nasc5").mask("99/99/9999");
+    });
+</script>
 <!-- End Scripts -->
 </body>
 
