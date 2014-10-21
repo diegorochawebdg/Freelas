@@ -1,0 +1,208 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../font/gotham-book.eot');
+    src: url('../font/gotham-book.eot?#iefix') format('embedded-opentype'),
+         url('../font/gotham-book.woff') format('woff'),
+         url('../font/gotham-book.ttf') format('truetype'),
+         url('../font/gotham-book.svg#gotham-book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gotham';
+    src: url('../font/gotham-bold.eot');
+    src: url('../font/gotham-bold.eot?#iefix') format('embedded-opentype'),
+         url('../font/gotham-bold.woff') format('woff'),
+         url('../font/gotham-bold.ttf') format('truetype'),
+         url('../font/gotham-bold.svg#Gotham') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Reset */
+*{
+	margin:0;
+	padding:0;
+	border:none;
+	-webkit-font-smoothing: antialiased;
+	font-family: 'Gotham', Arial, sans-serif;
+	list-style:none;
+	line-height:1;
+}
+body, html, #container{
+	width:100%;
+	height:100%;
+}
+#container{
+	background:url(../images/bg-body.png) #d1d3d4 repeat-y right bottom;
+	min-height: 735px;
+	padding-top: 110px;
+}
+.clear{
+	clear:both;
+}
+.link-padding{
+	position:relative;
+	height:0;
+	overflow:hidden;
+}
+.page-margin{
+	width:830px;
+	margin:0 auto;
+	display:table;
+}
+
+/*First Block*/
+#first-block{
+	width:295px;
+	float:left;
+}
+#first-block .title{
+	background: white;
+	text-align: center;
+}
+#first-block h1{
+	background:url(../images/hall-185-perdizes-logo.png) no-repeat center;
+	width:100%;
+	padding-top:325px;
+}
+#first-block span{
+	text-align: center;
+	background: #808285;
+	display: block;
+	padding: 10px 0 8px 0;
+	font: normal 14px 'Gotham', Arial, sans-serif; 
+	text-transform: uppercase;
+	color: white;
+	margin-bottom: 35px;
+}
+#first-block h2{
+	text-transform:uppercase;
+	font: normal 26px/1.4em 'Gotham', Arial, sans-serif;
+	color:#1b5c42;
+}
+
+/*Second block*/
+#second-block{
+	float:right;
+	width:440px;
+}
+#second-block .box{
+	background: #FFF url(../images/bg-box.png) no-repeat right center;
+	padding-right: 50px;
+	padding:26px 50px 30px 26px;
+	margin-bottom: 25px;
+}
+#second-block h2{
+	color:#4C5445;
+	font-size:24px;
+	margin-bottom:25px;
+	font: bold 15px/1.4em 'Gotham', Arial, sans-serif;
+	text-transform: uppercase;
+}
+#second-block input{
+	border:solid 1px #CFD2CE;
+	text-transform:uppercase;
+	color:#4C5445;
+	font-size:12px;
+	display:block;
+	width:80%;
+	height:40px;
+	margin-bottom:14px;
+	background-image:url(../images/form-bg.png);
+	background-repeat:no-repeat;
+	padding:0 5px 0 40px;
+}
+#second-block input#nome{
+	background-position:0 -1px;
+}
+#second-block input#email{
+	background-position:0  -55px;
+}
+#second-block input#tel{
+	background-position:0 -108px;
+}
+#second-block input#endereco{
+	background-position:0 -162px;
+}
+#second-block button{
+	cursor:pointer;
+	background:url(../images/button-bg.png) #1b5c42 no-repeat 11px center;
+	padding:16px 16px 16px 56px;
+	font: normal 14px 'Gotham', Arial, sans-serif;
+	color:#FFF;
+	text-transform:uppercase;
+	display: table;
+	margin: 0 27px 0 auto;
+	-webkit-transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+	   -moz-transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+		 -o-transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+			transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+}
+#second-block button:hover{
+	opacity:0.8;
+}
+#second-block .logos .item{
+	float: left;
+	width: 50%;
+	text-align: center;
+}
+#second-block .logos .item img{
+	display: inline;
+}
+
+
+/*And... Make it Responsible!*/
+@media screen and (min-width: 320px) and (max-width: 860px) {
+	body, html, #container{
+		height:auto;
+		padding: 0 !important;
+		background-image: none;
+	}
+	#first-block{
+		margin-top:55px !important;
+	}
+	.page-margin{
+		width:320px;
+	}
+	#first-block, #second-block{
+		float:none;
+		padding-top:0;
+	}
+	#first-block, #third-block{
+		display:table;
+		margin:0 auto 55px auto;
+	}
+	#first-block h1{
+		margin:0 auto;
+	}
+	#second-block{
+		margin:0;
+		width: 320px;
+	}
+	#second-block .box{
+		background-position: 290px center;
+	}
+	#second-block .logos{
+		margin-bottom: 30px;
+	}
+	#second-block .logos .item{
+		float: none;
+		width: 100%;
+	}
+}
+@media screen and (max-height: 533px) {
+	body, html, #container{
+		height:auto;
+	}
+}
+
+/*Thanks*/
+.thanks{
+	float:none !important;
+	display:table;
+	margin:0 auto !important;
+	padding-top:100px;
+}

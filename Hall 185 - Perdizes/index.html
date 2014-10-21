@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="description" content="Cadastre-se e obtenha informações antes do lançamento do empreendimento Hall 185 - Perdizes">
+<META name="viewport" content="initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+<title>Hall 185 - Perdizes</title>
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="css/style.min.css">
+<script type="text/javascript" src="js/valida-form.min.js"></script>
+</head>
+
+<body>
+<div id="container">
+	<div class="page-margin">
+
+        <!--First block-->
+        <div id="first-block">
+            <div class="title">
+                <h1 class="link-padding">Hall 185 Perdizes</h1>
+            </div>
+            <span>Futuro lançamento</span>
+            <h2>Um projeto em que a exclusividade é ver e viver.</h2>
+        </div>
+        <!--End of First block-->
+
+        <!--Second block-->
+        <div id="second-block">
+            <div class="box">
+                <div class="form-container">
+                    <h2>Cadastre-se e receba informações antes do lançamento.</h2>
+                    <form class="block left" name="cadastro" id="mainForm" method="post" action="enviar.php">
+                        <input type="hidden" name="recipient" value="diego.webdg@gmail.com">
+                        <input type="hidden" name="redirect" value="obrigado.html">
+                        <input type="hidden" name="subject" value="Cadastro Site | Hall 185 - Perdizes">
+                        
+                        <input type="text" name="nome" id="nome" placeholder="NOME:">
+                        <input type="email" name="email" id="email" placeholder="E-MAIL:">
+                        <input type="text" name="tel" id="tel" placeholder="TELEFONE:">
+                        <input type="text" name="endereco" id="endereco" placeholder="ENDEREÇO:">
+                        <button type="submit" id="cadastrar" name="cadastrar" title="Cadastrar" onclick="return valida_campos();">Cadastrar</button>
+                    </form>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <div class="logos">
+                <div class="item"><img src="images/alfa-realty-mdl.png" height="100" width="239" alt="Realização e incorporação: Alfa Realty MDL" title="Realização e incorporação: Alfa Realty MDL"></div>
+                <div class="item"><img src="images/anastassiadis-arquitetos.png" height="89" width="202" alt="Projeto de arquitetura: Anastassiadis Arquitetos" title="Projeto de arquitetura: Anastassiadis Arquitetos"></div>
+                <div class="clear"></div>
+            </div>
+            
+        </div>
+        <!--End of Second block-->
+        <div class="clear"></div>
+    </div>
+</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/masked.min.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function(e){
+			jQuery("#tel").mask("(99) 9999-9999?9");
+		});
+	</script>
+</body>
+</html>

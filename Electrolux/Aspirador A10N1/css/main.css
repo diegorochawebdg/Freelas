@@ -37,12 +37,6 @@ a:hover{
 .clear{
     clear: both;
 }
-.animate{
--webkit-transition: all 1000ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
-   -moz-transition: all 1000ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
-     -o-transition: all 1000ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
-        transition: all 1000ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
-}
 .content-center{
     width: 780px;
     padding: 0 10px;
@@ -65,24 +59,24 @@ a:hover{
 /*Header*/
 #header{
     background: url(../images/bg-header.jpg) no-repeat center;
-    height: 491px;
+    height: 393px;
     position: relative;
 }
 #header #logo{
   margin-left: -360px;
   top: 35px;
-}
+} 
 #header .main-txt{
   margin-left: -360px;
-  top: 108px;
+  top: 112px;
 }
 #header .main-txt h1{
   color: #333;
   font: normal 15px Arial, sans-serif;
-  margin-bottom: 23px;
+  margin-bottom: 50px;
 }
 #header .main-txt img.nome-produto{
-  margin-bottom: 33px;
+  margin-bottom: 64px;
 }
 #header .main-txt h2{
   margin-bottom: 44px;
@@ -99,222 +93,213 @@ a:hover{
   font: normal 15px Arial, sans-serif;
 }
 #header .hotspots .item1{
-<<<<<<< HEAD
-  top: 207px;
-  margin-left: -52px;
-=======
-  top: 417px;
-  margin-left: -112px;
->>>>>>> FETCH_HEAD
-}
-#header .hotspots .item2{
-  top: 443px;
-  margin-left: 304px;
+  top: 366px;
+  margin-left: -10px;
 }
 #header .hotspots-content .item1{
-<<<<<<< HEAD
-  top: 105px;
-  margin-left: -33px;
-=======
-  top: 245px;
-  margin-left: -213px;
->>>>>>> FETCH_HEAD
-}
-#header .hotspots-content .item2{
-  top: 414px;
-  margin-left: 148px;
+  top: 340px;
 }
 
-/*Capacidade | Tecnologia*/
-#capacidade-tecnologia{
-  background: url(../images/bg-capacidade-cyclone.jpg) no-repeat center;
-  height: 546px;
+/*Features*/
+#features{
+  background: url(../images/bg-features.jpg) no-repeat center;
+  height: 747px;
 }
-#capacidade-tecnologia h3{
+
+h3{
   color: #b80a7d;
-  font: normal 24px Arial, sans-serif;
+  font: normal 24px/1em Arial, sans-serif;
   margin-bottom: 10px;
 }
-#capacidade-tecnologia p{
+p{
   color: #333;
   font: normal 15px Arial, sans-serif;
 }
-#capacidade-tecnologia .capacidade-txt{
-  top: 63px;
-  margin-left: 125px;
-  width: 201px;
+#features .excelente-desempenho{
+  top: 140px;
+  margin-left: -370px;
+  padding-left: 130px;
+  width: 183px;
+  background: url(../images/1200w.png) no-repeat;
+  min-height: 117px;
 }
-#capacidade-tecnologia .tecnologia-txt{
-  top: 205px;
-  margin-left: 152px;
-  width: 215px;
+#features .nova-versao-mais-leve{
+  top: 285px;
+  margin-left: -368px;
 }
-#capacidade-tecnologia img.acessorios-img{
-  top: 330px;
-  margin-left: 167px;
+#features .animate{
+  top: 248px;
+  margin-left: -138px;
+  background: url(../images/agua.jpg);
+  width: 290px;
+  height: 290px;
+  border-radius: 100%;
+  border: solid 8px #b80a7d;
+  overflow: hidden;
 }
-#capacidade-tecnologia img.cyclone-img{
-  top: 165px;
-  margin-left: -202px;
+#features .animate img{
+  position: absolute;
+  left: -60px;
+  top: -90px;
+  -webkit-transition: all 2000ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+   -moz-transition: all 2000ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+     -o-transition: all 2000ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+        transition: all 2000ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
 }
-#capacidade-tecnologia .hotspots .item1{
-  top: 60px;
-  margin-left: -252px;
+#features .animate img.active{
+  left: -30px;
+  top: -70px;
 }
-#capacidade-tecnologia .hotspots-content .item1{
-  top: 83px;
-  margin-left: -329px;
+#features .eficiencia{
+  top: 320px;
+  margin-left: 180px;
+  width: 200px;
 }
-
-/*Sucção | Filtro*/
-#succao-filtro{
-  background: url(../images/bg-succao-filtro.jpg) no-repeat center;
-  height: 338px;
-}
-#succao-filtro h3{
-  color: white;
-  font: normal 24px Arial, sans-serif;
-  margin-bottom: 17px;
-}
-#succao-filtro p{
-  color: white;
-  font: normal 15px Arial, sans-serif;
-  opacity: 0.6;
-}
-#succao-filtro .txt{
-  top: 6px;
-  margin-left: -369px;
-  width: 380px;
-}
-#succao-filtro .txt li{
-  padding: 3px 0 0 130px;
-  margin-bottom: 45px;
-}
-#succao-filtro .txt li.succao{
-  background: url(../images/mais-poder-de-succao.png) no-repeat;
-}
-#succao-filtro .txt li.filtro{
-  background: url(../images/filtro-hepa-lavavel.png) no-repeat;
-  margin-left: 32px;
-  padding-top: 25px;
+#features .praticidade{
+  top: 550px;
+  margin-left: 40px;
+  padding-left: 125px;
+  background: url(../images/praticidade.png) no-repeat;
+  min-height: 117px;
 }
 
-/*Agilidade | Enrolador*/
-#agilidade-enrolador{
-  background: url(../images/bg-agilidade-enrolador.jpg) no-repeat center;
-  height: 507px;
+/*Sopro Sucção*/
+#sopro-succao{
+  background: url(../images/bg-sopro-succao.jpg) no-repeat center;
+  height: 624px;
 }
-#agilidade-enrolador .sem-saco{
+#sopro-succao h3{
+  color: #b80a7d;
+}
+#sopro-succao p{
+  color: black;
+}
+#sopro-succao .sopro-txt{
+  margin-left: 15px;
+  width: 225px;
+  padding-left: 130px;
+  background: url(../images/sopro-ar.png) no-repeat;
+  min-height: 117px;
+}
+#sopro-succao .controle-succao{
+  top: 170px;
+  margin-left: -28px;
+  width: 235px;
+  padding-left: 176px;
+  background: url(../images/controle-manual-succao.png) no-repeat;
+  min-height: 160px;
+}
+#sopro-succao .bypass{
+  top: 418px;
+  margin-left: -370px;
+}
+#sopro-succao .hotspots .item1{
   top: 10px;
-  margin-left: -155px;
+  margin-left: -112px;
 }
-#agilidade-enrolador .txt{
+#sopro-succao .hotspots-content .item1{
+  top: 32px;
+  margin-left: -240px;
+}
+#sopro-succao .hotspots .item2{
+  top: 375px;
+  margin-left: -112px;
+}
+#sopro-succao .hotspots-content .item2{
+  top: 394px;
+  margin-left: -134px;
+}
+
+/*Acessórios*/
+#acessorios{
+  background: url(../images/bg-acessorios.jpg) no-repeat center;
+  height: 448px;
+}
+#acessorios h3 span{
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-top: 5px;
+}
+#acessorios td{
+  border: solid 1px #b61780;
+  padding: 3px;
+  max-width: 335px;
+  background: #FFF;
+}
+#acessorios td.img{
+  text-align: center;
+}
+#acessorios td.img img{
+  display: inline;
+}
+#acessorios td h4{
+  color: #333;
+  font-size: 15px;
+  font-weight: bold;
+}
+#acessorios td p{
+  color: #333;
+  font-size: 14px;
+}
+#acessorios .filtro-txt{
+  width: 234px;
+  top: 46px;
+  margin-left: 124px;
+}
+#acessorios .hotspots .item1{
   top: 239px;
-  margin-left: -33px;
-  width: 380px;
+  margin-left: 123px;
 }
-#agilidade-enrolador .txt li{
-  padding: 3px 0 0 135px;
-  margin-bottom: 20px;
-  min-height: 116px;
-}
-#agilidade-enrolador .txt li.agilidade{
-  background: url(../images/mais-agilidade.png) no-repeat;
-}
-#agilidade-enrolador .txt li.enrolador{
-  background: url(../images/enrolador-de-cabo-eletrico.png) no-repeat;
-  margin-left: 32px;
-}
-#agilidade-enrolador h3{
-  color: #b50e7d;
-  font: normal 24px Arial, sans-serif;
-  margin-bottom: 15px;
-}
-#agilidade-enrolador p{
-  color: #333;
-  font: normal 15px Arial, sans-serif;
-}
-#agilidade-enrolador .hotspots .item1{
-  top: 30px;
-  margin-left: 70px;
-}
-#agilidade-enrolador .hotspots-content .item1{
-  top: 48px;
-  margin-left: 53px;
+#acessorios .hotspots-content .item1{
+  top: 264px;
+  margin-left: 40px;
 }
 
-
-/*Bocal | Controle Sucção*/
-#bocal-controle-succao{
-  background: url(../images/bg-succao-bocal.jpg) no-repeat center;
-  height: 365px;
+/*Saco coletor*/
+#saco-coletor{
+  background: url(../images/bg-saco-coletor.jpg) no-repeat center;
+  height: 272px;
 }
-#bocal-controle-succao .succao-txt{
-  top: 217px;
-  margin-left: -361px;
-  width: 275px;
+#saco-coletor .txt{
+  margin-left: -386px;
+  padding-left: 180px;
+  background: url(../images/saco-coletor-descartavel.png) no-repeat;
+  min-height: 172px;
+  width: 242px;
 }
-#bocal-controle-succao .succao-txt h3{
-  color: #b80a7d;
-  font: normal 24px Arial, sans-serif;
-  margin-bottom: 10px;
+#saco-coletor .txt *{
+  color: white;
 }
-#bocal-controle-succao .succao-txt p, #bocal-controle-succao td{
-  color: #333;
-  font: normal 15px Arial, sans-serif;
+#saco-coletor .txt li{
+  list-style-type: disc;
+  font: normal 15px/1.4em Arial, sans-serif;
 }
-#bocal-controle-succao .bocal-txt{
-    width: 370px;
-    margin-left: 18px;
-}
-#bocal-controle-succao .bocal-txt h3{
-    color: #a90e74;
-    font: normal 31px Arial, sans-serif;
-    margin-bottom: 5px;
-}
-#bocal-controle-succao .bocal-txt td{
-    border: solid 1px #b61780;
-    min-width: 104px;
-    padding: 5px;
-    background: white;
-}
-#bocal-controle-succao .bocal-txt td.center{
-    padding: 3px !important;
-    text-align: center;
-}
-#bocal-controle-succao .bocal-txt td.center img{
-    display: inline;
-}
-#bocal-controle-succao .hotspots .item1{
-    top: 300px;
-    margin-left: 6px;
-}
-#bocal-controle-succao .hotspots-content .item1{
-    top: 0;
-    margin-left: -85px;
+#saco-coletor .txt ul{
+  margin-left: 20px;
 }
 
 
 /*Video*/
 #video{
   background: #757575 url(../images/bg-video.jpg) no-repeat center top;
-  height: 400px;
+  height: 471px;
 }
 #video h3{
     font: bold 18px Arial, sans-serif;
-    color: #b80a7d;
-    margin: 0 0 5px 460px;
+    color: white;
+    padding: 35px 0 15px;
 }
 
 /*Embalagem | Especificações*/
 #embalagem-especificacoes{
   background: #757575 url(../images/bg-embalagem-especificacoes.jpg) no-repeat center top;
-  height: 610px;
+  height: 537px;
 }
 #embalagem-especificacoes .txt{
-  margin-left: 80px;
-  top: 165px;
-  min-width: 302px;
+  margin-left: 83px;
+  top: 96px;
+  width: 320px;
 }
 #embalagem-especificacoes .txt h3{
   margin-bottom: 15px; 
@@ -322,14 +307,14 @@ a:hover{
   color: white;
 }
 #embalagem-especificacoes .txt ul{
-  margin-bottom: 37px;
+  margin-bottom: 38px;
 }
 #embalagem-especificacoes .txt li{
   color: white;
+  opacity: 0.5;
   font: normal 15px/1.6em Arial, sans-serif;
   list-style-type: disc; 
   list-style-position: inside;
-  opacity: 0.7;
 }
 
 
@@ -412,81 +397,3 @@ a:hover{
 .cd-single-point .cd-more-info.cd-left::before, .cd-single-point .cd-more-info.cd-right::before{top: 50%;    bottom: auto;    -webkit-transform: translateY(-50%);    -moz-transform: translateY(-50%);    -ms-transform: translateY(-50%);    -o-transform: translateY(-50%);    transform: translateY(-50%);}
 .cd-single-point .cd-more-info.cd-left{right: 160%; left: auto;}
 .cd-close-info{display:none;}
-
-/*First Hotspot*/
-<<<<<<< HEAD
-#header .item1.cd-single-point>a, #agilidade-enrolador .hotspots .item1.cd-single-point>a{
-  background: url(../images/botao-spot-header.png) 0 0 no-repeat;
-}
-#header .item1.cd-single-point>a:hover, , #agilidade-enrolador .hotspots .item1.cd-single-point>a:hover{
-  opacity: 0.7;
-}
-#header .item1.cd-single-point>a:after, #header .item1.cd-single-point>a:before, #agilidade-enrolador .hotspots .item1.cd-single-point>a:after, #agilidade-enrolador .hotspots .item1.cd-single-point>a:before{
-  background-color: #b80a7d;
-}
-#header .item1.cd-single-point::after, #agilidade-enrolador .hotspots .item1.cd-single-point::after{content: ''; position: absolute; z-index: 1; width: 100%; height: 100%; top: 0; left: 0; border-radius: inherit; background-color: transparent; -webkit-animation: cd-pulse-header 2s infinite; -moz-animation: cd-pulse-header 2s infinite; animation: cd-pulse-header 2s infinite;}
-=======
-#agilidade-enrolador .hotspots .item1.cd-single-point>a{
-  background: url(../images/botao-spot-header.png) 0 0 no-repeat;
-}
-#agilidade-enrolador .hotspots .item1.cd-single-point>a:hover{
-  opacity: 0.7;
-}
-#agilidade-enrolador .hotspots .item1.cd-single-point>a:after, #agilidade-enrolador .hotspots .item1.cd-single-point>a:before{
-  background-color: #b80a7d;
-}
-#agilidade-enrolador .hotspots .item1.cd-single-point::after{content: ''; position: absolute; z-index: 1; width: 100%; height: 100%; top: 0; left: 0; border-radius: inherit; background-color: transparent; -webkit-animation: cd-pulse-header 2s infinite; -moz-animation: cd-pulse-header 2s infinite; animation: cd-pulse-header 2s infinite;}
->>>>>>> FETCH_HEAD
-
-@-webkit-keyframes cd-pulse-header {
-  0% {
-    -webkit-transform: scale(1);
-    box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.98);
-  }
-
-  50% {
-    box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.98);
-  }
-
-  100% {
-    -webkit-transform: scale(1.6);
-    box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0);
-  }
-}
-@-moz-keyframes cd-pulse-header {
-  0% {
-    -moz-transform: scale(1);
-    box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.98);
-  }
-
-  50% {
-    box-shadow: inset 0 0 1px 1px rgba(255, 255, 255,
-
-  100% {
-    -moz-transform: scale(1.6);
-    box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0);
-  }
-}
-@keyframes cd-pulse-header {
-  0% {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1);
-    box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.98);
-  }
-
-  50% {
-    box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.98);
-  }
-
-  100% {
-    -webkit-transform: scale(1.6);
-    -moz-transform: scale(1.6);
-    -ms-transform: scale(1.6);
-    -o-transform: scale(1.6);
-    transform: scale(1.6);
-    box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0);
-  }
-}
