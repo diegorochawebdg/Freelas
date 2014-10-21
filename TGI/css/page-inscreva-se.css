@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+#main-banner{
+    background: url(../images/home/main-banner-home.jpg) no-repeat center;
+}
+
+#form{
+    padding: 90px 0;
+}

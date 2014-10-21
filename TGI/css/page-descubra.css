@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+#main-banner{
+    background: url(../images/home/main-banner-home.jpg) no-repeat center;
+}
+
+#the-group li{
+    float: left;
+    width: 25%;
+    position: relative;
+    overflow: hidden;
+    height: 340px;
+}
+#the-group li img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -242px;
+    margin-top: -270px;
+    max-width: none;
+    -webkit-transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+   -moz-transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+     -o-transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+        transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+}
+#the-group li img:hover{
+    transform: scale(0.72);
+}
+#the-group .group-text{
+    padding: 90px 40px;
+    background: url(../images/descubra/linha.png) center bottom no-repeat;
+    margin-bottom: 40px;
+}
+#the-group .group-text h1{
+    color: #508384;
+    font-size: 36px;
+    text-align: right;
+    margin: 0;
+}
+#the-group .group-text p{
+    color: #545252;
+    font-size: 23px;
+    line-height: 1.3em;
+}
