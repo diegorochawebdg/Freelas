@@ -7,3 +7,19 @@
 #form{
     padding: 90px 0;
 }
+#form .row-fluid{
+    max-width: 500px;
+    margin: 0 auto;
+}
+#form .row-fluid h1{
+    color: #c83e33;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+#form .row-fluid input{
+    height: 42px;
+    width: 96%;
+    padding: 0 2%;
+    border: solid 1px #c3c3c3;
+    margin-bottom: 15px;
+}
