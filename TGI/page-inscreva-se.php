@@ -8,11 +8,11 @@
 			<div class="row-fluid">
 				<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit molestias, dolores minus ad libero. Dolores sit repudiandae rem ab, quam minus cum illum voluptatum accusamus iure inventore odio eligendi, necessitatibus.</h1>
 				<form action="">
-					<input type="text" name="nome" id="nome" placeholder="Nome Completo">
-					<input type="email" name="email" id="email" placeholder="E-mail">
-					<input type="password" name="senha" id="senha" placeholder="Senha">
+					<input type="text" name="nome" id="nome" placeholder="Nome Completo" required>
+					<input type="email" name="email" id="email" placeholder="E-mail" required>
+					<input type="password" name="senha" id="senha" placeholder="Senha" required>
 					<div class="select">
-						<select name="estado" id="estado">
+						<select name="estado" id="estado" required>
 							<option value="estado">Estado</option> 
                             <option value="ac">Acre</option> 
                             <option value="al">Alagoas</option> 
@@ -42,23 +42,23 @@
                             <option value="sp">São Paulo</option> 
                             <option value="to">Tocantins</option> 
 						</select>
-					<input type="text" name="cidade" id="cidade" placeholder="Cidade">
+					<input type="text" name="cidade" id="cidade" placeholder="Cidade" required>
 					<div class="clearfix"></div>
-					<span>Data de nascimento</span>
-					<input type="text" name="dia" id="dia" placeholder="Dia">
-					<input type="text" name="mes" id="mes" placeholder="Mês">
-					<input type="text" name="ano" id="ano" placeholder="Ano">
+					<span class="data">Data de nascimento</span>
+					<input type="text" name="dia" id="dia" placeholder="Dia" class="col-md-4" required>
+					<input type="text" name="mes" id="mes" placeholder="Mês" class="col-md-4" required>
+					<input type="text" name="ano" id="ano" placeholder="Ano" class="col-md-4" required>
 					<div class="clearfix"></div>
 
 					<label>Sexo:</label>
-					<input type="radio" name="sexo" id="masculino">
+					<input type="radio" name="sexo" id="masculino" required>
 					<label for="masculino">Masculino</label>
-					<input type="radio" name="sexo" id="feminino">
+					<input type="radio" name="sexo" id="feminino" required>
 					<label for="feminino">Feminino</label>
 					<div class="clearfix"></div>
 
 					<input type="checkbox" name="termos" id="termos" checked>
-					<label for="termos">Ao clicar em Participar, você concorda com nossos <a href="#" target="_blank">Termos e Política de Privacidade</a></label>
+					<label class="termos" for="termos">Ao clicar em Participar, você concorda com nossos <a href="#" target="_blank">Termos e Política de Privacidade</a></label>
 
 					<button type="submit" name="participar" id="participar">Participar</button>
 				</form>

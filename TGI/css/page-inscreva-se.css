@@ -23,3 +23,58 @@
     border: solid 1px #c3c3c3;
     margin-bottom: 15px;
 }
+#form .row-fluid select{
+    height: 42px;
+    width: 96%;
+    padding: 0 2%;
+    border: solid 1px #c3c3c3;
+    margin-bottom: 15px;
+    background: transparent;
+}
+#form span.data{
+    display: block;
+    margin-bottom: 3px;
+    color: #7c7c7c;
+}
+#form input#dia, #form input#mes, #form input#ano{
+    float: left;
+    width: 32%;
+}
+#form label, #form input[type="radio"]{
+    display: inline;
+    width: auto;
+    vertical-align: middle;
+}
+#form label{
+    margin-right: 20px;
+}
+#form input[type="radio"]{
+    margin: 0 5px 0 0;
+}
+#form input[type="checkbox"]{
+    display: inline-block;
+    width: 30px;
+    height: auto
+}
+#form label.termos{
+    color: #7c7c7c;
+    font-size: 9px;
+}
+#form label.termos a{
+    display: inline;
+    color: inherit;
+    text-decoration: underline;
+    font-size: inherit;
+}
+#form button{
+    background: #c83e33;
+    padding: 10px 20px 12px 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    display: table;
+    margin: 30px auto;
+}
+#form button:hover{
+    background: #508384;
+}
