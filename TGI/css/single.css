@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+#main-banner{
+    background: url(../images/home/main-banner-home.jpg) no-repeat center;
+}
+
+#o-artista{
+    padding: 60px 0;
+}
+#o-artista h2{
+    margin: 0 0 30px 20px;
+    color: #c83e33;
+    font-size: 46px;
+    font-weight: bold;
+}
+#o-artista h1{
+    color: #c83e33;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/*Sidebar*/
+#sidebar img{
+    margin-bottom: 20px;
+}
+#sidebar #artista-info{
+    margin-bottom: 15px;
+}
+#sidebar #artista-info li{
+    font-size: 14px;
+    line-height: 1.4em;
+}
+#sidebar #artista-social{
+    margin-bottom: 25px;
+}
+#sidebar #artista-social li{
+    display: inline-block;
+}
+#sidebar #artista-social li a{
+    background: url(../images/artista/social.png) no-repeat;
+    width: 24px;
+    height: 24px;
+}
+#sidebar #artista-social li a.twitter{
+    background-position: -27px 0;
+}
+#sidebar #artista-social li a.google{
+    background-position: -53px 0;
+}
+#sidebar #artista-social li a.linkedin{
+    background-position: -80px 0;
+}
+#sidebar #artista-social li a.instagram{
+    background-position: -106px 0;
+}
+#sidebar #artista-social li a.behance{
+    background-position: -133px 0;
+}
+#sidebar #artista-social li a.flickr{
+    background-position: -159px 0;
+}
+#sidebar #artista-social li a.pinterest{
+    background-position: -185px 0;
+}
+#sidebar .description p{
+    font: normal 12px/1.3em 'Open Sans', Arial, sans-serif;
+}
+
+/*Content*/
+#content li{
+    margin-bottom: 20px;
+}
+#content li a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-height: 335px;
+    background: rgba(200, 62, 51, 0.8);
+    top: 0;
+    display: table;
+    opacity: 0;
+    -webkit-transition: all 400ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+       -moz-transition: all 400ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+         -o-transition: all 400ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+            transition: all 400ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+}
+#content li a:hover{
+    text-decoration: none;
+    opacity: 1;
+}
+#content li .relative{
+    position: relative;
+}
+#content li .relative .vertical-align{
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+#content li .relative .vertical-align span{
+    font-size: 16px;
+    color: white;
+    padding: 25px;
+    display: block;
+}

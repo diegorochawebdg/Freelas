@@ -26,6 +26,7 @@
                 <a href="/" id="main-logo" title="Voltar para a página inicial" class="link-padding">&#35;Urbano</a>
                 <ul>
                     <li><a href="#" title="Descubra">Descubra</a></li>
+                    <li><a href="#" title="Artistas">Artistas</a></li>
                     <li><a href="#" title="Encontre">Encontre</a></li>
                     <li><a href="#" title="Participe">Participe</a></li>
                 </ul>
