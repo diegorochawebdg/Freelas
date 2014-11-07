@@ -99,26 +99,16 @@ a:hover{
   font: normal 15px Arial, sans-serif;
 }
 #header .hotspots .item1{
-<<<<<<< HEAD
   top: 207px;
   margin-left: -52px;
-=======
-  top: 417px;
-  margin-left: -112px;
->>>>>>> FETCH_HEAD
 }
 #header .hotspots .item2{
   top: 443px;
   margin-left: 304px;
 }
 #header .hotspots-content .item1{
-<<<<<<< HEAD
   top: 105px;
   margin-left: -33px;
-=======
-  top: 245px;
-  margin-left: -213px;
->>>>>>> FETCH_HEAD
 }
 #header .hotspots-content .item2{
   top: 414px;
@@ -414,7 +404,6 @@ a:hover{
 .cd-close-info{display:none;}
 
 /*First Hotspot*/
-<<<<<<< HEAD
 #header .item1.cd-single-point>a, #agilidade-enrolador .hotspots .item1.cd-single-point>a{
   background: url(../images/botao-spot-header.png) 0 0 no-repeat;
 }
@@ -425,18 +414,6 @@ a:hover{
   background-color: #b80a7d;
 }
 #header .item1.cd-single-point::after, #agilidade-enrolador .hotspots .item1.cd-single-point::after{content: ''; position: absolute; z-index: 1; width: 100%; height: 100%; top: 0; left: 0; border-radius: inherit; background-color: transparent; -webkit-animation: cd-pulse-header 2s infinite; -moz-animation: cd-pulse-header 2s infinite; animation: cd-pulse-header 2s infinite;}
-=======
-#agilidade-enrolador .hotspots .item1.cd-single-point>a{
-  background: url(../images/botao-spot-header.png) 0 0 no-repeat;
-}
-#agilidade-enrolador .hotspots .item1.cd-single-point>a:hover{
-  opacity: 0.7;
-}
-#agilidade-enrolador .hotspots .item1.cd-single-point>a:after, #agilidade-enrolador .hotspots .item1.cd-single-point>a:before{
-  background-color: #b80a7d;
-}
-#agilidade-enrolador .hotspots .item1.cd-single-point::after{content: ''; position: absolute; z-index: 1; width: 100%; height: 100%; top: 0; left: 0; border-radius: inherit; background-color: transparent; -webkit-animation: cd-pulse-header 2s infinite; -moz-animation: cd-pulse-header 2s infinite; animation: cd-pulse-header 2s infinite;}
->>>>>>> FETCH_HEAD
 
 @-webkit-keyframes cd-pulse-header {
   0% {
