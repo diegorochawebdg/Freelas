@@ -60,51 +60,62 @@
 
 			<ul id="artists">
 				<li class="col-md-6">
-					<img src="http://lorempixel.com/125/125/food/" alt="" class="col-md-4">
+					<a href="#">
+						<img src="http://lorempixel.com/125/125/food/" alt="" class="col-md-4">
+					</a>
 					<div class="artist-info col-md-8">
 						<h3>Julio Vieira</h3>
 						<span><strong>Localização:</strong> São Paulo</span>
 						<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus quae dolores, dolorem voluptatum vel perspiciatis ipsa, illo error in fugiat ullam molestiae similique atque at molestias!</span>
-						<a href="#" title="Conheça">Conheça</a>
+						<a href="#" title="Conheça" class="conheca-link">Conheça</a>
 					</div>
 					<div class="clearfix"></div>
 				</li>
 				<li class="col-md-6">
-					<img src="http://lorempixel.com/125/125/food/" alt="" class="col-md-4">
+					<a href="#">
+						<img src="http://lorempixel.com/125/125/food/" alt="" class="col-md-4">
+					</a>
 					<div class="artist-info col-md-8">
 						<h3>Julio Vieira</h3>
 						<span><strong>Localização:</strong> São Paulo</span>
 						<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus quae dolores, dolorem voluptatum vel perspiciatis ipsa, illo error in fugiat ullam molestiae similique atque at molestias!</span>
-						<a href="#" title="Conheça">Conheça</a>
+						<a href="#" title="Conheça" class="conheca-link">Conheça</a>
 					</div>
 					<div class="clearfix"></div>
 				</li>
 				<li class="col-md-6">
-					<img src="http://lorempixel.com/125/125/food/" alt="" class="col-md-4">
+					<a href="#">
+						<img src="http://lorempixel.com/125/125/food/" alt="" class="col-md-4">
+					</a>
 					<div class="artist-info col-md-8">
 						<h3>Julio Vieira</h3>
 						<span><strong>Localização:</strong> São Paulo</span>
 						<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus quae dolores, dolorem voluptatum vel perspiciatis ipsa, illo error in fugiat ullam molestiae similique atque at molestias!</span>
-						<a href="#" title="Conheça">Conheça</a>
-					</div>
-					<div class="clearfix"></div>
-				</li><li class="col-md-6">
-					<img src="http://lorempixel.com/125/125/food/" alt="" class="col-md-4">
-					<div class="artist-info col-md-8">
-						<h3>Julio Vieira</h3>
-						<span><strong>Localização:</strong> São Paulo</span>
-						<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus quae dolores, dolorem voluptatum vel perspiciatis ipsa, illo error in fugiat ullam molestiae similique atque at molestias!</span>
-						<a href="#" title="Conheça">Conheça</a>
+						<a href="#" title="Conheça" class="conheca-link">Conheça</a>
 					</div>
 					<div class="clearfix"></div>
 				</li>
 				<li class="col-md-6">
-					<img src="http://lorempixel.com/125/125/food/" alt="" class="col-md-4">
+					<a href="#">
+						<img src="http://lorempixel.com/125/125/food/" alt="" class="col-md-4">
+					</a>
 					<div class="artist-info col-md-8">
 						<h3>Julio Vieira</h3>
 						<span><strong>Localização:</strong> São Paulo</span>
 						<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus quae dolores, dolorem voluptatum vel perspiciatis ipsa, illo error in fugiat ullam molestiae similique atque at molestias!</span>
-						<a href="#" title="Conheça">Conheça</a>
+						<a href="#" title="Conheça" class="conheca-link">Conheça</a>
+					</div>
+					<div class="clearfix"></div>
+				</li>
+				<li class="col-md-6">
+					<a href="#">
+						<img src="http://lorempixel.com/125/125/food/" alt="" class="col-md-4">
+					</a>
+					<div class="artist-info col-md-8">
+						<h3>Julio Vieira</h3>
+						<span><strong>Localização:</strong> São Paulo</span>
+						<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus quae dolores, dolorem voluptatum vel perspiciatis ipsa, illo error in fugiat ullam molestiae similique atque at molestias!</span>
+						<a href="#" title="Conheça" class="conheca-link">Conheça</a>
 					</div>
 					<div class="clearfix"></div>
 				</li>
