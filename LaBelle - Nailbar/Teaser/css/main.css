@@ -71,7 +71,7 @@ hgroup{
     left: 50%;
     top: 50%;
     margin-left: -240px;
-    margin-top: -265px;
+    margin-top: -303px;
     text-align: center;
 }
 hgroup h1 img{
@@ -79,12 +79,20 @@ hgroup h1 img{
     margin-bottom: 15px;
 }
 hgroup h2{
-    font: normal 47px Simplifica;
+    font: normal 47px/1em Simplifica;
     color: #BC2748;
+    margin-bottom: 5px;
+}
+hgroup h2 strong{
+    font: bold 47px Simplifica;
+    color: inherit;
 }
 a{
     font: normal 26px/1em Simplifica;
     color: #308C7E;
+}
+a.mailto{
+    margin-bottom: 20px;
 }
 
 /*Responsible*/
