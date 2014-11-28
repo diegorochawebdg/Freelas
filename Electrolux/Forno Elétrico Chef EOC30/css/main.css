@@ -13,6 +13,7 @@
 }
 body, html {
     width: 100%;
+    min-width: 800px;
     min-height: 100%;
 }
 img {
@@ -62,8 +63,8 @@ a:hover {
 }
 h3 {
     color: #b80a7d;
-    font-size: 24px;
-    font-weight: normal;
+    font-size: 22px;
+    font-weight: bold;
     margin-bottom: 10px;
 }
 p {
@@ -142,7 +143,11 @@ p.white {
     margin-left: -10px;
 }
 #features1 .seletor h3 {
-    font-weight: bold;
+    font-size: 28px;
+    color: #fe22c2;
+}
+#features1 .seletor p {
+    color: white;
 }
 #features1 .hotspots .item1 {
     margin-left: -245px;
@@ -280,12 +285,16 @@ p.white {
 #video {
     background: url(../images/bg-video.jpg) no-repeat center;
     height: 515px;
+    text-align: center;
 }
 #video h3 {
     font: bold 18px Arial, sans-serif;
     color: white;
     padding: 35px 80px 15px 0;
     text-align: right;
+}
+#video img, #video iframe {
+    display: inline;
 }
 /*Embalagem | Especificações*/
 
