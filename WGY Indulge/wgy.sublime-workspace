@@ -1,0 +1,463 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"boca",
+				"bocal-para-estofados.jpg	w:88 h:57"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"bg-features",
+				"bg-features-2.jpg	w:1920 h:669"
+			],
+			[
+				"bg-fe",
+				"bg-features-2.jpg	w:1920 h:669"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"the_",
+				"the_author"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"inl",
+				"inline"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"titu",
+				"tituloEmpreendimento"
+			],
+			[
+				"tit",
+				"tituloEmpreendimento"
+			],
+			[
+				"read",
+				"ready	$(document).ready"
+			],
+			[
+				"fsi",
+				"font-size"
+			],
+			[
+				"ta",
+				"target	Attr"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"bg",
+				"bg+	background: ${1:#fff} url(${2}) ${3:0} ${4:0} ${5:no-repeat};"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"lis",
+				"list-style-position"
+			],
+			[
+				"bo",
+				"bocal-3.jpg	w:48 h:35"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"su",
+				"mais-poder-de-succao.png	w:117 h:117"
+			],
+			[
+				"bg-su",
+				"bg-succao-filtro.jpg	w:1920 h:338"
+			],
+			[
+				"cel",
+				"cellspacing	Attr"
+			],
+			[
+				"att",
+				"attr	.attr() - single"
+			],
+			[
+				"boc",
+				"bocal-2.jpg	w:70 h:27"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"alc",
+				"longo-alcance.png	w:119 h:117"
+			],
+			[
+				"to",
+				"top"
+			],
+			[
+				"MARG",
+				"margin-bottom"
+			],
+			[
+				"list",
+				"list-style-position"
+			],
+			[
+				"list-st",
+				"list-style-type"
+			],
+			[
+				"tab",
+				"table"
+			],
+			[
+				"nor",
+				"no-repeat"
+			],
+			[
+				"tb",
+				"table"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"text-dco",
+				"text-decoration"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"i",
+				"inline-block"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"fade",
+				"fadeIn	.fadeIn()"
+			],
+			[
+				"pos",
+				"pos-r	position: relative;"
+			],
+			[
+				"rgb",
+				"rgba()"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"scr",
+				"script"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"no",
+				"no-repeat"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 287.0,
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"view.options().set('wordWrap', True)",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/DiegoRocha/Documents/GitHub/Freelas/Electrolux/Aspirador GT3000 Pro/css/main.css",
+		"/Users/DiegoRocha/Documents/GitHub/Freelas/Electrolux/Aspirador GT3000 Pro/index.html",
+		"/Users/DiegoRocha/Documents/GitHub/Freelas/Electrolux/Processador FPB11/css/main.css",
+		"/Users/DiegoRocha/Documents/GitHub/Freelas/magile/functions.php",
+		"/private/var/folders/56/xvzxw8d12wn5dl7j7t9jz4n80000gn/T/fz3temp-1/index.php",
+		"/Users/DiegoRocha/Documents/GitHub/Freelas/Electrolux/electrolux-things.sublime-project",
+		"/private/var/folders/56/xvzxw8d12wn5dl7j7t9jz4n80000gn/T/fz3temp-1/functions.php",
+		"/private/var/folders/56/xvzxw8d12wn5dl7j7t9jz4n80000gn/T/fz3temp-1/footer.php",
+		"/private/var/folders/56/xvzxw8d12wn5dl7j7t9jz4n80000gn/T/fz3temp-1/style.css",
+		"/private/var/folders/56/xvzxw8d12wn5dl7j7t9jz4n80000gn/T/fz3temp-1/header.php",
+		"/private/var/folders/56/xvzxw8d12wn5dl7j7t9jz4n80000gn/T/fz3temp-1/single.php",
+		"/private/var/folders/56/xvzxw8d12wn5dl7j7t9jz4n80000gn/T/fz3temp-1/page-descubra.php",
+		"/private/var/folders/56/xvzxw8d12wn5dl7j7t9jz4n80000gn/T/fz3temp-1/page-artista.php",
+		"/private/var/folders/56/xvzxw8d12wn5dl7j7t9jz4n80000gn/T/fz3temp-1/page-inscreva-se.php",
+		"/Users/DiegoRocha/Documents/GitHub/Freelas/TGI/css/page-inscreva-se.css",
+		"/Users/DiegoRocha/Documents/GitHub/Freelas/TGI/page-inscreva-se.php",
+		"/private/var/folders/56/xvzxw8d12wn5dl7j7t9jz4n80000gn/T/fz3temp-1/grand-station.html",
+		"/Users/DiegoRocha/Documents/GitHub/Freelas/TGI/css/page-descubra.css",
+		"/Users/DiegoRocha/Documents/GitHub/Freelas/TGI/page-descubra.php",
+		"/Users/DiegoRocha/Documents/GitHub/Freelas/TGI/index.php",
+		"/Users/DiegoRocha/Documents/GitHub/FessKobbi/Brookfield/Landing - Semana conectada Brookfield/Landing/index.html",
+		"/Users/DiegoRocha/Documents/GitHub/FessKobbi/Brookfield/Landing - encontre seu Brookfield/index.html",
+		"/Users/DiegoRocha/Documents/GitHub/Freelas/Electrolux/Aspirador Nano NAN11/css/main.css",
+		"/Users/DiegoRocha/Documents/GitHub/Freelas/Electrolux/Aspirador Nano NAN11/index.html",
+		"/Users/DiegoRocha/Documents/GitHub/Freelas/Electrolux/Aspirador Nano NAN11/js/script.js",
+		"/Users/DiegoRocha/Documents/GitHub/Freelas/Electrolux/Panela Carioquinha - Mobile/index.html",
+		"/Users/DiegoRocha/Documents/GitHub/Freelas/Electrolux/Panela Carioquinha - Mobile/css/main.css",
+		"/Users/DiegoRocha/Documents/GitHub/Freelas/Electrolux/Panela Carioquinha - Mobile/js/script.js",
+		"/Users/DiegoRocha/Documents/GitHub/Freelas/Electrolux/Panela Carioquinha/index.html",
+		"/Users/DiegoRocha/Documents/GitHub/Freelas/Electrolux/Panela Carioquinha/css/main.css",
+		"/Users/DiegoRocha/Documents/GitHub/FessKobbi/singularidades/css/main.css",
+		"/Users/DiegoRocha/Documents/GitHub/FessKobbi/singularidades/footer.php",
+		"/Users/DiegoRocha/Documents/GitHub/FessKobbi/singularidades/css/home.css",
+		"/Users/DiegoRocha/Documents/GitHub/FessKobbi/singularidades/index.php",
+		"/Users/DiegoRocha/Documents/GitHub/Freelas/São Paulo Pesquisas/localizacao.html",
+		"/Users/DiegoRocha/Documents/GitHub/Freelas/São Paulo Pesquisas/sala-de-trabalho.html",
+		"/Users/DiegoRocha/Documents/GitHub/FessKobbi/Divena/Site/footer.php",
+		"/Users/DiegoRocha/Documents/GitHub/FessKobbi/Divena/Site/lead_testdrive.php",
+		"/Users/DiegoRocha/Documents/GitHub/FessKobbi/Divena/Site/css/main.css",
+		"/Users/DiegoRocha/Documents/GitHub/FessKobbi/Divena/Site/header.php",
+		"/Users/DiegoRocha/Documents/GitHub/FessKobbi/Divena/Site/js/main.js",
+		"/Users/DiegoRocha/Documents/GitHub/FessKobbi/Divena/Site/index.php",
+		"/Users/DiegoRocha/Documents/GitHub/FessKobbi/Brookfield/Landing - Semana conectada Brookfield/Landing/css/main.css",
+		"/Users/DiegoRocha/Documents/GitHub/FessKobbi/Brookfield/Landing - Semana conectada Brookfield/Teaser/index.html",
+		"/Users/DiegoRocha/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/DiegoRocha/Documents/GitHub/FessKobbi/Brookfield/Landing - Semana conectada Brookfield/Teaser/js/script.js",
+		"/Users/DiegoRocha/Documents/GitHub/FessKobbi/Brookfield/Landing - Semana conectada Brookfield/Teaser/css/main.css"
+	],
+	"find":
+	{
+		"height": 29.0
+	},
+	"find_in_files":
+	{
+		"height": 99.0,
+		"where_history":
+		[
+			"<open files>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"#508384",
+			"#features .bocaltxt table",
+			"cd-pulse",
+			";\n",
+			"#multiplos-programas",
+			"#warp .col-conteudo .col-sobre",
+			"src=\"img/",
+			"img",
+			"absolute",
+			"<p></p>\n                        <br>",
+			".main-lightbox-content .content-lightbox",
+			";\n",
+			"shad"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"#bocal-controle-succao .succao-txt",
+			"#programas-cozimento",
+			"#slider",
+			"src=\"images/",
+			".leads"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "wgy.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 248.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
