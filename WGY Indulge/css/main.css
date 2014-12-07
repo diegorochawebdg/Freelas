@@ -1,0 +1,141 @@
+/*Fonts*/
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Thin.eot');
+    src: url('../fonts/Gotham-Thin.eot') format('embedded-opentype'),
+         url('../fonts/Gotham-Thin.woff') format('woff'),
+         url('../fonts/Gotham-Thin.ttf') format('truetype'),
+         url('../fonts/Gotham-Thin.svg#Gotham') format('svg');
+         font-style: normal;
+         font-weight: lighter;
+}
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Light.eot');
+    src: url('../fonts/Gotham-Light.eot') format('embedded-opentype'),
+         url('../fonts/Gotham-Light.woff') format('woff'),
+         url('../fonts/Gotham-Light.ttf') format('truetype'),
+         url('../fonts/Gotham-Light.svg#Gotham') format('svg');
+         font-style: normal;
+         font-weight: normal;
+}
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Book.eot');
+    src: url('../fonts/Gotham-Book.eot') format('embedded-opentype'),
+         url('../fonts/Gotham-Book.woff') format('woff'),
+         url('../fonts/Gotham-Book.ttf') format('truetype'),
+         url('../fonts/Gotham-Book.svg#Gotham') format('svg');
+         font-style: normal;
+         font-weight: bold;
+}
+
+/*Reset Css*/
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    -webkit-font-smoothing: antialiased;
+    background-repeat: no-repeat;
+    list-style: none;
+    font-family: 'Gotham', Arial, Helvetica, sans-serif;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+body, html{
+    width: 100%;
+    min-height: 100%;
+}
+img{
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+.link-padding{
+    position: relative;
+    overflow: hidden;
+    height: 0;
+}
+.animate{
+-webkit-transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+   -moz-transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+     -o-transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+        transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+}
+/*End of Reset Css*/
+
+/*Header*/
+header{
+	padding: 35px 0;
+}
+header a{
+	color: black;
+	font: lighter 17px 'Gotham', Arial, sans-serif;
+}
+header .header-link-bar li{
+	margin: 0 30px;
+}
+
+/*Footer*/
+footer{
+	padding: 90px 0 0 0;
+	background: #ebebeb;
+}
+footer .footer-social li{
+	display: inline-block;
+	margin: 0 22px 40px 0;
+}
+footer .footer-social li:last-child{
+	margin-right: 0;
+}
+footer .footer-social li:hover img {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.7;
+}
+
+
+footer .copyright{
+	background: black;
+	padding: 15px 0;
+	text-align: center;
+	margin-top: 55px;
+}
+footer .copyright small{
+	color: white;
+	font: bold 14px 'Gotham', Arial, sans-serif;
+	text-transform: none;
+}
+
+footer .footerlinks li{
+	display: inline-block;
+	margin: 0 50px 40px 0;
+}
+footer .footerlinks ul li:last-child{
+	margin-right: 0;
+}
+footer .footerlinks li a{
+	color: black;
+	text-transform: none;
+	font-size: 18px;
+}
+footer .contact-info *{
+	color: black;
+	font: normal 14px 'Gotham', Arial, sans-serif;
+}
+footer .contact-info li{
+	min-height: 25px;
+	background: url(../images/contact-footer.png) no-repeat;
+	margin-bottom: 29px;
+	padding: 5px 0 0 40px;
+}
+footer .contact-info li.address{
+	background-position: 0 -51px;
+}
+footer .contact-info li.mail{
+	background-position: 0 -104px;
+}
