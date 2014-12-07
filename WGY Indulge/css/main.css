@@ -68,6 +68,7 @@ img{
 /*Header*/
 header{
 	padding: 33px 0;
+	background: white;
 }
 header a{
 	color: black;
