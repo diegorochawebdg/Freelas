@@ -2,20 +2,20 @@
 <html lang="en-us">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no">
         <meta name="description" content="">
         <meta name="author" content="Diego Rocha">
-        <link rel="icon" href="favicon.ico">
+        <link rel="icon" href="/favicon.ico">
 
         <title>Título de exemplo</title>
 		
 		<!-- Styles -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/main.min.css">
         <!-- End Styles -->
 
         <!-- Scripts -->
-        <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-1.11.1.min.js"></script>
         <!-- End Scripts -->
     </head>
 
@@ -33,7 +33,7 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="/" title="WGY Indulge"><img src="images/wgy-indulge-logo.png" height="118" width="188" alt="WGY Indulge" title="WGY Indulge"></a>
+						<a class="navbar-brand" href="/" title="WGY Indulge"><img src="/images/wgy-indulge-logo.png" height="118" width="188" alt="WGY Indulge" title="WGY Indulge"></a>
 					</div>
 
 					<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
@@ -43,9 +43,9 @@
 							<li><a href="#" title="Subscribe">Subscribe</a></li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
-							<li><a href="" target="_blank" title="Facebook" class="header-facebook"><img src="images/facebook-header.png" height="69" width="69" alt="Facebook" title="Facebook"></a></li>
-							<li><a href="" target="_blank" title="Twitter" class="header-twitter"><img src="images/twitter-header.png" height="69" width="69" alt="Twitter" title="Twitter"></a></li>
-							<li><a href="" target="_blank" title="Instagram" class="header-instagram"><img src="images/instagram-header.png" height="69" width="69" alt="Instagram" title="Instagram"></a></li>
+							<li><a href="" target="_blank" title="Facebook" class="header-facebook"><img src="/images/facebook-header.png" height="69" width="69" alt="Facebook" title="Facebook" class="animate"></a></li>
+							<li><a href="" target="_blank" title="Twitter" class="header-twitter"><img src="/images/twitter-header.png" height="69" width="69" alt="Twitter" title="Twitter" class="animate"></a></li>
+							<li><a href="" target="_blank" title="Instagram" class="header-instagram"><img src="/images/instagram-header.png" height="69" width="69" alt="Instagram" title="Instagram" class="animate"></a></li>
 						</ul>
 					</div>
 				</nav>

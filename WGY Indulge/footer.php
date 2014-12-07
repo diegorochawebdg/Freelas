@@ -8,9 +8,9 @@
 				<div class="footer-social pull-right  col-md-5">
 					<div class="row">
 						<ul>
-							<li><a href="" target="_blank" title="Facebook" class="header-facebook"><img src="images/facebook-footer.png" height="50" width="50" alt="Facebook" title="Facebook" class="animate"></a></li>
-							<li><a href="" target="_blank" title="Twitter" class="header-twitter"><img src="images/twitter-footer.png" height="50" width="50" alt="Twitter" title="Twitter" class="animate"></a></li>
-							<li><a href="" target="_blank" title="Instagram" class="header-instagram"><img src="images/instagram-footer.png" height="50" width="50" alt="Instagram" title="Instagram" class="animate"></a></li>
+							<li><a href="" target="_blank" title="Facebook" class="header-facebook"><img src="/images/facebook-footer.png" height="50" width="50" alt="Facebook" title="Facebook" class="animate"></a></li>
+							<li><a href="" target="_blank" title="Twitter" class="header-twitter"><img src="/images/twitter-footer.png" height="50" width="50" alt="Twitter" title="Twitter" class="animate"></a></li>
+							<li><a href="" target="_blank" title="Instagram" class="header-instagram"><img src="/images/instagram-footer.png" height="50" width="50" alt="Instagram" title="Instagram" class="animate"></a></li>
 						</ul>
 					</div>
 				</div>
@@ -56,9 +56,19 @@
 		</footer>
 		<!-- End Footer -->
 
+		<!-- Float bar -->
+		<div id="float-bar">
+			<ul>
+				<li class="float-bar-item1"><a href="#" title=""></a></li>
+				<li class="float-bar-item2"><a href="#" title=""></a></li>
+				<li class="float-bar-item3"><a href="#" title=""></a></li>
+			</ul>
+		</div>
+		<!-- End Float bar -->
+
 		<!-- Another Scripts -->
-        <script type="text/javascript" src="js/html5shiv.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/js/html5shiv.min.js"></script>
+        <script type="text/javascript" src="/js/bootstrap.min.js"></script>
         <!-- End Another Scripts -->
     </body>
 </html>
