@@ -1,6 +1,6 @@
 body{
 	background: url(../images/travel/bg-travel-boxes.jpg) no-repeat center;
-	background-size: auto 100%;
+	background-size: cover;
 	background-attachment: fixed;
 }
 
@@ -8,7 +8,7 @@ body{
 #main-content{
 	background: #ebebeb;
 }
-#main-content h1, #membership h2{
+#main-content h1, #themes-slider h2{
 	font: normal 60px 'Gotham', Arial, sans-serif;
 	padding: 0 15px 30px 15px;
 	margin: 0 auto 55px auto;
@@ -28,33 +28,30 @@ p strong{
 	font-weight: normal;
 }
 
-/*Concierge Blocks*/
-#concierge-blocks{
-	background: #3e5a75;
-}
-#concierge-blocks li{
+/*Travel Blocks*/
+#travel-blocks li, .choose-blocks li{
 	margin-bottom: 30px;
 }
-#concierge-blocks li .relative{
-	 background: #19242f; 
+#travel-blocks li .relative, .choose-blocks li .relative{
+	 background: rgba(0, 0, 0, 0.3); 
 	-webkit-box-shadow: 0 0 0 5px white; 
 	box-shadow: 0 0 0 2px white; 
 	border-radius: 2px;
 	padding: 50% 0;
 }
-#concierge-blocks li .relative .blocks-text{
+#travel-blocks li .relative .blocks-text, .choose-blocks li .relative .blocks-text{
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	top: 0;
 	margin: 0 -15px;
 }
-#concierge-blocks li .relative .blocks-text .text-relative{
+#travel-blocks li .relative .blocks-text .text-relative, .choose-blocks li .relative .blocks-text .text-relative{
 	height: 100%;
 	display: table;
 	width: 100%;
 }
-#concierge-blocks li .relative span{
+#travel-blocks li .relative span, .choose-blocks li .relative span{
 	color: white;
 	font: lighter 24px 'Gotham', Arial, sans-serif;
 	display: block;
@@ -64,113 +61,295 @@ p strong{
 	vertical-align: middle;
 }
 
-/*Membership*/
-#membership h2{
-	margin-bottom: 105px;
+/*=========Themes Slider========*/
+/*Tell Us*/
+.tell-us .choose-blocks li .relative{
+	background: transparent;
+	box-shadow: 0 0 0 2px #1c1c1c !important;
 }
-#membership li{
+#themes-slider .tell-us li .relative span{
+	color: #1c1c1c;
+	font-size: 27px;
+}
+
+/*Themes*/
+#themes-slider{
+	background: #ebebeb;
+}
+#themes-slider li{
 	margin-bottom: 30px;
 }
-#membership li:hover{
-	-webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    transform: scale(1.1);
-}
-#membership li .relative{
-	 background: #1c1c1c; 
+#themes-slider li .relative{
+	background-size: cover;
 	-webkit-box-shadow: 0 0 0 5px white; 
 	box-shadow: 0 0 0 2px white; 
 	border-radius: 2px;
-	padding: 50% 0;
 }
-#membership li .relative .blocks-text{
+#themes-slider li .relative .blocks-text{
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	top: 0;
 	margin: 0 -15px;
 }
-#membership li .relative .blocks-text .text-relative{
+#themes-slider li .relative .blocks-text .text-relative{
 	height: 100%;
 	display: table;
 	width: 100%;
 }
-#membership li .relative span{
-	font: lighter 40px 'Gotham', Arial, sans-serif;
+#themes-slider li .relative span{
+	color: white;
+	font: bold 24px 'Gotham', Arial, sans-serif;
 	display: block;
 	padding: 0px 15%;
 	text-align: center;
 	display: table-cell;
 	vertical-align: middle;
 }
-#membership li.essential .relative span{
+
+/*Destinations*/
+.destinations li.unknown .relative{
+	background: transparent;
+	box-shadow: 0 0 0 2px #1c1c1c !important;
+	padding: 50% 0;
+}
+#themes-slider .destinations li.unknown .relative span{
+	color: #1c1c1c;
+	font-size: 30px;
+}
+
+/*Describe*/
+.describe form{
+	width: 100%;
+	max-width: 750px;
+	display: table;
+	margin: 0 auto;
+}
+.describe form input, .describe form select, .describe form option, .describe form textarea{
+	width: 100%;
+	margin: 0 0 20px 0;
+	height: 83px;
+	background: #c4c4c4;
+	color: #1c1c1c;
+	font-size: 24px;
+	line-height: 2em;
+	text-align: center;
+	cursor: pointer;
+	display: block;
+	font-weight: bold;
+}
+::-webkit-input-placeholder {
+   color: #1c1c1c;
+}
+:-moz-placeholder {
+   color: #1c1c1c;  
+}
+::-moz-placeholder {
+   color: #1c1c1c;  
+}
+:-ms-input-placeholder {  
+   color: #1c1c1c;  
+}
+.describe form .select{
+	overflow: hidden;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.describe form .form-bg{
+	background: #c4c4c4 url(../images/travel/select-bg.png) no-repeat right center;
+}
+.describe form select{
+	text-indent: 36%;
+	text-transform: uppercase;
+	width: 120%;
+	background: transparent;
+	margin-bottom: 0;
+}
+.describe form textarea{
+	height: 168px;
+	padding: 15px 0;
+	resize: none;
+}
+.describe form textarea{
+	cursor: inherit;
+}
+
+/*Budget Avaliable*/
+.budget li .relative{
+	background: transparent;
+	box-shadow: 0 0 0 2px #1c1c1c !important;
+	padding: 50% 0 !important;
+}
+.budget li .relative:hover{
+	background: #bcbcbc;
+}
+.budget li .relative span{
+	color: #1c1c1c !important;
+	font-size: 30px !important;
+}
+
+/*Disclaimer*/
+.disclaimer .text{
+	margin-bottom: 40px;
+}
+.disclaimer .text p{
+	font: bold 14px/1.3em 'Gotham', Arial, sans-serif;
+	margin-bottom: 20px;
+}
+.disclaimer fieldset{
+	text-align: center;
+}
+.disclaimer fieldset label{
+	font-size: 12px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+/*Contact*/
+.contact form{
+	width: 100%;
+	max-width: 750px;
+	display: table;
+	margin: 0 auto;
+}
+.contact form input, .contact form select, .contact form option, .contact form textarea{
+	width: 100%;
+	margin: 0 0 20px 0;
+	height: 83px;
+	background: #c4c4c4;
+	color: #1c1c1c;
+	font-size: 24px;
+	line-height: 2em;
+	text-align: center;
+	cursor: pointer;
+	display: block;
+	font-weight: bold;
+}
+.contact form .select{
+	overflow: hidden;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.contact form .form-bg{
+	background: #c4c4c4 url(../images/travel/select-bg.png) no-repeat right center;
+}
+.contact form select{
+	text-indent: 36%;
+	text-transform: uppercase;
+	width: 120%;
+	background: transparent;
+	margin-bottom: 0;
+}
+.contact form textarea{
+	height: 168px;
+	padding: 15px 0;
+	resize: none;
+}
+.contact form textarea{
+	cursor: inherit;
+}
+.contact form input[type="checkbox"]{
+	height: auto;
+	width: auto;
+	display: inline-block;
+}
+.contact .the-news{
+	text-align: center;
+	margin: 35px 0;
+}
+.contact .the-news label{
+	margin-right: 20px;
+	font-size: 20px;
+}
+.contact button{
+	padding: 60px 32px;
+	border-radius: 100%;
+	border: solid 2px #1c1c1c;
+	color: #1c1c1c;
+	font-size: 27px;
+	background: transparent;
+	display: table;
+	margin: 0 auto;
+	cursor: pointer;
+}
+.contact button:hover{
+	background: #1c1c1c;
 	color: white;
 }
-#membership li.bespoke .relative span{
-	color: #f1e9c6;
+
+/*Spacer*/
+.spacer{
+	height: 50px;
+	background: #fff;
 }
-#membership li.indulge .relative span{
-	color: #b9a881;
+
+/*Animate all li's*/
+#themes-slider li{
+	-webkit-transition: all 300ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	-moz-transition: all 300ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	-o-transition: all 300ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	transition: all 300ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+
 }
-#membership li .stars{
+#themes-slider li:hover{
+	-webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+/*Slider Controls*/
+.bx-controls{
+	position: relative;
+}
+.bx-controls-direction{
+	display: table;
+	margin: 0 auto;
+	position: relative;
+	width: 310px;
+	top: -47px;
+}
+.bx-controls-direction a{
+	width: 22px;
+	height: 26px;
+	text-indent: -9999px;
+	display: block;
 	position: absolute;
-	bottom: 30px;
-	width: 100%;
-	text-align: center;
+	top: 3px;
+}
+.bx-controls-direction a.bx-prev{
+	background: url(../images/travel/prev.png) no-repeat;
 	left: 0;
 }
-#membership li .stars i{
+.bx-controls-direction a.bx-next{
+	background: url(../images/travel/next.png) no-repeat;
+	right: 0;
+}
+.bx-pager{
+	display: table;
+	margin: 20px auto;
+}
+.bx-pager .bx-pager-item a{
+	text-indent: -9999px;
+	width: 20px;
+	height: 20px;
+	background: #c4c4c4;
+	display: block;
+	border-radius: 100%;
+}
+.bx-pager .bx-pager-item{
 	display: inline-block;
-	margin: 0 10px;
-	-webkit-transition: all 400ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
-	   -moz-transition: all 400ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
-	     -o-transition: all 400ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
-	        transition: all 400ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	margin: 0 4px;
 }
-#membership li .stars i.delay1{
-	transition-delay: 0.2s !important;
-}
-#membership li .stars i.delay2{
-	transition-delay: 0.4s !important;
-}
-#membership li:hover .stars i{
-	-webkit-transform: rotate(72deg);
-    -moz-transform: rotate(72deg);
-    -ms-transform: rotate(72deg);
-    -o-transform: rotate(72deg);
-    transform: rotate(72deg);
+.bx-pager .bx-pager-item a.active{
+	background: #4e4e4e;
 }
 
-/*Membership content*/
-#membership-content{
-	background: #ebebeb;
-}
-
-/*Become | Request*/
-#become-request{
-	text-align: center;
-}
-#become-request a{
-	background: black;
-	font-size: 24px;
-	margin: 0 10px;
-	color: white;
-	padding: 40px 50px;
-	border-radius: 2px;
-}
-#become-request a:hover{
-	border-radius: 25px;
-	background: #19242f;
-	text-decoration: none;
-	-webkit-box-shadow: inset 0 0 5px #000;
-	box-shadow: inset 0 0 5px #000;
-}
 
 /*=============Responsible============*/
 @media screen and (max-width: 991px){
-	#main-content h1, #membership h2{
+	#main-content h1, #themes-slider h2{
 		font-size: 32px !important;
 		padding-bottom: 15px !important;
 		margin-bottom: 50px !important;
@@ -179,33 +358,22 @@ p strong{
 		font-size: 19px !important;
 		margin-bottom: 25px;
 	}
-	#concierge-blocks li{
-		width: 50%;
-		float: left;
-	}
 }
 @media screen and (max-width: 767px){
 	#concierge-blocks li{
 		width: auto;
 		float: none;
 	}
-	#concierge-blocks li .relative span{
+	#travel-blocks li .relative span{
 		font-size: 20px;
 	}
 	#membership li .relative span{
 		font-size: 35px;
 	}
-	#become-request a{
-		display: block;
-		width: 100%;
-		text-align: center;
-		margin: 0 0 25px 0;
-		padding: 25px 0;
+	form{
+		padding: 0 10px !important;
 	}
-	#become-request a:last-child{
-		margin-bottom: 0;
-	}
-	footer .copyright small{
-		font-size: 12px;
+	form select{
+		text-indent: 28% !important;
 	}
 }
