@@ -82,7 +82,7 @@ a:hover {
 #header .main-txt h2 {
     margin-bottom: 65px;
     color: white;
-    font: bold 25px Arial, sans-serif;
+    font: bold 24px Arial, sans-serif;
 }
 #header .main-txt h3 {
     margin-bottom: 10px;
@@ -180,6 +180,7 @@ p.white {
     margin-left: 118px;
     background: url(../images/sopro-ar.png) no-repeat;
     min-height: 117px;
+    padding-top: 15px;
 }
 #sopro-succao .filtro {
     top: 146px;
@@ -210,12 +211,21 @@ p.white {
 #acessorios {
     background: url(../images/bg-tabela.jpg) no-repeat center;
     height: 617px;
+    
 }
+
+#acessorios h3 {
+    font-weight: bold;
+
+}
+
 #acessorios h3 span {
     font-size: 16px;
-    font-weight: bold;
     display: block;
     margin: 7px 0;
+    color:#333;
+    font-weight: normal;
+    
 }
 #acessorios td {
     border-bottom: solid 1px #045a9c;
@@ -239,11 +249,12 @@ p.white {
 #acessorios td h4 {
     color: #333;
     font-size: 15px;
-    font-weight: bold;
+    
 }
 #acessorios td p {
     color: #333;
     font-size: 14px;
+
 }
 #acessorios .filtro-txt {
     width: 234px;
@@ -288,7 +299,7 @@ p.white {
     margin-left: 20px;
 }
 #saco-coletor .controle-succao {
-    margin-left: 209px;
+    margin-left: 200px;
     top: 44px;
 }
 
@@ -309,7 +320,7 @@ p.white {
     color: white;
 }
 #embalagem-especificacoes .txt ul {
-    margin-bottom: 38px;
+    margin-bottom: 62px;
 }
 #embalagem-especificacoes .txt li {
     color: white;

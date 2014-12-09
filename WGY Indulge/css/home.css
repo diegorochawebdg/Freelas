@@ -1,0 +1,223 @@
+body{
+	background: url(../images/travel/bg-travel-boxes.jpg) no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+body.another-bg{
+	background: url(../images/home/bg-our-services.jpg) no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+/*Concierge*/
+#main-content{
+	background: #ebebeb;
+}
+#main-content h1, h2{
+	font: normal 60px 'Gotham', Arial, sans-serif;
+	padding: 0 15px 30px 15px;
+	margin: 0 auto 55px auto;
+	border-bottom: solid 2px black;
+	display: table;
+}
+p{
+	font: lighter 30px/1.6em 'Gotham', Arial, sans-serif;
+	color: black;
+	text-align: justify;
+	margin-bottom: 70px;
+}
+section p:last-child{
+	margin-bottom: 0;
+}
+p strong{
+	font-weight: normal;
+}
+
+/*About Links*/
+#about li, .choose-blocks li{
+	margin-bottom: 30px;
+}
+#about li .relative, .choose-blocks li .relative{
+	 background: rgba(0, 0, 0, 0.3); 
+	-webkit-box-shadow: 0 0 0 5px white; 
+	box-shadow: 0 0 0 2px white; 
+	border-radius: 2px;
+	padding: 50% 0;
+}
+#about li .relative .blocks-text, .choose-blocks li .relative .blocks-text{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	margin: 0 -15px;
+}
+#about li .relative .blocks-text .text-relative, .choose-blocks li .relative .blocks-text .text-relative{
+	height: 100%;
+	display: table;
+	width: 100%;
+}
+#about li .relative span, .choose-blocks li .relative span{
+	color: white;
+	font: bold 30px 'Gotham', Arial, sans-serif;
+	display: block;
+	padding: 0px 15%;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/*About Us Text*/
+#about-us{
+	background: #ebebeb;
+}
+#about-us .founders{
+	margin: 0 22%;
+}
+#about-us .founders li{
+	margin-bottom: 30px;
+}
+#about-us .founders li .relative{
+	border-radius: 2px;
+	position: relative;
+}
+#about-us .founders li .relative img{
+	border-radius: 2px;
+}
+#about-us .founders li .relative .blocks-text{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	background: rgba(0, 0, 0, 0.7);
+	left: 0;
+	opacity: 0;
+}
+#about-us .founders li:hover .blocks-text{
+	opacity: 1;
+}
+#about-us .founders li .relative .blocks-text .text-relative{
+	height: 100%;
+	display: table;
+	width: 100%;
+	opacity: 0;
+}
+#about-us .founders li:hover .relative .blocks-text .text-relative{
+	opacity: 1;
+}
+#about-us .founders li .relative span{
+	color: white;
+	font: normal 20px 'Gotham', Arial, sans-serif;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+}
+#about-us .founders li .relative span strong{
+	display: block;
+	font-size: 12px;
+	line-height: 1.4em;
+}
+#about-us .founders .founders-social{
+	position: absolute;
+	bottom: 10px;
+	opacity: 0;
+}
+#about-us .founders li:hover .founders-social{
+	opacity: 1;
+}
+#about-us .founders .founders-social li{
+	margin-bottom: 0;
+	text-align: center;
+}
+#about-us .founders .founders-social li img{
+	display: inline;
+}
+
+/*Our Services*/
+#our-services h2{
+	color: white;
+	border-color: white;
+}
+#our-services li, .choose-blocks li{
+	margin-bottom: 30px;
+}
+#our-services li .relative, .choose-blocks li .relative{
+	 background: rgba(0, 0, 0, 0.3); 
+	-webkit-box-shadow: 0 0 0 5px white; 
+	box-shadow: 0 0 0 2px white; 
+	border-radius: 2px;
+	padding: 50% 0;
+}
+#our-services li .relative .blocks-text, .choose-blocks li .relative .blocks-text{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	margin: 0 -15px;
+}
+#our-services li .relative .blocks-text .text-relative, .choose-blocks li .relative .blocks-text .text-relative{
+	height: 100%;
+	display: table;
+	width: 100%;
+}
+#our-services li .relative span, .choose-blocks li .relative span{
+	color: white;
+	font: bold 30px 'Gotham', Arial, sans-serif;
+	display: block;
+	padding: 0px 15%;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/*Insider*/
+#insider{
+	background: #ebebeb;
+}
+#insider #insider-facebook{
+	background: #536693;
+}
+#insider #insider-instagram{
+	background: #b8ac9b;
+}
+
+/*Spacer*/
+.spacer{
+	height: 50px;
+	background: #fff;
+}
+
+
+
+/*=============Responsible============*/
+@media screen and (max-width: 991px){
+	#main-content h1, #themes-slider h2{
+		font-size: 32px !important;
+		padding-bottom: 15px !important;
+		margin-bottom: 50px !important;
+	}
+	p{
+		font-size: 19px !important;
+		margin-bottom: 25px;
+	}
+}
+@media screen and (max-width: 767px){
+	#concierge-blocks li{
+		width: auto;
+		float: none;
+	}
+	#about li .relative span{
+		font-size: 20px;
+	}
+	#membership li .relative span{
+		font-size: 35px;
+	}
+	form{
+		padding: 0 10px !important;
+	}
+	form select{
+		text-indent: 28% !important;
+	}
+	.contact form input, .contact form select, .contact form option, .contact form textarea{
+		height: 50px;
+	}
+}

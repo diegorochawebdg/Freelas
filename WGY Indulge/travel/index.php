@@ -112,357 +112,360 @@
 				</div>
 				<!-- End Tell us -->
 
-				<!-- Themes -->
-				<div class="slide themes">
-					<h2>Themes</h2>
-					<ul>
-						<li class="col-md-3">
-							<div class="relative">
-								<a href="#">
-									<img src="/images/travel/road-trip.jpg" alt="Road trip">
-									<div class="blocks-text">
-										<div class="text-relative">
-											<span>Road trip</span>
+				
+				<div class="slide">
+					<!-- Themes -->
+					<div class="themes">
+						<h2>Themes</h2>
+						<ul>
+							<li class="col-md-3">
+								<div class="relative">
+									<a href="#">
+										<img src="/images/travel/road-trip.jpg" alt="Road trip">
+										<div class="blocks-text">
+											<div class="text-relative">
+												<span>Road trip</span>
+											</div>
 										</div>
-									</div>
-								</a>
-							</div>
-						</li>
-						<li class="col-md-3">
-							<div class="relative">
-								<a href="#">
-									<img src="/images/travel/mountain.jpg" alt="Mountain">
-									<div class="blocks-text">
-										<div class="text-relative">
-											<span>Mountain</span>
+									</a>
+								</div>
+							</li>
+							<li class="col-md-3">
+								<div class="relative">
+									<a href="#">
+										<img src="/images/travel/mountain.jpg" alt="Mountain">
+										<div class="blocks-text">
+											<div class="text-relative">
+												<span>Mountain</span>
+											</div>
 										</div>
-									</div>
-								</a>
-							</div>
-						</li>
-						<li class="col-md-3">
-							<div class="relative">
-								<a href="#">
-									<img src="/images/travel/island.jpg" alt="Island">
-									<div class="blocks-text">
-										<div class="text-relative">
-											<span>Island</span>
+									</a>
+								</div>
+							</li>
+							<li class="col-md-3">
+								<div class="relative">
+									<a href="#">
+										<img src="/images/travel/island.jpg" alt="Island">
+										<div class="blocks-text">
+											<div class="text-relative">
+												<span>Island</span>
+											</div>
 										</div>
-									</div>
-								</a>
-							</div>
-						</li>
-						<li class="col-md-3">
-							<div class="relative">
-								<a href="#">
-									<img src="/images/travel/adventure.jpg" alt="Adventure">
-									<div class="blocks-text">
-										<div class="text-relative">
-											<span>Adventure</span>
+									</a>
+								</div>
+							</li>
+							<li class="col-md-3">
+								<div class="relative">
+									<a href="#">
+										<img src="/images/travel/adventure.jpg" alt="Adventure">
+										<div class="blocks-text">
+											<div class="text-relative">
+												<span>Adventure</span>
+											</div>
 										</div>
-									</div>
-								</a>
-							</div>
-						</li>
-						<li class="col-md-3">
-							<div class="relative">
-								<a href="#">
-									<img src="/images/travel/nightlife.jpg" alt="Nightlife">
-									<div class="blocks-text">
-										<div class="text-relative">
-											<span>Nightlife</span>
+									</a>
+								</div>
+							</li>
+							<li class="col-md-3">
+								<div class="relative">
+									<a href="#">
+										<img src="/images/travel/nightlife.jpg" alt="Nightlife">
+										<div class="blocks-text">
+											<div class="text-relative">
+												<span>Nightlife</span>
+											</div>
 										</div>
-									</div>
-								</a>
-							</div>
-						</li>
-						<li class="col-md-3">
-							<div class="relative">
-								<a href="#">
-									<img src="/images/travel/love.jpg" alt="Love">
-									<div class="blocks-text">
-										<div class="text-relative">
-											<span>Love</span>
+									</a>
+								</div>
+							</li>
+							<li class="col-md-3">
+								<div class="relative">
+									<a href="#">
+										<img src="/images/travel/love.jpg" alt="Love">
+										<div class="blocks-text">
+											<div class="text-relative">
+												<span>Love</span>
+											</div>
 										</div>
-									</div>
-								</a>
-							</div>
-						</li>
-						<li class="col-md-3">
-							<div class="relative">
-								<a href="#">
-									<img src="/images/travel/gourmet.jpg" alt="Gourmet">
-									<div class="blocks-text">
-										<div class="text-relative">
-											<span>Gourmet</span>
+									</a>
+								</div>
+							</li>
+							<li class="col-md-3">
+								<div class="relative">
+									<a href="#">
+										<img src="/images/travel/gourmet.jpg" alt="Gourmet">
+										<div class="blocks-text">
+											<div class="text-relative">
+												<span>Gourmet</span>
+											</div>
 										</div>
-									</div>
-								</a>
-							</div>
-						</li>
-						<li class="col-md-3">
-							<div class="relative">
-								<a href="#">
-									<img src="/images/travel/capitals.jpg" alt="Capitals">
-									<div class="blocks-text">
-										<div class="text-relative">
-											<span>Capitals</span>
+									</a>
+								</div>
+							</li>
+							<li class="col-md-3">
+								<div class="relative">
+									<a href="#">
+										<img src="/images/travel/capitals.jpg" alt="Capitals">
+										<div class="blocks-text">
+											<div class="text-relative">
+												<span>Capitals</span>
+											</div>
 										</div>
-									</div>
-								</a>
-							</div>
-						</li>
-						<li class="col-md-3">
-							<div class="relative">
-								<a href="#">
-									<img src="/images/travel/family.jpg" alt="Family">
-									<div class="blocks-text">
-										<div class="text-relative">
-											<span>Family</span>
+									</a>
+								</div>
+							</li>
+							<li class="col-md-3">
+								<div class="relative">
+									<a href="#">
+										<img src="/images/travel/family.jpg" alt="Family">
+										<div class="blocks-text">
+											<div class="text-relative">
+												<span>Family</span>
+											</div>
 										</div>
-									</div>
-								</a>
-							</div>
-						</li>
-						<li class="col-md-3">
-							<div class="relative">
-								<a href="#">
-									<img src="/images/travel/small-cities.jpg" alt="Small Cities">
-									<div class="blocks-text">
-										<div class="text-relative">
-											<span>Small Cities</span>
+									</a>
+								</div>
+							</li>
+							<li class="col-md-3">
+								<div class="relative">
+									<a href="#">
+										<img src="/images/travel/small-cities.jpg" alt="Small Cities">
+										<div class="blocks-text">
+											<div class="text-relative">
+												<span>Small Cities</span>
+											</div>
 										</div>
-									</div>
-								</a>
-							</div>
-						</li>
-						<li class="col-md-3">
-							<div class="relative">
-								<a href="#">
-									<img src="/images/travel/wild-life.jpg" alt="Wild Life">
-									<div class="blocks-text">
-										<div class="text-relative">
-											<span>Wild Life</span>
+									</a>
+								</div>
+							</li>
+							<li class="col-md-3">
+								<div class="relative">
+									<a href="#">
+										<img src="/images/travel/wild-life.jpg" alt="Wild Life">
+										<div class="blocks-text">
+											<div class="text-relative">
+												<span>Wild Life</span>
+											</div>
 										</div>
-									</div>
-								</a>
-							</div>
-						</li>
-						<li class="col-md-3">
-							<div class="relative">
-								<a href="#">
-									<img src="/images/travel/another-cultures.jpg" alt="Another Cultures">
-									<div class="blocks-text">
-										<div class="text-relative">
-											<span>Another Cultures</span>
+									</a>
+								</div>
+							</li>
+							<li class="col-md-3">
+								<div class="relative">
+									<a href="#">
+										<img src="/images/travel/another-cultures.jpg" alt="Another Cultures">
+										<div class="blocks-text">
+											<div class="text-relative">
+												<span>Another Cultures</span>
+											</div>
 										</div>
-									</div>
-								</a>
-							</div>
-						</li>
-						<li class="col-md-3">
-							<div class="relative">
-								<a href="#">
-									<img src="/images/travel/business.jpg" alt="Business">
-									<div class="blocks-text">
-										<div class="text-relative">
-											<span>Business</span>
+									</a>
+								</div>
+							</li>
+							<li class="col-md-3">
+								<div class="relative">
+									<a href="#">
+										<img src="/images/travel/business.jpg" alt="Business">
+										<div class="blocks-text">
+											<div class="text-relative">
+												<span>Business</span>
+											</div>
 										</div>
-									</div>
-								</a>
-							</div>
-						</li>
-						<li class="col-md-3">
-							<div class="relative">
-								<a href="#">
-									<img src="/images/travel/sports.jpg" alt="Sports">
-									<div class="blocks-text">
-										<div class="text-relative">
-											<span>Sports</span>
+									</a>
+								</div>
+							</li>
+							<li class="col-md-3">
+								<div class="relative">
+									<a href="#">
+										<img src="/images/travel/sports.jpg" alt="Sports">
+										<div class="blocks-text">
+											<div class="text-relative">
+												<span>Sports</span>
+											</div>
 										</div>
-									</div>
-								</a>
-							</div>
-						</li>
-						<li class="col-md-3">
-							<div class="relative">
-								<a href="#">
-									<img src="/images/travel/beach.jpg" alt="Beach">
-									<div class="blocks-text">
-										<div class="text-relative">
-											<span>Beach</span>
+									</a>
+								</div>
+							</li>
+							<li class="col-md-3">
+								<div class="relative">
+									<a href="#">
+										<img src="/images/travel/beach.jpg" alt="Beach">
+										<div class="blocks-text">
+											<div class="text-relative">
+												<span>Beach</span>
+											</div>
 										</div>
-									</div>
-								</a>
-							</div>
-						</li>
-						<li class="col-md-3">
-							<div class="relative">
-								<a href="#">
-									<img src="/images/travel/cruise.jpg" alt="Cruise">
-									<div class="blocks-text">
-										<div class="text-relative">
-											<span>Cruise</span>
+									</a>
+								</div>
+							</li>
+							<li class="col-md-3">
+								<div class="relative">
+									<a href="#">
+										<img src="/images/travel/cruise.jpg" alt="Cruise">
+										<div class="blocks-text">
+											<div class="text-relative">
+												<span>Cruise</span>
+											</div>
 										</div>
-									</div>
-								</a>
-							</div>
-						</li>
-						<li class="col-md-3">
-							<div class="relative">
-								<a href="#">
-									<img src="/images/travel/health.jpg" alt="Health">
-									<div class="blocks-text">
-										<div class="text-relative">
-											<span>Health</span>
+									</a>
+								</div>
+							</li>
+							<li class="col-md-3">
+								<div class="relative">
+									<a href="#">
+										<img src="/images/travel/health.jpg" alt="Health">
+										<div class="blocks-text">
+											<div class="text-relative">
+												<span>Health</span>
+											</div>
 										</div>
-									</div>
-								</a>
-							</div>
-						</li>
-						<li class="col-md-3">
-							<div class="relative">
-								<a href="#">
-									<img src="/images/travel/chill.jpg" alt="Chill">
-									<div class="blocks-text">
-										<div class="text-relative">
-											<span>Chill</span>
+									</a>
+								</div>
+							</li>
+							<li class="col-md-3">
+								<div class="relative">
+									<a href="#">
+										<img src="/images/travel/chill.jpg" alt="Chill">
+										<div class="blocks-text">
+											<div class="text-relative">
+												<span>Chill</span>
+											</div>
 										</div>
-									</div>
-								</a>
-							</div>
-						</li>
-						<li class="col-md-3">
-							<div class="relative">
-								<a href="#">
-									<img src="/images/travel/events.jpg" alt="Events">
-									<div class="blocks-text">
-										<div class="text-relative">
-											<span>Events</span>
+									</a>
+								</div>
+							</li>
+							<li class="col-md-3">
+								<div class="relative">
+									<a href="#">
+										<img src="/images/travel/events.jpg" alt="Events">
+										<div class="blocks-text">
+											<div class="text-relative">
+												<span>Events</span>
+											</div>
 										</div>
-									</div>
-								</a>
-							</div>
-						</li>
-						<li class="col-md-3">
-							<div class="relative">
-								<a href="#">
-									<img src="/images/travel/shopping.jpg" alt="Shopping">
-									<div class="blocks-text">
-										<div class="text-relative">
-											<span>Shopping</span>
+									</a>
+								</div>
+							</li>
+							<li class="col-md-3">
+								<div class="relative">
+									<a href="#">
+										<img src="/images/travel/shopping.jpg" alt="Shopping">
+										<div class="blocks-text">
+											<div class="text-relative">
+												<span>Shopping</span>
+											</div>
 										</div>
-									</div>
-								</a>
-							</div>
-						</li>
-					</ul>
-				</div>
-				<!-- End Themes -->
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!-- End Themes -->
 
-				<!-- Destinations -->
-				<div class="slide destinations">
-					<h2>Destinations</h2>
-					<ul>
-						<li class="col-md-3">
-							<div class="relative">
-								<a href="#">
-									<img src="/images/travel/south-america.jpg" alt="South America">
-									<div class="blocks-text">
-										<div class="text-relative">
-											<span>South America</span>
+					<!-- Destinations -->
+					<div class="destinations">
+						<h2>Destinations</h2>
+						<ul>
+							<li class="col-md-3">
+								<div class="relative">
+									<a href="#">
+										<img src="/images/travel/south-america.jpg" alt="South America">
+										<div class="blocks-text">
+											<div class="text-relative">
+												<span>South America</span>
+											</div>
 										</div>
-									</div>
-								</a>
-							</div>
-						</li>
-						<li class="col-md-3">
-							<div class="relative">
-								<a href="#">
-									<img src="/images/travel/north-e-central-americas.jpg" alt="North &amp; Central Americas">
-									<div class="blocks-text">
-										<div class="text-relative">
-											<span>North &amp; Central Americas</span>
+									</a>
+								</div>
+							</li>
+							<li class="col-md-3">
+								<div class="relative">
+									<a href="#">
+										<img src="/images/travel/north-e-central-americas.jpg" alt="North &amp; Central Americas">
+										<div class="blocks-text">
+											<div class="text-relative">
+												<span>North &amp; Central Americas</span>
+											</div>
 										</div>
-									</div>
-								</a>
-							</div>
-						</li>
-						<li class="col-md-3">
-							<div class="relative">
-								<a href="#">
-									<img src="/images/travel/europe.jpg" alt="Europe">
-									<div class="blocks-text">
-										<div class="text-relative">
-											<span>Europe</span>
+									</a>
+								</div>
+							</li>
+							<li class="col-md-3">
+								<div class="relative">
+									<a href="#">
+										<img src="/images/travel/europe.jpg" alt="Europe">
+										<div class="blocks-text">
+											<div class="text-relative">
+												<span>Europe</span>
+											</div>
 										</div>
-									</div>
-								</a>
-							</div>
-						</li>
-						<li class="col-md-3">
-							<div class="relative">
-								<a href="#">
-									<img src="/images/travel/africa.jpg" alt="Africa">
-									<div class="blocks-text">
-										<div class="text-relative">
-											<span>Africa</span>
+									</a>
+								</div>
+							</li>
+							<li class="col-md-3">
+								<div class="relative">
+									<a href="#">
+										<img src="/images/travel/africa.jpg" alt="Africa">
+										<div class="blocks-text">
+											<div class="text-relative">
+												<span>Africa</span>
+											</div>
 										</div>
-									</div>
-								</a>
-							</div>
-						</li>
-						<li class="col-md-3">
-							<div class="relative">
-								<a href="#">
-									<img src="/images/travel/asia.jpg" alt="Asia">
-									<div class="blocks-text">
-										<div class="text-relative">
-											<span>Asia</span>
+									</a>
+								</div>
+							</li>
+							<li class="col-md-3">
+								<div class="relative">
+									<a href="#">
+										<img src="/images/travel/asia.jpg" alt="Asia">
+										<div class="blocks-text">
+											<div class="text-relative">
+												<span>Asia</span>
+											</div>
 										</div>
-									</div>
-								</a>
-							</div>
-						</li>
-						<li class="col-md-3">
-							<div class="relative">
-								<a href="#">
-									<img src="/images/travel/australia.jpg" alt="Australia">
-									<div class="blocks-text">
-										<div class="text-relative">
-											<span>Australia</span>
+									</a>
+								</div>
+							</li>
+							<li class="col-md-3">
+								<div class="relative">
+									<a href="#">
+										<img src="/images/travel/australia.jpg" alt="Australia">
+										<div class="blocks-text">
+											<div class="text-relative">
+												<span>Australia</span>
+											</div>
 										</div>
-									</div>
-								</a>
-							</div>
-						</li>
-						<li class="col-md-3">
-							<div class="relative">
-								<a href="#">
-									<img src="/images/travel/inside-my-home-country.jpg" alt="Inside my home country">
-									<div class="blocks-text">
-										<div class="text-relative">
-											<span>Inside my home country</span>
+									</a>
+								</div>
+							</li>
+							<li class="col-md-3">
+								<div class="relative">
+									<a href="#">
+										<img src="/images/travel/inside-my-home-country.jpg" alt="Inside my home country">
+										<div class="blocks-text">
+											<div class="text-relative">
+												<span>Inside my home country</span>
+											</div>
 										</div>
-									</div>
-								</a>
-							</div>
-						</li>
-						<li class="col-md-3 unknown">
-							<div class="relative">
-								<a href="#">
-									<div class="blocks-text">
-										<div class="text-relative">
-											<span>Unknown</span>
+									</a>
+								</div>
+							</li>
+							<li class="col-md-3 unknown">
+								<div class="relative">
+									<a href="#">
+										<div class="blocks-text">
+											<div class="text-relative">
+												<span>Unknown</span>
+											</div>
 										</div>
-									</div>
-								</a>
-							</div>
-						</li>
-						
-					</ul>
+									</a>
+								</div>
+							</li>
+							
+						</ul>
+					</div>
+					<!-- End Destinations -->
 				</div>
-				<!-- End Destinations -->
 
 				<!-- Describe -->
 				<div class="slide describe">
@@ -580,9 +583,10 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, quaerat aut et enim dolore necessitatibus illo modi consectetur quos non magni dolor sunt nisi delectus quibusdam natus rerum, deserunt mollitia.</p>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, quaerat aut et enim dolore necessitatibus illo modi consectetur quos non magni dolor sunt nisi delectus quibusdam natus rerum, deserunt mollitia.</p>
 					</div>
+					<div class="clearfix"></div>
 					<fieldset>
-						<label for="terms">I CONFIRM THAT I HAVE READ AND AGREE WITH THE TERMS &amp; CONDITIONS AND PRIVACY POLICY.</label>
 						<input type="checkbox" id="terms" name="terms">
+						<label for="terms">I CONFIRM THAT I HAVE READ AND AGREE WITH THE TERMS &amp; CONDITIONS AND PRIVACY POLICY.</label>
 					</fieldset>
 				</div>
 				<!-- End Disclaimer -->
@@ -611,8 +615,8 @@
 							<input type="tel" name="phone" id="phone" placeholder="Phone" maxlength="">
 							<input type="email" name="email" id="email" placeholder="E-mail">
 							<div class="the-news">
+								<input type="checkbox" name="news" id="news">
 								<label for="news">Subscribe newsletter</label>
-								<input type="checkbox" checked="checked" name="news" id="news">
 							</div>
 						</fieldset>
 						<button type="button" name="send" id="send" class="animate">Send</button>
@@ -629,8 +633,8 @@
 <div class="spacer"></div>
 
 <script type="text/javascript" src="/js/jquery.bxslider.min.js"></script>
-<script type="text/javascript" src="/js/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="/js/jquery-ui.min.js"></script>
 <script type="text/javascript" src="/js/travel.js"></script>
-<link rel="stylesheet" href="/css/datepicker.min.css">
+<link rel="stylesheet" href="/css/jquery-ui.min.css">
 
 <?php include('../footer.php'); ?>

@@ -1,0 +1,43 @@
+#main-content{
+	background: #ebebeb;
+}
+#main-content h1{
+	font: normal 60px 'Gotham', Arial, sans-serif;
+	padding: 0 15px 30px 15px;
+	margin: 0 auto 55px auto;
+	border-bottom: solid 2px black;
+	display: table;
+}
+p, #main-content h2, address{
+	font: lighter 16px/1.6em 'Gotham', Arial, sans-serif;
+	color: black;
+	text-align: justify;
+	margin-bottom: 30px;
+	text-transform: none;
+}
+p strong{
+	font-weight: normal;
+}
+#main-content h2, address{
+	font-weight: bold;
+	margin-bottom: 0;
+}
+#main-content ul li{
+	margin-bottom: 20px;
+	font: lighter 16px/1.6em 'Gotham', Arial, sans-serif;
+}
+
+
+/*=============Responsible============*/
+@media screen and (max-width: 991px){
+	#main-content h1{
+		font-size: 32px !important;
+		padding-bottom: 15px !important;
+		margin-bottom: 50px !important;
+		text-align: center;
+	}
+	p{
+		font-size: 19px !important;
+		margin-bottom: 25px;
+	}
+}

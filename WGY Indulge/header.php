@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no">
         <meta name="description" content="">
         <meta name="author" content="Diego Rocha">
-        <link rel="icon" href="/favicon.ico">
+        <link rel="icon" href="/favicon.png">
 
         <title>Título de exemplo</title>
 		

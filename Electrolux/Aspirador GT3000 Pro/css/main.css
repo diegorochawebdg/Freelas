@@ -124,6 +124,7 @@ p.white {
 #features .grande-capacidade {
     margin-left: -235px;
     top: 21px;
+    color: white;
 } 
 #features .leve-eficiente {
     margin-left: -310px;
@@ -180,6 +181,7 @@ p.white {
     margin-left: 118px;
     background: url(../images/sopro-ar.png) no-repeat;
     min-height: 117px;
+    padding-top: 15px;
 }
 #sopro-succao .filtro {
     top: 146px;
@@ -211,11 +213,17 @@ p.white {
     background: url(../images/bg-tabela.jpg) no-repeat center;
     height: 617px;
 }
+
+#acessorios h3 {
+    font-weight: bold;
+
+}
 #acessorios h3 span {
     font-size: 16px;
-    font-weight: bold;
+    font-weight: normal;
     display: block;
     margin: 7px 0;
+    color: #333;
 }
 #acessorios td {
     border-bottom: solid 1px #045a9c;
@@ -282,12 +290,13 @@ p.white {
 }
 #saco-coletor .txt li.small{
     font-size: 12px;
+    list-style-type: none;
 }
 #saco-coletor .txt ul {
     margin-left: 20px;
 }
 #saco-coletor .controle-succao {
-    margin-left: 209px;
+    margin-left: 202px;
     top: 44px;
 }
 

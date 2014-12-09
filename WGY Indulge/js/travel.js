@@ -30,22 +30,25 @@ $(document).ready(function() {
 	//Slider Clicks
 	$('a[title="Themes"').click(function(event) {
 		returnTop();
+		$('.destinations').hide();
+		$('.themes').show();
 		slider.goToSlide(1);
 	});
 	$('a[title="Destination"').click(function(event) {
 		returnTop();
-		slider.goToSlide(2);
+		$('.themes').hide();
+		$('.destinations').show();
+		slider.goToSlide(1);
 	});
 	$('.themes a, .destinations a').click(function(event) {
-		returnTop();
-		slider.goToSlide(3);
+		$(this).closest('.relative').toggleClass('active');
 	});
 	$('.budget a').click(function(event) {
 		returnTop();
-		slider.goToSlide(5);
+		slider.goToSlide(4);
 	});
 	$('.disclaimer input, .disclaimer label').click(function(event) {
 		returnTop();
-		slider.goToSlide(6);
+		slider.goToSlide(5);
 	});
 });
