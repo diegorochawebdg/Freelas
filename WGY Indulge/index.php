@@ -69,9 +69,9 @@
 						</div>
 						<div class="founders-social animate">
 							<ul>
-								<li class="col-md-4"><a href="" target="_blank" title="Facebook" class="header-facebook"><img src="/images/facebook-header.png" height="69" width="69" alt="Facebook" title="Facebook" class="animate"></a></li>
-								<li class="col-md-4"><a href="" target="_blank" title="Twitter" class="header-twitter"><img src="/images/twitter-header.png" height="69" width="69" alt="Twitter" title="Twitter" class="animate"></a></li>
-								<li class="col-md-4"><a href="" target="_blank" title="Instagram" class="header-instagram"><img src="/images/instagram-header.png" height="69" width="69" alt="Instagram" title="Instagram" class="animate"></a></li>
+								<li><a href="" target="_blank" title="Facebook" class="header-facebook"><img src="/images/facebook-header.png" height="69" width="69" alt="Facebook" title="Facebook" class="animate"></a></li>
+								<li><a href="" target="_blank" title="Twitter" class="header-twitter"><img src="/images/twitter-header.png" height="69" width="69" alt="Twitter" title="Twitter" class="animate"></a></li>
+								<li><a href="" target="_blank" title="Instagram" class="header-instagram"><img src="/images/instagram-header.png" height="69" width="69" alt="Instagram" title="Instagram" class="animate"></a></li>
 							</ul>
 							<div class="clearfix"></div>
 						</div>
@@ -87,9 +87,9 @@
 						</div>
 						<div class="founders-social animate">
 							<ul>
-								<li class="col-md-4"><a href="" target="_blank" title="Facebook" class="header-facebook"><img src="/images/facebook-header.png" height="69" width="69" alt="Facebook" title="Facebook" class="animate"></a></li>
-								<li class="col-md-4"><a href="" target="_blank" title="Twitter" class="header-twitter"><img src="/images/twitter-header.png" height="69" width="69" alt="Twitter" title="Twitter" class="animate"></a></li>
-								<li class="col-md-4"><a href="" target="_blank" title="Instagram" class="header-instagram"><img src="/images/instagram-header.png" height="69" width="69" alt="Instagram" title="Instagram" class="animate"></a></li>
+								<li><a href="" target="_blank" title="Facebook" class="header-facebook"><img src="/images/facebook-header.png" height="69" width="69" alt="Facebook" title="Facebook" class="animate"></a></li>
+								<li><a href="" target="_blank" title="Twitter" class="header-twitter"><img src="/images/twitter-header.png" height="69" width="69" alt="Twitter" title="Twitter" class="animate"></a></li>
+								<li><a href="" target="_blank" title="Instagram" class="header-instagram"><img src="/images/instagram-header.png" height="69" width="69" alt="Instagram" title="Instagram" class="animate"></a></li>
 							</ul>
 							<div class="clearfix"></div>
 						</div>
@@ -154,19 +154,20 @@
 	<!-- Insider Facebook -->
 	<div id="insider-facebook">
 		<div class="container">
-			<div class="links">
+			<div class="links-insider">
 				<ul>
-					<li><a href="#" title="Visit our page on Facebook"><img src="" alt="Visit our page on Facebook"></a></li>
-					<li><a href="#" title="Follow us on Facebook"><img src="" alt="Follow us on Facebook"></a></li>
+					<li><a href="#" title="Visit our page on Facebook"><img src="images/home/facebook-visit-our-page.png" height="69" width="69" alt="Visit our page on Facebook"></a></li>
+					<li><a href="#" title="Follow us on Facebook"><img src="images/home/follow-us.png" height="33" width="33" alt="Follow us on Facebook"></a></li>
 				</ul>
 				<div class="clearfix"></div>
 			</div>
 			
 			<!-- Facebook Slider -->
 			<div class="the-slider facebook-slider">
-				<div class="slide">
+
+				<div class="slide col-md-4">
 					<div class="relative">
-						<img src="" alt="">
+						<img src="images/home/facebook-post-example.jpg" height="331" width="331" alt="">
 						<div class="the-contents">
 							<div class="text">
 								<strong>Exclusive: WGY's Justin Keeperman talks Art Basel &amp; more! <a href="#">www.examiner.com</a></strong>
@@ -178,6 +179,49 @@
 						</div>
 					</div>
 				</div>
+				<div class="slide col-md-4">
+					<div class="relative">
+						<img src="images/home/facebook-post-example.jpg" height="331" width="331" alt="">
+						<div class="the-contents">
+							<div class="text">
+								<strong>Exclusive: WGY's Justin Keeperman talks Art Basel &amp; more! <a href="#">www.examiner.com</a></strong>
+								<span>Today on Nov. 19, we did an exclusive interview with the one of the most connected guys in Miami.</span>
+							</div>
+							<div class="facebook-like">
+								<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slide col-md-4">
+					<div class="relative">
+						<img src="images/home/facebook-post-example.jpg" height="331" width="331" alt="">
+						<div class="the-contents">
+							<div class="text">
+								<strong>Exclusive: WGY's Justin Keeperman talks Art Basel &amp; more! <a href="#">www.examiner.com</a></strong>
+								<span>Today on Nov. 19, we did an exclusive interview with the one of the most connected guys in Miami.</span>
+							</div>
+							<div class="facebook-like">
+								<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slide col-md-4">
+					<div class="relative">
+						<img src="images/home/facebook-post-example.jpg" height="331" width="331" alt="">
+						<div class="the-contents">
+							<div class="text">
+								<strong>Exclusive: WGY's Justin Keeperman talks Art Basel &amp; more! <a href="#">www.examiner.com</a></strong>
+								<span>Today on Nov. 19, we did an exclusive interview with the one of the most connected guys in Miami.</span>
+							</div>
+							<div class="facebook-like">
+								<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
 			</div>
 			<!-- Facebook Slider -->
 		</div>
@@ -187,24 +231,26 @@
 	<!-- Insider Instagram -->
 	<div id="insider-instagram">
 		<div class="container">
-			<div class="links">
+			<div class="links-insider">
 				<ul>
-					<li><a href="#" title="Visit our Instagram"><img src="" alt="Visit our Instagram"></a></li>
-					<li><a href="#" title="Follow us on Instagram"><img src="" alt="Follow us on Instagram"></a></li>
+					<li><a href="#" title="Visit our Instagram"><img src="images/home/instagram-follow-us.png" height="67" width="67" alt="Visit our Instagram"></a></li>
+					<li><a href="#" title="Follow us on Instagram"><img src="images/home/follow-us.png" height="33" width="33" alt="Follow us on Instagram"></a></li>
 				</ul>
 				<div class="clearfix"></div>
 			</div>
 
 			<!-- Instagram Slider -->
 			<div class="the-slider instagram-slider">
-				<div class="slide">
+				<div class="slide col-md-4">
 					<div class="relative">
-						<img src="" alt="">
+						<img src="images/home/instagram-post-example.jpg" height="331" width="331" alt="">
 						<div class="the-contents">
-							<span class="time">6m</span>
+							<div class="the-time">
+								<span class="time">6m</span>
+							</div>
 							<div class="like-comment">
-								<a href="#" title="Like"><img src="" alt="Like"></a>
-								<a href="#" title="Comment"><img src="" alt="Comment"></a>
+								<a href="#" title="Like"><img src="images/home/instagram-like.png" height="69" width="69" alt="Like"></a>
+								<a href="#" title="Comment"><img src="images/home/instagram-comment.png" height="69" width="69" alt="Comment"></a>
 							</div>
 							<div class="text">
 								<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
@@ -212,6 +258,75 @@
 						</div>
 					</div>
 				</div>
+				<div class="slide col-md-4">
+					<div class="relative">
+						<img src="images/home/instagram-post-example.jpg" height="331" width="331" alt="">
+						<div class="the-contents">
+							<div class="the-time">
+								<span class="time">6m</span>
+							</div>
+							<div class="like-comment">
+								<a href="#" title="Like"><img src="images/home/instagram-like.png" height="69" width="69" alt="Like"></a>
+								<a href="#" title="Comment"><img src="images/home/instagram-comment.png" height="69" width="69" alt="Comment"></a>
+							</div>
+							<div class="text">
+								<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slide col-md-4">
+					<div class="relative">
+						<img src="images/home/instagram-post-example.jpg" height="331" width="331" alt="">
+						<div class="the-contents">
+							<div class="the-time">
+								<span class="time">6m</span>
+							</div>
+							<div class="like-comment">
+								<a href="#" title="Like"><img src="images/home/instagram-like.png" height="69" width="69" alt="Like"></a>
+								<a href="#" title="Comment"><img src="images/home/instagram-comment.png" height="69" width="69" alt="Comment"></a>
+							</div>
+							<div class="text">
+								<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slide col-md-4">
+					<div class="relative">
+						<img src="images/home/instagram-post-example.jpg" height="331" width="331" alt="">
+						<div class="the-contents">
+							<div class="the-time">
+								<span class="time">6m</span>
+							</div>
+							<div class="like-comment">
+								<a href="#" title="Like"><img src="images/home/instagram-like.png" height="69" width="69" alt="Like"></a>
+								<a href="#" title="Comment"><img src="images/home/instagram-comment.png" height="69" width="69" alt="Comment"></a>
+							</div>
+							<div class="text">
+								<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slide col-md-4">
+					<div class="relative">
+						<img src="images/home/instagram-post-example.jpg" height="331" width="331" alt="">
+						<div class="the-contents">
+							<div class="the-time">
+								<span class="time">6m</span>
+							</div>
+							<div class="like-comment">
+								<a href="#" title="Like"><img src="images/home/instagram-like.png" height="69" width="69" alt="Like"></a>
+								<a href="#" title="Comment"><img src="images/home/instagram-comment.png" height="69" width="69" alt="Comment"></a>
+							</div>
+							<div class="text">
+								<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
 			</div>
 			<!-- End Instagram Slider -->
 		</div>
@@ -232,6 +347,7 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <!-- Scripts -->
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
 <script type="text/javascript" src="/js/home.js"></script>
 <!-- End Scripts -->
 

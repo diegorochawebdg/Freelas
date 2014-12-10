@@ -1,0 +1,250 @@
+#content{
+	background: #ebebeb;
+	padding: 70px 0;
+}
+h1{
+	font: normal 45px 'Gotham', Arial, sans-serif;
+	color: #b9a881;
+	text-align: center;
+	margin-bottom: 70px;
+}
+h2{
+	font: normal 30px 'Gotham', Arial, sans-serif;
+	color: black;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"]{
+	/*width: 96%;
+	padding: 0 2%;*/
+	color: white;
+	background: #181818;
+	height: 45px;
+	font: bold 16px 'Gotham', Arial, sans-serif;
+	text-align: center;
+	margin-bottom: 20px;
+}
+::-webkit-input-placeholder {
+   color: #FFF;
+   font: bold 16px 'Gotham', Arial, sans-serif;
+}
+:-moz-placeholder {
+   color: #FFF;  
+   font: bold 16px 'Gotham', Arial, sans-serif;
+}
+::-moz-placeholder {
+   color: #FFF;  
+   font: bold 16px 'Gotham', Arial, sans-serif;
+}
+:-ms-input-placeholder {  
+   color: #FFF;  
+   font: bold 16px 'Gotham', Arial, sans-serif;
+}
+label.another-label{
+	color: #b9a881;
+	font: bolder 17px 'Gotham', Arial, sans-serif !important;	
+	text-align: center;
+	margin-top: 13px;
+}
+label.another-label2{
+	color: #b9a881;
+	font: bolder 19px 'Gotham', Arial, sans-serif !important;	
+	text-align: right;
+}
+
+/*Boxes*/
+.box{
+	border: solid 1px #b1b1b1;
+	margin-bottom: 15px !important;
+	padding-bottom: 15px;
+}
+.box.padding{
+	padding: 20px 0 0 0;
+}
+.box h3{
+	font: bold 20px 'Gotham', Arial, sans-serif;
+	color: #b9a881;
+	text-align: center;
+	min-height: 65px;
+}
+.box label{
+	font: bold 15px 'Gotham', Arial, sans-serif;
+	color: black;
+	text-align: center;
+	width: 85%;
+	height: 32px;
+	vertical-align: top;
+	padding-top: 7px;
+}
+[type="radio"], [type="checkbox"]{
+	width: 32px;
+	height: 30px;
+}
+
+/*Cols*/
+.col-md-8{
+	width: 64.66666667%;
+	margin: 0 1%;
+}
+.col-md-4{
+	width: 31.33333333%;
+	margin: 0 1%;
+}
+.col-md-6{
+	width: 48%;
+	margin: 0 1%;
+}
+.row2{
+	margin: 0 -21px;
+}
+.row3{
+	margin: 0 -6px;
+}
+
+/*Favorite*/
+.favorite input, .miscellaneous input{
+	width: 100%;
+}
+
+/*VIP*/
+.vip-experiencies h3, .vip-experiencies h4{
+	text-align: center;
+	color: #b9a881;
+	font-size: 19px;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+.vip-experiencies .col-md-4 label{
+	padding-top: 15px;
+	text-align: center;
+	font-size: 15px;
+}
+.vip-experiencies .col-md-8 input{
+	width: 100%;
+}
+
+/*Button*/
+button{
+	padding: 60px 32px;
+	border-radius: 100%;
+	border: solid 2px #1c1c1c;
+	color: #1c1c1c;
+	font-size: 27px;
+	background: transparent;
+	display: table;
+	margin: 0 auto;
+	cursor: pointer;
+}
+button:hover{
+	background: #1c1c1c;
+	color: white;
+}
+
+/*=============Responsible============*/
+@media screen and (max-width: 991px){
+	.col-md-8{
+		width: 63%;
+	}
+	.col-md-6{
+		width: 43.9%;
+	}
+	.col-md-4{
+		width: 30%;
+	
+}
+	.row2{
+		margin: 0 -38px;
+	}
+	input.col-md-12{
+		width: 100%;
+	}
+	.box label{
+		width: 75%;
+	}
+	.col-md-8, .col-md-4, .col-md-6{
+		float: left;
+	}
+	label.another-label2{
+		font-size: 15px !important;
+	}
+	.vip-experiencies .col-md-4{
+		width: 30%;
+		margin: 0;
+	}
+	.vip-experiencies .col-md-4 label{
+		min-height: 60px;
+	}
+	.vip-experiencies .col-md-4 input{
+		padding: 0;
+	}
+	.vip-experiencies .col-md-8{
+		padding-top: 65px;
+	}
+	.vip-experiencies .col-md-8 input{
+		margin-bottom:  0;
+	}
+	footer{
+		padding-top: 0;
+	}
+}
+@media screen and (max-width: 767px){
+	#content{
+		padding: 30px 0;
+	}
+	h1{
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+	h2{
+		font-size: 20px;
+	}
+	.col-md-8, .col-md-4, .col-md-6{
+		width: 100% !important;
+		margin: 0 0 20px 0 !important; 
+		padding: 0;
+	}
+	#content .row{
+		margin: 0;
+	}
+	.row2, .row3{
+		margin: 0;
+	}
+	.box{
+		padding: 20px !important;
+	}
+	.box h3{
+		min-height: 0;
+		margin-bottom: 10px;
+	}
+	.box label{
+		width: 75%;
+	}
+	.box input[type="text"]{
+		width: 100%;
+	}
+	label.another-label2{
+		text-align: center;
+	}
+	::-webkit-input-placeholder {
+	   font: bold 12px 'Gotham', Arial, sans-serif;
+	}
+	:-moz-placeholder {
+	   font: bold 12px 'Gotham', Arial, sans-serif;
+	}
+	::-moz-placeholder {
+	   font: bold 12px 'Gotham', Arial, sans-serif;
+	}
+	:-ms-input-placeholder {  
+	   font: bold 12px 'Gotham', Arial, sans-serif;
+	}
+	.vip-experiencies input{
+		width: 100%;
+	}
+	.vip-experiencies .col-md-4 label{
+		min-height: 0;
+	}
+	.vip-experiencies .col-md-8{
+		padding-top: 0;
+	}
+}

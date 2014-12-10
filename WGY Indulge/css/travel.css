@@ -252,7 +252,7 @@ p strong{
 	display: none !important;
 }
 [type="checkbox"] + label {
-padding: 5px 50px 0 0;
+padding: 5px 20px 0 0;
 background: url(../images/travel/checkbox.png) no-repeat right center;
 height: 30px;
 cursor: pointer;
@@ -305,8 +305,9 @@ cursor: pointer;
     transform: scale(1.05);
 }
 #themes-slider li .active{
-	box-shadow: 0 0 0 2px #b9a881;
-	opacity: 0.5;
+	box-shadow: 0 0 0 5px #b9a881;
+	position: relative;
+	/*opacity: 0.5;*/
 }
 
 /*Slider Controls*/
@@ -388,5 +389,11 @@ cursor: pointer;
 	}
 	.contact form input, .contact form select, .contact form option, .contact form textarea{
 		height: 50px;
+	}
+	#themes-slider li{
+		text-align: center;
+	}
+	#themes-slider li img{
+		display: inline;
 	}
 }

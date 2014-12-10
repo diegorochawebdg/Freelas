@@ -119,6 +119,7 @@ p strong{
 #about-us .founders .founders-social{
 	position: absolute;
 	bottom: 10px;
+	width: 100%;
 	opacity: 0;
 }
 #about-us .founders li:hover .founders-social{
@@ -127,6 +128,8 @@ p strong{
 #about-us .founders .founders-social li{
 	margin-bottom: 0;
 	text-align: center;
+	display: inline-block;
+	width: 32%;
 }
 #about-us .founders .founders-social li img{
 	display: inline;
@@ -172,13 +175,162 @@ p strong{
 /*Insider*/
 #insider{
 	background: #ebebeb;
+	padding-bottom: 0;
 }
 #insider #insider-facebook{
 	background: #536693;
+	position: relative;
+	padding: 50px 0;
 }
+#insider .slide .relative{
+	border-radius: 2px;
+	position: relative;
+	text-align: center;
+}
+#insider .slide .relative img{
+	border-radius: 2px;
+	display: inline;
+}
+#insider .slide .relative .the-contents{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	background: rgba(0, 0, 0, 0.7);
+	left: 0;
+	opacity: 0;
+	-webkit-transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+	   -moz-transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+	     -o-transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+	        transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+}
+#insider .slide:hover .the-contents{
+	opacity: 1;
+}
+#insider .relative .the-contents .text{
+	position: absolute;
+	top: 10px;
+	text-align: center;
+	padding: 5px 30px;
+}
+#insider .relative .the-contents .text strong{
+	font: bold 13px 'Gotham', Arial, sans-serif;
+	color: white;
+	margin-bottom: 7px;
+	display: block;
+}
+#insider .relative .the-contents .text strong a{
+	display: inline;
+	text-decoration: underline;
+	color: white;
+}
+#insider .relative .the-contents .text span{
+	font: normal 12px 'Gotham', Arial, sans-serif;
+	color: white;
+	display: block;
+}
+#insider .slide:hover .relative .the-contents .text-relative{
+	opacity: 1;
+}
+#insider .slide .relative span{
+	color: white;
+	font: normal 20px 'Gotham', Arial, sans-serif;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+}
+#insider .slide .relative span strong{
+	display: block;
+	font-size: 12px;
+	line-height: 1.4em;
+}
+#insider .facebook-like{
+	position: absolute;
+	bottom: 10px;
+	height: 40px;
+	vertical-align: top;
+	width: 100%;
+}
+#insider .facebook-like span{
+	text-align: left !important;
+}
+
+
 #insider #insider-instagram{
 	background: #b8ac9b;
+	position: relative;
+	padding: 50px 0;
 }
+.links-insider{
+	position: absolute;
+	left: 10px;
+	padding-top: 50px;
+	top: 0;
+}
+.links-insider li{
+	text-align: center;
+	margin-bottom: 25px;
+}
+.links-insider li img{
+	display: inline;
+}
+#insider #insider-instagram .like-comment{
+	position: absolute;
+	top: 40%;
+	text-align: center;
+	width: 100%;
+}
+#insider #insider-instagram .like-comment a{
+	margin-right: 10px;
+}
+#insider #insider-instagram .text{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	bottom: 20px;
+	top: auto;
+}
+#insider #insider-instagram .the-time{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 20px;
+}
+#insider #insider-instagram span.time{
+	font: bold 16px 'Gotham', Arial, sans-serif;
+	display: inline-block;
+	padding: 3px 0 0 25px;
+	background: url(../images/home/instagram-time.png) no-repeat left center;
+	min-height: 20px;
+}
+
+/*Slider Controls*/
+.bx-wrapper{
+	position: relative;
+}
+.bx-controls-direction{
+	display: table;
+	margin: 0 auto;
+	width: 310px;
+	top: -47px;
+}
+.bx-controls-direction a{
+	width: 22px;
+	height: 26px;
+	text-indent: -9999px;
+	display: block;
+	position: absolute;
+	top: 50%;
+}
+.bx-controls-direction a.bx-prev{
+	background: url(../images/home/slide-prev.png) no-repeat;
+	left: -25px;
+}
+.bx-controls-direction a.bx-next{
+	background: url(../images/home/slide-next.png) no-repeat;
+	right: -25px;
+}
+
 
 /*Spacer*/
 .spacer{
@@ -186,11 +338,40 @@ p strong{
 	background: #fff;
 }
 
+/*Animate all li's*/
+#content li{
+	-webkit-transition: all 300ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	-moz-transition: all 300ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	-o-transition: all 300ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	transition: all 300ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+
+}
+#content li:hover{
+	-webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}
+#content li .active{
+	box-shadow: 0 0 0 2px #b9a881;
+	opacity: 0.5;
+}
+
+/*Other Hovers*/ 
+.slide .like-comment a:hover img{
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.7;
+}
 
 
 /*=============Responsible============*/
 @media screen and (max-width: 991px){
-	#main-content h1, #themes-slider h2{
+	#main-content h1, h2{
 		font-size: 32px !important;
 		padding-bottom: 15px !important;
 		margin-bottom: 50px !important;
@@ -201,23 +382,45 @@ p strong{
 	}
 }
 @media screen and (max-width: 767px){
-	#concierge-blocks li{
+	#insider #insider-facebook, #insider #insider-instagram{
+		padding: 20px 0;
+	}
+	#insider .facebook-like{
+		bottom: 10px;
+	}
+	.links-insider{
+		position: static;
+		padding-top: 0;
+		margin: 0 auto 10px auto;
+		display: table;
+	}
+	.links-insider li{
+		display: inline-block;
+		margin: 0 5px;
+		max-width: 50px;
+	}
+	.bx-controls-direction a.bx-next{
+		right: -10px;
+	}
+	.bx-controls-direction a.bx-prev{
+		left: -10px;
+	}
+}
+@media screen and (max-width: 500px){
+	#about-us .founders .founders-social{
+		max-width: 29%;
+		left: -40%;
+		top: 0;
+	}
+	#about-us .founders .founders-social li{
+		margin-bottom: 10px;
+		display: block;
 		width: auto;
-		float: none;
 	}
-	#about li .relative span{
-		font-size: 20px;
+	#about-us .founders li .relative span{
+		font-size: 16px;
 	}
-	#membership li .relative span{
-		font-size: 35px;
-	}
-	form{
-		padding: 0 10px !important;
-	}
-	form select{
-		text-indent: 28% !important;
-	}
-	.contact form input, .contact form select, .contact form option, .contact form textarea{
-		height: 50px;
+	#about-us .founders li .relative span strong{
+		font-size: 10px;
 	}
 }

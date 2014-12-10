@@ -183,6 +183,254 @@ footer .contact-info li.mail{
 	background-position: 0 -93px;
 }
 
+/*Contact*/
+#contact{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.85);
+	padding: 30px 0;
+	-webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.6s;
+	transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.6s;
+	-webkit-transform: translateX(100%);
+	-ms-transform: translateX(100%);
+	transform: translateX(100%);
+	opacity: 0;
+}
+#contact.active{
+	-webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.6s;
+	transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.6s;
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0);
+	opacity: 1;
+}
+#contact .container{
+	max-width: 750px;
+}
+
+/*Info Contact*/
+#contact .container .info-contact{
+	box-shadow: 0 0 0 1px white;
+	margin-top: 100px;
+}
+#contact .container .info-contact .box-padding{
+	padding: 50px 25px;
+}
+#contact .container .info-contact ul{
+	margin-bottom: 30px;
+}
+#contact .container .info-contact ul.contact-info-list li{
+	margin-bottom: 20px;
+}
+#contact .container .info-contact ul.contact-info-list li, #contact .container .info-contact ul.contact-info-list li *{
+	color: white;
+	font: normal 13.5px 'Gotham', Arial, sans-serif;
+}
+#contact .container .info-contact .contact-social ul{
+	width: 100%;
+	margin-bottom: 0;
+}
+#contact .container .info-contact .contact-social li{
+	display: inline-block;
+	width: 31%;
+	text-align: center;
+}
+#contact .container .info-contact .contact-social li:hover img{
+	-webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}
+#contact .container .info-contact .contact-social li img{
+	display: inline;
+}
+
+/*The Contact*/
+#contact .the-contact{
+	background: url(../images/contact/contact-bg.png) no-repeat top center;
+	min-height: 739px;
+	background-size: 100% auto;
+	padding: 0 !important;
+}
+#contact .the-contact .box-padding{
+	padding: 20px 23px 25px 29px;
+}
+#contact .the-contact .close-contact{
+	display: table;
+	margin: 0 auto 15px auto;
+}
+#contact .the-contact h2{
+	color: #b9a881;
+	font-size: 16px;
+	margin-bottom: 10px;
+	padding: 0 !important;
+	text-align: center;
+	border: none;
+}
+#contact .the-contact form select{
+	width: 100%;
+	text-align: center;
+}
+#contact .the-contact form .chosen-single span{
+	text-align: center;
+}
+#contact .the-contact form .chosen-container{
+	background: #181818;
+}
+#contact .the-contact form .contact-border{
+	border: solid 1px white;
+	padding: 15px 20px 0px 20px;
+}
+#contact .the-contact form input{
+	width: 96%;
+	padding: 0 2%;
+	color: white;
+	background: #181818;
+	margin-bottom: 5px;
+	height: 40px;
+	text-align: center;
+}
+#contact .the-contact form textarea{
+	width: 96%;
+	padding: 10px 2%;
+	color: white;
+	background: #181818;
+	margin-bottom: 5px;
+	height: 75px;
+	text-align: center;
+	resize: none;
+}
+#contact ::-webkit-input-placeholder {
+   color: white;
+}
+#contact :-moz-placeholder {
+   color: white;  
+}
+#contact ::-moz-placeholder {
+   color: white;  
+}
+#contact :-ms-input-placeholder {  
+   color: white;  
+}
+#contact [type="checkbox"]{
+	display: none !important;
+}
+#contact .the-contact label{
+	color: #e2e2e2;
+	font: bold 8px 'Gotham', Arial, sans-serif;
+	text-align: center;
+	margin: 0 -15px;
+	display: block;
+	width: 115%;
+	max-width: 1000px;
+}
+#contact [type="checkbox"] + label {
+padding: 5px 21px 0 0;
+background: url(../images/checkbox.png) no-repeat right center;
+height: 30px;
+cursor: pointer;
+}
+#contact [type="checkbox"]:checked + label{
+	background: url(../images/checkbox-ok.png) no-repeat right center !important;
+}
+/*Button*/
+#contact button{
+	padding: 25px 7px;
+	border-radius: 100%;
+	border: solid 2px white;
+	color: white;
+	font-size: 20px;
+	background: transparent;
+	display: table;
+	margin: 10px auto 0 auto;
+	cursor: pointer;
+}
+#contact button:hover{
+	background: white;
+	color: #1c1c1c;
+}
+
+/*Subscribe*/
+#subscribe{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.85);
+	padding: 30px 0;
+	-webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.6s;
+	transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.6s;
+	-webkit-transform: translateX(100%);
+	-ms-transform: translateX(100%);
+	transform: translateX(100%);
+	opacity: 0;
+}
+#subscribe.active{
+	-webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.6s;
+	transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.6s;
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0);
+	opacity: 1;
+}
+#subscribe .container{
+	max-width: 320px;
+}
+#subscribe .subscribe-box{
+	border: solid 1px white;
+}
+#subscribe .box-padding{
+	padding: 20px 23px 25px 29px;
+}
+#subscribe .close-contact{
+	display: table;
+	margin: 0 0 15px auto;
+}
+#subscribe h2{
+	color: #b9a881;
+	font-size: 16px !important;
+	margin-bottom: 10px !important;
+	padding: 0 !important;
+	text-align: center;
+	border: none;
+}
+#subscribe form input{
+	width: 96%;
+	padding: 0 2%;
+	color: white;
+	background: #181818;
+	margin-bottom: 5px;
+	height: 40px;
+	text-align: center;
+}
+/*Button*/
+#subscribe button{
+	border-radius: 100%;
+	border: solid 2px white;
+	color: white;
+	font-size: 20px;
+	background: transparent;
+	display: table;
+	margin: 10px 5px 0 11px;
+	cursor: pointer;
+	display: inline-block;
+}
+#subscribe button#login{
+	padding: 37px 14px;
+}
+#subscribe button#sign-up{
+	padding: 37px 7px;
+}
+#subscribe button:hover{
+	background: white;
+	color: #1c1c1c;
+}
+
 /*=============Responsible===============*/
 @media screen and (max-width: 1199px){
 	header .header-link-bar li{
@@ -264,5 +512,15 @@ footer .contact-info li.mail{
 	}
 	footer .copyright{
 		margin-top: 20px;
+	}
+	#contact{
+		position: absolute;
+	}
+	#contact .container .info-contact{
+		margin: 20px 0;
+		top: 20px;
+	}
+	#contact .the-contact{
+		float: none !important; 
 	}
 }
