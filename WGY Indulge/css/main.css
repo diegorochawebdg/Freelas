@@ -186,6 +186,7 @@ footer .contact-info li.mail{
 /*Contact*/
 #contact{
 	position: fixed;
+	overflow: scroll;
 	left: 0;
 	top: 0;
 	width: 100%;
@@ -450,6 +451,19 @@ cursor: pointer;
 	.navbar-right img{
 		width: 50px;
 	}
+	#contact .container .info-contact{
+		margin: 20px auto 40px;
+		top: 20px;
+		width: 320px;
+	}
+	#contact .the-contact{
+		float: none !important; 
+		width: 320px;
+		margin: 0 auto 10px auto;
+	}
+	#contact .the-contact h2{
+		margin-bottom: 20px !important;
+	}
 
 }
 @media screen and (max-width: 767px){
@@ -513,14 +527,5 @@ cursor: pointer;
 	footer .copyright{
 		margin-top: 20px;
 	}
-	#contact{
-		position: absolute;
-	}
-	#contact .container .info-contact{
-		margin: 20px 0;
-		top: 20px;
-	}
-	#contact .the-contact{
-		float: none !important; 
-	}
+	
 }

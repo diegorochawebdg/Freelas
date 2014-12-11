@@ -79,9 +79,9 @@
 						</ul>
 						<div class="contact-social">
 							<ul>
-								<li><a href="#" target="_blank" title="Facebook" class="header-facebook"><img src="images/contact/contact-facebook.png" height="61" width="61" alt="Facebook" title="Facebook" class="animate"></a></li>
-								<li><a href="#" target="_blank" title="Twitter" class="header-twitter"><img src="images/contact/twitter-contact.png" height="61" width="61" alt="Twitter" title="Twitter" class="animate"></a></li>
-								<li><a href="#" target="_blank" title="Instagram" class="header-instagram"><img src="images/contact/instagram-contact.png" height="61" width="61" alt="Instagram" title="Instagram" class="animate"></a></li>
+								<li><a href="#" target="_blank" title="Facebook" class="header-facebook"><img src="/images/contact/contact-facebook.png" height="61" width="61" alt="Facebook" title="Facebook" class="animate"></a></li>
+								<li><a href="#" target="_blank" title="Twitter" class="header-twitter"><img src="/images/contact/twitter-contact.png" height="61" width="61" alt="Twitter" title="Twitter" class="animate"></a></li>
+								<li><a href="#" target="_blank" title="Instagram" class="header-instagram"><img src="/images/contact/instagram-contact.png" height="61" width="61" alt="Instagram" title="Instagram" class="animate"></a></li>
 							</ul>
 						</div>
 					</div>
@@ -91,7 +91,7 @@
 				<!-- The Contact -->
 				<div class="col-md-5 the-contact pull-right">
 					<div class="box-padding">
-						<a href="#" title="Close" class="close-contact"><img src="images/contact/close-contact.png" height="28" width="28" alt="Close"></a>
+						<a href="#" title="Close" class="close-contact"><img src="/images/contact/close-contact.png" height="28" width="28" alt="Close"></a>
 						<h2>Contact</h2>
 						<form action="">
 							<div class="contact-border">
@@ -124,7 +124,7 @@
 			<div class="container">
 				<div class="subscribe-box">
 					<div class="box-padding">
-						<a href="#" title="Close" class="close-contact"><img src="images/contact/close-contact.png" height="28" width="28" alt="Close"></a>
+						<a href="#" title="Close" class="close-contact"><img src="/images/contact/close-contact.png" height="28" width="28" alt="Close"></a>
 						<h2>Subscribe Newsletter</h2>
 						<form action="">
 							<input type="email" name="email" id="email" placeholder="E-mail">

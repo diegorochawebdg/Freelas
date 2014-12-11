@@ -1,0 +1,287 @@
+/*Concierge*/
+#main-content{
+	background: #ebebeb;
+}
+#main-content h1, h2{
+	font: normal 60px 'Gotham', Arial, sans-serif;
+	padding: 0 15px 30px 15px;
+	margin: 0 auto 55px auto;
+	border-bottom: solid 2px black;
+	display: table;
+}
+p{
+	font: lighter 30px/1.6em 'Gotham', Arial, sans-serif;
+	color: black;
+	text-align: justify;
+	margin-bottom: 70px;
+}
+section p:last-child{
+	margin-bottom: 0;
+}
+p strong{
+	font-weight: normal;
+}
+
+/*Events Blocks*/
+#events-blocks{
+	background: #3e5a75;
+}
+#events-blocks li{
+	margin-bottom: 30px;
+}
+#events-blocks li .relative{
+	-webkit-box-shadow: 0 0 0 5px white; 
+	box-shadow: 0 0 0 2px white; 
+	border-radius: 2px;
+	padding: 50% 0;
+}
+#events-blocks li .relative .blocks-text{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	margin: 0 -15px;
+}
+#events-blocks li .relative .blocks-text .text-relative{
+	height: 100%;
+	display: table;
+	width: 100%;
+}
+#events-blocks li .the-text{
+	color: white;
+	font: lighter 24px 'Gotham', Arial, sans-serif;
+	padding: 0px 9%;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+}
+#events-blocks li .relative h3{
+	color: white;
+	font: lighter 24px 'Gotham', Arial, sans-serif;
+	text-align: center;
+}
+#events-blocks li .relative p{
+	color: white;
+	font: lighter 14px 'Gotham', Arial, sans-serif;
+	text-align: justify;
+}
+
+/*Gastronomy | Libation*/
+#gastronomy-libation{
+	position: relative;
+}
+#gastronomy-libation img.e-amp{
+	position: absolute;
+	left: 50%;
+	top: 100px;
+	margin-left: -34px;
+}
+#gastronomy-libation p{
+	font-size: 20px;
+}
+
+/*Gastronomy Slider*/
+#gastronomy-slider, #nightlife-slider{
+	background: #ebebeb;
+	padding: 50px 0;
+}
+.slider-sellector{
+	margin-bottom: 15px;
+}
+.slider-sellector ul{
+	display: table;
+	margin: 0 auto 40px auto;
+}
+.slider-sellector ul li{
+	display: inline-block;
+	margin: 0 3px;
+	width: 120px;
+	height: 120px;
+}
+.slider-sellector ul li a{
+	display: table;
+	background: #989898;
+	text-align: center;
+	width: 120px;
+	height: 120px;
+	border-radius: 100%;
+	margin: 0 auto;
+	text-decoration: none !important;
+	-webkit-transition: all 400ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+	   -moz-transition: all 400ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+	     -o-transition: all 400ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+	        transition: all 400ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+}
+.slider-sellector ul li a:hover, .slider-sellector ul li.active a{
+	text-decoration: none;
+	background: #2d2d2d;
+}
+.slider-sellector ul li a span{
+	color: white;
+	font: bolder 15px 'Gotham', Arial, sans-serif;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/*The slider*/
+.the-slider ul.slide li{
+	position: relative;
+}
+.the-slider ul.slide li .info{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	display: none;
+}
+.the-slider ul.slide li .info .relative{
+	position: relative;
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+.the-slider ul.slide li .info .relative a.more-info{
+	position: absolute;
+	left: 50%;
+	bottom: 10px;
+	margin-left: -13px;
+	z-index: 3;
+}
+.the-slider ul.slide li .info .info1{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+.the-slider ul.slide li .info .info1 h4{
+	color: white;
+	font: normal 37px 'Gotham', Arial, sans-serif;
+}
+.the-slider ul.slide li .info .info1 p{
+	color: white;
+	font: bold 12px 'Gotham', Arial, sans-serif;
+	padding: 0 10px;
+	text-align: center;
+}
+
+
+
+.the-slider ul.slide li .info .info2{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	padding: 0 15px;
+}
+.the-slider ul.slide li .info .info2 li{
+	text-align: left;
+	padding-left: 35px;
+	margin-bottom: 25px;
+	color: white;
+	font: bold 13px 'Gotham', Arial, sans-serif;
+}
+.the-slider ul.slide li .info .info2 li.address-slider{
+	background: url(../images/events/address-slider.png) no-repeat left top;
+}
+.the-slider ul.slide li .info .info2 li.hour-slider{
+	background: url(../images/events/hour-slider.png) no-repeat left top;
+}
+.the-slider ul.slide li .info .info2 li.phone-slider{
+	background: url(../images/events/phone-slider.png) no-repeat left top;
+}
+.the-slider ul.slide li .info .info2 li.url-slider{
+	background: url(../images/events/url-slider.png) no-repeat left top;
+}
+.the-slider ul.slide li .info .info2 li a{
+	color: white;
+}
+
+.the-slider ul.slide li .info .info1.hide, .the-slider ul.slide li .info .info2.hide{
+	opacity: 0;
+}
+
+/*Hide Sliders*/
+.all-sliders .item2, .all-sliders .item3, .all-sliders .item4, .all-sliders .item5, .all-sliders .item7, .all-sliders .item8, .all-sliders .item9, .all-sliders .item10{
+	display: none;
+}
+
+/*Slider Controls*/
+.bx-wrapper{
+	position: relative;
+}
+.bx-controls-direction{
+	display: table;
+	margin: 0 auto;
+	width: 310px;
+	top: -47px;
+}
+.bx-controls-direction a{
+	width: 22px;
+	height: 26px;
+	text-indent: -9999px;
+	display: block;
+	position: absolute;
+	top: 50%;
+}
+.bx-controls-direction a.bx-prev{
+	background: url(../images/events/slide-prev.png) no-repeat;
+	left: -25px;
+}
+.bx-controls-direction a.bx-next{
+	background: url(../images/events/slide-next.png) no-repeat;
+	right: -25px;
+}
+
+/*Division*/
+.division{
+	height: 80px;
+}
+
+/*=============Responsible============*/
+@media screen and (max-width: 991px){
+	#main-content h1, h2{
+		font-size: 32px !important;
+		padding-bottom: 15px !important;
+		margin-bottom: 50px !important;
+	}
+	p{
+		font-size: 19px !important;
+		margin-bottom: 25px;
+	}
+	#events-blocks li{
+		width: 50%;
+		float: left;
+	}
+}
+@media screen and (max-width: 767px){
+	#events-blocks li{
+		width: auto;
+		float: none;
+	}
+	#events-blocks li .relative h3{
+		font-size: 20px;
+	}
+	#events-blocks li .relative p{
+		font-size: 14px !important;
+	}
+	#events-blocks li .relative span{
+		font-size: 20px;
+	}
+	#membership li .relative span{
+		font-size: 35px;
+	}
+	#gastronomy-libation img.e-amp{
+		position: static;
+		margin: 20px auto 30px auto;
+		display: table;
+	}
+	.the-slider ul.slide li .info .info1 h4{
+		font-size: 28px;
+	}
+	.the-slider ul.slide li .info .info1 h4{
+		font-size: 28px !important;
+	}
+	.the-slider ul.slide li .info .info1 p{
+		font-size: 15px !important;
+	}
+}

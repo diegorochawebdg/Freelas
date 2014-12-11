@@ -1,12 +1,5 @@
 $(document).ready(function() {
 
-	//Prevent Default
-	$('a').click(function(event) {
-		if($(this).attr('href') == '#'){
-			event.preventDefault();
-		}
-	});
-
 	//The Slider
 	var slider = $('#the-slider').bxSlider({
 		adaptiveHeight: 	true,
