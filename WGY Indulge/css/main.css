@@ -292,7 +292,7 @@ footer .contact-info li.mail{
 	color: white;
 	background: #181818;
 	margin-bottom: 5px;
-	height: 40px;
+	height: 36px;
 	text-align: center;
 }
 #contact .the-contact form textarea{
@@ -301,7 +301,7 @@ footer .contact-info li.mail{
 	color: white;
 	background: #181818;
 	margin-bottom: 5px;
-	height: 75px;
+	height: 59px;
 	text-align: center;
 	resize: none;
 }
@@ -458,7 +458,7 @@ cursor: pointer;
 	}
 	#contact .the-contact{
 		float: none !important; 
-		width: 320px;
+		width: 290px;
 		margin: 0 auto 10px auto;
 	}
 	#contact .the-contact h2{

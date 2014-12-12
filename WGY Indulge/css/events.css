@@ -201,7 +201,7 @@ p strong{
 }
 
 /*Hide Sliders*/
-.all-sliders .item2, .all-sliders .item3, .all-sliders .item4, .all-sliders .item5, .all-sliders .item7, .all-sliders .item8, .all-sliders .item9, .all-sliders .item10{
+.all-sliders .item2, .all-sliders .item3, .all-sliders .item4, .all-sliders .item5, .all-sliders .item6, .all-sliders .item8, .all-sliders .item9, .all-sliders .item10, .all-sliders .item11, .all-sliders .item12, .all-sliders .item13{
 	display: none;
 }
 
@@ -238,6 +238,13 @@ p strong{
 }
 
 /*=============Responsible============*/
+@media screen and (max-width: 1200px){
+	#main-content h1, h2{
+		font-size: 42px !important;
+		padding-bottom: 15px !important;
+		margin-bottom: 50px !important;
+	}
+}
 @media screen and (max-width: 991px){
 	#main-content h1, h2{
 		font-size: 32px !important;
@@ -251,6 +258,24 @@ p strong{
 	#events-blocks li{
 		width: 50%;
 		float: left;
+	}
+
+	#gastronomy-libation img.e-amp{
+		position: static;
+		margin: 20px auto 30px auto;
+		display: table;
+	}
+	.the-slider ul.slide li .info .info1 h4{
+		font-size: 28px;
+	}
+	.the-slider ul.slide li .info .info1 h4{
+		font-size: 25px !important;
+	}
+	.the-slider ul.slide li .info .info1 p{
+		font-size: 10px !important;
+	}
+	.the-slider ul.slide li .info .relative a.more-info{
+		bottom: 0;
 	}
 }
 @media screen and (max-width: 767px){
@@ -270,18 +295,5 @@ p strong{
 	#membership li .relative span{
 		font-size: 35px;
 	}
-	#gastronomy-libation img.e-amp{
-		position: static;
-		margin: 20px auto 30px auto;
-		display: table;
-	}
-	.the-slider ul.slide li .info .info1 h4{
-		font-size: 28px;
-	}
-	.the-slider ul.slide li .info .info1 h4{
-		font-size: 28px !important;
-	}
-	.the-slider ul.slide li .info .info1 p{
-		font-size: 15px !important;
-	}
+	
 }
