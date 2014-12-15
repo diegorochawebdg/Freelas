@@ -306,10 +306,6 @@ cursor: pointer;
     transform: scale(1.05);
 }
 #themes-slider li .active, #themes-slider li.unknown .active{
-	/*border: solid 5px #b9a881 !important;
-	box-shadow: none;
-	position: relative !important;
-	margin: -5px;*/
 	opacity: 0.3;
 }
 
