@@ -101,9 +101,8 @@ h3 {
     font-weight: bold;
 }
 #header .main-txt h2 {
-    margin-bottom: 65px;
-    color: white;
-    font: bold 25px Arial, sans-serif;
+    color: #fff;
+    font: 400 31px/20px Arial,sans-serif;
 }
 #header .main-txt p {
     color: #333;
