@@ -241,10 +241,15 @@ p{
   background: #757575 url(../images/bg-video.jpg) no-repeat center top;
   height: 565px;
 }
+#video .content-center{
+  text-align: center;
+}
 #video h3{
     font: bold 18px Arial, sans-serif;
     color: white;
     padding: 35px 0 15px;
+    text-align: left;
+    margin-left: 40px;
 }
 
 /*Embalagem | Especificações*/

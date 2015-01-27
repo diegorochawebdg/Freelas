@@ -131,7 +131,7 @@ p{
   height: 539px;
 }
 #base-potencia .base-ceramica{
-  top: -27px;
+  top: -11px;
   margin-left: 23px;
 }
 
@@ -203,14 +203,27 @@ span.potencia{
   margin-left: 117px;
 }
 
+
+/*Video*/
+#video{
+  background: url(../images/bg-video.jpg) no-repeat center top;
+  height: 491px;
+  margin-top:-30px;
+}
+#video h3{
+    font: bold 18px Arial, sans-serif;
+    color: white;
+    padding: 35px 0 15px;
+
+}
 /*Embalagem | Especificações*/
 #embalagem-especificacoes{
   background: url(../images/bg-embalagem-especificacoes.jpg) no-repeat center top;
-  height: 319px;
+  height: 404px;
 }
 #embalagem-especificacoes .txt{
   margin-left: 90px;
-  top: -33px;
+  top: 63px;
 }
 #embalagem-especificacoes .txt h3{
   margin-bottom: 15px; 
