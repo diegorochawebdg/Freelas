@@ -1,0 +1,55 @@
+/* Menu Page Hover */
+div.main-menu nav ul li a:hover
+{
+    color: #D34A61;
+}
+/* Portfolio item category */
+#work-items li span.sub-info
+{
+    color: #ccc;
+}
+/* Blog item title hover */
+#news-items li p.title a:hover
+{
+    color: #B52540;
+}
+/* Blog read more color */
+#news-items li a.read-more{
+    color: white;
+}
+/* Blog read more hover background */
+#news-items li a.read-more:hover
+{
+    background-color: #B52540;
+}
+/* Contect form */
+.contact-form input, .contact-form textarea
+{
+    color: #999; 
+}
+.contact-form button
+{
+    color: #FFFFFF;
+}
+/* Arrow text color */
+.posts-navigation a
+{
+    color: #FFFFFF;
+}
+#blog-pagination a
+{
+    color: #FFFFFF;
+}
+/* Comments */
+a#cancel-comment-reply-link
+{
+    color: white;
+}
+input#submit
+{
+    background-color: #ffffff;
+}
+input#submit:hover
+{
+    background-color: #868686;
+}

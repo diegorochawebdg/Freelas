@@ -1,0 +1,138 @@
+.comments-holder, .comments-pagination-wrapper
+{
+    font-size: 12px;
+    font-family: arial;
+}
+.post-author{
+    padding-right: 20px;
+    padding-top: 20px;
+}
+.comment-separator{    
+    font-size: 13px;   
+    font-weight: bold;    
+    padding: 5px 5px 5px 0px;
+}
+.author-about{
+    padding-left: 80px;
+}
+.comments-holder{
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    line-height: 1;
+}
+.comments-holder ol, .no-comments {
+    border-top-width: 1px;    
+    border-style: solid;
+    padding-top: 50px;
+}
+.comment{
+    padding: 10px 0;
+}
+.avatar{
+    border-color: #6c202d;    
+    border-width: 5px;
+    border-style: solid;
+    margin-bottom: 10px;
+    margin-right: 15px;
+}
+.comment-author
+{
+    text-decoration: none;
+}
+.comment-date
+{
+    text-transform: uppercase;
+}
+.separator{
+    padding: 0 5px;
+}
+.comment-text {
+    display: inline;
+    padding: 15px;
+}
+.comment-text p
+{
+    padding-top: 15px;
+    line-height: 20px;
+}
+.comment-reply-link{
+    background-color: #FFFFFF;
+    padding: 5px 10px 5px;
+}
+.children{
+    padding: 0 0 0 50px !important;
+    list-style-type: none !important;
+}
+#commentform input#author, #commentform input#email {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: arial;
+    margin-top: 15px;
+    padding: 10px;    
+    border: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+#commentform input#submit
+{    
+    font-size: 13px;
+    font-weight: bold;
+    font-family: arial;
+    margin-top: 15px;
+    padding: 10px;    
+    border: none;
+}
+#commentform textarea{
+    max-width: 359px;
+    width:100%;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 15px;
+    font-family: arial;
+    padding: 10px;
+    overflow: auto;
+    border: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+.comments-pagination
+{
+    text-align: right;    
+    padding: 5px 0px 10px 0px;	
+    border-bottom-width: 1px;    
+    border-style: solid;
+}
+.comments-pagination a
+{
+    text-decoration: none;
+}
+input#submit{
+    color: #FFFFFF;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.logged-in-as a, .comments-holder a{
+    text-decoration: none;
+}
+#comment-status
+{
+    margin: 3px 0 5px 0;
+    font-style: italic;
+    height: 12px;
+    line-height: 12px;
+}
+input#author, input#email
+{
+    width: 151px;
+}
+#reply-title
+{
+    font-size: 13px;
+}
