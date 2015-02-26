@@ -1,0 +1,113 @@
+body {background:url(img-layout/bg-fundo-body.jpg) repeat-x center top #A7A8AA; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; color:#1A171B; font-size:9pt; margin:0; padding:0; overflow-x:hidden; font-style:normal;}
+*    {margin:0; padding:0;}
+img  {border:0;}
+a    {text-decoration:none;}
+em   {padding:10px; background:#000; display:none; position:absolute;}
+
+#barra-superior {float:left; position:relative; width:100%; height:11px; background:#B3B3B3; z-index:100;}
+#bg-caderno  {margin:auto; position:relative; width:1220px; height:860px; background:url(img-layout/bg-body.jpg) no-repeat center top #A7A8AA;}
+#geral {margin:auto; position:relative; width:906px;}
+#left  {float:left; position:relative; width:160px;}
+#right {float:right; position:relative; width:680px; /*min-height:700px;*/ background:url(img-layout/bg-content.png) repeat;}
+#footer{float:right; position:relative; width:875px; color:#1A171B; font-size:9pt;}
+#footer a {color:#1A171B;}
+#copyright {float:left; position:relative; width:300px; margin:3px 0 0 0; font-size:8pt;}
+#contato   {float:right; position:relative; width:auto; margin:-48px 15px 0 0;}
+
+#logo  {float:left; position:relative; width:160px; margin:15px auto;}
+#menu-left    {float:left; position:relative; width:160px; margin:15px 0 0;}
+#menu-left ul {list-style-type:none; margin:0; padding:0;}
+#menu-left li {list-style-type:none; border-bottom:1px solid #CCCCCC; padding:5px 0; float:left; width:122px;}
+#menu-left li ul {position:absolute; top:38px; left:60px; display:none; background:url(img-layout/bg-menu-hover.png) repeat;}
+#menu-left li ul.locacao-sub {top: 208px; left: 100px;}
+#menu-left li ul a {color:#FFF;}
+#menu-left li ul li:hover a {color:#000;}
+#menu-left li:hover ul{display:block;} 
+#menu-left li li   {border:0; text-align:center; width:100px;}
+#menu-left li li:hover a {color:#FFF}
+#menu-left a             {color:#1A171B; display:block; font-size:10pt;}
+#menu-left a:hover       {color:#990000;}
+#menu-left .active       {color:#990000;}
+#menu-left .sem-borda    {border-bottom:0;}
+
+#corpo-content-top    {float:left; position:relative; width:680px;}
+#content-top          {float:left; position:relative; width:490px; margin:70px 0 0 175px;}
+#content-top h1       {color:#FFF; display:inline-block; padding:5px 10px; margin:0 0 10px 0; background:#990000; font-size:10pt;}
+#content-bottom       {float:left; position:relative; width:605px; margin:0 0 0 20px; padding:30px 0 40px 40px;}
+#content-top h2, #content-bottom h2    {color:#FFF; display:inline-block; padding:5px 10px; margin:0 0 10px 0; background:#990000; font-size:10pt;}
+#content-equipe       {float:left; position:relative; width:585px; /*margin:0 0 30px 0;*/}
+#txt-content-bottom   {float:left; position:relative; width:605px; margin:0 0 20px 0;}
+#corpo-content-bottom {float:left; position:relative; width:605px; /*margin:0 0 30px 0;*/ padding:30px 0 0 0; border-top:1px solid #CCC;}
+#corpo-content-bottom ul, #content-top ul {float:left; list-style-type:none; margin:20px 0;}
+#corpo-content-bottom li, #content-top li {float:left; width:75px; padding:0 0 0 20px; margin:0 25px 15px 0; background:url(img-layout/tic-off.jpg) no-repeat left top;}
+#corpo-content-bottom li:hover, #content-top li:hover {background:url(img-layout/tic-on.jpg) no-repeat left top;}
+#mapa                 {float:left; position:relative; width:560px; height:348px; border:2px solid #1A171B;}
+.txt-tooltip          {float:left; position:relative; width:90%; padding:10px 20px; background:#990000;}
+.box-tooltip          {position:absolute; left:0; width:100%; z-index:10; padding:12px 0 0 0; display:none; background:url(img-layout/tic.png) no-repeat; color:#FFF;}
+.box-tooltip-top      {position:absolute; left:0; width:100%; z-index:10; padding:12px 0 0 0; display:none; background:url(img-layout/tic.png) no-repeat; color:#FFF;}
+.txt-tooltip-top      {float:left; position:relative; width:93%; padding:20px; background:url(img-layout/bg-menu-hover.png) repeat;}
+.font-col             {font-size:8pt;}
+#content-footer       {float:left; position:relative; width:605px; border-top:1px solid #c3c3c3; padding:30px 0 0 0;}
+.tic-left             {background-position:left top;}
+.tic-centera      {background-position:119px 0;}
+.tic-center       {background-position:235px 0;}
+.tic-centerb      {background-position:355px 0;}
+.tic-right        {background-position:479px 0;}
+.box-home             {float:left; position:relative; width:170px; margin:0 30px 0 0;}
+.box-footer           {float:left; position:relative; width:585px; margin:0 30px 0 0;}
+.link-box-home        {float:left; position:relative; width:170px;}
+.link-box-home a          {display:inline-block; font-size:10pt; color:#FFF; padding:5px 10px; background:#990000;}
+.link-box-home .bot-saiba {float:right; color:#900; font-size:9pt; background:none; padding:0 25px 0 0;}
+.link-box-home-footer .bot-saiba {float:right; color:#900; font-size:9pt; background:none;}
+.separador-equipe         {float:left; position:relative; width:100%; padding:10px 0 0 0;}
+.link-box-home-footer     {float:left; position:relative; width:300px;}
+.bot-contato              {color:#900;}
+.bot-pergunta             {cursor:pointer; font-size:10pt;}
+.txt-box-home             {float:left; position:relative; width:170px; height:145px; padding:10px 0;}
+.txt-box-footer           {float:left; position:relative; width:600px; padding:10px 0;}
+.tel-contato,.email-contato{float:left; position:relative; width:200px;}
+.corpo-lista-cliente      {float:left; position:relative; width:135px; height:135px; margin:0 15px 15px 0;}
+.logo                     {float:left; position:relative; width:135px; height:135px; background:url(img-site/clientes-off.jpg) no-repeat;}
+.logo:hover               {background:url(img-site/clientes-on.jpg) no-repeat;}
+.separador-cliente        {float:left; position:relative; width:100%; height:1px;}
+
+.seraza,.seraza:hover     {background-position:-135px -405px;}
+.getulio,.getulio:hover   {background-position:0 -269px;}
+.magazine,.magazine:hover {background-position:-135px -135px;}
+.brazil,.brazil:hover     {background-position:0 -405px;}
+.spvias,.spvias:hover     {background-position:left top;}
+.seller,.seller:hover     {background-position:center top;}
+.gfk,.gfk:hover           {background-position:-135px -269px;}
+.zs,.zs:hover             {background-position:0 -135px;}
+.iq,.iq:hover             {background-position:right top;}
+
+.eco,.eco:hover           {background-position:-270px -405px;}
+
+.multi,.multi:hover       {background-position:-270px -269px;}
+
+.ag,.ag:hover             {background-position:-270px -135px;}
+
+.about,.about:hover       {background-position:left bottom;}
+
+.maison,.maison:hover     {background-position:center bottom;}
+
+.oma,.oma:hover           {background-position:right bottom;}
+
+#traducao   {float:right; position:relative; padding:0 10px 10px; background:#B3B3B3; margin:0 15px 0 0; display:none;}
+#traducao a {color:#FFF;}
+#br,#en,#es {float:left; position:relative; padding:8px; margin:0 7px 0 0; background:url(img-layout/bandeira-on.jpg) no-repeat;}
+#br         {background:url(img-layout/bandeira-on.jpg) no-repeat left top;}
+#en         {background:url(img-layout/bandeira-on.jpg) no-repeat center top;}
+#es         {background:url(img-layout/bandeira-on.jpg) no-repeat right top;}
+#br-off,#en-off,#es-off {float:left; position:relative; padding:8px; margin:0 7px 0 0; background:url(img-layout/bandeira-on.jpg) no-repeat;}
+#br-off     {background:url(img-layout/bandeira-off.jpg) no-repeat left top;}
+#en-off     {background:url(img-layout/bandeira-off.jpg) no-repeat center top;}
+#es-off       {background:url(img-layout/bandeira-off.jpg) no-repeat right top;}
+#br-off:hover {background:url(img-layout/bandeira-on.jpg) no-repeat left top;}
+#en-off:hover {background:url(img-layout/bandeira-on.jpg) no-repeat center top;}
+#es-off:hover {background:url(img-layout/bandeira-on.jpg) no-repeat right top;}
+#menu-right {float:left; position:relative; width:680px; margin:15px 0; text-align:center;}
+#home       {width:0; display:block; padding:10px; background:url(img-layout/bot-content.png) no-repeat left top;}
+#barra-top  {border-left:1px solid #C2C2C2; margin:0 23px 0 18px;}
+#divide     {float:left; position:relative; margin:0 10px; }
+#news       {width:0; display:block; padding:10px; background:url(img-layout/bot-content.png) no-repeat right top;}
