@@ -17,15 +17,4 @@ $(document).ready(function() {
     }, function() {
     	$(this).parent().parent().parent().children('.hotspots-content').children('.item2').stop().fadeOut('fast');
     });
-    $('.hotspots li.item3').hover(function() {
-        $(this).parent().parent().parent().children('.hotspots-content').children('.item3').stop().fadeIn('fast');
-    }, function() {
-        $(this).parent().parent().parent().children('.hotspots-content').children('.item3').stop().fadeOut('fast');
-    });
-
-    $('.hotspots li.item4').hover(function() {
-        $(this).parent().parent().parent().children('.hotspots-content').children('.item4').stop().fadeIn('fast');
-    }, function() {
-        $(this).parent().parent().parent().children('.hotspots-content').children('.item4').stop().fadeOut('fast');
-    });
 });
