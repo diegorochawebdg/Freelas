@@ -5,7 +5,10 @@
     margin: 0;
     padding: 0;
     border: none;
+<<<<<<< HEAD
     -webkit-font-smoothing: antialiased;
+=======
+>>>>>>> FETCH_HEAD
     background-repeat: no-repeat;
     list-style: none;
     font-family: 'ElectroluxSans', Arial, Helvetica, sans-serif;
@@ -143,7 +146,11 @@ header hgroup h1 strong{
     margin-bottom: 37px;
 }
 header hgroup h2{
+<<<<<<< HEAD
     font: 700 30px 'ElectroluxSans', sans-serif;
+=======
+    font: 700 31.7px 'ElectroluxSans', sans-serif;
+>>>>>>> FETCH_HEAD
     color: #eb6852;
 }
 header article{
@@ -162,7 +169,11 @@ section#features {
     height: 688px;
 }
 section#features .seletor-txt, section#features .preparacao-txt  {
+<<<<<<< HEAD
     margin-left: 78px;
+=======
+    margin-left: 67px;
+>>>>>>> FETCH_HEAD
     padding-left: 68px;
 }
 section#features .seletor-txt{
@@ -175,7 +186,12 @@ section#features .preparacao-txt{
 }
 section#features .seletor-txt h3, section#features .preparacao-txt h3{
     color: #051e4c;
+<<<<<<< HEAD
     font-size: 23px;
+=======
+    font-size: 28px;
+    line-height: 30px;
+>>>>>>> FETCH_HEAD
 }
 section#features .seletor-txt p, section#features .preparacao-txt p{
     color: #666;
@@ -293,6 +309,11 @@ section#embalagem-especificacoes ul{
 section#embalagem-especificacoes li{
     font-size: 15px;
     line-height: 1.4em;
+<<<<<<< HEAD
+=======
+    list-style-type: disc;
+    list-style-position: inside;
+>>>>>>> FETCH_HEAD
 }
 
 /*Footer*/
@@ -306,6 +327,10 @@ footer h3{
     font: 700 23px 'ElectroluxSans', sans-serif;
     text-align: center;
     padding-top: 45px;
+<<<<<<< HEAD
+=======
+    text-transform: uppercase;
+>>>>>>> FETCH_HEAD
 }
 footer figure{
     top: 111px;
@@ -324,14 +349,33 @@ footer figure{
 .cd-single-point {
     position: absolute;
     border-radius: 50%;
+<<<<<<< HEAD
+=======
+    transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transition: all .300s;
+    -webkit-transition: all .300s;
+    -ms-transition: all .300s;
+    -moz-transition: all .300s;
+    -o-transition: all .300s;
+>>>>>>> FETCH_HEAD
 }
 .cd-single-point > a {
     position: relative;
     z-index: 99;
     display: block;
+<<<<<<< HEAD
     width: 36px;
     height: 36px;
     border-radius: inherit;
+=======
+    width: 30px;
+    height: 30px;
+    border-radius: 0;
+>>>>>>> FETCH_HEAD
     background: url("../images/hotspot.png") 0 0 no-repeat;
     -webkit-transition: background-color 0.2s;
     -moz-transition: background-color 0.2s;
@@ -343,7 +387,16 @@ footer figure{
     -o-transition: all .300s;
 }
 .cd-single-point:hover {
+<<<<<<< HEAD
     opacity: 0.7;
+=======
+    opacity: 0.8;
+    transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+>>>>>>> FETCH_HEAD
 }
 .cd-single-point::after {
     content: '';
