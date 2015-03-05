@@ -60,12 +60,22 @@ a:hover{
     z-index: 9;
     display: none;
 }
+p{
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 1.2em;
+}
+h3{
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
 /*End of Reset Css*/
 
 /*Header*/
 #header{
     background: url(../images/bg-header.jpg) no-repeat center;
-    height: 587px;
+    height: 533px;
     position: relative;
 }
 #header #logo{
@@ -77,50 +87,166 @@ a:hover{
   top: 112px;
 }
 #header .main-txt h1{
-  color: #333;
+  color: #666;
   font: normal 15px Arial, sans-serif;
-  margin-bottom: 33px;
-}
-#header .main-txt img.nome-produto{
-  margin-bottom: 40px;
-}
-#header .main-txt h2{
-  margin-bottom: 44px;
-  color: white;
-  font: bold 25px Arial, sans-serif;
-}
-#header .main-txt h3{
-  margin-bottom: 10px;
-  color: #b80a7d;
-  font: normal 24px Arial, sans-serif;
-}
-#header .main-txt p{
-  color: #333;
-  font: normal 15px Arial, sans-serif;
+  margin-bottom: 20px;
 }
 #header .hotspots .item1{
-  top: 277px;
-  margin-left: 150px;
+  top: 500px;
+  margin-left: 270px;
 }
 #header .hotspots-content .item1{
-  top: 110px;
+  top: 340px;
+  margin-left: 110px;
+}
+
+/*Features*/
+#features{
+  background: url(../images/bg-features-1.jpg) no-repeat center;
+  height: 762px;
+}
+#features h3{
+  color: #e0adcc;
+}
+#features h3 span{
+  color: #FFF;
+  display: block;
+}
+#features p{
+  color: #FFF;
+  opacity: 0.7;
+}
+#features .jarra-de-vidro{
+  top: 60px;
+  margin-left: -30px;
+}
+#features .potencia{
+  top: 280px;
+  margin-left: 117px;
+}
+#features .jarra-resistente{
+  top: 560px;
+  margin-left: 138px;
+  text-align: center;
+  width: 220px;
+}
+#features .jarra-resistente h3{
+  font-weight: normal;
+  color: white;
+}
+#features .hotspots .item1{
+  top: 10px;
+  margin-left: -320px;
+}
+#features .hotspots-content .item1{
+  top: 0px;
+  margin-left: -330px;
+}
+
+/*Filtrio*/
+#filtrio{
+  background: url(../images/bg-features-2.jpg) no-repeat center;
+  height: 538px;
+}
+#filtrio .filtrio h3{
+    margin-left: -365px;
+    top: 0;
+    font-size: 28px;
+    color: #c75299;
+}
+#filtrio .filtrio h3 span{
+  color: #972477;
+  display: block;
+}
+#filtrio .filtrio p{
+  margin-left: -50px;
+  top: 15px;
+  color: #353535;
+}
+#filtrio .separador-parcial h3,
+#filtrio .separador-espuma h3,
+#filtrio .abertura-total h3{
+    color: #972477;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+#filtrio .separador-parcial p,
+#filtrio .separador-espuma p,
+#filtrio .abertura-total p{
+    color: #353535;
+    font-size: 14px;
+}
+#filtrio .separador-parcial{
+    margin-left: -38px;
+    top: 150px;
+}
+#filtrio .separador-espuma{
+    margin-left: -58px;
+    top: 320px;
+}
+#filtrio .abertura-total{
+    margin-left: -278px;
+    top: 410px;
+}
+#filtrio .hotspots .item1{
+  top: 255px;
+  margin-left: 280px;
+}
+#filtrio .hotspots-content .item1{
+  top: 260px;
+  margin-left: 100px;
+}
+#filtrio .hotspots .item2{  
+    top: -126px;
+    margin-left: -210px;
+}
+#filtrio .hotspots-content .item2{
+  top: -180px;
+  margin-left: -183px;
+}
+
+/*Trava de segurança*/
+#trava-de-seguranca{
+  background: url(../images/bg-trava-de-seguranca.jpg) no-repeat center;
+  height: 539px;    
+}
+#trava-de-seguranca h3{
+    color: #972477;
+    font-size: 24px;
+}
+#trava-de-seguranca p{
+    color: #353535;
+    font-size: 17px;
+}
+#trava-de-seguranca .trava-de-seguranca,
+#trava-de-seguranca .design-sofisticado{
+    margin-left: -20px;
+}
+#trava-de-seguranca .design-sofisticado{
+    top: 220px;
 }
 
 /*Video*/
+#video{
+  background: url(../images/bg-video.jpg) no-repeat center top;
+  height: 707px;
+  text-align: center;
+}
 #video h3{
     font: bold 18px Arial, sans-serif;
     color: white;
-    padding: 35px 0 15px;
+    padding: 35px 0 15px 45px;
+    text-align: left;
 }
 
 /*Embalagem | Especificações*/
 #embalagem-especificacoes{
   background: #757575 url(../images/bg-embalagem-especificacoes.jpg) no-repeat center top;
-  height: 562px;
+  height: 513px;
 }
 #embalagem-especificacoes .txt{
   margin-left: 96px;
-  top: 119px;
+  top: 98px;
 }
 #embalagem-especificacoes .txt h3{
   margin-bottom: 15px; 
@@ -131,7 +257,7 @@ a:hover{
   margin-bottom: 38px;
 }
 #embalagem-especificacoes .txt li{
-  color: #d098a5;
+  color: white;
   font: normal 15px/1.6em Arial, sans-serif;
   list-style-type: disc; 
 }
@@ -218,16 +344,22 @@ a:hover{
 .cd-close-info{display:none;}
 
 /*First Hotspot*/
-#header .cd-single-point>a{
+#header .cd-single-point>a,
+#features .cd-single-point>a{
   background: url(../images/botao-spot-header.png) 0 0 no-repeat;
 }
-#header .cd-single-point>a:hover{
+#header .cd-single-point>a:hover,
+#features .cd-single-point>a:hover{
   opacity: 0.7;
 }
-#header .cd-single-point>a::after, #header .cd-single-point>a:before{
+#header .cd-single-point>a::after, #header .cd-single-point>a:before,
+#features .cd-single-point>a::after, #features .cd-single-point>a:before{
   background-color: #b80a7d;
 }
-#header .cd-single-point::after{content: ''; position: absolute; z-index: 1; width: 100%; height: 100%; top: 0; left: 0; border-radius: inherit; background-color: transparent; -webkit-animation: cd-pulse-header 2s infinite; -moz-animation: cd-pulse-header 2s infinite; animation: cd-pulse-header 2s infinite;}
+#header .cd-single-point::after,
+#features .cd-single-point::after{
+    content: ''; position: absolute; z-index: 1; width: 100%; height: 100%; top: 0; left: 0; border-radius: inherit; background-color: transparent; -webkit-animation: cd-pulse-header 2s infinite; -moz-animation: cd-pulse-header 2s infinite; animation: cd-pulse-header 2s infinite;
+}
 
 @-webkit-keyframes cd-pulse-header {
   0% {
