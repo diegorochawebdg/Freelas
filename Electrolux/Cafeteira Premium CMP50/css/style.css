@@ -8,13 +8,14 @@
     background-repeat: no-repeat;
     list-style: none;
     font-family: 'ElectroluxSans', Arial, Helvetica, sans-serif;
-    font-weight: normal;
+    font-weight: 400;
     line-height: 1em;
 }
 body, html {
     width: 100%;
     min-height: 100%;
     min-width: 800px;
+    overflow-x: hidden;
 }
 img {
     display: block;
@@ -76,7 +77,7 @@ h3 {
         url('../fonts/ElectroluxSans-Regular.ttf') format('truetype'),
         url('../fonts/ElectroluxSans-Regular.svg#ElectroluxSans') format('svg'),
         url('../fonts/ElectroluxSans-Regular.woff') format('woff');
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 }
 @font-face {
@@ -86,7 +87,7 @@ h3 {
         url('../fonts/ElectroluxSans-SemiBold.ttf') format('truetype'),
         url('../fonts/ElectroluxSans-SemiBold.svg#ElectroluxSans') format('svg'),
         url('../fonts/ElectroluxSans-SemiBold.woff') format('woff');
-    font-weight: 700;
+    font-weight: 600;
     font-style: normal;
 }
 @font-face {
@@ -96,7 +97,7 @@ h3 {
         url('../fonts/ElectroluxSans-Bold.ttf') format('truetype'),
         url('../fonts/ElectroluxSans-Bold.svg#ElectroluxSans') format('svg'),
         url('../fonts/ElectroluxSans-Bold.woff') format('woff');
-    font-weight: 900;
+    font-weight: 700;
     font-style: normal;
 }
 @font-face {
@@ -106,7 +107,7 @@ h3 {
         url('../fonts/ElectroluxSans-Light.ttf') format('truetype'),
         url('../fonts/ElectroluxSans-Light.svg#ElectroluxSans') format('svg'),
         url('../fonts/ElectroluxSans-Light.woff') format('woff');
-    font-weight: lighter;
+    font-weight: 100;
     font-style: normal;
 }
 
@@ -224,18 +225,20 @@ section#features .hotspots-content .item2{
     top: 577px;
 }
 
-/*Jarra térmica*/
-section#jarra-termica{
-    background: #ad9f87;
+/*Jarra de vidro*/
+section#jarra-de-vidro{
+    background: url(../images/jarra-cafeteira-cmp50.jpg) no-repeat center #ad9f87;
+    height: 835px;
+    position: relative;
 }
-section#jarra-termica figcaption{
+section#jarra-de-vidro .jarra-txt{
     color: #FFFFFF;
-    font: normal 18px 'ElectroluxSans', sans-serif;
-    margin-left: 115px;
-    top: 193px;
+    font: 400 18px 'ElectroluxSans', sans-serif;
+    margin-left: 126px;
+    top: 305px;
 }
-section#jarra-termica figcaption strong{
-    font: 700 20px/1em 'ElectroluxSans', sans-serif;
+section#jarra-de-vidro .jarra-txt strong{
+    font: 600 30px/1em 'ElectroluxSans', sans-serif;
     display: block;
     margin-bottom: 15px;
 }
