@@ -167,6 +167,9 @@ section#features{
 section#features .temporizador-digital, section#features .sistema-lift  {
     margin-left: 90px;
     
+}section#features .temporizador-digital, section#features .sistema-lift p {
+    color: #666;
+    
 }
 section#features .temporizador-digital{
     top: 115px;
@@ -240,6 +243,7 @@ section#niveis-tostagem .niveis-tostagem-txt {
 
 section#niveis-tostagem .niveis-tostagem-txt h3 {
     color: #eb6852;
+    font-size: 36px;
 
 }
 
@@ -297,10 +301,11 @@ footer{
     overflow: hidden;
 }
 footer h3{
-    font: 700 23px 'ElectroluxSans', sans-serif;
+    font: 600 23px 'ElectroluxSans', sans-serif;
     text-align: center;
     padding-top: 45px;
     text-transform: uppercase;
+    color: #000;
 }
 footer figure{
     top: 111px;
