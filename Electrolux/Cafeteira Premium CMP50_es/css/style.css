@@ -196,7 +196,7 @@ section#features figure.painel-lcd div figcaption{
     position: absolute;
     text-align: center;
     top: 73px;
-    left: 158px;
+    left: 162px;
     font: 600 24px 'ElectroluxSans', sans-serif;
     color: #e36552;
     width: 170px;
@@ -221,7 +221,7 @@ section#features .hotspots-content .item1{
     top: 177px;
 }
 section#features .hotspots-content .item2{
-    margin-left: -329px;
+    margin-left: -321px;
     top: 577px;
 }
 
