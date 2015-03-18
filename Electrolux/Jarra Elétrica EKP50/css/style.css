@@ -1,0 +1,313 @@
+@charset "UTF-8";
+/*Reset Css*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-repeat: no-repeat;
+    list-style: none;
+    font-family: 'ElectroluxSans', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1em;
+}
+body, html {
+    width: 100%;
+    min-height: 100%;
+    min-width: 800px;
+    overflow-x: hidden;
+}
+img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+a {
+    display: block;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.link-padding {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    display: block;
+}
+.clearfix{
+    clear: both;
+}
+.container {
+    width: 780px;
+    padding: 0 10px;
+    margin: 0 auto;
+    position: relative;
+}
+.absolute {
+    position: absolute;
+    left: 50%;
+}
+.hotspots li {
+    z-index: 10;
+}
+.hotspots-content img {
+    z-index: 9;
+    display: none;
+}
+
+p {
+    font: 400 18px/1.3em 'ElectroluxSans', Arial, sans-serif;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font: 600 28px/1em 'ElectroluxSans', Arial, sans-serif;
+    margin-bottom: 15px;
+    color: #051e4c;
+
+}
+/*End of Reset Css*/
+
+/*@font-face*/
+@font-face {
+    font-family: 'ElectroluxSans';
+    src: url('../fonts/ElectroluxSans-Regular.eot');
+    src: url('../fonts/ElectroluxSans-Regular?#iefix') format('embedded-opentype'),
+        url('../fonts/ElectroluxSans-Regular.ttf') format('truetype'),
+        url('../fonts/ElectroluxSans-Regular.svg#ElectroluxSans') format('svg'),
+        url('../fonts/ElectroluxSans-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ElectroluxSans';
+    src: url('../fonts/ElectroluxSans-SemiBold.eot');
+    src: url('../fonts/ElectroluxSans-SemiBold?#iefix') format('embedded-opentype'),
+        url('../fonts/ElectroluxSans-SemiBold.ttf') format('truetype'),
+        url('../fonts/ElectroluxSans-SemiBold.svg#ElectroluxSans') format('svg'),
+        url('../fonts/ElectroluxSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ElectroluxSans';
+    src: url('../fonts/ElectroluxSans-Bold.eot');
+    src: url('../fonts/ElectroluxSans-Bold?#iefix') format('embedded-opentype'),
+        url('../fonts/ElectroluxSans-Bold.ttf') format('truetype'),
+        url('../fonts/ElectroluxSans-Bold.svg#ElectroluxSans') format('svg'),
+        url('../fonts/ElectroluxSans-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ElectroluxSans';
+    src: url('../fonts/ElectroluxSans-Light.eot');
+    src: url('../fonts/ElectroluxSans-Light?#iefix') format('embedded-opentype'),
+        url('../fonts/ElectroluxSans-Light.ttf') format('truetype'),
+        url('../fonts/ElectroluxSans-Light.svg#ElectroluxSans') format('svg'),
+        url('../fonts/ElectroluxSans-Light.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+/*Header*/
+header{
+    background: url(../images/bg-header.jpg) no-repeat center;
+    height: 580px;
+}
+header *{
+    color: #FFF;
+}
+header figure#logo{
+    top: 21px;
+    margin-left: -380px;
+}
+header hgroup{
+    top: 124px;
+    margin-left: -380px;
+    /* max-width: 325px; */
+}
+header hgroup h1{
+    font: 600 30px 'ElectroluxSans', sans-serif;
+}
+header hgroup h1 span{
+    font: lighter 18px 'ElectroluxSans', sans-serif;
+    display: block;
+}
+header hgroup h1 strong{
+    font: 600 18px 'ElectroluxSans', sans-serif;
+    color: #777d90;
+    text-align: right;
+    display: block;
+    margin-bottom: 25px;
+}
+header hgroup h2{
+    font: 600 32px 'ElectroluxSans', sans-serif;
+    color: #eb6852;
+}
+header article{
+    /* width: 285px; */
+    top: 375px;
+    margin-left: -380px;
+ }
+ 
+header article p {   
+    font: 400 14px 'ElectroluxSans', sans-serif;
+    color: #FFF;
+}
+
+/*Features*/
+section#features{
+    background: url(../images/bg-features.jpg) no-repeat center #dadfe1;
+    height: 629px;
+}
+
+section#features .protecao-pingos, section#features .funcao-onecup  {
+    margin-left: 90px;
+    
+}section#features .protecao-pingos, section#features .funcao-onecup p {
+    color: #666;
+    
+}
+section#features .protecao-pingos{
+    top: 115px;
+}
+section#features .funcao-onecup{
+    top: 330px;
+}
+
+
+/*Painel LCD HighContrast*/
+section#painel-lcd{
+    background: url(../images/bg-painel-lcd.jpg) no-repeat center #c5cbcf;
+    height: 641px;
+    position: relative;
+}
+
+
+section#painel-lcd .painel-lcd {
+    top: 129px;
+    margin-left: -370px;
+
+
+}
+
+/*Temperatura | Medida */
+section#temperatura-medida{
+    background: url(../images/bg-jarra-frente.jpg) no-repeat center #FFF;
+    height: 620px;
+}
+section#temperatura-medida .txt{
+    top: 148px;
+    margin-left: 86px;
+}
+section#temperatura-medida h3{
+    line-height: 1.1em;
+    color: #18214e;
+}
+section#temperatura-medida p{
+    font-size: 18px;
+    color: #666;
+}
+
+section#opcoes-de-temperatura {
+    background: url(../images/bg-opcoes-de-temperatura.jpg) no-repeat center;
+    height: 592px;
+}
+
+section#opcoes-de-temperatura .opcoes-de-temperatura-txt {
+    top: 150px;
+    margin-left: -313px;
+
+}
+
+section#opcoes-de-temperatura .opcoes-de-temperatura-txt li {
+    font: 400 18px/1.5em 'ElectroluxSans', Arial, sans-serif;
+    color: #666;
+}
+
+section#opcoes-de-temperatura .opcoes-de-temperatura-txt li.destaque{
+    font: 600 18px/1.5em 'ElectroluxSans', Arial, sans-serif;
+}
+
+section#opcoes-de-temperatura .opcoes-de-temperatura-txt ul {
+   margin-left: 65px;
+   margin-top: 10px;
+    }
+
+section#opcoes-de-temperatura .opcoes-de-temperatura-txt h3 {
+    color: #041e50;
+    font-size: 24px;
+    margin-left: 23px;
+
+}
+
+section#opcoes-de-temperatura .opcoes-de-temperatura-txt p {
+    color: #FFF;
+}
+
+section#opcoes-de-temperatura .torradas {
+    top: 350px;
+    margin-left: -404px;
+}
+
+section#opcoes-de-temperatura .hotspots .item1{
+    top: 150px;
+    margin-left: 240px;
+}
+section#opcoes-de-temperatura .hotspots-content .item1{
+    top: 150px;
+    margin-left: 69px;
+}
+
+
+/*Embalagem | especificações*/
+section#embalagem-especificacoes{
+    background: url(../images/bg-embalagem-especificacoes.jpg) center;
+    height: 490px;
+}
+section#embalagem-especificacoes *{
+    color: white;
+}
+section#embalagem-especificacoes .txt{
+    top: 130px;
+    margin-left: 78px;
+    width: 305px;
+}
+section#embalagem-especificacoes h3{
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+section#embalagem-especificacoes ul{
+    margin-bottom: 50px;
+}
+section#embalagem-especificacoes li{
+    font-size: 15px;
+    line-height: 1.4em;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+/*Footer*/
+footer{
+    background: url(../images/bg-footer.jpg) no-repeat center;
+    height: 630px;
+    position: relative;
+    overflow: hidden;
+}
+footer h3{
+    font: 600 23px 'ElectroluxSans', sans-serif;
+    text-align: center;
+    padding-top: 45px;
+    text-transform: uppercase;
+    color: #000;
+}
+footer figure{
+    top: 111px;
+    margin-left: -396px;
+    width: 916px;
+}
+
+
