@@ -10,6 +10,7 @@
     font-family: 'ElectroluxSans', Arial, Helvetica, sans-serif;
     font-weight: 400;
     line-height: 1em;
+    -webkit-font-smoothing: antialiased;
 }
 body, html {
     width: 100%;
@@ -29,15 +30,6 @@ a {
 }
 a:hover {
     text-decoration: underline;
-}
-.link-padding {
-    position: relative;
-    overflow: hidden;
-    height: 0;
-    display: block;
-}
-.clearfix{
-    clear: both;
 }
 .container {
     width: 780px;
@@ -127,7 +119,6 @@ header figure#logo{
 header hgroup{
     top: 124px;
     margin-left: -380px;
-    /* max-width: 325px; */
 }
 header hgroup h1{
     font: 600 37px 'ElectroluxSans', sans-serif;
@@ -146,11 +137,10 @@ header hgroup h1 strong{
 header hgroup h2{
     font: 600 32px 'ElectroluxSans', sans-serif;
     color: #eb6852;
-    margin-top:48px;
+    margin-top: 44px;
 }
 header article{
-    /* width: 285px; */
-    top: 348px;
+    top: 343px;
     margin-left: -380px;
  }
  
@@ -166,7 +156,7 @@ section#features{
 }
 
 section#features .motor, section#features .laminas {
-    margin-left: 90px;
+    margin-left: 109px;
     
 }section#features .motor, section#features .laminas p {
     color: #666;
@@ -176,18 +166,18 @@ section#features .motor{
     top: 115px;
 }
 section#features .laminas{
-    top: 330px;
+    top: 303px;
 }
 
 
 
 section#features .hotspots .item1{
-    top: 349px;
-    margin-left: 27px;
+    top: 320px;
+    margin-left: 49px;
 }
 section#features .hotspots-content .item1{
-    top: 326px;
-    margin-left: -133px;
+    top: 319px;
+    margin-left: -106px;
 }
 
 /*truflow*/
@@ -210,8 +200,8 @@ section#truflow .hotspots .item1{
     margin-left: 186px;
 }
 section#truflow .hotspots-content .item1{
-    top: 135px;
-    margin-left:28px;
+    top: 122px;
+    margin-left: 11px;
 }
 
 /*Acessorios*/
@@ -232,36 +222,26 @@ section#acessorios .txt h3{
 section#acessorios p{
     font-size: 18px;
     color: #666;
+    margin-bottom: 60px;
 }
 
 section#acessorios .itens-acessorios {
     margin-left:485px;
-    padding-top: 184px;
+    padding-top: 166px;
     
 }
-
-section#itens-acessorios p{
-    font-size: 18px;
-    color: #666;
-}
-section#itens-acessorios h3{
-    font-size: 18px;
-    color: #666;
-}
-
-
 
 /*Embalagem | especificações*/
 section#embalagem-especificacoes{
     background: url(../images/bg-embalagem-especificacoes.jpg) center;
-    height: 490px;
+    height: 500px;
 }
 section#embalagem-especificacoes *{
     color: white;
 }
 section#embalagem-especificacoes .txt{
-    top: 74px;
-    margin-left: 103px;
+    top: 75px;
+    margin-left: 80px;
     width: 305px;
 }
 section#embalagem-especificacoes h3{
@@ -269,7 +249,7 @@ section#embalagem-especificacoes h3{
     margin-bottom: 12px;
 }
 section#embalagem-especificacoes ul{
-    margin-bottom: 50px;
+    margin-bottom: 55px;
 }
 section#embalagem-especificacoes li{
     font-size: 15px;
@@ -291,11 +271,6 @@ footer h3{
     padding-top: 45px;
     text-transform: uppercase;
     color: #000;
-}
-footer figure{
-    top: 111px;
-    margin-left: -396px;
-    width: 916px;
 }
 
 /*CD*/
@@ -367,35 +342,6 @@ footer figure{
     -o-transform: translateX(-50%) translateY(-50%) rotate(540deg);
     transform: translateX(-50%) translateY(-50%) rotate(540deg);
 }
-.spot {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 999999;
-    -webkit-overflow-scrolling: touch;
-    ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    opacity: 0;
-    -webkit-transform: scale(0.8);
-    -moz-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    -o-transform: scale(0.8);
-    transform: scale(0.8);
-    -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s, -webkit-transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
-    -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s, -moz-transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
-    transition: opacity 0.3s 0s, visibility 0s 0.3s, transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
-}
-.spot-aberto {
-    ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=.1)";
-    opacity: 1;
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition: opacity 0.3s 0s, visibility 0s 0s, -webkit-transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
-    -moz-transition: opacity 0.3s 0s, visibility 0s 0s, -moz-transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
-    transition: opacity 0.3s 0s, visibility 0s 0s, transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
-}
 @-webkit-keyframes cd-pulse {
     0% {
         -webkit-transform: scale(0.6);
@@ -443,54 +389,3 @@ footer figure{
         box-shadow: inset 0 0 1px 1px rgba(5, 30, 76, 0);
     }
 }
-.cd-single-point .cd-more-info {
-    position: fixed;
-    z-index: 3;
-    width: 100%;
-    height: 100%;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-    visibility: hidden;
-    opacity: 0;
-    -webkit-transform: scale(0.8);
-    -moz-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    -o-transform: scale(0.8);
-    transform: scale(0.8);
-    -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s, -webkit-transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
-    -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s, -moz-transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
-    transition: opacity 0.3s 0s, visibility 0s 0.3s, transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
-}
-.cd-single-point .cd-more-info {
-    position: absolute;
-    width: 220px;
-    height: 240px;
-    overflow-y: visible;
-}
-.cd-single-point .cd-more-info.cd-left, .cd-single-point .cd-more-info.cd-right {
-    top: 50%;
-    bottom: auto;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-.cd-single-point .cd-more-info.cd-left::before, .cd-single-point .cd-more-info.cd-right::before {
-    top: 50%;
-    bottom: auto;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-.cd-single-point .cd-more-info.cd-left {
-    right: 160%;
-    left: auto;
-}
-.cd-close-info {
-    display: none;
-}
-
-
