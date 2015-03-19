@@ -10,7 +10,6 @@
     font-family: 'ElectroluxSans', Arial, Helvetica, sans-serif;
     font-weight: 400;
     line-height: 1em;
-    -webkit-font-smoothing: antialiased;
 }
 body, html {
     width: 100%;
@@ -24,6 +23,22 @@ img {
     height: auto;
     max-width: 100%;
 }
+a {
+    display: block;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.link-padding {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    display: block;
+}
+.clearfix{
+    clear: both;
+}
 .container {
     width: 780px;
     padding: 0 10px;
@@ -34,6 +49,13 @@ img {
     position: absolute;
     left: 50%;
 }
+.hotspots li {
+    z-index: 10;
+}
+.hotspots-content img {
+    z-index: 9;
+    display: none;
+}
 
 p {
     font: 400 18px/1.3em 'ElectroluxSans', Arial, sans-serif;
@@ -42,7 +64,7 @@ p {
 
 h3 {
     font: 600 28px/1em 'ElectroluxSans', Arial, sans-serif;
-    margin-bottom: 18px;
+    margin-bottom: 15px;
     color: #051e4c;
 
 }
@@ -103,7 +125,7 @@ header figure#logo{
     margin-left: -380px;
 }
 header hgroup{
-    top: 122px;
+    top: 124px;
     margin-left: -380px;
     /* max-width: 325px; */
 }
@@ -111,24 +133,23 @@ header hgroup h1{
     font: 600 30px 'ElectroluxSans', sans-serif;
 }
 header hgroup h1 span{
-    font: 100 18px 'ElectroluxSans', sans-serif;
+    font: lighter 18px 'ElectroluxSans', sans-serif;
     display: block;
-    margin-bottom: 25px;
 }
 header hgroup h1 strong{
     font: 600 18px 'ElectroluxSans', sans-serif;
     color: #777d90;
     text-align: right;
     display: block;
-    margin-bottom: 18px;
+    margin-bottom: 25px;
 }
 header hgroup h2{
-    font: 600 32px/1.1em 'ElectroluxSans', sans-serif;
+    font: 600 32px 'ElectroluxSans', sans-serif;
     color: #eb6852;
 }
 header article{
     /* width: 285px; */
-    top: 396px;
+    top: 375px;
     margin-left: -380px;
  }
  
@@ -179,8 +200,8 @@ section#temperatura-medida{
     height: 620px;
 }
 section#temperatura-medida .txt{
-    top: 130px;
-    margin-left: 60px;
+    top: 148px;
+    margin-left: 86px;
 }
 section#temperatura-medida h3{
     line-height: 1.1em;
@@ -189,7 +210,6 @@ section#temperatura-medida h3{
 section#temperatura-medida p{
     font-size: 18px;
     color: #666;
-    margin-bottom: 70px;
 }
 
 section#opcoes-de-temperatura {
@@ -224,17 +244,35 @@ section#opcoes-de-temperatura .opcoes-de-temperatura-txt h3 {
 
 }
 
+section#opcoes-de-temperatura .opcoes-de-temperatura-txt p {
+    color: #FFF;
+}
+
+section#opcoes-de-temperatura .torradas {
+    top: 350px;
+    margin-left: -404px;
+}
+
+section#opcoes-de-temperatura .hotspots .item1{
+    top: 150px;
+    margin-left: 240px;
+}
+section#opcoes-de-temperatura .hotspots-content .item1{
+    top: 150px;
+    margin-left: 69px;
+}
+
 
 /*Embalagem | especificações*/
 section#embalagem-especificacoes{
     background: url(../images/bg-embalagem-especificacoes.jpg) center;
-    height: 634px;
+    height: 490px;
 }
 section#embalagem-especificacoes *{
     color: white;
 }
 section#embalagem-especificacoes .txt{
-    top: 199px;
+    top: 130px;
     margin-left: 78px;
     width: 305px;
 }
@@ -266,3 +304,10 @@ footer h3{
     text-transform: uppercase;
     color: #000;
 }
+footer figure{
+    top: 111px;
+    margin-left: -396px;
+    width: 916px;
+}
+
+
