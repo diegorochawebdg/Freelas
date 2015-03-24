@@ -19,11 +19,13 @@ $(document).ready(function() {
     });
 
     //Animate
-    jQuery('header .parallax-layer').parallax({
-        mouseport: jQuery('.parallax-area'),
-        xparallax: false
+    $(window).load(function() {
+        jQuery('header .parallax-layer').parallax({
+            mouseport: jQuery('.parallax-area'),
+            xparallax: false
+        });
     });
-
+    
     //Appear
     $('.animated').appear();
 
