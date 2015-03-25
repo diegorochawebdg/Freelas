@@ -43,14 +43,22 @@ a:hover {
 }
 .hotspots li {
     z-index: 10;
+    opacity: 1 !important;
 }
 .hotspots-content img {
     z-index: 9;
-    display: none;
+    opacity: 0;
+    -webkit-transition: all 400ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+       -moz-transition: all 400ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+         -o-transition: all 400ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
+            transition: all 400ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+}
+.hotspots-content img.active{
+    opacity: 1;
 }
 
 p {
-    font: 400 18px/1.3em Arial, sans-serif;
+    font: 400 16px/1.3em Arial, sans-serif;
     margin-bottom: 30px;
 }
 
@@ -61,7 +69,7 @@ h3 {
 
 }
 .animated{
-    opacity: 0 !important;
+    opacity: 0;
 }
 /*End of Reset Css*/
 
@@ -94,9 +102,23 @@ header hgroup{
     animation-delay: 0.3s;
 }
 header hgroup h2{
-    font: 700 34px 'Roboto Condensed', sans-serif;
+    font: 700 34px/1.1em 'Roboto Condensed', sans-serif;
     color: #f7b129;
     margin-top: 17px;
+}
+header .parallax-area{
+    /*
+    width: 490px;
+    height: 440px;
+    top: -112px;
+    margin-left: -245px;
+    */
+    width: 800px;
+    height: 440px;
+    top: -112px;
+    margin-left: -399px;
+    z-index: 2;
+    */
 }
  
 p.vendedor-txt {   
@@ -116,21 +138,13 @@ header .ecotank {
     animation-delay: 0.8s;
 }
 header .ecotank figcaption {
-    font: 700 16px 'Roboto Condensed', sans-serif;
+    font: 500 18px/20px 'Roboto Condensed', sans-serif;
     padding-top: 15px;
 
 }
-header .mao-animacao{
-    top: -100px;
-    margin-left: 60px;
-    -webkit-transition: all 1200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
-       -moz-transition: all 1200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
-         -o-transition: all 1200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); 
-            transition: all 1200ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
-}
-header .mao-animacao.active{
-    top: 0px;
-    margin-left: 11px;
+header .parallax-layer{
+    margin-top: -100px;
+    margin-left: 10px;
 }
 
 
@@ -194,6 +208,7 @@ section#features .l455 figcaption{
 
 section#features .l455 .garrafa-l455{
     padding-top: 45px;
+    border-right: solid 1px #ababab;
 }
 
 section#features .multifuncional-convencional{
@@ -204,7 +219,7 @@ section#features .multifuncional-convencional{
 }
 
 section#features .multifuncional-convencional figcaption{
-    font: 400 20px 'Roboto Condensed', sans-serif;
+    font: 400 20px/18px 'Roboto Condensed', sans-serif;
     color: #666;
     margin-left: 32px;
 }
@@ -268,21 +283,21 @@ section#tintas{
 }
 section#tintas .txt{
     top: 16px;
-    margin-left: 43px;
+    margin-left: 23px;
 }
 
 section#tintas strong{
     font: 700 24px 'Roboto Condensed', sans-serif;
     color: #f7b129;
     top: 143px;
-    margin-left: 43px;
+    margin-left: 23px;
 }
 section#tintas .txt h3{
     font-size: 30px;
     color: #1d4783;
 }
 section#tintas .txt p{
-    font-size: 18px;
+    font-size: 16px;
     color: #333;
 }
 
@@ -308,7 +323,6 @@ section#tintas .impressoes-tinta figcaption{
 
 section#tintas .conexao-wifi{
     padding-top: 389px;
-   
     margin-left: -370px;
 }
 
@@ -328,7 +342,7 @@ section#tintas .conexao-wifi .wifi{
     animation-delay: 0.8s !important;
 }
 section#tintas .conexao-wifi .wifi p{
-    font: 400 16px Arial, sans-serif;
+    font: 400 14px Arial, sans-serif;
     color: #333;
 }
 section#tintas .conexao-wifi .wifi h4{
@@ -344,11 +358,11 @@ section#tintas .conexao-wifi .wifi .txt{
 }
 
 section#tintas .conexao-wifi .wifi-direct{
-    -webkit-animation-delay: 1.2s !important;
-    animation-delay: 1.2s !important; 
+    -webkit-animation-delay: 0.8s !important;
+    animation-delay: 0.8s !important; 
 }
 section#tintas .conexao-wifi .wifi-direct p{
-    font: 400 16px Arial, sans-serif;
+    font: 400 14px Arial, sans-serif;
     color: #333;  
 }
 section#tintas .conexao-wifi .wifi-direct, h4{
@@ -384,7 +398,8 @@ section#epson-connect .nuvem-epson-connect{
     top: -90px;
     margin-left: -362px;
 }
-section#epson-connect .nuvem-epson-connect img{
+section#epson-connect .nuvem-epson-connect img,
+.hotspots li a{
     opacity: 1 !important;
     animation-iteration-count: infinite;
     -moz-animation-iteration-count: infinite;
@@ -402,22 +417,19 @@ section#epson-connect  figcaption{
 section#epson-connect .iprint{
     top: -83px;
     margin-left: -144px;
-
 }
-
-
 
 section#epson-connect .epson-connect-txt {
     top: -19px;
     margin-left: 163px;
 }
 section#epson-connect .animacao2{
-    -webkit-animation-delay: 0.8s !important;
-    animation-delay: 0.8s !important;
+    -webkit-animation-delay: 0.5s !important;
+    animation-delay: 0.5s !important;
 }
 section#epson-connect .email-print {
     top: 184px;
-    margin-left: 100px;
+    margin-left: 117px;
     /*padding: 192px 0px 0px 502px;*/
 }
 section#epson-connect .email-print img,
@@ -426,8 +438,8 @@ section#epson-connect .cloud-print img{
     margin-right: 13px;
 }
 section#epson-connect .email-print {
-    -webkit-animation-delay: 1.2s !important;
-    animation-delay: 1.2s !important;
+    -webkit-animation-delay: 0.7s !important;
+    animation-delay: 0.7s !important;
 }
 section#epson-connect .email-print-txt {
     float: right;
@@ -436,8 +448,8 @@ section#epson-connect .email-print-txt {
 section#epson-connect .cloud-print {
     top: 287px;
     margin-left: 118px;
-    -webkit-animation-delay: 1.6s !important;
-    animation-delay: 1.6s !important;
+    -webkit-animation-delay: 1.0s !important;
+    animation-delay: 1.0s !important;
 }
 section#epson-connect .cloud-print-txt {
     float: right;
@@ -452,6 +464,7 @@ section#epson-connect .email-print p{
     color: #333;
 
    
+    margin-bottom: 20px;
 }
 section#epson-connect .epson-connect-txt  h4, .cloud-print  h4, .email-print  h4{
     font: 700 18px 'Roboto Condensed', sans-serif;
@@ -472,7 +485,7 @@ section#video .player{
 }
 section#video strong{
     background: #1d4783;
-    padding: 15px;
+    padding: 10px 15px;
     font: 700 16px 'Roboto Condensed', sans-serif;
     color: #f7b129;
     margin: 0 0 0 auto;
@@ -494,8 +507,7 @@ section#embalagem-especificacoes .embalagem, .especificacoes{
 section#embalagem-especificacoes .embalagem h3{
     font: 400 30px 'Roboto Condensed', sans-serif;
     margin-bottom: 12px;
-    color: #f7b129;
-    background-color: #1d4783;;
+    color: #fff;
     padding: 10px;
     width: 215px;
 }
@@ -510,122 +522,121 @@ section#embalagem-especificacoes .embalagem ul{
 }
 section#embalagem-especificacoes .embalagem li,
 section#embalagem-especificacoes .especificacoes li{
-    font: 400 14px Arial, sans-serif;
-    line-height: 1.8em;
+    font: 400 14px/1.3em Arial, sans-serif;
     list-style-type: disc;
-    /*list-style-position: inside;*/
+    margin-bottom: 7px;
 }
 
 section#embalagem-especificacoes .especificacoes h3{
     font: 400 30px 'Roboto Condensed', sans-serif;
-    background-color: #1d4783;
-    color: #f7b129;
+    color: #fff;
     padding: 10px;
     margin-left: -34px;
     display: table;
     float: left;
 }
 section#embalagem-especificacoes .especificacoes ul{
-    top: 0px;
-    left: 167px;
-    padding: 15px;
-    background: rgba(0, 160, 240, 0.8);
+    top: -1px;
+    left: 161px;
+    padding: 15px 15px 10px 15px;
+    background: rgba(0, 179, 255, 0.9);
     display: block;
-    width: 140px;
+    width: 145px;
 }
 section#embalagem-especificacoes .especificacoes ul li{
     list-style-position: inside;
+    color: #272727;
 }
 section#embalagem-especificacoes .embalagem{
-   top: 81px;
+   top: 89px;
    margin-left: -386px;
 }
 section#embalagem-especificacoes .especificacoes{
-   top: 80px;
+   top: 89px;
    margin-left: 10px;
 }
 /*CD*/
-.cd-img-replace {
-    display: inline-block;
-    overflow: hidden;
-    text-indent: 100%;
-    white-space: nowrap;
-}
-.cd-single-point {
-    position: absolute;
-    border-radius: 50%;
-}
-.cd-single-point > a {
-    position: relative;
-    z-index: 99;
-    display: block;
-    width: 28px;
-    height: 28px;
-    border-radius: 100%;
-    border: solid 1px #FFF;
-    background: #fbd791;
+.cd-img-replace{display: inline-block; overflow: hidden; text-indent: 100%; white-space: nowrap;}
+.cd-single-point{position: absolute; border-radius: 50%;}
+.cd-single-point > a{position: relative; z-index: 99; display: block; width: 28px;  height: 28px; border-radius: inherit; background: #fbd791;
     background: -moz-linear-gradient(-45deg,  #fbd791 0%, #f7b432 100%);
     background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#fbd791), color-stop(100%,#f7b432));
     background: -webkit-linear-gradient(-45deg,  #fbd791 0%,#f7b432 100%);
     background: -o-linear-gradient(-45deg,  #fbd791 0%,#f7b432 100%);
     background: -ms-linear-gradient(-45deg,  #fbd791 0%,#f7b432 100%);
     background: linear-gradient(135deg,  #fbd791 0%,#f7b432 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbd791', endColorstr='#f7b432',GradientType=1 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbd791', endColorstr='#f7b432',GradientType=1 ); -webkit-transition: background-color 0.2s; -moz-transition: background-color 0.2s;  transition: background-color 0.2s; transition: all .300s; -webkit-transition: all .300s; -ms-transition: all .300s; -moz-transition: all .300s; -o-transition: all .300s;}
+.cd-single-point > a:hover{background-position:0 -30px;}
+.cd-single-point > a:hover a::after, .cd-single-point > a:before{color:#000;}
+.cd-single-point > a::after, .cd-single-point > a:before{ content: ''; position: absolute;  left: 50%; top: 50%; bottom: auto;   right: auto; -webkit-transform: translateX(-50%) translateY(-50%); -moz-transform: translateX(-50%) translateY(-50%);  -ms-transform: translateX(-50%) translateY(-50%); -o-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); background-color: #1d4783; -webkit-transition-property: -webkit-transform; -moz-transition-property: -moz-transform; transition-property: transform;  -webkit-transition-duration: 0.2s;  -moz-transition-duration: 0.2s;  transition-duration: 0.2s;}
+.cd-single-point > a::after{ height: 2px; width: 12px; }
+.cd-single-point > a::before{height: 12px;  width: 2px;}
+.cd-single-point::after{content: ''; position: absolute; z-index: 1; width: 100%; height: 100%; top: 0; left: 0; border-radius: inherit; background-color: transparent; -webkit-animation: cd-pulse 500ms infinite; -moz-animation: cd-pulse 500ms infinite; animation: cd-pulse 500ms infinite;}
+.cd-single-point.spot-aberto > a::after, .cd-single-point.spot-aberto > a::before{-webkit-transform: translateX(-50%) translateY(-50%) rotate(540deg); -moz-transform: translateX(-50%) translateY(-50%) rotate(540deg); -ms-transform: translateX(-50%) translateY(-50%) rotate(135deg); -o-transform: translateX(-50%) translateY(-50%) rotate(540deg); transform: translateX(-50%) translateY(-50%) rotate(540deg);}
+.cd-single-point.spot-aberto::after{display: none;}
+.cd-single-point.aberto::after{display: none;}
+.spot-aberto .cd-single-point::after{display:none;}
 
-    -webkit-transition: background-color 0.2s;
-    -moz-transition: background-color 0.2s;
-    transition: background-color 0.2s;
-    transition: all .300s;
-    -webkit-transition: all .300s;
-    -ms-transition: all .300s;
-    -moz-transition: all .300s;
-    -o-transition: all .300s;
+
+.spot{position: absolute; width:100%; height:100%; z-index:999999; -webkit-overflow-scrolling: touch; ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; opacity: 0; -webkit-transform: scale(0.8); -moz-transform: scale(0.8); -ms-transform: scale(0.8); -o-transform: scale(0.8); transform: scale(0.8); -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s, -webkit-transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s; -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s, -moz-transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s; transition: opacity 0.3s 0s, visibility 0s 0.3s, transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;}
+
+@-webkit-keyframes cd-pulse {
+  0% {
+    -webkit-transform: scale(1);
+    box-shadow: inset 0 0 0px 1px rgba(255, 255, 255, 0.98);
+  }
+
+  50% {
+    box-shadow: inset 0 0 0px 1px rgba(255, 255, 255, 0.98);
+  }
+
+  100% {
+    -webkit-transform: scale(1.6);
+    box-shadow: inset 0 0 0px 1px rgba(255, 255, 255, 0.2);
+  }
 }
-.cd-single-point > a:hover {
-    background-position: 0 -30px;
+@-moz-keyframes cd-pulse {
+  0% {
+    -moz-transform: scale(1);
+    box-shadow: inset 0 0 0px 1px rgba(255, 255, 255, 0.98);
+  }
+
+  50% {
+    box-shadow: inset 0 0 0px 1px rgba(255, 255, 255, 0.98);
+  }
+
+  100% {
+    -moz-transform: scale(1.6);
+    box-shadow: inset 0 0 0px 1px rgba(255, 255, 255, 0.2);
+  }
 }
-.cd-single-point > a:hover a::after, .cd-single-point > a:before {
-    color: #1d4783;
+@keyframes cd-pulse {
+  0% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    box-shadow: inset 0 0 0px 1px rgba(255, 255, 255, 0.98);
+  }
+
+  50% {
+    box-shadow: inset 0 0 0px 1px rgba(255, 255, 255, 0.98);
+  }
+
+  100% {
+    -webkit-transform: scale(1.6);
+    -moz-transform: scale(1.6);
+    -ms-transform: scale(1.6);
+    -o-transform: scale(1.6);
+    transform: scale(1.6);
+    box-shadow: inset 0 0 0px 1px rgba(255, 255, 255, 0.2);
+  }
 }
-.cd-single-point > a::after, .cd-single-point > a:before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    bottom: auto;
-    right: auto;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -o-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    background-color: #1d4783;
-    -webkit-transition-property: -webkit-transform;
-    -moz-transition-property: -moz-transform;
-    transition-property: transform;
-    -webkit-transition-duration: 0.2s;
-    -moz-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-}
-.cd-single-point > a::after {
-    height: 2px;
-    width: 12px;
-}
-.cd-single-point > a::before {
-    height: 12px;
-    width: 2px;
-}
-.cd-single-point::after {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    border-radius: inherit;
-    background-color: transparent;
-    -webkit-animation: cd-pulse 2s infinite;
-    -moz-animation: cd-pulse 2s infinite;
-    animation: cd-pulse 2s infinite;
-}
+
+.cd-single-point .cd-more-info{position: fixed; z-index: 3; width: 100%; height: 100%; overflow-y: auto; -webkit-overflow-scrolling: touch; visibility: hidden; opacity: 0; -webkit-transform: scale(0.8);-moz-transform: scale(0.8); -ms-transform: scale(0.8); -o-transform: scale(0.8); transform: scale(0.8); -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s, -webkit-transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s; -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s, -moz-transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s; transition: opacity 0.3s 0s, visibility 0s 0.3s, transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;}
+.cd-single-point .cd-more-info{position: absolute; width: 220px;height: 240px; overflow-y: visible;}
+.cd-single-point .cd-more-info.cd-left, .cd-single-point .cd-more-info.cd-right{top: 50%; bottom: auto;-webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%); transform: translateY(-50%);}
+.cd-single-point .cd-more-info.cd-left::before, .cd-single-point .cd-more-info.cd-right::before{top: 50%;    bottom: auto;    -webkit-transform: translateY(-50%);    -moz-transform: translateY(-50%);    -ms-transform: translateY(-50%);    -o-transform: translateY(-50%);    transform: translateY(-50%);}
+.cd-single-point .cd-more-info.cd-left{right: 160%; left: auto;}
+.cd-close-info{display:none;}

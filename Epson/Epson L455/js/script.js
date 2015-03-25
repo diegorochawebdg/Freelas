@@ -1,69 +1,66 @@
-$(document).ready(function() {
-	$('a').click(function(event) {
-        if($(this).attr('href', '#')){
-            event.preventDefault();
+jQuery(document).ready(function() {
+	jQuery('a').click(function(e) {
+        if(jQuery(this).attr('href', '#')){
+            e.preventDefault();
         }
     });
 
     //Hotspots
-    $('.hotspots li.item1').hover(function() {
-    	$(this).parent().parent().parent().children('.hotspots-content').children('.item1').stop().fadeIn('fast');
+    jQuery('.hotspots li.item1').hover(function() {
+    	jQuery(this).parent().parent().parent().children('.hotspots-content').children('.item1').addClass('active');
     }, function() {
-    	$(this).parent().parent().parent().children('.hotspots-content').children('.item1').stop().fadeOut('fast');
-    });
-
-    $('.hotspots li.item2').hover(function() {
-    	$(this).parent().parent().parent().children('.hotspots-content').children('.item2').stop().fadeIn('fast');
-    }, function() {
-    	$(this).parent().parent().parent().children('.hotspots-content').children('.item2').stop().fadeOut('fast');
+    	jQuery(this).parent().parent().parent().children('.hotspots-content').children('.item1').removeClass('active');
     });
 
     //Animate
-    var intervalo = window.setInterval(abastecimento, 2000);
-    function abastecimento() {
-        $('header .mao-animacao').toggleClass('active');
-    }
+    jQuery('header .parallax-layer').parallax({
+        mouseport: jQuery('.parallax-area'),
+        xparallax: false
+    });
 
     //Appear
-    $('.animated').appear();
+    jQuery('.animated').appear();
 
     //Fade in Down
-    $('header hgroup, header .ecotank, p.vendedor-txt, section#versatil-e-completa .txt, .conexao-wifi, .wifi, .wifi-direct img, .epson-connect-txt div, .email-print, .cloud-print').on('appear', function(event, $all_appeared_elements) {
-        $(this).addClass('fadeInDown');
+    jQuery('header hgroup, header .ecotank, p.vendedor-txt, section#versatil-e-completa .txt, .wifi, .wifi-direct, .epson-connect-txt div, .email-print, .cloud-print').on('appear', function(e, $all_appeared_elements) {
+        jQuery(this).addClass('fadeInDown');
     });
-    $('header hgroup, header .ecotank, p.vendedor-txt, section#versatil-e-completa .txt, .conexao-wifi, .wifi, .wifi-direct img, .epson-connect-txt div, .email-print, .cloud-print').on('disappear', function(event, $all_appeared_elements) {
-        $(this).removeClass('fadeInDown');
-    });
-
+    /*jQuery('header hgroup, header .ecotank, p.vendedor-txt, section#versatil-e-completa .txt, .conexao-wifi, .wifi, .wifi-direct img, .epson-connect-txt div, .email-print, .cloud-print').on('disappear', function(e, $all_appeared_elements) {
+        jQuery(this).removeClass('fadeInDown');
+    });*/
+    //Fade in Left
+    jQuery('.conexao-wifi').on('appear', function(e, $all_appeared_elements) {
+            jQuery(this).addClass('fadeInLeft');
+        });
     /*Fade In Right*/
-    $('.recarregue').on('appear', function(event, $all_appeared_elements) {
-        $(this).addClass('fadeInRight');
+    jQuery('.recarregue').on('appear', function(e, $all_appeared_elements) {
+        jQuery(this).addClass('fadeInRight');
     });
-    $('.recarregue').on('disappear', function(event, $all_appeared_elements) {
-        $(this).removeClass('fadeInRight');
-    });
+    /*jQuery('.recarregue').on('disappear', function(e, $all_appeared_elements) {
+        jQuery(this).removeClass('fadeInRight');
+    });*/
 
     /*Fade In Right Big*/
-    $('.economica, .l455, .multifuncional-convencional').on('appear', function(event, $all_appeared_elements) {
-        $(this).addClass('fadeInRight');
+    jQuery('.economica, .l455, .multifuncional-convencional').on('appear', function(e, $all_appeared_elements) {
+        jQuery(this).addClass('fadeInRight');
     });
-    $('.economica, .l455, .multifuncional-convencional').on('disappear', function(event, $all_appeared_elements) {
-        $(this).removeClass('fadeInRight');
-    });
+    /*jQuery('.economica, .l455, .multifuncional-convencional').on('disappear', function(e, $all_appeared_elements) {
+        jQuery(this).removeClass('fadeInRight');
+    });*/
 
     /*Fade In Up*/
-    $('section#versatil-e-completa strong').on('appear', function(event, $all_appeared_elements) {
-        $(this).addClass('fadeInUp');
+    jQuery('section#versatil-e-completa strong').on('appear', function(e, $all_appeared_elements) {
+        jQuery(this).addClass('fadeInUp');
     });
-    $('section#versatil-e-completa strong').on('disappear', function(event, $all_appeared_elements) {
-        $(this).removeClass('fadeInUp');
-    });
+    /*jQuery('section#versatil-e-completa strong').on('disappear', function(e, $all_appeared_elements) {
+        jQuery(this).removeClass('fadeInUp');
+    });*/
 
     //RollIn
-    $('.impressoes-tinta .animacao1, .impressoes-tinta .animacao2, .impressoes-tinta .animacao3').on('appear', function(event, $all_appeared_elements) {
-        $(this).addClass('rollIn');
+    jQuery('.impressoes-tinta .animacao1, .impressoes-tinta .animacao2, .impressoes-tinta .animacao3').on('appear', function(e, $all_appeared_elements) {
+        jQuery(this).addClass('rollIn');
     });
-    $('.impressoes-tinta .animacao1, .impressoes-tinta .animacao2, .impressoes-tinta .animacao3').on('disappear', function(event, $all_appeared_elements) {
-        $(this).removeClass('rollIn');
-    });
+    /*jQuery('.impressoes-tinta .animacao1, .impressoes-tinta .animacao2, .impressoes-tinta .animacao3').on('disappear', function(e, $all_appeared_elements) {
+        jQuery(this).removeClass('rollIn');
+    });*/
 });
