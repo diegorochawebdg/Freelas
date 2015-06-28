@@ -84,35 +84,23 @@ $yellow: #f9ef1a;
     color: $gray;
 }
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> b3dec7c7c2455da99c4997a085c06e48b27c3c38
 /*==============================
 =            Header            =
 ==============================*/
 header{
     background: url(../images/bg-header.jpg) no-repeat center;
-    height: 433px;
+    height: 459px;
     position: relative;
     overflow: hidden;
     figure#logo{
         top: 33px;
-<<<<<<< HEAD
-        margin-left: 223px;
-=======
         margin-left: 213px;
->>>>>>> b3dec7c7c2455da99c4997a085c06e48b27c3c38
     }
     .main-title{
         top: 33px;
         margin-left: -357px;
         h1{
-<<<<<<< HEAD
-=======
             margin-bottom: 9px;
->>>>>>> b3dec7c7c2455da99c4997a085c06e48b27c3c38
             strong{
                 display: inline;
             }
@@ -139,11 +127,7 @@ header{
     }
     h2{
         top: 297px;
-<<<<<<< HEAD
-        margin-left: 170px;
-=======
         margin-left: 178px;
->>>>>>> b3dec7c7c2455da99c4997a085c06e48b27c3c38
     }
     .parallax-area{
         width: 800px;
@@ -163,7 +147,7 @@ header{
 ==================================*/
 section#recarregue{
     background: url(../images/bg-recarregue.jpg) no-repeat top center;
-    height: 352px;
+    height: 326px;
     div.text{
         margin-left: -371px;
         top: 73px;
@@ -187,36 +171,10 @@ section#recarregue{
 ==================================*/
 section#comparacao{
     background: url(../images/bg-comparacao.jpg) no-repeat top center;
-    height: 610px;
+    height: 532px;
     div.text{
         margin-left: -365px;
         top: 7px;
-        h3{
-<<<<<<< HEAD
-            text-align: center;
-=======
-            /* text-align: center;
->>>>>>> b3dec7c7c2455da99c4997a085c06e48b27c3c38
-            color: #FFF;
-            font: normal 22px/1.2em $roboto;
-            text-transform: uppercase;
-            span{
-                display: block;
-                color: $yellow;
-                font-weight: bold;
-                &.size1{
-                    font-size: 150px;
-                    line-height: 135px;
-                }
-                &.size2{
-                    font-size: 34px;
-                }
-<<<<<<< HEAD
-            }
-=======
-            } */
->>>>>>> b3dec7c7c2455da99c4997a085c06e48b27c3c38
-        }
     }
     img.cartuchos{
         top: 26px;
@@ -227,13 +185,8 @@ section#comparacao{
         margin-left: 213px;
     }
     .text2{
-<<<<<<< HEAD
-        margin-left: 150px;
-        top: 321px;
-=======
         margin-left: 100px;
         top: 336px;
->>>>>>> b3dec7c7c2455da99c4997a085c06e48b27c3c38
         text-align: center;
         span{
             font: normal 24px $roboto;
@@ -263,73 +216,33 @@ section#comparacao{
     }
 }
 
-/*==================================
-=            super-conectada       =
-==================================*/
-section#super-conectada{
-    background: url(../images/bg-super-conectada.jpg) no-repeat top center;
-    height: 523px;
+/*================================
+=            Garantia            =
+================================*/
+section#garantia{
+    background: url(../images/bg-garantia.jpg) no-repeat top center;
+    height: 426px;
     div.text{
-        top: 28px;
-        margin-left: -375px;
-    }
-    .wireless,
-    .iprint{
-        margin-left: -326px;
-        h4{
-            font-size: 18px;
-            line-height: 1em;
-            sup{
-                font-size: 12px;
-            }
-        }
-        p{
-<<<<<<< HEAD
-            font-size: 14px;
-        }
-        &.wireless{
-            top: 182px;
-=======
-            font: normal 14px $arial;
-        }
-        &.wireless{
-            top: 180px;
->>>>>>> b3dec7c7c2455da99c4997a085c06e48b27c3c38
-            &h4,p{
-                color: #333;
-            }
-        }
-        &.iprint{
-<<<<<<< HEAD
-            top: 261px;
-=======
-            top: 257px;
->>>>>>> b3dec7c7c2455da99c4997a085c06e48b27c3c38
-            h4,p{
-                color: #FFF;
-            }
+        top: 117px;
+        margin-left: -336px;
+        h3 sup{
+            font-size: 12px;
         }
     }
-    a.appstore,
-    a.google-play{
-        top: 484px;
-        &.appstore{
-            margin-left: -373px;
-        }
-        &.google-play{
-            margin-left: -234px;
-        }
+    div.text2{
+        top: 366px;
+        margin-left: -336px;
     }
     .hotspots{
         .item1{
-            top: 201px;
-            margin-left: -10px;
+            top: 278px;
+            margin-left: -12px;
         }
     }
     .hotspots-content{
         .item1{
-            top: 99px;
-            margin-left: -12px;
+            top: 172px;
+            margin-left: -22px;
         }
     }
 }
@@ -339,10 +252,10 @@ section#super-conectada{
 ==================================*/
 section#beneficios{
     background: url(../images/bg-beneficios.jpg) no-repeat top center;
-    height: 405px;
+    height: 460px;
     div.text{
-        margin-left: 94px;
-        top: -67px;
+        margin-left: 93px;
+        top: 0px;
     }
     .consumo,
     .qualidade-impressao,
@@ -362,13 +275,13 @@ section#beneficios{
             color: #FFF;
         }
         &.consumo{
-            top: 73px;
+            top: 144px;
         }
         &.qualidade-impressao{
-            top: 165px;
+            top: 232px;
         }
         &.garantia{
-            top: 272px;
+            top: 342px;
             h4{
                 color: #333;
             }
@@ -395,11 +308,7 @@ section#tintas-originais{
                 font-weight: bold;
                 &.size1{
                     font-size: 80px;
-<<<<<<< HEAD
-                    line-height: 73px;
-=======
                     line-height: 64px;
->>>>>>> b3dec7c7c2455da99c4997a085c06e48b27c3c38
                 }
                 &.size2{
                     font-size: 25px;
@@ -411,11 +320,7 @@ section#tintas-originais{
         }
         p{
             color: #FFF;
-<<<<<<< HEAD
-            font: normal 14px/1.2em $roboto;
-=======
             font: normal 12px/1.2em $roboto;
->>>>>>> b3dec7c7c2455da99c4997a085c06e48b27c3c38
             text-transform: uppercase;
             padding-top: 6px;
         }
@@ -437,16 +342,6 @@ section#tintas-originais{
 =============================*/
 section#video{
     background: url(../images/bg-video.jpg) no-repeat center top;
-<<<<<<< HEAD
-    height: 536px;
-    text-align: center;
-    h3{
-        font: bold 18px $roboto;
-        color: #FFF;
-        text-align: center;
-        text-transform: uppercase;
-        margin: -13px 0 20px;
-=======
     height: 501px;
     text-align: center;
     padding-top: 35px;
@@ -456,7 +351,6 @@ section#video{
         text-transform: uppercase;
         margin-left: -70px;
         top: -40px;
->>>>>>> b3dec7c7c2455da99c4997a085c06e48b27c3c38
     }
     .player{
         display: table;
@@ -470,7 +364,7 @@ section#video{
 ===========================================*/
 section#embalagem-especificacoes{
     background: url(../images/bg-conteudo-embalagem.jpg) no-repeat top center;
-    height: 471px;
+    height: 475px;
     .embalagem{
         margin-left: -380px;
         top: 13px;
@@ -482,11 +376,8 @@ section#embalagem-especificacoes{
                     border-bottom: none;
                     height: 30px;
                     padding: 0 5px;
-<<<<<<< HEAD
-=======
                     font: normal 14px $arial;
                     color: #333;
->>>>>>> b3dec7c7c2455da99c4997a085c06e48b27c3c38
                     img{
                         display: inline;
                     }
@@ -506,26 +397,19 @@ section#embalagem-especificacoes{
     }
     h3.especificacoes-title{
         top: 13px;
-<<<<<<< HEAD
-=======
         margin-left: -20px;
->>>>>>> b3dec7c7c2455da99c4997a085c06e48b27c3c38
     }
     .especificacoes{
-        background: $yellow;
+        background: rgba(255, 255, 36, 0.5);
         padding: 10px 15px;
         width: 150px;
-<<<<<<< HEAD
-        margin-left: 230px;
-=======
         margin-left: 210px;
->>>>>>> b3dec7c7c2455da99c4997a085c06e48b27c3c38
         top: 0;
         li{
             list-style-type: disc;
             color: #272727;
-            line-height: 1.7em;
             list-style-position: inside;
+            font: normal 14px/1.7em $arial;
         }
     }
 }
