@@ -46,11 +46,11 @@ jQuery(document).ready(function() {
     });
 
     //Hotspots
-    jQuery('.hotspots li').on('appear', function(e, $all_appeared_elements) {
+    /*jQuery('.hotspots li').on('appear', function(e, $all_appeared_elements) {
         jQuery(this).addClass('bounceInUp');
-    });
+    });*/
 
-     /*=================================
+    /*=================================
     =            Analytics            =
     =================================*/
     $('.parallax-layer').hover(function(event) {
