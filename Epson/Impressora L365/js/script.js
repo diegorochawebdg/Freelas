@@ -19,27 +19,4 @@ jQuery(document).ready(function() {
             xparallax: false
         });
     });
-<<<<<<< HEAD
-=======
-
-    /*=================================
-    =            Analytics            =
-    =================================*/
-    $('.parallax-layer').hover(function(event) {
-        _gaq.push(['_trackEvent', 'Animação', 'Mão recarregando impressora']);
-    }); 
-    $('a.appstore').click(function(event) {
-        _gaq.push(['_trackEvent', 'Link', 'Apple App Store']);
-    }); 
-    $('a.google-play').click(function(event) {
-        _gaq.push(['_trackEvent', 'Link', 'Google Play Store']);
-    });    
-    /*Hotspots*/
-    $('.hotspots a').hover(function() {
-        var theTitle = $(this).parent().parent().parent().parent().find('.hotspots-content img').attr('title');
-        _gaq.push(['_trackEvent', 'Hotspots', theTitle]);
-    });
-    
-    
->>>>>>> b3dec7c7c2455da99c4997a085c06e48b27c3c38
 });

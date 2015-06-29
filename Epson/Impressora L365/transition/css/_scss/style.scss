@@ -140,6 +140,12 @@ header{
         margin-top: -100px;
         margin-left: 10px;
     }
+    @for $i from 0 to 4{
+        .animated:nth-child(#{$i}) { 
+            animation-delay: 0.8 * $i + s; 
+            -webkit-animation-delay: 0.8 * $i + s;
+        }
+    }
 }
 
 /*==================================
