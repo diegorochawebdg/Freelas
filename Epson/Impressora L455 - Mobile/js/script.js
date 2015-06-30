@@ -1,33 +1,47 @@
 $(document).ready(function($) {
-	$('#foo4').carouFredSel({
-		responsive: true,
-		prev: '#prev2',
-		next: '#next2',
-		width: '100%',
-		scroll: 1,
-		items: {
-			width: 100,
-			height: '65%',
-			visible: {
-				min: 1,
-				max: 1
-			}
-		}
-	});	
-	$('#dispositivos-seguranca ul').carouFredSel({
-		responsive: true,
-		prev: '#prev3',
-		next: '#next3',
-		width: '100%',
-		scroll: 1,
-		auto: 	false,
-		items: {
-			width: 100,
-			height: '65%',
-			visible: {
-				min: 1,
-				max: 1
-			}
-		}
-	});	
+	//Slider
+	$('section#slider ul').bxSlider({
+		pager: false
+	});
+
+	/*================================
+    =            Animated            =
+    ================================*/
+    jQuery('.animated').appear();
+
+    //Fade in Left
+    jQuery('.left').on('appear', function(e, $all_appeared_elements) {
+        jQuery(this).addClass('fadeInLeft');
+    });
+
+    /*Fade In Right*/
+    jQuery('.right').on('appear', function(e, $all_appeared_elements) {
+        jQuery(this).addClass('fadeInRight');
+    });
+
+    /*Fade In Up*/
+    jQuery('.up').on('appear', function(e, $all_appeared_elements) {
+        jQuery(this).addClass('fadeInUp');
+    });
+    
+    //Fade in Down
+    jQuery('.down').on('appear', function(e, $all_appeared_elements) {
+        jQuery(this).addClass('fadeInDown');
+    });
+
+     /*=================================
+    =            Analytics            =
+    =================================*/
+    $('a.appstore').click(function(event) {
+        _gaq.push(['_trackEvent', 'Link', 'Apple App Store']);
+    }); 
+    $('a.google-play').click(function(event) {
+        _gaq.push(['_trackEvent', 'Link', 'Google Play Store']);
+    });
+    $('a.bx-prev').click(function(event) {
+        _gaq.push(['_trackEvent', 'Slider', 'Foto anterior']);
+    });
+    $('a.bx-next').click(function(event) {
+        _gaq.push(['_trackEvent', 'Slider', 'Próxima foto']);
+    });    
 });

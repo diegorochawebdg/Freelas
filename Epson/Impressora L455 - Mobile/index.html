@@ -8,15 +8,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimun-scale=1">
 	<meta name="description" content="Multifuncional EcoTank L455 da Epson - Fácil de recarregar! Tanques que comportam grandes quantidades de tinta e que podem ser recarregados por você mesmo, com as garrafas de tintas Epson.">
 	<meta name="Author" content="Estúdio RBianco">
+	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
 
+	<!-- Google Analytics -->
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	<!-- Scripts -->
-	<script src="js/jquery1.7.min.js"></script>
-	<script type="text/javascript" language="javascript" src="js/jquery.carouFredSel-6.2.1-packed.min.js"></script>
-	<script type="text/javascript" language="javascript" src="js/script.min.js"></script>
-	<!-- End Scripts -->
+	ga('create', 'UA-60802796-2', 'auto');
+	ga('send', 'pageview');
+	</script>
 </head>
 
 <body>
@@ -25,9 +30,9 @@
 		<!--Header-->
 		<div id="header">
 			<div class="content-center">
-				<img src="images/epson-logo.png" width="100" height="32" alt="Logotipo Epson" title="Epson" id="logo">
+				<img src="images/epson-logo.png" width="100" height="32" alt="Logotipo Epson" title="Epson" id="logo" class="animated fadeInRight">
 				
-				<div class="main-title absolute">
+				<div class="main-title absolute animated fadeInLeft">
 					<h1 class="title1">Multifuncional <strong>EcoTank L455</strong></h1>
 					<ul>
 						<li>Imprime</li>
@@ -42,7 +47,7 @@
 				<img src="images/logo-ecotank.png" width="254" height="318" alt="logo ecotank" title="logo ecotank" class="ecotank">
 
 				<!-- Txt Vendedor -->
-				<div class="txt-vendedor">
+				<div class="txt-vendedor animated up">
 					<p>As impressoras que utilizam <br>garrafas ao invés de cartuchos.</p>
 				</div>
 				<!-- End Txt Vendedor -->
@@ -58,8 +63,8 @@
 		<section id="recarregue">
 				<div class="content-center">
 					<div class="text absolute">
-						<h2>Recarregue <br><strong>você mesmo</strong></h2>
-						<p>Fácil de recarregar! Tanques que <br>comportam grandes quantidades <br>de tinta e que podem ser <br>recarregados por você mesmo, <br>com as garrafas de tinta Epson.</p>
+						<h2 class="title2 animated up">Recarregue <br><strong>você mesmo</strong></h2>
+						<p class="animated up">Fácil de recarregar! Tanques que <br>comportam grandes quantidades <br>de tinta e que podem ser <br>recarregados por você mesmo, <br>com as garrafas de tinta Epson.</p>
 					</div>
 		</section>
 		<!--End Recarregue-->
@@ -68,8 +73,8 @@
 		<section id="visor-lcd">
 				<div class="content-center">
 				<div class="text absolute">
-					<h2>Visor LCD colorido</h2>
-					<p>Ajuste suas fotos <br>diretamente no visor <br>sem precisar do <br>computador.</p>
+					<h2 class="animated down">Visor LCD colorido</h2>
+					<p class="animated down">Ajuste suas fotos <br>diretamente no visor <br>sem precisar do <br>computador.</p>
 			   </div>
 			   </div>
 		</section>
@@ -78,14 +83,10 @@
 		<!-- Economia -->
 		<section id="economia">
 			 <div class="content-center">
-				<div class="text absolute">
-					<img src="images/impressao-economica.png" width="" height="" alt="Imprimir com garrafa é: 90% mais econômico do que com cartuchos" title="Imprimir com garrafa é: 90% mais econômico do que com cartuchos">
-			   </div>
-			   
 
-			   <img class="cartuchos absolute" src="images/35-cartuchos.png" height="" width="" alt="35 cartuchos de 2ml" title="35 cartuchos de 2ml"></img>
-				<img src="images/1-garrafa-tinta-preta.png" height="" width="108" alt="1 garrada de tinta preta" title="1 garrada de tinta preta" class="garrafa absolute">
-				<div class="text2 absolute">
+			   <img class="cartuchos absolute animated left" src="images/35-cartuchos.png" height="134" width="101" alt="35 cartuchos de 2ml" title="35 cartuchos de 2ml"></img>
+				<img src="images/1-garrafa-de-tinta-preta.png" height="130" width="86" alt="1 garrada de tinta preta" title="1 garrada de tinta preta" class="garrafa absolute animated right">
+				<div class="text2 absolute animated right">
 					<span>
 						<strong>4000</strong>
 						impressões em preto<sup>1</sup>
@@ -98,23 +99,22 @@
 		<!--Super Conectada-->
 		<section id="super-conectada">
 			<div class="content-center">
-				<div class="text absolute">
-					<h3 class="title1">A multifuncional que <strong>é super conectada</strong></h3>
+				<div class="text absolute animated down">
+					<h3 class="title2">A multifuncional que <strong>é super conectada</strong></h3>
 					<p class="text">Suas impressões com muito mais <br>liberdade, sem fios.</p>
 				</div>
-				<div class="wireless absolute">
+				<div class="wireless absolute animated down">
 					<h4>Wireless<sup>3</sup></h4>
 					<p>Imprime e digitaliza sem precisar <br>de cabos para conexão.</p>
 				</div>
-				<div class="iprint absolute">
+				<div class="iprint absolute animated down">
 					<h4>WiFi Direct</h4>
 					<p>Impressão sem a necessidade <br>de cabos e roteador.</p>
 				</div>
 
-				<div class="cartao">
+				<div class="cartao absolute animated up">
 					<h4>Cartão <br>de memória</h4>
-					<p>Visualize, edite e <br>imprima suas fotos <br>diretamente do seu leitor de <br>cartão de memória.</p>
-
+					<p>Visualize, edite e <br>imprima suas fotos <br>diretamente da sua L455 <br>utilizando seu leitor de <br>cartão de memória.</p>
 				 </div>
 		</section>   
 		 <!--End Super Conectada-->
@@ -122,47 +122,45 @@
 		<!--Epson Connect-->
 		<section id="epson-connect">
 			<div class="content-center">
-				<h3><img src="images/logo-epson-connect.jpg" width="" height="" alt="Epson Connect - Impressão móvel e na nuvem" title="Epson Connect - Impressão móvel e na nuvem"></h3>
 
-			 <div class="text absolute">
-				<p>Você tem impressão móvel e na <br>nuvem<sup>2</sup> quando quiser.</p>
-
-				<div class="epson-connect">
-					<h4>E-mail Print</h4>
-					<p>Com ele você envia e-mail para <br>sua L455 e imprime arquivos e <br>fotos em instantes.</p>
-					<h4>Cloud Print</h4>
-					<p>Faça sua impressão de forma prática <br>e segura diretamente da nuvem sem <br>drives nem cabos.</p>
-					<h4>iPrint</h4>
-					<p>Com esse aplicativo você imprime <br>direto do seu smartphone ou tablet.</p>
-					<h4>Apple Air Print</h4>
-					<p>Imprima diretamente do seu <br>dispositivo IOS com esse aplicativo.</p>
+				<div class="text">
+					<h3><img src="images/logo-epson-connect.jpg" alt="Epson Connect - Impressão móvel e na nuvem" title="Epson Connect - Impressão móvel e na nuvem" class="animated pulse"></h3>
+					<p>Você tem impressão móvel e na <br>nuvem<sup>2</sup> quando quiser.</p>
 				</div>
 
-				<h5>Baixe o aplicativo:</h5>
+				<div class="epson-connect">
+					<h4 class="animated down">iPrint</h4>
+					<p class="animated down">Com esse aplicativo <br>você imprime direto do <br>seu smartphone ou <br>tablet.</p>
+					<h4 class="animated down">Apple Air Print</h4>
+					<p class="animated down">Imprima diretamente <br>do seu dispositivo IOS <br>com esse aplicativo.</p>
+					<h4 class="animated down">E-mail Print</h4>
+					<p class="animated down">Com ele você envia <br>e-mail para sua L455 <br>e imprime arquivos e <br>fotos em instantes.</p>
+					<h4 class="animated down">Cloud Print</h4>
+					<p class="animated down">Faça sua impressão de <br>forma prática e segura <br>diretamente da nuvem <br>sem drives nem cabos.</p>
+				</div>
 
-				<a href="https://itunes.apple.com/br/app/epson-iprint/id326876192" target="_blank" class="appstore absolute" title="Disponível na App Store"><img src="images/disponivel-na-app-store.jpg" height="" width="" alt="Disponível na App Store" title="Disponível na App Store"></a>
-				<a href="https://play.google.com/store/apps/details?id=epson.print" target="_blank" class="google-play absolute" title="Disponível no Google Play"><img src="images/disponivel-na-google-play.jpg" height="" width="" alt="Disponível no Google Play" title="Disponível no Google Play"></a>
+				<div class="app">
+					<h5>Baixe o aplicativo:</h5>
+					<a href="https://itunes.apple.com/br/app/epson-iprint/id326876192" target="_blank" class="appstore" title="Disponível na App Store"><img src="images/disponivel-na-app-store.jpg" height="40" width="116" alt="Disponível na App Store" title="Disponível na App Store"></a>
+					<a href="https://play.google.com/store/apps/details?id=epson.print" target="_blank" class="google-play" title="Disponível no Google Play"><img src="images/disponivel-na-google-play.jpg" height="39" width="118" alt="Disponível no Google Play" title="Disponível no Google Play"></a>
+				</div>
 
-			 </div>
 			</div>
 		</section>
 		<!--End Epson Connect-->
 
 		<!-- Slider -->
 		<section id="slider">
-				 <div class="content-center">
-					<div class="list_carousel responsive">
-					<ul id="foo4">
-						<li><img src="images/01.jpg" alt=""></li>
-						<li><img src="images/02.jpg" alt=""></li>
-						<li><img src="images/03.jpg" alt=""></li>
-						<li><img src="images/04.jpg" alt=""></li>
-						<li><img src="images/05.jpg" alt=""></li>
-					</ul>
-					<a id="prev2" class="next" href="#">&lt;</a>
-					<a id="next2" class="prev" href="#">&gt;</a>
-					</div>
-				 </div>
+			<div class="content-center">
+				<h3>Galeria de imagens</h3>
+				<ul>
+					<li><img src="images/slider/01.jpg" alt=""></li>
+					<li><img src="images/slider/02.jpg" alt=""></li>
+					<li><img src="images/slider/03.jpg" alt=""></li>
+					<li><img src="images/slider/04.jpg" alt=""></li>
+					<li><img src="images/slider/05.jpg" alt=""></li>
+				</ul>
+			</div>
 		</section>
 		<!-- End Slider -->
 
@@ -170,22 +168,22 @@
 		<!-- Benefícios -->
 		<section id="beneficios">
 			<div class="content-center">
-				<div class="text absolute">
-					<h3 class="title1">Benefícios <strong>insuperáveis</strong></h3>
+				<div class="text animated up">
+					<h3 class="title2">Benefícios <strong>insuperáveis</strong></h3>
 					<p class="text">Altíssima produtividade e rendimento.</p>
 				</div>
 
-				<div class="consumo absolute">
+				<div class="consumo absolute animated up">
 					<h4>Baixo consumo de energia</h4>
 					<p>Consumo aproximado a uma lâmpada fluorescente.</p>
 				</div>
 
-				<div class="qualidade-impressao absolute">
+				<div class="qualidade-impressao absolute animated up">
 					<h4>Alta qualidade de <br>impressão e confiabilidade</h4>
 					<p>Com as tintas originais Epson.</p>
 				</div>
 
-				<div class="garantia absolute">
+				<div class="garantia absolute animated up">
 					<h4>Garantia de 1 ano</h4>
 				</div>
 			</div>
@@ -196,18 +194,18 @@
 		<section id="tintas-originais">
 			<div class="content-center">
 
-			<div class="text absolute">
-					<h3 class="title1">Tintas <strong>originais Epson</strong></h3>
+				<div class="text animated down">
+					<h3 class="title2">Tintas <strong>originais Epson</strong></h3>
 					<p class="text">Utilize tintas originais e garanta <br>o alto desempenho e a vida útil <br>da sua L455.</p>
 				</div>
 
-				<div class="imprima absolute">
+				<div class="imprima absolute animated down">
 					<h4>
 						Imprima
 						<span class="size1">6.500</span>
 						<span class="size2">páginas coloridas<sup>1</sup></span>
 					</h4>
-					<p>com o kit de garrafas <br>de tinta incluso</p>
+					<p>com o kit de garrafas de tinta incluso</p>
 				</div>
 				
 			</div>
@@ -216,65 +214,72 @@
 
 		<!-- Vídeo -->
 		<section id="video">
-				<div class="content-center">
-					<span>Assista ao vídeo:</span>
-					<iframe width="320" height="180" src="//www.youtube.com/embed/pJA9pcF0rpY?rel=0" frameborder="0" allowfullscreen></iframe>
-				</div>
-		 </section>
-			<!-- End Vídeo -->
+			<div class="content-center">
+				<span>Assista ao vídeo:</span>
+				<iframe width="300" height="169" src="https://www.youtube.com/embed/LawffPVkTZY?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</section>
+		<!-- End Vídeo -->
 
 		<!-- Embalagem | Especificações -->
-		<section id="embalagem-especificacoes">
+		<section id="embalagem">
 			<div class="content-center">
-				<div class="embalagem absolute">
-					<h3 class="title1">Conteúdo <strong>da Embalagem</strong></h3>
-					<table cellpadding="0" cellspacing="0" border="0">
-						<tr>
-							<td><img src="images/table/item1.png" height="18" width="33" alt="Multifuncional Epson L455" title="Multifuncional Epson L455"></td>
-							<td>Multifuncional Epson L455</td>
-						</tr>
-						<tr>
-							<td><img src="images/table/item2.png" height="25" width="9" alt="1 garrafa com tinta preta T664120" title="1 garrafa com tinta preta T664120"></td>
-							<td>1 garrafa com tinta preta T664120</td>
-						</tr>
-						<tr>
-							<td><img src="images/table/item3.png" height="25" width="11" alt="1 garrafa com tinta magenta T664220" title="1 garrafa com tinta magenta T664220"></td>
-							<td>1 garrafa com tinta magenta T664220</td>
-						</tr>
-						<tr>
-							<td><img src="images/table/item4.png" height="25" width="11" alt="1 garrafa com tinta amarela T664320" title="1 garrafa com tinta amarela T664320"></td>
-							<td>1 garrafa com tinta amarela T664320</td>
-						</tr>
-						<tr>
-							<td><img src="images/table/item5.png" height="25" width="10" alt="1 garrafa com tinta ciano T664420" title="1 garrafa com tinta ciano T664420"></td>
-							<td>1 garrafa com tinta ciano T664420</td>
-						</tr>
-						<tr>
-							<td><img src="images/table/item6.png" height="22" width="26" alt="Cabo de alimentação" title="Cabo de alimentação"></td>
-							<td>Cabo de alimentação</td>
-						</tr>
-						<tr>
-							<td><img src="images/table/item7.png" height="18" width="26" alt="Cabo USB incluso" title="Cabo USB incluso"></td>
-							<td>Cabo USB incluso</td>
-						</tr>
-						<tr>
-							<td><img src="images/table/item8.png" height="21" width="24" alt="CD de instalação e softwares Epson" title="CD de instalação e softwares Epson"></td>
-							<td>CD de instalação e softwares Epson</td>
-						</tr>
-						<tr>
-							<td><img src="images/table/item9.png" height="24" width="30" alt="Guia de instalação rápida" title="Guia de instalação rápida"></td>
-							<td>Guia de instalação rápida</td>
-						</tr>
-						<tr>
-							<td><img src="images/table/item10.png" height="20" width="22" alt="Manual do Usuário" title="Manual do Usuário"></td>
-							<td>Manual do Usuário</td>
-						</tr>
-					</table>
+				<h3 class="title2 animated down">Conteúdo <strong>da Embalagem</strong></h3>
+				<table cellpadding="0" cellspacing="0" border="0" class=" animated down">
+					<tr>
+						<td><img src="images/table/item1.png" height="18" width="33" alt="Multifuncional Epson L455" title="Multifuncional Epson L455"></td>
+						<td>Multifuncional Epson L455</td>
+					</tr>
+					<tr>
+						<td><img src="images/table/item2.png" height="25" width="9" alt="1 garrafa com tinta preta T664120" title="1 garrafa com tinta preta T664120"></td>
+						<td>1 garrafa com tinta preta T664120</td>
+					</tr>
+					<tr>
+						<td><img src="images/table/item3.png" height="25" width="11" alt="1 garrafa com tinta magenta T664220" title="1 garrafa com tinta magenta T664220"></td>
+						<td>1 garrafa com tinta magenta T664220</td>
+					</tr>
+					<tr>
+						<td><img src="images/table/item4.png" height="25" width="11" alt="1 garrafa com tinta amarela T664320" title="1 garrafa com tinta amarela T664320"></td>
+						<td>1 garrafa com tinta amarela T664320</td>
+					</tr>
+					<tr>
+						<td><img src="images/table/item5.png" height="25" width="10" alt="1 garrafa com tinta ciano T664420" title="1 garrafa com tinta ciano T664420"></td>
+						<td>1 garrafa com tinta ciano T664420</td>
+					</tr>
+					<tr>
+						<td><img src="images/table/item6.png" height="22" width="26" alt="Cabo de alimentação" title="Cabo de alimentação"></td>
+						<td>Cabo de alimentação</td>
+					</tr>
+					<tr>
+						<td><img src="images/table/item7.png" height="18" width="26" alt="Cabo USB incluso" title="Cabo USB incluso"></td>
+						<td>Cabo USB incluso</td>
+					</tr>
+					<tr>
+						<td><img src="images/table/item8.png" height="21" width="24" alt="CD de instalação e softwares Epson" title="CD de instalação e softwares Epson"></td>
+						<td>CD de instalação e softwares Epson</td>
+					</tr>
+					<tr>
+						<td><img src="images/table/item9.png" height="24" width="30" alt="Guia de instalação rápida" title="Guia de instalação rápida"></td>
+						<td>Guia de instalação rápida</td>
+					</tr>
+					<tr>
+						<td><img src="images/table/item10.png" height="20" width="22" alt="Manual do Usuário" title="Manual do Usuário"></td>
+						<td>Manual do Usuário</td>
+					</tr>
+				</table>
 
-				</div>
 				
-				<h3 class="title1 especificacoes-title absolute">Especificações <strong>Técnicas</strong></h3>
-				<div class="especificacoes absolute">   
+
+			</div>
+		</section>
+		<!-- End Embalagem | Especificações -->
+
+		<!-- Especificações Técnicas -->
+		<section id="especificacoes">
+			<div class="content-center">
+				<h3 class="title2 especificacoes-title animated down">Especificações <strong>Técnicas</strong></h3>
+				<img src="images/especificacoes-tecnicas.jpg" height="86" width="159" class="left animated ">
+				<div class="especificacoes animated right">   
 					<ul>
 						<li>Largura: 48,2cm</li>
 						<li>Profundidade: 30cm</li>
@@ -282,10 +287,9 @@
 						<li>Peso Líquido: 4,5kg</li>
 					</ul>
 				</div>
-
 			</div>
 		</section>
-		<!-- End Embalagem | Especificações -->
+		<!-- End Especificações Técnicas -->
 
 		<!-- Observações -->
 		<section id="obs">
@@ -302,6 +306,13 @@
 
 	</div>
 	<!--End of content-center-->
+
+	<!-- Scripts -->
+	<script src="js/jquery.min.js"></script>
+	<script type="text/javascript" language="javascript" src="js/jquery.bxslider.min.js"></script>
+	<script type="text/javascript" language="javascript" src="js/jquery.appear.min.js"></script>
+	<script type="text/javascript" language="javascript" src="js/script.js"></script>
+	<!-- End Scripts -->
 
 </body>
 
