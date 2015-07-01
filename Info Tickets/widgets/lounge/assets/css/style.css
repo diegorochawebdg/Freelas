@@ -1,0 +1,196 @@
+/* Fonts */
+/* Extends | Mixins */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/DiegoRocha\/Documents\/GitHub\/Freelas\/Info\%20Tickets\/widgets\/lounge\/assets\/css\/style\.scss}line{font-family:\000037}}
+#the-widget .main-wrapper .step-1 strong.title, #the-widget .main-wrapper .step-2 strong.learn-more, #the-widget .main-wrapper .step-3 strong.learn-more, #the-widget .main-wrapper .step-3 label, #the-widget .main-wrapper .step-4 strong.learn-more,
+#the-widget .main-wrapper .step-4 span.thank-you {
+  text-shadow: #666 1px 1px 3px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/DiegoRocha\/Documents\/GitHub\/Freelas\/Info\%20Tickets\/widgets\/lounge\/assets\/css\/style\.scss}line{font-family:\0000317}}
+* {
+  margin: 0;
+  border: none;
+  padding: 0;
+  color: #FFF;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/DiegoRocha\/Documents\/GitHub\/Freelas\/Info\%20Tickets\/widgets\/lounge\/assets\/css\/style\.scss}line{font-family:\0000323}}
+.clearfix {
+  clear: both;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/DiegoRocha\/Documents\/GitHub\/Freelas\/Info\%20Tickets\/widgets\/lounge\/assets\/css\/style\.scss}line{font-family:\0000326}}
+li {
+  list-style-type: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/DiegoRocha\/Documents\/GitHub\/Freelas\/Info\%20Tickets\/widgets\/lounge\/assets\/css\/style\.scss}line{font-family:\0000329}}
+.button {
+  background: #FFF;
+  display: table;
+  margin: 0 auto;
+  color: #ec6060;
+  text-transform: uppercase;
+  border-radius: 20px;
+  padding: 15px 25px;
+  box-shadow: -1px -1px 10px #555;
+  font: bold 13px "Montserrat", serif;
+  text-decoration: none;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/DiegoRocha\/Documents\/GitHub\/Freelas\/Info\%20Tickets\/widgets\/lounge\/assets\/css\/style\.scss}line{font-family:\0000341}}
+.button:hover {
+  background: #ec6060;
+  color: #FFF;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/DiegoRocha\/Documents\/GitHub\/Freelas\/Info\%20Tickets\/widgets\/lounge\/assets\/css\/style\.scss}line{font-family:\0000347}}
+#the-widget {
+  width: 592px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/DiegoRocha\/Documents\/GitHub\/Freelas\/Info\%20Tickets\/widgets\/lounge\/assets\/css\/style\.scss}line{font-family:\0000349}}
+#the-widget .main-wrapper {
+  background: url(../images/bg.jpg) no-repeat center top;
+  border-radius: 90px 90px 0 0;
+  /* Step 1 */
+  /* Steps utils */
+  /* Step 2 */
+  /* Step 3 */
+  /* Step 4 */
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/DiegoRocha\/Documents\/GitHub\/Freelas\/Info\%20Tickets\/widgets\/lounge\/assets\/css\/style\.scss}line{font-family:\0000352}}
+#the-widget .main-wrapper .box-padding {
+  padding: 17px 40px 23px 40px;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/DiegoRocha\/Documents\/GitHub\/Freelas\/Info\%20Tickets\/widgets\/lounge\/assets\/css\/style\.scss}line{font-family:\0000355}}
+#the-widget .main-wrapper .box-padding .step-1,
+#the-widget .main-wrapper .box-padding .step-2,
+#the-widget .main-wrapper .box-padding .step-3 {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/DiegoRocha\/Documents\/GitHub\/Freelas\/Info\%20Tickets\/widgets\/lounge\/assets\/css\/style\.scss}line{font-family:\0000364}}
+#the-widget .main-wrapper .step-1 strong.title {
+  font: 700 18px "Merriweather", serif;
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/DiegoRocha\/Documents\/GitHub\/Freelas\/Info\%20Tickets\/widgets\/lounge\/assets\/css\/style\.scss}line{font-family:\0000369}}
+#the-widget .main-wrapper .step-1 a.widget-expand {
+  float: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/DiegoRocha\/Documents\/GitHub\/Freelas\/Info\%20Tickets\/widgets\/lounge\/assets\/css\/style\.scss}line{font-family:\0000376}}
+#the-widget .main-wrapper .steps-utils span.welcome {
+  font: 700 14.5px "Lato", serif;
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/DiegoRocha\/Documents\/GitHub\/Freelas\/Info\%20Tickets\/widgets\/lounge\/assets\/css\/style\.scss}line{font-family:\0000381}}
+#the-widget .main-wrapper .steps-utils .language-hide ul,
+#the-widget .main-wrapper .steps-utils .language-hide li,
+#the-widget .main-wrapper .steps-utils .language-hide a.hide-button {
+  display: inline-block;
+  margin: 0 3px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/DiegoRocha\/Documents\/GitHub\/Freelas\/Info\%20Tickets\/widgets\/lounge\/assets\/css\/style\.scss}line{font-family:\0000387}}
+#the-widget .main-wrapper .steps-utils .language-hide ul,
+#the-widget .main-wrapper .steps-utils .language-hide a.hide-button {
+  float: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/DiegoRocha\/Documents\/GitHub\/Freelas\/Info\%20Tickets\/widgets\/lounge\/assets\/css\/style\.scss}line{font-family:\0000392}}
+#the-widget .main-wrapper .steps-utils .language-hide a.hide-button {
+  margin-right: 40px !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/DiegoRocha\/Documents\/GitHub\/Freelas\/Info\%20Tickets\/widgets\/lounge\/assets\/css\/style\.scss}line{font-family:\0000396}}
+#the-widget .main-wrapper .steps-utils small {
+  position: absolute;
+  bottom: 5px;
+  right: 25px;
+  text-transform: uppercase;
+  font: bold 7.5px "Montserrat", serif;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/DiegoRocha\/Documents\/GitHub\/Freelas\/Info\%20Tickets\/widgets\/lounge\/assets\/css\/style\.scss}line{font-family:\00003106}}
+#the-widget .main-wrapper .step-2 {
+  max-width: 315px;
+  margin: 0 auto;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/DiegoRocha\/Documents\/GitHub\/Freelas\/Info\%20Tickets\/widgets\/lounge\/assets\/css\/style\.scss}line{font-family:\00003110}}
+#the-widget .main-wrapper .step-2 strong.learn-more {
+  font: bold 17.5px "Lato", serif;
+  margin: 25px 0;
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/DiegoRocha\/Documents\/GitHub\/Freelas\/Info\%20Tickets\/widgets\/lounge\/assets\/css\/style\.scss}line{font-family:\00003119}}
+#the-widget .main-wrapper .step-3 {
+  max-width: 330px;
+  margin: 0 auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/DiegoRocha\/Documents\/GitHub\/Freelas\/Info\%20Tickets\/widgets\/lounge\/assets\/css\/style\.scss}line{font-family:\00003122}}
+#the-widget .main-wrapper .step-3 strong.learn-more {
+  font: bold 15px/1.5em "Lato", serif;
+  margin: 5px 0 20px;
+  display: block;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/DiegoRocha\/Documents\/GitHub\/Freelas\/Info\%20Tickets\/widgets\/lounge\/assets\/css\/style\.scss}line{font-family:\00003129}}
+#the-widget .main-wrapper .step-3 .date {
+  float: left;
+  width: 150px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/DiegoRocha\/Documents\/GitHub\/Freelas\/Info\%20Tickets\/widgets\/lounge\/assets\/css\/style\.scss}line{font-family:\00003132}}
+#the-widget .main-wrapper .step-3 .date.last {
+  float: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/DiegoRocha\/Documents\/GitHub\/Freelas\/Info\%20Tickets\/widgets\/lounge\/assets\/css\/style\.scss}line{font-family:\00003135}}
+#the-widget .main-wrapper .step-3 .date input {
+  background: #FFF url(../images/calendar.png) no-repeat 10px center;
+  padding-left: 46px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/DiegoRocha\/Documents\/GitHub\/Freelas\/Info\%20Tickets\/widgets\/lounge\/assets\/css\/style\.scss}line{font-family:\00003140}}
+#the-widget .main-wrapper .step-3 label {
+  font: bold 13px "Lato", serif;
+  margin-bottom: 5px;
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/DiegoRocha\/Documents\/GitHub\/Freelas\/Info\%20Tickets\/widgets\/lounge\/assets\/css\/style\.scss}line{font-family:\00003146}}
+#the-widget .main-wrapper .step-3 input {
+  border: solid 1px #d8d8d8;
+  border-radius: 2px;
+  box-sizing: border-box;
+  height: 43px;
+  margin-bottom: 15px;
+  padding: 0 15px 0 32px;
+  width: 100%;
+  color: #b2b2b2;
+  font: normal 13px "Lato", serif;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/DiegoRocha\/Documents\/GitHub\/Freelas\/Info\%20Tickets\/widgets\/lounge\/assets\/css\/style\.scss}line{font-family:\00003156}}
+#the-widget .main-wrapper .step-3 input#your-email {
+  background: #FFF url(../images/email.png) no-repeat 10px center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/DiegoRocha\/Documents\/GitHub\/Freelas\/Info\%20Tickets\/widgets\/lounge\/assets\/css\/style\.scss}line{font-family:\00003163}}
+#the-widget .main-wrapper .step-4 {
+  text-align: center;
+  max-width: 350px;
+  margin: 0 auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/DiegoRocha\/Documents\/GitHub\/Freelas\/Info\%20Tickets\/widgets\/lounge\/assets\/css\/style\.scss}line{font-family:\00003167}}
+#the-widget .main-wrapper .step-4 img {
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/DiegoRocha\/Documents\/GitHub\/Freelas\/Info\%20Tickets\/widgets\/lounge\/assets\/css\/style\.scss}line{font-family:\00003170}}
+#the-widget .main-wrapper .step-4 strong.learn-more,
+#the-widget .main-wrapper .step-4 span.thank-you {
+  font: bold 18px/1.5em "Lato", serif;
+  margin: 5px 0 20px;
+  display: block;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/DiegoRocha\/Documents\/GitHub\/Freelas\/Info\%20Tickets\/widgets\/lounge\/assets\/css\/style\.scss}line{font-family:\00003178}}
+#the-widget .main-wrapper .step-4 span.thank-you {
+  font-size: 23px;
+}
+
+/*# sourceMappingURL=style.css.map */

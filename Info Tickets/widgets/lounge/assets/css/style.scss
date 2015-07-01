@@ -1,0 +1,183 @@
+/* Fonts */
+$merriweather: 'Merriweather', serif;
+$lato: 'Lato', serif;
+$montserrat: 'Montserrat', serif;
+
+/* Extends | Mixins */
+%shadow{
+	text-shadow: #666 1px 1px 3px;
+}
+@mixin transition($args,$args2) {
+	-webkit-transition: $args $args2 ease-in;
+	-moz-transition: $args $args2 ease-in;
+	-o-transition: $args $args2 ease-in;
+	transition: $args $args2 ease-in;
+}
+
+*{
+	margin: 0;
+	border: none;
+	padding: 0;
+	color: #FFF;
+}
+.clearfix{
+	clear: both;
+}
+li{
+	list-style-type: none;
+}
+.button{
+	background: #FFF;
+	display: table;
+	margin: 0 auto;
+	color: #ec6060;
+	text-transform: uppercase;
+	border-radius: 20px;
+	padding: 15px 25px;
+	box-shadow: -1px -1px 10px #555;
+	font: bold 13px $montserrat;
+	text-decoration: none;
+	@include transition(all, 200ms);
+	&:hover{
+		background: #ec6060;
+		color: #FFF;
+	}
+}
+
+#the-widget{
+	width: 592px;
+	.main-wrapper{
+		background: url(../images/bg.jpg) no-repeat center top;
+		border-radius: 90px 90px 0 0;
+		.box-padding{
+			padding: 17px 40px 23px 40px;
+			position: relative;
+			.step-1,
+			.step-2,
+			.step-3,
+			/* .steps-utils */{
+				display: none;
+			}
+		}
+		/* Step 1 */
+		.step-1{
+			strong.title{
+				font: 700 18px $merriweather;
+				@extend %shadow;
+				float: left;
+			}
+			a.widget-expand{
+				float: right;
+			}
+		}
+
+		/* Steps utils */
+		.steps-utils{
+			span.welcome{
+				font: 700 14.5px $lato;
+				float: left;
+			}
+			.language-hide{
+				ul,
+				li,
+				a.hide-button{
+					display: inline-block;
+					margin: 0 3px;
+				}
+				ul,
+				a.hide-button{
+					float: right;
+
+				}
+				a.hide-button{
+					margin-right: 40px !important;
+				}
+			}
+			small{
+				position: absolute;
+				bottom: 5px;
+				right: 25px;
+				text-transform: uppercase;
+				font: bold 7.5px $montserrat;
+			}
+		}
+
+		/* Step 2 */
+		.step-2{
+			max-width: 315px;
+			margin: 0 auto;
+			text-align: center;
+			strong.learn-more{
+				font: bold 17.5px $lato;
+				margin: 25px 0;
+				display: block;
+				@extend %shadow;
+			}
+		}
+
+		/* Step 3 */
+		.step-3{
+			max-width: 330px;
+			margin: 0 auto;
+			strong.learn-more{
+				font: bold 15px/1.5em $lato;
+				margin: 5px 0 20px;
+				display: block;
+				@extend %shadow;
+				text-align: center;
+			}
+			.date{
+				float: left;
+				width: 150px;
+				&.last{
+					float: right;
+				}
+				input{
+					background: #FFF url(../images/calendar.png) no-repeat 10px center;
+					padding-left: 46px;
+				}
+			}
+			label{
+				font: bold 13px $lato;
+				margin-bottom: 5px;
+				display: block;
+				@extend %shadow;
+			}
+			input{
+				border: solid 1px #d8d8d8;
+				border-radius: 2px;
+				box-sizing: border-box;
+				height: 43px;
+				margin-bottom: 15px;
+				padding: 0 15px 0 32px;
+				width: 100%;
+				color: #b2b2b2;
+				font: normal 13px $lato;
+				&#your-email{
+					background: #FFF url(../images/email.png) no-repeat 10px center;
+				}
+			}
+		}
+
+		/* Step 4 */
+		.step-4{
+			text-align: center;
+			max-width: 350px;
+			margin: 0 auto;
+			img{
+				display: inline-block;
+			}
+			strong.learn-more,
+			span.thank-you{
+				font: bold 18px/1.5em $lato;
+				margin: 5px 0 20px;
+				display: block;
+				@extend %shadow;
+				text-align: center;
+			}
+			span.thank-you{
+				font-size: 23px;
+			}
+		}
+	}
+}
