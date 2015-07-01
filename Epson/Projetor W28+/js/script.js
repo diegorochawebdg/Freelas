@@ -19,4 +19,13 @@ jQuery(document).ready(function() {
             xparallax: false
         });
     });
+
+     /*=================================
+    =            Analytics            =
+    =================================*/
+    /*Hotspots*/
+    $('.hotspots a').hover(function() {
+        var theTitle = $(this).parent().parent().parent().parent().find('.hotspots-content img').attr('title');
+        _gaq.push(['_trackEvent', 'Hotspots', theTitle]);
+    });
 });
