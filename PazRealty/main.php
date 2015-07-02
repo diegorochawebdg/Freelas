@@ -38,6 +38,7 @@
 			        	<li><?php echo CHtml::link('FAQ', array('/site/faq')); ?></li>
                         <li class="sep"></li>
                         <li class="portal"><?php echo CHtml::link('PORTAL DO CLIENTE', 'http://www.uau.com.br/PortalUAU_Site/AbrePortal.aspx?Empresa=MA5m%2bkPP0HY%3d', array('target'=>'_blank')); ?></li>
+                        <li><a href="http://www.pazrealty.com.br/painel-usuario/" target="_blank" title="Portal de parcerias">PORTAL DE PARCERIAS</a></li>
                         <?php if(isset($_GET['dev'])): ?>
                             <li class="login">
                                 <?php
@@ -131,7 +132,8 @@
 				</ul>
 				<div class="corretor">
 					<div>
-						<?php echo CHtml::link('<span>CORRETOR</span> ON-LINE', Yii::app()->createUrl('site/chat', array('empreendimento'=>$this->id_empreendimento)), array('class'=>'fancy')); ?>
+						<?php /*echo CHtml::link('<span>CORRETOR</span> ON-LINE', Yii::app()->createUrl('site/chat', array('empreendimento'=>$this->id_empreendimento)), array('class'=>'fancy')); */?>
+						<a class="fancy-corretor" href="http://houste.hypnobox.com.br/atendimento/index.php?id_produto=529"><span>CORRETOR</span> ON-LINE</a>
 						<span class="curva"></span>
 					</div>
 					<div class="bg-red"></div>
