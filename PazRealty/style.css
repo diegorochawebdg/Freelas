@@ -1,0 +1,330 @@
+/** Custom Reset **/
+html {font-family: Tahoma, Arial, sans-serif;}
+input {color:#727d84;}
+li {list-style: none;}
+a {text-decoration: none;}
+label { display: block; font-size:12px; margin-bottom: 5px;}
+label.checkbox { display: block; padding-left: 15px; text-indent: -15px; }
+input, textarea, select {border: 1px solid #a7b6bf; padding: 6px 5px; width: 97%; font-size: 12px;}
+textarea {resize:none;}
+select { padding: 5px 5px; }
+input.enviar {margin-left: 330px; font-weight: bold; font-size: 15px; color: #FFF; border: none; background: #be1e24; width: 160px; height: 39px;}
+
+/** CSS global **/
+.container {width: 940px; margin: 0 auto;}
+.clear {clear:both; width:100%;} 
+.btn-img {border:none; cursor:pointer; text-indent:-9999px; line-height:0; font-size:0;}
+.checkbox input {width: 13px; height: 13px; padding: 0; margin:0; vertical-align: bottom; position: relative; top: -1px; *overflow: hidden;}
+.left {float: left;}
+.right {float: right;}
+.linha-vermelha {height: 1px; width: 100%; background: #cd2027;}
+
+.etapa {font-size:11px; color:#f9fbfc; font-weight: bold; background: #80777e; width: 100%;}
+.etapa span {padding: 4px 6px;display: block; text-transform:uppercase;}
+
+.abas li {cursor: pointer; font-size: 12px; text-transform: uppercase; font-weight: bold;float: left; background: #dfdddf; color: #6d656b; width: 185px; padding: 12px 0; text-align: center; margin-right: 1px; }
+.abas li.ativo {color: #FFF; background: #cd2027;}
+.target-aba {display: none;}
+.target-aba.ativo {display: block;}
+.holder {border: 1px solid #727d84; width: 100%; position: relative; float: left;}
+
+.breadcrumbs {margin: 30px 0 18px;font-size: 12px;color: #727d84;}
+.breadcrumbs a {color: #727d84;}
+.breadcrumbs a:hover {text-decoration: underline;}
+.breadcrumbs span { font-weight: bold;}
+
+/** Erro **/
+.error-page {padding: 120px 0 250px; text-align: center; color: #727d84;}
+
+/** Styles **/
+header {width:100%; height: 107px; background: url(../images/bg-header.jpg) repeat-x;}
+	.navbar {float: right; margin-top: 2px; position: relative;}
+		.navbar li {float: left; overflow: hidden;}
+		.navbar li.sep {background: url(../images/navbar-sep.png) no-repeat; width: 2px; height: 36px;}
+        .navbar li.login {padding: 5px 0 5px 15px;}
+        .navbar li a {padding: 11px 15px; font-size:11px; color: #eee; display:block;}
+        /*.navbar li.portal a {padding: 11px 0 11px 15px;}*/
+		.navbar input {font-size: 10px; padding: 2px 4px; width:60px;}
+		.navbar input.go {background: url(../images/btn-go.png) no-repeat; width:17px; height: 18px; }
+		.navbar .logo {margin-top: -2px; position: absolute; right: 780px; top: 0; width: 1500px; height: 109px; z-index: 100;background: url(../images/bg-linha-logo.png) repeat-x;}
+		.navbar .logo .curva {background: url(../images/bg-curva-logo.png) no-repeat; width: 195px; height: 127px; float: right; margin-right: -195px;}
+		.navbar .logo a {float: right; display: block; margin: 20px -10px 0 0; }
+	.etapas {float: right;}
+		.etapas li {float: left;}
+		.etapas li a {display: block; font-size: 15px; color: #f9fbfc; font-weight: bold; width:130px; background-position: left 20px;}
+		.etapas li.breve a {background: url(../images/icon-breve.png) no-repeat; padding: 16px 10px 16px 35px; background-position: left 22px;}
+		.etapas li.lancamento a {background: url(../images/icon-lancamento.png) no-repeat; padding: 25px 10px 25px 40px; background-position: left 10px;}
+		.etapas li.obra a {background: url(../images/icon-obra.png) no-repeat; padding: 25px 10px 25px 40px; background-position: left 20px; width: 95px;}
+		.etapas li.pronto a {background: url(../images/icon-pronto.png) no-repeat; padding: 16px 0 16px 38px; background-position: left 22px; width: 95px;}
+
+/** Footer **/
+footer {width: 100%; color:#ecf1f4;float: left; overflow: hidden; }
+	footer .links {padding-bottom: 65px; float: left; position: relative; z-index: 20; background: #80777e; width: 100%; padding-top:30px;}
+		footer .links ul {float: left; margin-right: 40px;line-height:24px;margin-right:90px;}
+		footer .links ul li {font-size: 12px;}
+		footer .links ul li h3 {font-size: 14px; font-weight: bold}
+		footer .links ul li a {color:#ecf1f4}
+		footer .links ul li a:hover {text-decoration: underline;}
+		footer .links .copy {font-size: 9px; margin-top: 20px; float: left;}
+	footer .mundo {float: right;line-height:18px;}
+		footer .mundo div {float: left; margin-left: 20px;}
+		footer .mundo div.last {margin: 0;}
+		footer .mundo div h3 { margin-bottom: 5px;}
+		footer .mundo div h3 a{font-size: 14px; font-weight: bold; color: #ecf1f4;}
+	
+	
+.leads {background:url(../images/bg-footer.jpg) repeat-x; width:100%; float: left;position: fixed; bottom: 0; left: 0; z-index: 999;}
+	.leads ul {border-left: 1px solid #91070c; float: left;}
+	.leads li { float: left; border-left: 1px solid #c0474c; border-right: 1px solid #91070d;}
+	.leads li.telefone {font-weight: bold; font-size:14px; color: #FFF;}
+	.leads li a {font-weight: bold; font-size:14px; color: #FFF; padding: 10px 42px 10px 171px; display: block;}
+	.leads li.telefone a {padding: 10px 34px;}
+	.leads li.info a {background: url(../images/icon-email.png) 117px center no-repeat;}
+	.leads li.ligamos a {background: url(../images/icon-ligamos.png) 117px center no-repeat;}
+	.leads li.agende a {background: url(../images/icon-agende.png) 30px center no-repeat; padding-left: 60px;}
+	.leads li span {font-size: 10px; font-weight: bold; display: block;}
+	.leads .container {position: relative; height: 49px;}
+	.leads .corretor { border-left: none; position: absolute; line-height: 16px; margin: 0; right: -500px; bottom: 0; z-index: 30;}
+	.leads .corretor div {float: left; background:url(../images/bg-cusrva-footer.png) repeat-x;}
+	.leads .corretor div.bg-red {float: left; background:url(../images/bg-footer.jpg) repeat-x; width:500px; height: 77px;}
+	.leads .corretor a { border-right: 1px solid #91070d;float: left; color: #FFF; display: block; background:url(../images/icon-corretor.png) 30px 28px no-repeat; font-size: 18px; padding: 25px 35px 20px 60px}
+	.leads .corretor a span {font-size: 12px;font-weight: bold; display: block;}
+
+/** Home **/
+section#tv {position:relative;}
+	#slider {width: 100%; height: 466px; overflow: hidden;}
+		#slider .slide {width: 100%; height: 466px; z-index: 10;}
+		#slider .slide .container {position: relative; height: 466px; display: block;}
+		#slider .slide .container div { position: absolute; bottom: 80px; left:0; width: 100%; color: #FFF;}
+	.navigation {position: absolute; bottom: 0; z-index: 20; width:100%;}
+		.navigation #nav {display:none;}
+		.navigation ul {display:block; float: left;}
+		.navigation li {float:left;}
+		.navigation li a {text-transform:uppercase;display: block; text-align: center;width:186px;padding: 14px 0; margin-right: 1px; background: #d1ced1; font-size: 11px; color:#6d656b; filter: alpha(opacity=70); -khtml-opacity: 0.7; -moz-opacity: 0.7; opacity: 0.7;}
+		.navigation li.activeSlide a {color:#FFF; background: #f57f20; filter: alpha(opacity=100); -khtml-opacity: 1; -moz-opacity: 1; opacity: 1;}
+section#home-carousel {padding:40px 0; color: #47494a;}
+	section#home-carousel li { width: 260px; float: left; margin-right: 45px; }
+	section#home-carousel li span {}
+	section#home-carousel li h2 {font-size:18px; font-weight: bold; line-height: 32px;}
+	section#home-carousel li p {font-size: 12px;}
+	section#home-carousel li a {color: #47494a;}
+	section#home-carousel li a:hover {text-decoration: underline;}
+	
+/** Leads **/
+.form-lead {width: 835px; color: #727d84; float: left; padding-bottom: 40px; background: #FFF;}	
+	.form-lead .head {background: #cd2027; color: #FFF; border-bottom: 1px solid #727d84; font-size: 20px; font-weight: bold; padding: 8px 55px 8px 55px;}
+	.form-lead .desc {padding: 25px 55px 25px 55px; font-size: 12px; line-height: 20px;}
+	.form-lead .form {width: 720px; float: left; margin-left: 24px; padding: 20px 30px; background: #f7f9fb;}
+	.form-lead .form div { margin-bottom: 15px;}
+	.form-lead .form .full {width:710px;}
+	.form-lead .form .half {width:335px;}
+	.form-lead .form select.half {width:346px;}
+	.form-lead .form select.full {width:720px;}
+	.form-lead .form .ddd {width: 40px;}
+	.form-lead .form .telefone { margin-left: 10px; width: 270px;}
+	.form-lead .checkbox {margin: 20px 55px;}
+	.informacoes textarea {height: 77px;}
+	.agende .dia, .agende .ano {width: 70px;}
+	.agende .mes {width: 197px;}
+	.form-lead .form .error {border: 1px solid #be1e24; }
+	.form-lead .form label.error {border: none; color:#be1e24; }
+    .indicacao .msg { padding-top: 100px; width: 90%; height: 250px; background: #f7f9fb; margin: 40px auto; text-align: center; }
+    .indicacao .msg p {color: #727d84;}
+    .indicacao .msg p.titulo { font-size: 26px; font-weight: bold;}
+    .indicacao .msg p.desc {margin: 0; padding: 0; font-size: 14px; }
+    .indicacao textarea {height: 77px;}
+
+/** Empreendimento **/
+.empreendimento{}
+	.empreendimento .destaque {position: relative;}
+	.empreendimento .etapa {width: 920px; padding: 5px 10px;text-transform: uppercase; position: absolute; bottom: 0; left: 0; font-size: 14px; font-weight: bold; color: #f7f9fb; background: url(../images/bg-etapa.png);}
+	.empreendimento .info {background: #f9fbfc; float: left; width: 940px; font-size: 14px;color: #727d84;}
+	.empreendimento .info span {color:#cd2027;}
+	.empreendimento .info .cima {float: left; width: 880px; padding: 20px 30px 20px 30px; }
+	.empreendimento .info .cima h2 {font-size: 30px;} 
+	.empreendimento .mapico {margin-top: 10px; background: url(../images/icon-ver-mapa.png) no-repeat; color: #6d6b6c; font-weight: bold; padding: 8px 0 10px 26px;}
+	.empreendimento a:hover {text-decoration: underline;}
+	.empreendimento a.email {margin-top: 4px; background: url(../images/icon-enviar-email.png) no-repeat; color: #6d6b6c; font-weight: bold; padding: 0px 0 0 32px; }
+	.empreendimento .info .divisao {background: #dee7ed; border-bottom:1px solid #FFF; width: 100%; height: 1px; float: left;}
+	.empreendimento .info .baixo {float: left; width: 880px; padding: 20px 30px 20px 30px; }
+	.empreendimento .info .baixo p { float: left;}
+	.empreendimento .info .baixo span {font-size: 24px; font-weight: bold;}
+	.empreendimento .info .baixo span.bullet {font-size: 14px; color: #727d84; padding: 0 10px;}
+	.empreendimento .galerias {margin-top: 50px; float: left;}
+	.empreendimento .gal {border: 1px solid #727d84; padding: 30px 0 20px; position: relative; float: left;}
+	.empreendimento .gal ul {position: absolute; top:0; left: 0;}
+	.empreendimento .gal ul li {text-align: center; font-size: 12px; color:#727d84; }
+	.empreendimento .gal ul li p { padding: 10px 0 0 0;}
+	.empreendimento .diversos {float: left; margin: 50px 0; width: 100%; color: #727d84; font-size: 12px;}
+	.empreendimento .localizacao{}
+	.empreendimento h4 {margin: 20px; font-size: 16px;color: #6d6b6c; font-weight: bold; }
+		.empreendimento .localizacao .topo {padding: 20px;}
+		.empreendimento .localizacao .topo h4 {padding-top: 4px; margin: 0;}
+		.empreendimento .localizacao .topo p { text-transform: uppercase;margin-top: 10px;}
+		.empreendimento .localizacao .filtros {padding: 15px 25px 20px 25px; background: #f9fbfc; float: left; width: 890px; margin-bottom: 40px;}
+		.empreendimento .localizacao .filtros input { padding: 7px 5px; }
+		.empreendimento .localizacao .filtros select{ padding: 6px 5px; }
+		.empreendimento .localizacao #endereco-map { width: 680px;}
+		.empreendimento .localizacao #estado-map {width: 60px;}
+		.empreendimento .localizacao #mostrar-rota {float: right;font-weight: bold;font-size: 12px;color: #FFF;border: none;background: #be1e24;width: 110px;height: 30px;}
+		.empreendimento .localizacao .holder_mapa{position: relative;width: 860px; height: 390px;margin: 0 auto 40px auto;}
+		.empreendimento .localizacao #map_canvas {width: 860px; height: 390px; position: relative; left: 0; top:0;}
+		.empreendimento .localizacao #info-rota {position: absolute;border: 1px solid #dfded7;z-index: 10;width: 278px;height: 388px;display: none;padding: 0 10px;overflow: auto;right: 0;top: 0;}
+	.empreendimento .ficha{padding-bottom: 20px;float: left; width: 100%;}
+		.empreendimento .ficha h4 {background: url(../images/icon-ficha.png) no-repeat; padding: 4px 0 3px 26px;}
+		.empreendimento .ficha div {float: left;}
+		.empreendimento .ficha div.key {width: 240px; padding-right: 20px; text-transform: uppercase; font-weight: bold;}
+		.empreendimento .ficha div.val {width: 170px; padding-right: 20px;} 
+		.empreendimento .ficha div.odd { padding: 20px; width: 900px;}
+		.empreendimento .ficha div.even {background: #f9fbfc; padding: 20px; width: 900px;}
+	.empreendimento .estagio {padding-bottom: 20px;float: left; width: 100%;}
+		.empreendimento .estagio h4 {background: url(../images/icon-estagio.png) no-repeat;padding: 4px 0 3px 36px;}
+		.empreendimento .estagio .left {width: 650px; margin: 20px 0 0 20px;}
+		.empreendimento .estagio ul.porcentagem {list-style: none;width: 670px;float: left;}
+		.empreendimento .estagio ul.porcentagem li {margin-bottom: 20px;float: left;font-size: 14px;font-weight: bold;}
+		.empreendimento .estagio ul.porcentagem li.last {margin: 0;}
+		.empreendimento .estagio ul.porcentagem label { font-size: 14px;font-weight: bold;text-transform:uppercase; float:left;margin-right:15px;width: 155px;}
+		.empreendimento .estagio ul.porcentagem p {font-size: 14px;font-weight: bold;float: left;margin-left: 15px;}
+		.empreendimento .estagio ul.porcentagem .barra {border: 1px solid #dfded7;width: 400px;	float: left;}
+		.empreendimento .estagio ul.porcentagem .fill {background: #cd2027;height: 18px;width: 0px;}
+		.empreendimento .estagio .obras {margin: 18px 20px 0 0;}
+		.empreendimento .estagio .obras p {text-align: center; padding: 5px 0;}
+        .empreendimento .estagio p.observacao {margin-left: 20px; font-weight: bold;}
+        .empreendimento .estagio .foto-obra { padding: 0 30px; }
+
+		
+/** Paginas **/
+.pagina {margin-top: 40px;}
+	.pagina .holder {font-size: 12px; padding: 40px; color: #727d84; margin-bottom: 40px; width: 860px;}
+
+/** FAQ **/
+.faq {}
+	.faq h5 {font-size: 16px; margin-bottom: 40px; text-align: justify;}
+	.faq p { line-height: 26px; text-align: justify;}
+	.faq p.pergunta {font-weight: bold}
+	.faq p.resposta {margin-bottom: 30px;}
+	
+/** Contatos **/
+.contatos {}
+	.contatos h5 {font-size: 16px; text-transform:uppercase; margin-bottom: 20px; text-align: justify;}
+	.contatos.ofereca h5 {margin-bottom: 40px;}
+	.contatos p {margin-bottom: 40px;}
+	.contatos input, .contatos textarea, .contatos select {margin-bottom: 20px;}
+	.contatos textarea {width: 840px; height: 210px;}
+	.contatos .checkbox input { margin: 0;}
+	.contatos .left { margin-right: 30px; }
+	.contatos .last {margin: 0;}
+	.contatos .terco {width: 250px;} 
+	.contatos .half {width: 405px;} 
+	.contatos .ddd { width: 40px;}
+	.contatos .file {padding: 3px; width: 260px;}
+	.contatos .telefone {margin-left: 10px; width: 190px;}
+	.contatos.ofereca .telefone {width: 327px;}
+	.contatos .enviar {margin-top: 40px; margin-bottom: 0;}
+	.contatos .errorSummary {margin-bottom: 40px;}
+		.contatos .errorSummary p {margin: 0; font-weight: bold;}
+		.contatos .errorSummary li {color: #be1e24; }
+		.contatos p.sucesso { font-weight: bold; text-align: center;}
+
+/** Busca **/
+.busca {margin-bottom: 40px; float: left; margin-top: 0px;width: 100%;}
+	.busca .filtros {float: left; color: #727d84; text-transform: uppercase; }
+		.busca .filtros h4 {margin-bottom:10px;margin-top: 12px;}
+		.busca .filtros .holder {border: 1px solid #838c92; width: 154px; padding:10px 15px 15px;}
+		.busca .filtros input {float: left; width: 15px; height: 15px; margin-right: 5px;}
+		.busca .filtros label {float: left;}
+		.busca .filtros .holder h5 {margin-bottom: 10px;}
+		.busca .filtros .holder div {border-bottom: 1px solid #838c92; float: left; width: 100%; padding-bottom:10px;margin-bottom:10px;}
+		.busca .filtros .holder div.last {margin: 0; border: none;padding-bottom: 0;}
+		.busca .filtros .holder div.clear {margin:0; border: none; padding: 0; height: 1px; width: 100%;}
+	.busca .resultado {width: 740px; color:#727d84; }
+		.busca .resultado p.selecione {font-size: 12px; margin: 20px 0; float: left;}
+		.busca .resultado a.selecione {font-size: 12px;float: left;display: block; padding: 6px 10px 6px 22px; color: #FFF; }
+		.busca .resultado a.selecione.asc {background: #c91f26 url(../images/seta-asc-ativo.png) 8px center no-repeat; margin-top: 12px;}
+		.busca .resultado a.selecione.desc {background: #c91f26 url(../images/seta-desc-ativo.png) 8px center no-repeat; margin-bottom: 12px;}
+		.busca .resultado .pagination {float: right; margin-top: 8px;}
+			.busca .resultado .pagination a {border: none; background: none; color: #727d84; font-weight: bold;}
+			.busca .resultado .pagination li.hidden {display: none;}
+			.busca .resultado .pagination a:hover,
+			.busca .resultado .pagination li.selected a {text-decoration:underline; color: #c91f26;}
+			.busca .resultado .pagination li.next a,
+			.busca .resultado .pagination li.previous a { background:#cd2027; color: #FFF; width: 20px; height: 20px; padding: 3px 5px;}
+		.busca .resultado .ordenacao {background: #f9fbfc; padding: 12px;float: left;width: 716px;}
+			.busca .resultado .ordenacao h4 {margin-bottom: 5px;}
+			.busca .resultado .ordenacao a {margin-right: 15px;font-size: 12px;float: left;display: block; padding: 8px 0; width: 150px; text-align: center; background: #dfdddf; font-weight: bold; color:#727d84; }
+			.busca .resultado .ordenacao a.desc {color: #FFF;background: #c91f26 url(../images/seta-desc-ativo.png) 132px center no-repeat;}
+			.busca .resultado .ordenacao a.asc {color: #FFF;background: #c91f26 url(../images/seta-asc-ativo.png) 132px center no-repeat;}
+			.busca .resultado .ordenacao a#ordem_fase {width: 220px; margin-right: 0;}
+			.busca .resultado .ordenacao a#ordem_fase.desc {background: #c91f26 url(../images/seta-desc-ativo.png) 202px center no-repeat;}
+			.busca .resultado .ordenacao a#ordem_fase.asc {background: #c91f26 url(../images/seta-asc-ativo.png) 202px center no-repeat;}
+		.busca .resultado .itens {border-top: 1px solid #838c92; float: left; color: #47494a;}
+			.busca .resultado .itens .item {border: 1px solid #838c92; border-top:none; float: left; width: 738px; height: 175px; }
+			.busca .resultado .itens .compare {background:#f7f9fb; border-right: 1px solid #838c92; width: 52px; height: 175px; }
+			.busca .resultado .itens .compare input {width: 15px; margin-left: 19px; margin-top: 76px;}
+			.busca .resultado .itens .image {width: 220px; height: 144px; position:relative; margin: 15px 0 0 15px;}
+			.busca .resultado .itens .image span {font-weight: bold; color: #FFF; width: 210px; text-transform: uppercase; position: absolute; left: 0; top: 0; font-size: 10px; padding: 3px 5px; background: #80777e; display: block;}
+			.busca .resultado .itens .infos {margin: 15px 0 0 15px;}
+			.busca .resultado .itens .infos h2 {font-size: 18px;}
+			.busca .resultado .itens .infos p {font-size: 14px;}
+			.busca .resultado .itens .infos p.dorms {font-size: 16px;}
+		.busca .resultado .itens .botoes { padding: 0 15px; margin-top:15px; height: 144px; border-left: 1px solid #838c92; }
+			.busca .resultado .itens .botoes a { display: block; color: #FFF; width:142px; margin-bottom: 15px;}
+			.busca .resultado .itens .botoes a.corretor {font-weight: bold;line-height: 14px; width: 95px;float: left; color: #FFF; display: block; background: #f57f20 url(../images/icon-corretor.png) 15px 11px no-repeat; font-size: 18px; padding: 10px 0 10px 50px}
+			.busca .resultado .itens .botoes a.corretor span {font-size: 12px;font-weight: bold; display: block;}
+			.busca .resultado .itens .botoes a.saiba {background: #c91f26; font-weight: bold; width: 144px; text-align: center; padding: 8px 0;}
+			
+
+
+/** Portal do cliente**/	
+.portalc-nav {}
+	.portalc-nav h2 {color: #fff; margin-top: 19px;}
+	.portalc-nav .navbar {font-size: 11px; font-weight: bold; color: #d3d1d2;}
+	.portalc-nav .navbar p {padding: 10px 15px; float: left;}
+	.portalc-nav .navbar select {float: left; padding: 2px; width: 180px; margin-top: 7px;}
+	.portalc-nav .navbar .drop-contrato { padding-right: 15px;}
+	.portalc-nav .navbar .drop-contrato p { padding-right: 5px;}
+
+.portalc-contratos {padding-bottom: 80px;}
+    .portalc-contratos h3 {font-size: 14px; color: #727d84; padding: 50px 0 30px 0;}
+    .portalc-contratos li { border: 1px solid #80777e; margin-bottom: 10px; padding: 20px; width: 902px;}
+    .portalc-contratos li a { float: right; display: block; background: url(../images/btn-acessae.jpg) no-repeat; width: 117px; height: 29px;}
+    .portalc-contratos li p {color: #80777e; font-size: 14px; float: left; line-height: 28px;}
+
+.portalc-contratos.boleto {padding: 0px 0 40px 0; margin: 0; width:700px;}
+.portalc-contratos.boleto h3 {padding: 0 0 30px 0; }
+.portalc-contratos.boleto li {width: 640px;}
+.portalc-contratos.boleto li a {background: url(../images/btn-gerar.jpg) no-repeat;}
+
+.portalc-painel { padding: 20px 0 80px 0; }
+    .portalc-painel h4 {color: #cd2027; font-size: 11px; font-weight: bold; background: #d1ced1; padding: 8px 10px;}
+    .portalc-painel .menu {width: 210px; float: left;}
+    .portalc-painel .menu li { margin-bottom: 1px;}
+    .portalc-painel .menu li a {width: 190px; display: block; padding: 8px 10px; background: #d1ced1; color: #6b6369; font-size: 12px; font-weight: bold;}
+    .portalc-painel .menu li a span {font-size: 10px; display: block;}
+    .portalc-painel .menu li a.ativo,
+    .portalc-painel .menu li a:hover {background: #cd2027; color: #FFF;}
+    .portalc-painel .right {width: 700px; float: right;}
+
+.portalc-painel .ficha {}
+    .portalc-painel .ficha .info { float: left; font-size: 14px; color: #727d84;}
+    .portalc-painel .ficha .left {padding-left: 20px;}
+    .portalc-painel .ficha .info span {color:#cd2027;}
+    .portalc-painel .ficha .info .cima {float: left; padding: 20px 0 0 0; }
+    .portalc-painel .ficha .info img {float: left;}
+    .portalc-painel .ficha .info .cima h2 {font-size: 30px;}
+    .portalc-painel .ficha .info .endereco {font-size: 14px; color: #727d84; padding-top: 20px;}
+    .portalc-painel .ficha .info .baixo {float: left; padding: 20px 0 0 0 }
+    .portalc-painel .ficha .info .baixo p { float: left;}
+    .portalc-painel .ficha .info .baixo span {font-size: 24px; font-weight: bold;}
+
+.portalc-painel .estagio {padding-bottom: 20px;float: left; width: 100%;}
+    .portalc-painel .estagio .left {width: 650px; margin: 20px 0 0 20px;}
+    .portalc-painel .estagio ul.porcentagem {list-style: none;width: 670px;float: left;}
+    .portalc-painel .estagio ul.porcentagem li {color: #727d84; margin-bottom: 20px;float: left;font-size: 14px;font-weight: bold;}
+    .portalc-painel .estagio ul.porcentagem li.last {margin: 0;}
+    .portalc-painel .estagio ul.porcentagem label {font-size: 14px;font-weight: bold;text-transform:uppercase; float:left;margin-right:15px;width: 155px;}
+    .portalc-painel .estagio ul.porcentagem p {font-size: 14px;font-weight: bold;float: left;margin-left: 15px;}
+    .portalc-painel .estagio ul.porcentagem .barra {border: 1px solid #dfded7;width: 400px;	float: left;}
+    .portalc-painel .estagio ul.porcentagem .fill {background: #cd2027;height: 18px;width: 0px;}
+    .portalc-painel .estagio .obras {margin: 18px 20px 0 0;}
+    .portalc-painel .estagio .obras p {text-align: center; padding: 5px 0;}

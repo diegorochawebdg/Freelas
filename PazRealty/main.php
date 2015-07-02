@@ -38,6 +38,7 @@
 			        	<li><?php echo CHtml::link('FAQ', array('/site/faq')); ?></li>
                         <li class="sep"></li>
                         <li class="portal"><?php echo CHtml::link('PORTAL DO CLIENTE', 'http://www.uau.com.br/PortalUAU_Site/AbrePortal.aspx?Empresa=MA5m%2bkPP0HY%3d', array('target'=>'_blank')); ?></li>
+                        <li class="sep"></li>
                         <li><a href="http://www.pazrealty.com.br/painel-usuario/" target="_blank" title="Portal de parcerias">PORTAL DE PARCERIAS</a></li>
                         <?php if(isset($_GET['dev'])): ?>
                             <li class="login">
